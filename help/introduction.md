@@ -2,7 +2,7 @@
 title: Inleiding
 description: 'Afdrukformulieren sneller omzetten in aangepaste formulieren '
 translation-type: tm+mt
-source-git-commit: ef5789dabccc65dcf988b9424b435aa036017691
+source-git-commit: ceff5cb56aa9896a28004628c5e26c262b7918bd
 
 ---
 
@@ -19,9 +19,9 @@ De service voor automatische conversie van formulieren helpt de digitalisering e
 
 ![Het is eenvoudig. U geeft ons gewoon de bronformulieren en laat alles aan ons over. We zullen je prachtige adaptieve vormen aanbieden. Natuurlijk, zult u met de output aan uw tevredenheid kleven. ](assets/pdf-to-adaptive-form-gitx50.gif)
 
-## Onboarding {#onboarding}
+## On-boarding {#onboarding}
 
-De service is gratis beschikbaar voor klanten op de locatie van AEM 6.5 Forms en klanten van Adobe Managed Service. U kunt contact opnemen met het verkoopteam van Adobe of uw Adobe-vertegenwoordiger om toegang tot de service te vragen.
+De service is gratis beschikbaar voor klanten op locatie met AEM 6.4 Forms en AEM 6.5 Forms en Adobe Managed Service Enterprise-klanten. U kunt contact opnemen met het verkoopteam van Adobe of uw Adobe-vertegenwoordiger om toegang tot de service te vragen.
 
 Adobe biedt uw organisatie toegang tot deze gegevens en verleent de persoon die in uw organisatie als beheerder is aangewezen de vereiste bevoegdheden. De beheerder kan toegang tot uw ontwikkelaars (gebruikers) van Vormen AEM van uw organisatie verlenen om met de dienst te verbinden. Zie De service [Automated Forms Conversion](configure-service.md) configureren voor meer informatie.
 
@@ -37,7 +37,7 @@ De service Automated Forms Conversion wordt uitgevoerd op Adobe Cloud. U verbind
 
 ![Workflow](assets/conversion-workflow.png)
 
-### 1.De omgeving instellen {#set-up-the-environment}
+### 1. De omgeving instellen {#set-up-the-environment}
 
 De service Automated Forms Conversion wordt uitgevoerd op Adobe Cloud. [Configureer de Adobe I/O-account van uw organisatie en verbind uw lokale AEM-instantie](configure-service.md) met de conversieservice die wordt uitgevoerd op Adobe Cloud.
 

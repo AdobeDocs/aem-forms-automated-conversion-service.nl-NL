@@ -5,7 +5,7 @@ uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 translation-type: tm+mt
-source-git-commit: b879a0ddecd5370c754dfe9e1bf33121dd5ecc97
+source-git-commit: c552f4073ac88ca9016a746116a27a5898df7f7d
 
 ---
 
@@ -24,10 +24,11 @@ In dit artikel worden de stapsgewijze instructies beschreven waarmee u al deze i
 
 ## Voorwaarden {#pre-requisites}
 
-* AEM 6.5-auteurinstantie met de nieuwste AEM 6.5 Service Pack
+* Een instantie van AEM 6.4 of 6.5-auteurs instellen
+* Installeer het [recentste de dienstpak](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) voor uw instantie AEM
 * Laatste versie van het invoegpakket voor AEM Forms
-* [Automated Forms Conversion-service](configure-service.md)
-* Een database die moet worden geïntegreerd. De database die wordt gebruikt in de voorbeeldimplementatie is MySQL 5.6.24. U kunt het geconverteerde adaptieve formulier echter integreren met elke gewenste database.
+* Service voor [automatische conversie van formulieren configureren](configure-service.md)
+* Stel een database in. De database die wordt gebruikt in de voorbeeldimplementatie is MySQL 5.6.24. U kunt het geconverteerde adaptieve formulier echter integreren met elke gewenste database.
 
 ## Monster van adaptief formulier {#sample-adaptive-form}
 
@@ -154,9 +155,9 @@ Nadat u MYSQL als gegevensbron hebt geconfigureerd, voert u de volgende stappen 
 
 1. Navigeer in de auteur van AEM naar **[!UICONTROL Forms]** > **[!UICONTROL Data Integrations]**.
 
-1. Tik **[!UICONTROL Create]** > **[!UICONTROL Form Data Model]**.
+1. Tik op **[!UICONTROL Create]** > **[!UICONTROL Form Data Model]**.
 
-1. Geef in de **[!UICONTROL Create Form Data Model]** wizard **workflow_submit** op als naam voor het gegevensmodel van het formulier. Tik **[!UICONTROL Next]**.
+1. Geef in de **[!UICONTROL Create Form Data Model]** wizard **workflow_submit** op als naam voor het gegevensmodel van het formulier. Tik op **[!UICONTROL Next]**.
 
 1. Selecteer de MYSQL-gegevensbron die u in de vorige sectie hebt geconfigureerd en tik op **[!UICONTROL Create]**.
 

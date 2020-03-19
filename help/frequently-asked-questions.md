@@ -7,7 +7,7 @@ uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 translation-type: tm+mt
-source-git-commit: 1e22587a832ca8d09f33141a9ba4e4b1748e0312
+source-git-commit: 022b86b77c4a524f320cbcbcd6bad4403ddf57d8
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: 1e22587a832ca8d09f33141a9ba4e4b1748e0312
 # Veelgestelde vragen{#frequently-asked-questions}
 
 1. **Welke versie van AEM Forms steunt de Geautomatiseerde dienst van de Omzetting van Vormen?**
-   <p>De service Automated Forms Conversion ondersteunt AEM 6.5 Forms. Het werkt met zowel AEM-formulieren op OSGi als AEM-formulieren op JEE. U hebt het nieuwste invoegpakket voor AEM Forms bovenop de AEM-auteurinstantie nodig om de service te kunnen gebruiken. Voor gedetailleerde instructies, zie de Geautomatiseerde dienst van de Omzetting <a href="configure-service.md">van Vormen</a> vormen.</p> 
+   <p>De geautomatiseerde dienst van de Omzetting van Vormen steunt Vormen AEM 6.4 en Vormen AEM 6.5. Het werkt met zowel AEM-formulieren op OSGi als AEM-formulieren op JEE. U hebt het nieuwste invoegpakket voor AEM Forms bovenop de AEM-auteurinstantie nodig om de service te kunnen gebruiken. Voor gedetailleerde instructies, zie de Geautomatiseerde dienst van de Omzetting <a href="configure-service.md">van Vormen</a> vormen.</p> 
     <br>
 
 1. **Kan de dienst op-gebouw worden geïnstalleerd?**
@@ -60,7 +60,7 @@ source-git-commit: 1e22587a832ca8d09f33141a9ba4e4b1748e0312
 
 1. **De service heeft formulieren niet geconverteerd. Wat is de reden en hoe moet dit probleem worden opgelost?**
 De meest voorkomende redenen voor het mislukken van de conversie zijn:</p>
-   * Beveiligde PDF-formulieren worden beschikbaar gesteld voor conversie. Gebruik geen met wachtwoord beveiligde of beveiligde PDF-formulieren voor conversie.
+   * Beveiligde PDF-formulieren worden meegeleverd bij de conversie. Gebruik geen met wachtwoord beveiligde of beveiligde PDF-formulieren voor conversie.
    * De internetverbinding wordt onderbroken. Zorg ervoor dat u tijdens de conversie verbinding hebt met internet.
    * De bron-PDF heeft een afbeelding van het formulier in plaats van het daadwerkelijke formulier.
    * De service is onjuist geconfigureerd, de service-URL is niet opgegeven of de service-URL is onjuist. Controleer de [serviceconfiguratie](configure-service.md#configure-the-cloud-service) op **[!UICONTROL AEM]** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion configuration]**.
@@ -97,11 +97,11 @@ De service ondersteunt alleen lege of niet-ingevulde formulieren. Upload geen in
 1. **Hoeveel tijd bespaart de dienst in vergelijking met het handproces om activa (thema&#39;s, malplaatjes) te plannen, te creëren, en het publiceren van een adaptief vorm?**
    <p>De hoeveelheid tijd is afhankelijk van de grootte en complexiteit van invoerformulieren en het aantal aanvragen. De service is bedoeld om de tijd die nodig is om waarde te verhogen aanzienlijk te verminderen door PDF-formulieren in veel sneller tempo te converteren naar adaptieve formulieren dan bij het handmatig converteren van formulieren. </p> <br />
 
-1. **Wat te doen als ik een fout met betrekking tot bibliotheken RSA ontmoet?** Het foutbericht is vergelijkbaar met het onderstaande bericht: <br/>
+1. **Wat te doen als ik een fout met betrekking tot bibliotheken RSA ontmoet? Het foutbericht is vergelijkbaar met het onderstaande bericht:** <br/>
    `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&amp;lt;init&amp;gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>De bovengenoemde fout komt voor wanneer de laarsdelegatie niet voor bibliotheken RSA/BouncyCastle wordt gevormd. Voer de volgende stappen uit om het probleem op te lossen:
    <p> </p>
 
-   1. Stop de AEM-instantie. Navigeer naar de `[AEM installation directory]\crx-quickstart\conf\` map. Open het bestand sling.properties voor bewerking. Als u een AEM-instantie start `[AEM installation directory]\crx-quickstart\bin\start.bat` , bewerkt u de eigenschappen sling.properties op `[AEM_root]\crx-quickstart\`.
+   1. Stop de AEM-instantie. Navigate to the `[AEM installation directory]\crx-quickstart\conf\` folder. Open het bestand sling.properties voor bewerking. Als u een AEM-instantie start `[AEM installation directory]\crx-quickstart\bin\start.bat` , bewerkt u de eigenschappen sling.properties op `[AEM_root]\crx-quickstart\`.
    1. Voeg de volgende eigenschappen toe aan het bestand sling.properties:<br/> `sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*`<br />  `sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.*`<br /> `sling.bootdelegation.xerces=org.apache.xerces.*`
    1. Sla het bestand op en sluit het. <br/>
    1. Start de AEM-instantie.<br/>

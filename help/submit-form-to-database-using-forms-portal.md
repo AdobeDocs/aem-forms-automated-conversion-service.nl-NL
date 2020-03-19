@@ -5,7 +5,7 @@ uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 translation-type: tm+mt
-source-git-commit: 040b0ddb489b5bdfd640a93b22cd7bc512a39aea
+source-git-commit: c552f4073ac88ca9016a746116a27a5898df7f7d
 
 ---
 
@@ -26,10 +26,11 @@ Het voorbeeld, dat in dit artikel wordt besproken, is een referentie-implementat
 
 ## Voorwaarden {#pre-requisites}
 
-* AEM 6.5-auteurinstantie met de nieuwste AEM 6.5 Service Pack
+* Een instantie van AEM 6.4 of 6.5-auteurs instellen
+* Installeer het [recentste de dienstpak](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) voor uw instantie AEM
 * Laatste versie van het invoegpakket voor AEM Forms
-* [Automated Forms Conversion-service](configure-service.md)
-* Een database die moet worden geïntegreerd. De database die wordt gebruikt in de voorbeeldimplementatie is MySQL 5.6.24. U kunt Forms Portal echter integreren met elke gewenste database.
+* Service voor [automatische conversie van formulieren configureren](configure-service.md)
+* Stel een database in. De database die wordt gebruikt in de voorbeeldimplementatie is MySQL 5.6.24. U kunt het geconverteerde adaptieve formulier echter integreren met elke gewenste database.
 
 ## Verbinding tussen AEM-instantie en database instellen {#set-up-connection-aem-instance-database}
 
@@ -269,7 +270,7 @@ Voer de volgende stappen uit, op alle auteur en publiceer instanties, om de stee
    [Bestand ophalen](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
 1. Ga naar AEM package manager op *http://[host]:[port]/crx/packmgr/*.
-1. Click **[!UICONTROL Upload Package]**.
+1. Klik op **[!UICONTROL Upload Package]**.
 1. Blader naar het **zip-pakket aem-fp-db-integration-sample-pkg-6.1.2.zip** en klik op **[!UICONTROL OK]**.
 1. Klik op **[!UICONTROL Install]** naast het pakket om het pakket te installeren.
 

@@ -9,7 +9,7 @@ topic-tags: forms
 discoiquuid: cad34fff-7f9f-4a27-8b5c-d0a523903eec
 privatebeta: true
 translation-type: tm+mt
-source-git-commit: f598871fd41c402f98d94d7b2174ab8b2e487075
+source-git-commit: caccb547a5741eb0e70ddf75630a661f8fe75cb3
 
 ---
 
@@ -268,17 +268,17 @@ Voer de volgende stappen uit:
    1. Selecteer in de **[!UICONTROL Submission]** sectie een optie in de **[!UICONTROL Submit using Form Data Model]** **[!UICONTROL Submit Action]** vervolgkeuzelijst.
 
    1. Selecteer het gegevensmodel in het **[!UICONTROL Data Model to submit]** veld.
-   1. Tik ![op het pictogram](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) om de eigenschappen op te slaan.
+   1. Tik ![op het pictogram](assets/save_icon.svg) om de eigenschappen op te slaan.
 
-1. Tik op het tekstvak Naam van aanvrager en selecteer het pictogram ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) configureren (configureren).
+1. Tik op het tekstvak Naam van aanvrager en selecteer het pictogram ![](assets/configure_icon.svg) configureren (configureren).
 
-   1. Selecteer in het veld Bindverwijzing de optie **Aanvrager** > **Naam** en tik op het pictogram ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) Voltooid om de eigenschappen op te slaan. Op dezelfde manier creeer een gegevensband voor het **Adres**, het Aantal **van de** Telefoon, **E-mail**, **Bezetting**, **Jaarloon (in dollars)****, enNo. van afhankelijke familieleden** met de entiteiten van het formuliergegevensmodel.
+   1. Selecteer in het veld Bindverwijzing de optie **Aanvrager** > **Naam** en tik op het pictogram ![](assets/save_icon.svg) Voltooid om de eigenschappen op te slaan. Op dezelfde manier creeer een gegevensband voor het **Adres**, het Aantal **van de** Telefoon, **E-mail**, **Bezetting**, **Jaarloon (in dollars)****, enNo. van afhankelijke familieleden** met de entiteiten van het formuliergegevensmodel.
    ![Bindverwijzingen](assets/bind_references.png)
 
 1. Tik **[!UICONTROL Preview]** om de vooraf ingevulde aangepaste waarden voor formuliervelden weer te geven.
 1. Wijzig, indien nodig, de veldwaarden en verzend het adaptieve formulier. De veldwaarden worden verzonden naar de MySQL-database. U kunt de **kandidaatlijst** in het gegevensbestand verfrissen om de bijgewerkte waarden in de lijst te bekijken.
 
-**** Hoofdlettergebruik: U genereert een adaptief formulier zonder gegevensbinding met de service Automated Forms Conversion en configureert de MYSQL-database als gegevensbron. U bindt de aangepaste formuliervelden met de regeleditor aan het vooraf invullen van veldwaarden. Wijzig, indien nodig, de veldwaarden en verzend gegevens naar de crx-repository.
+**Hoofdlettergebruik:** U genereert een adaptief formulier zonder gegevensbinding met de service Automated Forms Conversion en configureert de MYSQL-database als gegevensbron. U bindt de aangepaste formuliervelden met de regeleditor aan het vooraf invullen van veldwaarden. Wijzig, indien nodig, de veldwaarden en verzend gegevens naar de crx-repository.
 
 Voer de volgende stappen uit om de [regeleditor](https://helpx.adobe.com/experience-manager/6-5/forms/using/rule-editor.html) te gebruiken om de service van het formuliergegevensmodel aan te roepen om velden en vooraf ingevulde waarden in een adaptieve vorm te binden:
 
@@ -304,7 +304,7 @@ Voer de volgende stappen uit om de [regeleditor](https://helpx.adobe.com/experie
 
    1. Maak een binding voor de adaptieve formuliervelden met de entiteiten van het formuliergegevensmodel met de sectie Uitvoer. Bind bijvoorbeeld **[!UICONTROL Applicant Name]** het aangepaste formulierveld met de **naamentiteit** .
 
-   1. Tik **[!UICONTROL Done]**. Tik **[!UICONTROL Done]** opnieuw op de pagina van de Redacteur van de Regel.
+   1. Tik op **[!UICONTROL Done]**. Tik **[!UICONTROL Done]** opnieuw op de pagina van de Redacteur van de Regel.
    ![Regeleditor om verwijzingen te binden](assets/rule_editor_bind_references.png)
 
 1. Tik **[!UICONTROL Preview]** om de vooraf ingevulde aangepaste waarden voor formuliervelden weer te geven.
@@ -319,7 +319,7 @@ Voer de volgende stappen uit om de [regeleditor](https://helpx.adobe.com/experie
 
 ### JSON-schema gebruiken als gegevensbron {#jsondatasource}
 
-**** Hoofdlettergebruik: U genereert een adaptief formulier zonder gegevensbinding met de service Automated Forms Conversion en configureert het JSON-schema als gegevensbron. U bindt de adaptieve formuliervelden handmatig aan het JSON-schema en gebruikt de optie **Voorvertonen met gegevens** om de veldwaarden vooraf in te vullen. Wijzig, indien nodig, de veldwaarden en verzend gegevens naar de crx-repository.
+**Hoofdlettergebruik:** U genereert een adaptief formulier zonder gegevensbinding met de service Automated Forms Conversion en configureert het JSON-schema als gegevensbron. U bindt de adaptieve formuliervelden handmatig aan het JSON-schema en gebruikt de optie **Voorvertonen met gegevens** om de veldwaarden vooraf in te vullen. Wijzig, indien nodig, de veldwaarden en verzend gegevens naar de crx-repository.
 
 Controleer voordat u het gebruiksgeval uitvoert of:
 
@@ -331,9 +331,9 @@ Voer de volgende stappen uit:
 1. Selecteer het geconverteerde aanvraagformulier **voor een** voorbeeldlening in de **uitvoermap** en tik op **[!UICONTROL Properties]**.
 1. Tik op het **[!UICONTROL Form Model]** tabblad, selecteer **[!UICONTROL Schema]** de optie in de **[!UICONTROL Select From]** vervolgkeuzelijst en tik **[!UICONTROL Select Schema]** op om het JSON **-schema** demo.schema te uploaden dat is opgeslagen in het lokale bestandssysteem. Tik **[!UICONTROL Save & Close]** om het formulier op te slaan.
 1. Selecteer het aanvraagformulier voor de **voorbeeldlening** en tik op **[!UICONTROL Edit]**.
-1. Tik op het tekstvak Naam van aanvrager en selecteer het pictogram ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) configureren (configureren).
+1. Tik op het tekstvak Naam van aanvrager en selecteer het pictogram ![](assets/configure_icon.svg) configureren (configureren).
 
-   Selecteer in het veld Bindverwijzing de optie **Aanvrager** > **Naam** en tik op het pictogram ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) Voltooid om de eigenschappen op te slaan. Op dezelfde manier creeer een gegevensband voor het **Adres**, het Aantal **van de** Telefoon, **E-mail**, **Bezetting**, **Jaarloon (in dollars)****, enNo. van afhankelijke familieleden** gebieden met de JSON schema-entiteiten.
+   Selecteer in het veld Bindverwijzing de optie **Aanvrager** > **Naam** en tik op het pictogram ![](assets/save_icon.svg) Voltooid om de eigenschappen op te slaan. Op dezelfde manier creeer een gegevensband voor het **Adres**, het Aantal **van de** Telefoon, **E-mail**, **Bezetting**, **Jaarloon (in dollars)****, enNo. van afhankelijke familieleden** gebieden met de JSON schema-entiteiten.
 
 1. Selecteer nogmaals het geconverteerde aanvraagformulier **voor een** voorbeeldlening in de **[!UICONTROL output]** map en selecteer **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**.</br>
 
@@ -347,7 +347,7 @@ Voer de volgende stappen uit:
 
 ### XSD-schema gebruiken als gegevensbron {#xsddatasource}
 
-**** Hoofdlettergebruik: U genereert een adaptief formulier zonder gegevensbinding met de service Automated Forms Conversion en configureert het XSD-schema als gegevensbron. U bindt de adaptieve formuliervelden handmatig aan het XSD-schema en gebruikt de **voorbeeldweergave met gegevens** om veldwaarden vooraf in te vullen. Wijzig, indien nodig, de veldwaarden en verzend gegevens naar de crx-repository.
+**Hoofdlettergebruik:** U genereert een adaptief formulier zonder gegevensbinding met de service Automated Forms Conversion en configureert het XSD-schema als gegevensbron. U bindt de adaptieve formuliervelden handmatig aan het XSD-schema en gebruikt de **voorbeeldweergave met gegevens** om veldwaarden vooraf in te vullen. Wijzig, indien nodig, de veldwaarden en verzend gegevens naar de crx-repository.
 
 Controleer voordat u het gebruiksgeval uitvoert of:
 
@@ -359,8 +359,8 @@ Voer de volgende stappen uit:
 1. Selecteer het geconverteerde aanvraagformulier **voor een** voorbeeldlening in de **[!UICONTROL output]** map en tik op **[!UICONTROL Properties]**.
 1. Tik op het **[!UICONTROL Form Model]** tabblad, selecteer **[!UICONTROL Schema]** de optie in de **[!UICONTROL Select From]** vervolgkeuzelijst en tik **[!UICONTROL Select Schema]** om het XSD-schema van de **toepassing** te uploaden dat is opgeslagen in het lokale bestandssysteem. Selecteer basiselement voor het XSD-schema en tik **[!UICONTROL Save & Close]** om het formulier op te slaan.
 1. Selecteer het aanvraagformulier voor de **voorbeeldlening** en tik op **[!UICONTROL Edit]**.
-1. Tik op het tekstvak Naam van aanvrager en selecteer het pictogram ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) configureren (configureren).
-Selecteer in het veld Bindverwijzing de optie **Verzoekende partij** > **Naam** en tik op ![Gereed pictogram](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) om de eigenschappen op te slaan. Op dezelfde manier creeer een gegevensband voor het **Adres**, het Aantal **van de** Telefoon, **E-mail**, **Bezetting**, **Jaarloon (in dollars)****, enNo. van afhankelijke familieleden** gebieden met de XSD schema-entiteiten.
+1. Tik op het tekstvak Naam van aanvrager en selecteer het pictogram ![](assets/configure_icon.svg) configureren (configureren).
+Selecteer in het veld Bindverwijzing de optie **Verzoekende partij** > **Naam** en tik op ![Gereed pictogram](assets/save_icon.svg) om de eigenschappen op te slaan. Op dezelfde manier creeer een gegevensband voor het **Adres**, het Aantal **van de** Telefoon, **E-mail**, **Bezetting**, **Jaarloon (in dollars)****, enNo. van afhankelijke familieleden** gebieden met de XSD schema-entiteiten.
 
 1. Selecteer nogmaals het geconverteerde aanvraagformulier voor **voorbeeldleningen** in de **uitvoermap** en selecteer **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**.</br>
 
@@ -381,9 +381,9 @@ Met de service [Automated Forms Conversion kunt u het aanvraagformulier voor een
 
 ### JSON-schema gebruiken als gegevensbron {#jsonwithdatabinding}
 
-**** Hoofdlettergebruik: U genereert een adaptief formulier met JSON-gegevensbinding met de service Automated Forms Conversion. De Prefill-service en het verzenden van formulieren werken naadloos. U hebt geen configuratiestappen nodig.
+**Hoofdlettergebruik:** U genereert een adaptief formulier met JSON-gegevensbinding met de service Automated Forms Conversion. De Prefill-service en het verzenden van formulieren werken naadloos. U hebt geen configuratiestappen nodig.
 
-Zorg ervoor dat u [een adaptief formulier met gegevensbinding](#generate-adaptive-forms-with-json-binding)hebt voordat u het hoofdlettergebruik uitvoert.
+Voordat u het hoofdlettergebruik uitvoert, moet u controleren of u [een adaptief formulier met gegevensbinding](#generate-adaptive-forms-with-json-binding)hebt.
 
 Voer de volgende stappen uit:
 

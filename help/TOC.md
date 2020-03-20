@@ -5,13 +5,13 @@ sub-product: forms conversion service
 audience: end-user
 user-guide-title: Adobe Experience Manager Forms Automated Conversion Service
 translation-type: tm+mt
-source-git-commit: 625babc74a3aedd8f5aca453dbe1d04a40f59942
+source-git-commit: a6eed86bf4581a4c20aa8e2c3fddbf88d1ac7b97
 
 ---
 
 
 # Inhoudsopgave {#using}
-
++ [Releaseopmerkingen](release-notes.md)
 + [Inleiding tot de service Automated Forms Conversion](introduction.md)
 + [De service Automated Forms Conversion configureren](configure-service.md)
 + [Afdrukformulieren converteren naar aangepaste formulieren](convert-existing-forms-to-adaptive-forms.md)

@@ -2,7 +2,7 @@
 title: Wat is nieuw? Opmerkingen bij de release - Automated Forms Conversion Service
 description: 'Meer informatie over de nieuwste functies en oplossingen voor Automated Forms Conversion Service '
 translation-type: tm+mt
-source-git-commit: 6d658dbb181c09e42073e328e0232e40d4fb6b58
+source-git-commit: ec3a85ccd4c5d535ebc31c55702adab9aa92cf4e
 
 ---
 
@@ -24,7 +24,7 @@ De geautomatiseerde Dienst van de Omzetting van Vormen ontvangt voortdurende ver
 
 **Logische secties in een formulier automatisch detecteren**
 
-Standaard maakt de service een apart bovenste venster voor elke pagina van een PDF-formulier. Nu kunt u met de **[!UICONTROL Auto-detect logical sections]** optie deelvensters op paginaniveau (op paginanummers gebaseerde deelvensters) neerzetten en alleen logische deelvensters maken.  Het omvat ook velden die niet tot een sectie met een voorgaande logische sectie behoren. Ook worden velden van een logische sectie die zich over twee aangrenzende pagina&#39;s uitstrekken, samengevoegd tot één logische sectie. Als sommige velden van een logische sectie zich bijvoorbeeld aan het einde van pagina 1 bevinden en sommige zich aan het begin van pagina 2 bevinden, worden al deze velden opgenomen in één logische sectie.
+Standaard maakt de service een apart bovenste venster voor elke pagina van een PDF-formulier. Nu kunt u met de **[!UICONTROL Auto-detect logical sections]** optie deelvensters op paginaniveau (op paginanummers gebaseerde deelvensters) neerzetten en alleen logische deelvensters maken.  De velden die niet tot een sectie met een voorgaande logische sectie behoren, en velden van een logische sectie die zich over twee aangrenzende pagina&#39;s uitstrekken, worden in één logische sectie samengevoegd. Als sommige velden van een logische sectie zich bijvoorbeeld aan het einde van pagina 1 bevinden en sommige zich aan het begin van pagina 2 bevinden, worden al deze velden opgenomen in één logische sectie.
 
 ### Verbeterde functies
 

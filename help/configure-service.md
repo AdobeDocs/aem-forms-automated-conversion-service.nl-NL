@@ -2,7 +2,7 @@
 title: De service Automated Forms Conversion configureren
 description: AEM-instantie klaar om de service Automated Forms Conversion te gebruiken
 translation-type: tm+mt
-source-git-commit: c552f4073ac88ca9016a746116a27a5898df7f7d
+source-git-commit: 5f27fcbf756350a03b7143af489f737e01a7f0e3
 
 ---
 
@@ -43,6 +43,7 @@ Voordat u de service gebruikt, moet u de instantie van uw AEM-auteur voorbereide
 1. [Download en installeer AEM 6.4 of AEM 6.5](#aemquickstart)
 1. [De nieuwste AEM Service Pack downloaden en installeren](#servicepack)
 1. [Het nieuwste invoegpakket voor AEM Forms downloaden en installeren](#downloadaemformsaddon)
+1. [Download en installeer het nieuwste connectorpakket](#installConnectorPackage)
 1. [Aangepaste thema&#39;s en sjablonen maken](#referencepackage)
 
 ### Download en installeer AEM 6.4 of AEM 6.5 {#aemquickstart}
@@ -65,8 +66,20 @@ Download en installeer het nieuwste AEM Service Pack. Voor gedetailleerde instru
 Een AEM-exemplaar bevat basisformuliermogelijkheden. Voor de conversieservice zijn alle mogelijkheden van AEM Forms vereist. Download en installeer het invoegpakket AEM Forms om alle mogelijkheden van AEM Forms te benutten. Het pakket is vereist om de conversieservice in te stellen en uit te voeren. Zie Mogelijkheden voor gegevensvastlegging [installeren en configureren voor gedetailleerde instructies.](https://helpx.adobe.com/experience-manager/6-5/forms/using/installing-configuring-aem-forms-osgi.html)
 
 >[!NOTE]
-> Als u een bestaande gebruiker van de service Automated Forms Conversion bent, installeert u de nieuwste invoegtoepassing voor AEM Forms om de service te blijven gebruiken. Het aansluitingspakket wordt samengevoegd met het pakket AEM Forms Add-on. Het extra schakelaarpakket wordt niet meer vereist.
 > Zorg ervoor dat u de verplichte configuraties na de installatie uitvoert nadat u het invoegpakket hebt geïnstalleerd.
+
+
+### Connector-pakket downloaden en installeren {#installConnectorPackage}
+
+U hebt het aansluitpakket 1.1.38 of hoger nodig als u de nieuwste kenmerken en verbeteringen van de release AFC-2020.03.1 wilt gebruiken. U kunt het aansluitingspakket downloaden van AEM Package Share.
+
+| Besturingssysteem | Koppeling naar downloadpakket voor connector |
+| ------------- | ------------- |
+| Microsoft Windows | https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/fd/AEM-Forms-6.5.4.0-WIN |
+| Linux | https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/fd/AEM-Forms-6.5.4.0-WIN |
+
+>[!NOTE]
+> als u al een automatische Forms Conversion-serviceomgeving hebt, installeert u het nieuwste servicepakket, het nieuwste AEM Forms Add-on-pakket en het nieuwste connectorpakket in de aangegeven volgorde om de nieuwste functies van de conversieservice te kunnen gebruiken.
 
 
 ### Aangepaste thema&#39;s en sjablonen maken {#referencepackage}

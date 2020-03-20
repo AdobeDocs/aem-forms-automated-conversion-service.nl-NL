@@ -2,38 +2,42 @@
 title: Wat is nieuw? Opmerkingen bij de release - Automated Forms Conversion Service
 description: 'Meer informatie over de nieuwste functies en oplossingen voor Automated Forms Conversion Service '
 translation-type: tm+mt
-source-git-commit: c552f4073ac88ca9016a746116a27a5898df7f7d
+source-git-commit: e88b9606878cb408c0369b5f20a644db93578f64
 
 ---
 
 
-# Wat is er nieuw in de Automated Forms Conversion Service?
+# Automated Forms Conversion Service: Opmerkingen bij de release
 
-De geautomatiseerde Dienst van de Omzetting van Vormen ontvangt voortdurende verbeteringen. Bezoek deze pagina regelmatig om up-to-date te blijven met de meest recente ontwikkelingen. Op deze pagina vindt u informatie over:
+De geautomatiseerde Dienst van de Omzetting van Vormen ontvangt voortdurende verbeteringen. Om up-to-date te blijven met de meest recente ontwikkelingen, bezoek deze pagina regelmatig. Op deze pagina vindt u informatie over:
 
 * Laatste versies
 * Nieuwe functies
-* Bekende problemen
 * Bugfixes
 * Verouderde functionaliteit
+* Speciale instructies
 * Toekomstige plannen voor wijzigingen
 
 Deze pagina wordt elke maand bijgewerkt, dus maak regelmatig een nieuwe pagina.
 
-## februari 2020
+## 20 maart 2020 (AFC-2020.03.1)
 
-### 20 februari 2020 (AFC-2020.02.2)
+### Nieuwe functies
 
-* Beveiligde service voor communicatie met de service
+**Logische secties in een formulier automatisch detecteren**
 
+Standaard maakt de service een apart bovenste venster voor elke pagina van een invoer-PDF-formulier. Nu kunt u de **[!UICONTROL Auto-detect logical sections]** optie selecteren om het idee van het maken van een afzonderlijk bovenste venster voor elke PDF-pagina te verwijderen en logische secties automatisch te detecteren. De dienstclubs verwant gebieden van een vorm aan een logische sectie. Alle velden die bijvoorbeeld betrekking hebben op het factuuradres, worden in één sectie opgenomen en alle velden die betrekking hebben op het verzendadres, worden in een andere sectie opgenomen. De service maakt ook een apart bovenste deelvenster voor elke automatisch gedetecteerde logische sectie.
 
-## januari 2020
+### Verbeterde functies
 
-### 9 januari 2020 (AFC-2020.01.1)
+**Verbeteringen in lijstdetectie**
 
-### 23 januari 2020 (AFC-2020.01.2)
+De service is nu efficiënter voor het detecteren van lijsten met opsommingstekens en nummers. Het kan nu gemakkelijk lijsten op meerdere niveaus ontdekken.
 
-## december 2019
+### Speciale instructies
 
-### 5 december 2019 (AFC-2019.12.1)
+**Installeer het pakket Automated Forms Conversion Service Connector**
 
+U hebt het aansluitpakket 1.1.38 of hoger nodig als u de nieuwste kenmerken en verbeteringen van de release AFC-2020.03.1 wilt gebruiken. U kunt het aansluitingspakket downloaden van [AEM Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/fd/AEM-Forms-6.5.4.0-WIN).
+
+Als u al beschikt over een automatische Forms Conversion-serviceomgeving en de nieuwste functies van de conversieservice wilt gebruiken, installeert u het meest recente servicepakket, het nieuwste invoegpakket voor AEM Forms en het nieuwste aansluitingspakket in de eerder vermelde volgorde. Voor gedetailleerde instructies, zie het [Configure het Geautomatiseerde de dienstartikel](configure-service.md) van de Omzetting van Vormen.

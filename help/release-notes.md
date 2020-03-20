@@ -2,7 +2,7 @@
 title: Wat is nieuw? Opmerkingen bij de release - Automated Forms Conversion Service
 description: 'Meer informatie over de nieuwste functies en oplossingen voor Automated Forms Conversion Service '
 translation-type: tm+mt
-source-git-commit: 01dfd20951314017d47713bfb1a2a5f2d563f434
+source-git-commit: 6d658dbb181c09e42073e328e0232e40d4fb6b58
 
 ---
 
@@ -18,15 +18,13 @@ De geautomatiseerde Dienst van de Omzetting van Vormen ontvangt voortdurende ver
 * Speciale instructies
 * Toekomstige plannen voor wijzigingen
 
-Deze pagina wordt elke maand bijgewerkt, dus maak regelmatig een nieuwe pagina.
-
 ## 20 maart 2020 (AFC-2020.03.1)
 
 ### Nieuwe functies
 
 **Logische secties in een formulier automatisch detecteren**
 
-Standaard maakt de service een apart bovenste venster voor elke pagina van een invoer-PDF-formulier. Nu kunt u de **[!UICONTROL Auto-detect logical sections]** optie selecteren om het idee van het maken van een afzonderlijk bovenste venster voor elke PDF-pagina te verwijderen en logische secties automatisch te detecteren. De dienstclubs verwant gebieden van een vorm aan een logische sectie. Alle velden die bijvoorbeeld betrekking hebben op het factuuradres, worden in één sectie opgenomen en alle velden die betrekking hebben op het verzendadres, worden in een andere sectie opgenomen. De service maakt ook een apart bovenste deelvenster voor elke automatisch gedetecteerde logische sectie.
+Standaard maakt de service een apart bovenste venster voor elke pagina van een PDF-formulier. Nu kunt u met de **[!UICONTROL Auto-detect logical sections]** optie deelvensters op paginaniveau (op paginanummers gebaseerde deelvensters) neerzetten en alleen logische deelvensters maken.  Het omvat ook velden die niet tot een sectie met een voorgaande logische sectie behoren. Ook worden velden van een logische sectie die zich over twee aangrenzende pagina&#39;s uitstrekken, samengevoegd tot één logische sectie. Als sommige velden van een logische sectie zich bijvoorbeeld aan het einde van pagina 1 bevinden en sommige zich aan het begin van pagina 2 bevinden, worden al deze velden opgenomen in één logische sectie.
 
 ### Verbeterde functies
 

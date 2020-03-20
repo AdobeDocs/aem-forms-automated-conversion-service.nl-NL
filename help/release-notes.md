@@ -2,7 +2,7 @@
 title: Wat is nieuw? Opmerkingen bij de release - Automated Forms Conversion Service
 description: 'Meer informatie over de nieuwste functies en oplossingen voor Automated Forms Conversion Service '
 translation-type: tm+mt
-source-git-commit: e88b9606878cb408c0369b5f20a644db93578f64
+source-git-commit: 01dfd20951314017d47713bfb1a2a5f2d563f434
 
 ---
 
@@ -40,4 +40,4 @@ De service is nu efficiënter voor het detecteren van lijsten met opsommingsteke
 
 U hebt het aansluitpakket 1.1.38 of hoger nodig als u de nieuwste kenmerken en verbeteringen van de release AFC-2020.03.1 wilt gebruiken. U kunt het aansluitingspakket downloaden van [AEM Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/fd/AEM-Forms-6.5.4.0-WIN).
 
-Als u al beschikt over een automatische Forms Conversion-serviceomgeving en de nieuwste functies van de conversieservice wilt gebruiken, installeert u het meest recente servicepakket, het nieuwste invoegpakket voor AEM Forms en het nieuwste aansluitingspakket in de eerder vermelde volgorde. Voor gedetailleerde instructies, zie het [Configure het Geautomatiseerde de dienstartikel](configure-service.md) van de Omzetting van Vormen.
+Als u al beschikt over een servicemilieu voor automatische Forms Conversion die de nieuwste functies van de conversieservice kan gebruiken, installeert u het meest recente servicepakket, het nieuwste invoegpakket voor AEM Forms en het nieuwste aansluitingspakket in de aangegeven volgorde. Voor gedetailleerde instructies, zie het [Configure het Geautomatiseerde de dienstartikel](configure-service.md) van de Omzetting van Vormen.

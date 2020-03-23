@@ -2,7 +2,7 @@
 title: De service Automated Forms Conversion configureren
 description: AEM-instantie klaar om de service Automated Forms Conversion te gebruiken
 translation-type: tm+mt
-source-git-commit: 01dfd20951314017d47713bfb1a2a5f2d563f434
+source-git-commit: e01334d9a22ab95749e9b9b459da8886ae1ccd78
 
 ---
 
@@ -71,12 +71,7 @@ Een AEM-exemplaar bevat basisformuliermogelijkheden. Voor de conversieservice zi
 
 ### Connector-pakket downloaden en installeren {#installConnectorPackage}
 
-U hebt het aansluitpakket 1.1.38 of hoger nodig als u de nieuwste kenmerken en verbeteringen van de release AFC-2020.03.1 wilt gebruiken. U kunt het aansluitingspakket downloaden van AEM Package Share.
-
-| Besturingssysteem | Koppeling naar downloadpakket voor connector |
-| ------------- | ------------- |
-| Microsoft Windows | https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/fd/AEM-Forms-6.5.4.0-WIN |
-| Linux | https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/fd/AEM-Forms-6.5.4.0-WIN |
+U hebt het aansluitpakket 1.1.38 of hoger nodig als u de nieuwste kenmerken en verbeteringen van de release AFC-2020.03.1 wilt gebruiken. U kunt het aansluitingspakket [downloaden van AEM Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1).
 
 >[!NOTE]
 > Als u al beschikt over een servicemilieu voor automatische Forms Conversion die de nieuwste functies van de conversieservice kan gebruiken, installeert u het meest recente servicepakket, het nieuwste invoegpakket voor AEM Forms en het nieuwste aansluitingspakket in de aangegeven volgorde.

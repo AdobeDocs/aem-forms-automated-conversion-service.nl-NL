@@ -8,12 +8,12 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: bbf39e3bae55654f92a50f52a22cee5da938236d
+source-git-commit: bcd55fa59f37b71b95b7cbfd80fcda368eaba408
 
 ---
 
 
-#  PDF-formulieren converteren naar adaptieve formulieren {#convert-print-forms-to-adaptive-forms}
+# PDF-formulieren converteren naar adaptieve formulieren {#convert-print-forms-to-adaptive-forms}
 
 Met de AEM Forms Automated Forms Conversion-service van Adobe Sensei worden uw PDF-formulieren automatisch geconverteerd naar apparaatvriendelijke en responsieve adaptieve formulieren. Of u nu niet-interactieve PDF-formulieren, Acro Forms of op XFA gebaseerde PDF-formulieren gebruikt, de service Automated Forms Conversion kan deze formulieren eenvoudig converteren naar adaptieve formulieren. Zie de service [Automated Forms Conversion](introduction.md) voor informatie over de mogelijkheden, de omzettingsworkflow en de instapkaartgegevens.
 
@@ -21,9 +21,9 @@ Met de AEM Forms Automated Forms Conversion-service van Adobe Sensei worden uw P
 
 * [**De conversieservice configureren **](configure-service.md)
 
-* **[De](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)sjablonen** voorbereiden die op geconverteerde formulieren moeten worden toegepast: Met behulp van een sjabloon kunt u consistente branding toepassen op alle adaptieve formulieren. Bovendien worden met de service Automated Forms Conversion geen kop- en voettekst van PDF-brondocumenten geëxtraheerd en gebruikt. U kunt adaptieve formuliersjablonen gebruiken om kop- en voettekst op te geven. De kop- en voettekst die in de sjabloon is opgegeven, worden tijdens de conversie op het (de) adaptieve formulier(en) toegepast.
+* **De[sjablonen](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)voorbereiden die op geconverteerde formulieren moeten worden toegepast:** Met behulp van een sjabloon kunt u consistente branding toepassen op alle adaptieve formulieren. Bovendien worden met de service Automated Forms Conversion geen kop- en voettekst van PDF-brondocumenten geëxtraheerd en gebruikt. U kunt adaptieve formuliersjablonen gebruiken om kop- en voettekst op te geven. De kop- en voettekst die in de sjabloon is opgegeven, worden tijdens de conversie op het (de) adaptieve formulier(en) toegepast.
 
-* **[Bereid de](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html)thema** &#39;s voor die op geconverteerde formulieren moeten worden toegepast: Met een thema kunt u een consistente stijl toepassen op alle adaptieve vormen van uw organisatie.
+* **Bereid de[thema](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html)&#39;s voor die op geconverteerde formulieren moeten worden toegepast:** Met een thema kunt u een consistente stijl toepassen op alle adaptieve vormen van uw organisatie.
 
 ## Het conversieproces starten {#start-the-conversion-process}
 
@@ -35,24 +35,24 @@ Nadat u een AEM-exemplaar hebt aangesloten met AEM Forms Conversion Service, kun
 
 ### PDF-formulieren uploaden naar uw AEM Forms-server {#upload-pdf-forms-to-your-aem-forms-server}
 
-De conversieservice converteert PDF-formulieren die beschikbaar zijn in uw AEM Forms-exemplaar naar adaptieve formulieren. U kunt alle PDF-formulieren naar wens tegelijk of gefaseerd uploaden. Overweeg het volgende voordat u de formulieren uploadt:
+De conversieservice converteert PDF-formulieren die beschikbaar zijn in uw AEM Forms-exemplaar naar adaptieve formulieren. U kunt alle PDF-formulieren naar wens tegelijk of gefaseerd uploaden. Houd rekening met het volgende voordat u de formulieren uploadt:
 
 * Houd het aantal formulieren in een map kleiner dan 15 en houd het totale aantal pagina&#39;s in een map kleiner dan 50.
 * Houd de map kleiner dan 10 MB. Formulieren niet in een submap bewaren.
 * Houd het aantal pagina&#39;s in een formulier kleiner dan 15.
 * Upload de beveiligde formulieren niet. De service converteert formulieren die met een wachtwoord zijn beveiligd niet.
 * Upload geen bronformulieren met spaties in de bestandsnaam. Verwijder de ruimte uit de naam van het bestand voordat u de formulieren uploadt.
-* Upload geen [PDF-portfolio](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html). De service converteert een PDF-portfolio niet naar adaptieve formulieren.
+* Upload geen [PDF-portfolio&#39;s](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html). De service converteert geen PDF-portfolio&#39;s naar adaptieve formulieren.
 * Lees de secties [Bekende problemen](known-issues.md) en [Beste praktijken en overwegingen](styles-and-pattern-considerations-and-best-practices.md) en breng voorgestelde veranderingen in vormen aan.
 
 Voer de volgende stappen uit om de formulieren te uploaden die moeten worden geconverteerd naar een map in uw AEM Forms-instantie:
 
 1. Meld u aan bij de instantie AEM Forms.
 
-1. Tik **[!UICONTROL Adobe Experience Manager]** > ![](assets/adobeexperiencemanager.png) **[!UICONTROL Navigation]** > ![](assets/compass.png) > **[!UICONTROL Forms]** **[!UICONTROL Forms & Documents]**.
-1. Tik **[!UICONTROL Create]**> **[!UICONTROL Folder]**. Geef de **titel** en de **naam** van de map op. Tik **[!UICONTROL Create]**. Er wordt een map gemaakt.
+1. Tap **[!UICONTROL Adobe Experience Manager]** ![](assets/adobeexperiencemanager.png) > **[!UICONTROL Navigation]** ![](assets/compass.png) > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
+1. Tik op **[!UICONTROL Create]**> **[!UICONTROL Folder]**. Geef de **titel** en de **naam** van de map op. Tik op **[!UICONTROL Create]**. Er wordt een map gemaakt.
 1. Tik om de nieuwe map te openen.
-1. Tik **[!UICONTROL Create]**> **[!UICONTROL File Upload]**. Selecteer de formulieren die u wilt uploaden, klik **[!UICONTROL Open]** en klik op **[!UICONTROL Upload]**. De formulieren worden geüpload.
+1. Tik op **[!UICONTROL Create]**> **[!UICONTROL File Upload]**. Selecteer de formulieren die u wilt uploaden, klik **[!UICONTROL Open]** en klik op **[!UICONTROL Upload]**. De formulieren worden geüpload.
 
 ### De conversie uitvoeren {#run-the-conversion}
 
@@ -91,10 +91,14 @@ Als u deze optie selecteert, genereert de conversieservice een adaptief formulie
 
 
    * Selecteer de **[!UICONTROL Auto-detect multi-column layout of input forms]** optie om de indeling van het bronformulier te behouden voor grote schermen zoals desktops en laptops. De optie is handig als u de indeling van bronformulieren met meerdere kolommen wilt behouden. Als een bron-PDF bijvoorbeeld een indeling met twee kolommen heeft, genereert de service een adaptief uitvoerformulier met een indeling met twee kolommen voor schermschermen met groot scherm en een lay-out met één kolom voor apparaten met klein scherm, zoals mobiele telefoons. De eigenschap heeft sommige bekende kwesties met de structuur van het gegevensbronschema. Zie het [artikel over bekende problemen](known-issues.md) voor meer informatie.
+   * Standaard maakt de service een apart bovenste venster voor elke pagina van een PDF-formulier. Nu kunt u met de **[!UICONTROL Auto-detect logical sections]** optie deelvensters op paginaniveau (op paginanummers gebaseerde deelvensters) neerzetten en alleen logische deelvensters maken. De velden die niet tot een sectie met een voorgaande logische sectie behoren, en velden van een logische sectie die zich over twee aangrenzende pagina&#39;s uitstrekken, worden in één logische sectie samengevoegd. Als sommige velden van een logische sectie zich bijvoorbeeld aan het einde van pagina 1 bevinden en sommige zich aan het begin van pagina 2 bevinden, worden al deze velden opgenomen in één logische sectie.
+
+      >[!NOTE]
+      > U hebt het schakelaarpakket 1.1.38 of hierboven nodig om de **[!UICONTROL Auto-detect logical sections]** eigenschap te gebruiken.
 
 
 
-1. Tik **[!UICONTROL Start Conversion]**. De conversie wordt gestart. De voortgang van de conversie wordt weergegeven op de map of het formulier totdat de conversie wordt uitgevoerd. Het bericht wordt vervangen door een ander statusbericht (geconverteerd, gedeeltelijk geconverteerd of Conversie mislukt) nadat de conversie is voltooid. Na voltooiing van de conversie wordt ook een statuse-mail verzonden naar het geconfigureerde e-mailadres:
+1. Tik op **[!UICONTROL Start Conversion]**. De conversie wordt gestart. De voortgang van de conversie wordt weergegeven op de map of het formulier totdat de conversie wordt uitgevoerd. Het bericht wordt vervangen door een ander statusbericht (geconverteerd, gedeeltelijk geconverteerd of Conversie mislukt) nadat de conversie is voltooid. Na voltooiing van de conversie wordt ook een statuse-mail verzonden naar het geconfigureerde e-mailadres:
 
    * Als de conversie is gelukt, worden het geconverteerde adaptieve formulier en het bijbehorende schema gedownload naar het pad dat is opgegeven op het **[!UICONTROL Basic]** tabblad van het conversiedialoogvenster. Formulierfragmenten en het bijbehorende schema worden alleen gedownload als de optie Fragment extraheren is geselecteerd voordat de conversie wordt gestart.
    * Bij een mislukte conversie wordt het **[!UICONTROL Conversion Failed]** bericht weergegeven als alle invoerformulieren niet zijn geconverteerd of als het **[!UICONTROL Partially Failed]** bericht wordt weergegeven wanneer slechts een paar invoerformulieren niet zijn geconverteerd. Er wordt een status-e-mail verzonden naar het [geconfigureerde e-mailadres](configure-service.md#configureemailnotification) en er wordt een fout geregistreerd naar het bestand error.log.
@@ -127,6 +131,6 @@ Als u deze optie selecteert, genereert de conversieservice een adaptief formulie
    >
    >Als het conversieproces meer dan 60 minuten in beslag neemt en het PDF-formulier nog steeds niet is geconverteerd naar een adaptief formulier, maakt u een nieuwe map op de AEM Forms-instantie, uploadt u het PDF-formulier naar de nieuwe map en start u de conversie opnieuw.
 
-## Omgezette formulieren controleren en corrigeren {#review-and-correct-the-converted-forms}
+## Review and correct the converted forms {#review-and-correct-the-converted-forms}
 
-Real world-forms hebben complexe vereisten voor het vastleggen van gegevens. Zodra de automatische conversie is voltooid, kunnen klanten de conversiekwaliteit van het formulier controleren en de benodigde updates uitvoeren voor het formulier. AEM Forms biedt een [revisie en juiste](review-correct-ui-edited.md) editor om de vereiste wijzigingen aan te brengen. Zo kunt u de automatische identificatie van formuliervelden verbeteren en geïdentificeerde velden van het ene type naar het andere converteren. U kunt bijvoorbeeld de indeling van twee kolommen in een formulier bepalen en een veld dat automatisch als keuzerondje wordt aangeduid, wijzigen in een veld met meerdere keuzen.
+In werkelijkheid hebben formulieren complexe vereisten voor het vastleggen van gegevens. Zodra de automatische conversie is voltooid, kunnen klanten de conversiekwaliteit van het formulier controleren en de benodigde updates uitvoeren voor het formulier. AEM Forms biedt een [revisie en juiste](review-correct-ui-edited.md) editor om de vereiste wijzigingen aan te brengen. Zo kunt u de automatische identificatie van formuliervelden verbeteren en geïdentificeerde velden van het ene type naar het andere converteren. U kunt bijvoorbeeld de indeling van twee kolommen in een formulier bepalen en een veld dat automatisch als keuzerondje wordt aangeduid, wijzigen in een veld met meerdere keuzen.

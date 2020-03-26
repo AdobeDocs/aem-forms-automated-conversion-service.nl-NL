@@ -5,7 +5,7 @@ uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 translation-type: tm+mt
-source-git-commit: c552f4073ac88ca9016a746116a27a5898df7f7d
+source-git-commit: c0ca850a0a1e82e34364766601011d6367b218ac
 
 ---
 
@@ -26,10 +26,10 @@ Het voorbeeld, dat in dit artikel wordt besproken, is een referentie-implementat
 
 ## Voorwaarden {#pre-requisites}
 
-* Een instantie van AEM 6.4 of 6.5-auteurs instellen
+* Een exemplaar van AEM 6.4 of 6.5 auteur instellen
 * Installeer het [recentste de dienstpak](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) voor uw instantie AEM
 * Laatste versie van het invoegpakket voor AEM Forms
-* Service voor [automatische conversie van formulieren configureren](configure-service.md)
+* Configure [Automated Forms Conversion service](configure-service.md)
 * Stel een database in. De database die wordt gebruikt in de voorbeeldimplementatie is MySQL 5.6.24. U kunt het geconverteerde adaptieve formulier echter integreren met elke gewenste database.
 
 ## Verbinding tussen AEM-instantie en database instellen {#set-up-connection-aem-instance-database}

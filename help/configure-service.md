@@ -1,13 +1,13 @@
 ---
-title: De service Automated Forms Conversion configureren
+title: De service voor automatische conversie van formulieren configureren
 description: AEM-instantie klaar om de service Automated Forms Conversion te gebruiken
 translation-type: tm+mt
-source-git-commit: e01334d9a22ab95749e9b9b459da8886ae1ccd78
+source-git-commit: 68824c2f398d00141d67996121f7b758af16d2e4
 
 ---
 
 
-# De service Automated Forms Conversion configureren {#about-this-help}
+# De service voor automatische conversie van formulieren configureren {#about-this-help}
 
 In deze Help ziet u hoe een AEM-beheerder de service Automated Forms Conversion kan configureren om de conversie van PDF-formulieren naar adaptieve formulieren te automatiseren. Deze hulp is voor IT en beheerders AEM bij uw organisatie. De verstrekte informatie is gebaseerd op de veronderstelling dat iedereen die deze Hulp leest met de volgende technologieën vertrouwd is:
 
@@ -21,11 +21,11 @@ In deze Help ziet u hoe een AEM-beheerder de service Automated Forms Conversion 
 
 **Bekijk de video of lees het artikel om de service Automated Forms Conversion te configureren**
 
-## On-boarding{#onboarding}
+## Onboarding{#onboarding}
 
-De service is gratis beschikbaar voor klanten op locatie met AEM 6.4 Forms en AEM 6.5 Forms en Adobe Managed Service Enterprise-klanten. U kunt contact opnemen met het verkoopteam van Adobe of uw Adobe-vertegenwoordiger om toegang tot de service te vragen.
+De service is gratis beschikbaar voor klanten op locatie met AEM 6.4 Forms en AEM 6.5 Forms en Adobe Managed Service Enterprise-klanten. U kunt contact opnemen met het Adobe-verkoopteam of uw Adobe-vertegenwoordiger om toegang tot de service aan te vragen.
 
-Adobe biedt uw organisatie toegang tot deze gegevens en verleent de persoon die in uw organisatie als beheerder is aangewezen de vereiste bevoegdheden. De beheerder kan toegang tot uw ontwikkelaars (gebruikers) van Vormen AEM van uw organisatie verlenen om met de dienst te verbinden.
+Adobe maakt toegang voor uw organisatie mogelijk en biedt de vereiste rechten aan de persoon die is aangewezen als beheerder in uw organisatie. De beheerder kan toegang verlenen aan de AEM Forms-ontwikkelaars (gebruikers) van uw organisatie om verbinding te maken met de service.
 
 ## Vereisten {#prerequisites}
 
@@ -36,14 +36,14 @@ U hebt het volgende nodig om de Automated Forms Conversion Service te gebruiken:
 * Een up-to-date AEM 6.4 of AEM 6.5 auteurinstantie met het nieuwste AEM Service Pack
 * Een AEM-gebruiker (in uw AEM-instantie) die lid is van een gebruikersgroep voor formulieren
 
-## De omgeving instellen {#setuptheservice}
+## Set up the environment {#setuptheservice}
 
 Voordat u de service gebruikt, moet u de instantie van uw AEM-auteur voorbereiden om verbinding te maken met de service die wordt uitgevoerd op Adobe Cloud. Voer de volgende stappen in de vermelde reeks uit om uw exemplaar voor de service voor te bereiden:
 
 1. [Download en installeer AEM 6.4 of AEM 6.5](#aemquickstart)
 1. [De nieuwste AEM Service Pack downloaden en installeren](#servicepack)
 1. [Het nieuwste invoegpakket voor AEM Forms downloaden en installeren](#downloadaemformsaddon)
-1. [Download en installeer het nieuwste connectorpakket](#installConnectorPackage)
+1. (optioneel) [Download en installeer het nieuwste aansluitingspakket](#installConnectorPackage)
 1. [Aangepaste thema&#39;s en sjablonen maken](#referencepackage)
 
 ### Download en installeer AEM 6.4 of AEM 6.5 {#aemquickstart}
@@ -69,9 +69,9 @@ Een AEM-exemplaar bevat basisformuliermogelijkheden. Voor de conversieservice zi
 > Zorg ervoor dat u de verplichte configuraties na de installatie uitvoert nadat u het invoegpakket hebt geïnstalleerd.
 
 
-### Connector-pakket downloaden en installeren {#installConnectorPackage}
+### (Optioneel) Installeer het aansluitingspakket {#installConnectorPackage}
 
-U hebt het aansluitpakket 1.1.38 of hoger nodig als u de nieuwste kenmerken en verbeteringen van de release AFC-2020.03.1 wilt gebruiken. U kunt het aansluitingspakket [downloaden van AEM Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1).
+Installeer aansluitpakket 1.1.38 of hoger om de functies voor [automatisch detecteren van logische secties](convert-existing-forms-to-adaptive-forms.md#run-the-conversion) en de verbeteringen die zijn geleverd in release AFC-2020.03.1 te gebruiken. U kunt het aansluitingspakket [downloaden van AEM Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1).
 
 >[!NOTE]
 > Als u al beschikt over een servicemilieu voor automatische Forms Conversion die de nieuwste functies van de conversieservice kan gebruiken, installeert u het meest recente servicepakket, het nieuwste invoegpakket voor AEM Forms en het nieuwste aansluitingspakket in de aangegeven volgorde.

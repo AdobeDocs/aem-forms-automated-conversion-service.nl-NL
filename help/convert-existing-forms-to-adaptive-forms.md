@@ -8,7 +8,7 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: bcd55fa59f37b71b95b7cbfd80fcda368eaba408
+source-git-commit: c0ca850a0a1e82e34364766601011d6367b218ac
 
 ---
 
@@ -21,7 +21,7 @@ Met de AEM Forms Automated Forms Conversion-service van Adobe Sensei worden uw P
 
 * [**De conversieservice configureren **](configure-service.md)
 
-* **De[sjablonen](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)voorbereiden die op geconverteerde formulieren moeten worden toegepast:** Met behulp van een sjabloon kunt u consistente branding toepassen op alle adaptieve formulieren. Bovendien worden met de service Automated Forms Conversion geen kop- en voettekst van PDF-brondocumenten geëxtraheerd en gebruikt. U kunt adaptieve formuliersjablonen gebruiken om kop- en voettekst op te geven. De kop- en voettekst die in de sjabloon is opgegeven, worden tijdens de conversie op het (de) adaptieve formulier(en) toegepast.
+* **De[sjablonen](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)voorbereiden die op geconverteerde formulieren moeten worden toegepast:** Met behulp van een sjabloon kunt u consistente branding toepassen op alle adaptieve formulieren. Bovendien worden met de service Automated Forms Conversion geen kop- en voettekst van PDF-brondocumenten geëxtraheerd en gebruikt. U kunt adaptieve formuliersjablonen gebruiken om kop- en voettekst op te geven. De kop- en voettekst die in de sjabloon is opgegeven, worden tijdens de conversie op het adaptieve formulier toegepast.
 
 * **Bereid de[thema](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html)&#39;s voor die op geconverteerde formulieren moeten worden toegepast:** Met een thema kunt u een consistente stijl toepassen op alle adaptieve vormen van uw organisatie.
 
@@ -42,7 +42,7 @@ De conversieservice converteert PDF-formulieren die beschikbaar zijn in uw AEM F
 * Houd het aantal pagina&#39;s in een formulier kleiner dan 15.
 * Upload de beveiligde formulieren niet. De service converteert formulieren die met een wachtwoord zijn beveiligd niet.
 * Upload geen bronformulieren met spaties in de bestandsnaam. Verwijder de ruimte uit de naam van het bestand voordat u de formulieren uploadt.
-* Upload geen [PDF-portfolio&#39;s](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html). De service converteert geen PDF-portfolio&#39;s naar adaptieve formulieren.
+* Upload geen [PDF-portfolio&#39;s](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html). De service converteert een PDF-portfolio niet naar een adaptief formulier.
 * Lees de secties [Bekende problemen](known-issues.md) en [Beste praktijken en overwegingen](styles-and-pattern-considerations-and-best-practices.md) en breng voorgestelde veranderingen in vormen aan.
 
 Voer de volgende stappen uit om de formulieren te uploaden die moeten worden geconverteerd naar een map in uw AEM Forms-instantie:
@@ -67,7 +67,7 @@ Nadat u de formulieren hebt geüpload en de service hebt geconfigureerd, voert u
 
    * **[!UICONTROL Select a cloud configuration]**. Als u een configuratie selecteert, worden de standaardsjabloon en het standaardthema al opgegeven. U kunt desgewenst een andere sjabloon of een thema opgeven.
    * Geef een locatie op waar u gegenereerde adaptieve formulieren en het bijbehorende schema wilt opslaan. U kunt standaardpaden gebruiken of aangepaste paden opgeven.
-   * Gebruik de optie Aangepaste formulieren **genereren zonder bindingen** van gegevensmodel om aan te geven of u een adaptief formulier wilt genereren met of zonder gegevensmodelbinding.
+   * Selecteer met de optie Aangepaste formulieren **genereren zonder bindingen** van gegevensmodellen of u een adaptief formulier wilt genereren met of zonder bindingen van gegevensmodellen.
 Als u deze optie niet selecteert, koppelt de conversieservice de adaptieve formulieren automatisch aan een JSON-schema en wordt een gegevensbinding gemaakt tussen de velden in het adaptieve formulier en het JSON-schema. In het **[!UICONTROL Save generated data model schema at]** veld wordt de standaardlocatie weergegeven waar het gegenereerde JSON-schema wordt opgeslagen. U kunt de locatie ook aanpassen om het gegenereerde schema op te slaan.
 Als u deze optie selecteert, genereert de conversieservice een adaptief formulier zonder bindingen van gegevensmodellen. Na een geslaagde conversie kunt u een adaptief formulier koppelen aan een formuliergegevensmodel, een XML-schema of een JSON-schema. Zie [Een adaptief formulier](https://helpx.adobe.com/experience-manager/6-5/forms/using/creating-adaptive-form.html)maken voor meer informatie.
    <!--
@@ -91,7 +91,7 @@ Als u deze optie selecteert, genereert de conversieservice een adaptief formulie
 
 
    * Selecteer de **[!UICONTROL Auto-detect multi-column layout of input forms]** optie om de indeling van het bronformulier te behouden voor grote schermen zoals desktops en laptops. De optie is handig als u de indeling van bronformulieren met meerdere kolommen wilt behouden. Als een bron-PDF bijvoorbeeld een indeling met twee kolommen heeft, genereert de service een adaptief uitvoerformulier met een indeling met twee kolommen voor schermschermen met groot scherm en een lay-out met één kolom voor apparaten met klein scherm, zoals mobiele telefoons. De eigenschap heeft sommige bekende kwesties met de structuur van het gegevensbronschema. Zie het [artikel over bekende problemen](known-issues.md) voor meer informatie.
-   * Standaard maakt de service een apart bovenste venster voor elke pagina van een PDF-formulier. Nu kunt u met de **[!UICONTROL Auto-detect logical sections]** optie deelvensters op paginaniveau (op paginanummers gebaseerde deelvensters) neerzetten en alleen logische deelvensters maken. De velden die niet tot een sectie met een voorgaande logische sectie behoren, en velden van een logische sectie die zich over twee aangrenzende pagina&#39;s uitstrekken, worden in één logische sectie samengevoegd. Als sommige velden van een logische sectie zich bijvoorbeeld aan het einde van pagina 1 bevinden en sommige zich aan het begin van pagina 2 bevinden, worden al deze velden opgenomen in één logische sectie.
+   * Standaard maakt de service een apart bovenste venster voor elke pagina van een PDF-formulier. U kunt nu de **[!UICONTROL Auto-detect logical sections]** optie gebruiken om geen deelvensters op paginaniveau (op paginanummers gebaseerde deelvensters) te maken en alleen logische deelvensters te maken. De velden die niet tot een sectie met een voorafgaande logische sectie behoren, en velden van een logische sectie die zich over twee aangrenzende pagina&#39;s uitstrekken, worden in één logische sectie samengevoegd. Als sommige velden van een logische sectie zich bijvoorbeeld aan het einde van pagina 1 bevinden en sommige zich aan het begin van pagina 2 bevinden, worden al deze velden opgenomen in één logische sectie.
 
       >[!NOTE]
       > U hebt het schakelaarpakket 1.1.38 of hierboven nodig om de **[!UICONTROL Auto-detect logical sections]** eigenschap te gebruiken.
@@ -129,7 +129,7 @@ Als u deze optie selecteert, genereert de conversieservice een adaptief formulie
 
    >[!NOTE]
    >
-   >Als het conversieproces meer dan 60 minuten in beslag neemt en het PDF-formulier nog steeds niet is geconverteerd naar een adaptief formulier, maakt u een nieuwe map op de AEM Forms-instantie, uploadt u het PDF-formulier naar de nieuwe map en start u de conversie opnieuw.
+   >Als het conversieproces meer dan 60 minuten in beslag neemt en het PDF-formulier nog steeds niet is geconverteerd naar een adaptief formulier, maakt u een map op de AEM Forms-instantie, uploadt u het PDF-formulier naar de nieuwe map en start u de conversie opnieuw.
 
 ## Review and correct the converted forms {#review-and-correct-the-converted-forms}
 

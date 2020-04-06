@@ -1,13 +1,13 @@
 ---
-title: 'Beste praktijken en overwegingen '
-seo-title: 'Beste praktijken en overwegingen '
+title: 'Best practices en overwegingen '
+seo-title: 'Best practices en overwegingen '
 description: Tips en trucs voor de service voor automatische conversie van formulieren
 seo-description: Lijst met stijlen en patronen in bron-PDF-formulieren die door de service Formulierconversie geautomatiseerd kunnen worden geïdentificeerd
 uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 translation-type: tm+mt
-source-git-commit: 0f413a8bc0bb444b6faaddaf32f84f36e38438a5
+source-git-commit: 8e373b978535cd6616072cf50c223bd7f4f7c35a
 
 ---
 
@@ -18,14 +18,14 @@ Dit document bevat richtlijnen en aanbevelingen waarmee u beheerders, auteurs en
 
 ## Aanbevolen werkwijzen
 
-De conversieservice converteert PDF-formulieren die beschikbaar zijn in uw AEM Forms-exemplaar naar adaptieve formulieren. U kunt alle PDF-formulieren naar wens tegelijk of gefaseerd uploaden. Overweeg het volgende voordat u de formulieren uploadt:
+De conversieservice converteert PDF-formulieren die beschikbaar zijn in uw AEM Forms-exemplaar naar adaptieve formulieren. U kunt alle PDF-formulieren naar wens tegelijk of gefaseerd uploaden. Houd rekening met het volgende voordat u de formulieren uploadt:
 
 * Houd het aantal formulieren in een map kleiner dan 15 en houd het totale aantal pagina&#39;s in een map kleiner dan 50.
 * Houd de map kleiner dan 10 MB. Formulieren niet in een submap bewaren.
 * Houd het aantal pagina&#39;s in een formulier kleiner dan 15.
 * Upload de beveiligde formulieren niet. De service converteert formulieren die met een wachtwoord zijn beveiligd niet.
-* Upload de [PDF-portfolio](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html)niet. De service converteert een PDF-portfolio niet naar adaptieve formulieren.
-* Upload geen gescande, gekleurde, niet-Engelse taal en ingevulde formulieren. Dergelijke formulieren worden niet ondersteund.
+* Do not upload the [PDF Portfolios](https://helpx.adobe.com/nl/acrobat/using/overview-pdf-portfolios.html). De service converteert geen PDF-portfolio&#39;s naar adaptieve formulieren.
+* Upload geen gescande, gekleurde, niet-Engelse en ingevulde formulieren. Dergelijke formulieren worden niet ondersteund.
 * Upload geen bronformulieren met spaties in de bestandsnaam. Verwijder de ruimte uit de naam van het bestand voordat u de formulieren uploadt.
 * Gebruik adaptieve formuliersjablonen om de kop- en voettekst op te geven voor het adaptieve uitvoerformulier. De service negeert de header-voettekst van PDF-brondocumenten en gebruikt de header-voettekst die is opgegeven in de adaptieve formuliersjabloon.
 
@@ -39,7 +39,7 @@ De dienst zou beginnen correcte gebieden of panelen aan deze patronen te identif
 
 ### Algemene patronen {#general}
 
-| Patroon | Resolutie |
+| Patroon | Voorbeeld |
 |--- |--- |
 | **Patroonservice** <br> converteert gekleurde PDF-formulieren niet naar een adaptief formulier. <br><br>**Resolutie **<br>Gebruik PDF-formulieren voor zwart-wit of grijswaarden. | ![Kleurformulier](assets/best-practice-coloured-forms.png) |
 | **Met Patroonservice** <br>worden gevulde PDF-formulieren niet naar een adaptief formulier geconverteerd. <br><br>**Resolutie **<br>Gebruik lege adaptieve formulieren. | ![Formulier invullen](assets/best-practice-filled-forms.png) |

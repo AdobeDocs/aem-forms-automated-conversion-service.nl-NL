@@ -1,18 +1,18 @@
 ---
-title: Het standaardmetamodel uitbreiden
-seo-title: Het standaardmetamodel uitbreiden
+title: Het standaard metamodel uitbreiden
+seo-title: Het standaard metamodel uitbreiden
 description: Het standaardmetamodel uitbreiden om patronen, validaties en entiteiten toe te voegen die specifiek zijn voor uw organisatie en configuraties toe te passen op adaptieve formuliervelden terwijl de service voor automatische formulierconversie wordt uitgevoerd.
 seo-description: Het standaardmetamodel uitbreiden om patronen, validaties en entiteiten toe te voegen die specifiek zijn voor uw organisatie en configuraties toe te passen op adaptieve formuliervelden terwijl de service voor automatische formulierconversie wordt uitgevoerd.
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 translation-type: tm+mt
-source-git-commit: 5d4dba8fea7439b991a7a15872e6f4ed48156ac9
+source-git-commit: ffab4d916cbd545078f4b72b8de5c9968f23b0da
 
 ---
 
 
-# Het standaardmetamodel uitbreiden {#extend-the-default-meta-model}
+# Het standaard metamodel uitbreiden {#extend-the-default-meta-model}
 
 Met de service Automated Forms Conversion kunt u formulierobjecten herkennen en uitnemen van bronformulieren. Met Semantic-mapper kan de service bepalen hoe de geëxtraheerde objecten in een adaptieve vorm worden weergegeven. Een bronformulier kan bijvoorbeeld vele verschillende soorten representaties van een datum hebben. Met de semantische mapfunctie kunt u alle weergaven van datumformulierobjecten van het bronformulier toewijzen aan datumcomponent van de adaptieve formulieren. Met Semantic mapper kan de service ook validaties, regels, gegevenspatronen, Help-tekst en toegankelijkheidseigenschappen vooraf configureren en toepassen op adaptieve formuliercomponenten tijdens conversie.
 
@@ -50,7 +50,7 @@ Voer de volgende stappen uit om het standaard meta-model aan het lokale dossiers
 
 1. Meld u aan bij de instantie AEM Forms.
 1. Navigeer naar de map **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** **>** **[!UICONTROL Meta Model]** .
-1. Selecteer het **[!UICONTROL global.schema.json]** bestand en tik op **[!UICONTROL Download]**. Er wordt een dialoogvenster voor downloaden weergegeven. Selecteer de **[!UICONTROL Download asset(s) as binary files]** optie. Tik **[!UICONTROL Download]**. Er wordt een archief gedownload.
+1. Selecteer het **[!UICONTROL global.schema.json]** bestand en tik op **[!UICONTROL Download]**. Er wordt een dialoogvenster voor downloaden weergegeven. Selecteer de **[!UICONTROL Download asset(s) as binary files]** optie. Tik op **[!UICONTROL Download]**. Er wordt een archief gedownload.
 
    <!--
    Comment Type: draft
@@ -189,9 +189,9 @@ Met de eigenschap **name:afProperties** in het meta-model kunt u de volgende aan
    <th><strong>Beschrijving</strong></th> 
   </tr> 
   <tr> 
-   <td><p>multiline</p></td> 
+   <td><p>multiLine</p></td> 
    <td> 
-    <p>Met de eigenschap multiline wordt een bronformulierveld na conversie omgezet in een veld met meerdere regels in het adaptieve formulier. Zie Een tekenreeksveld <strong>omzetten in een veld</strong> met meerdere regels in voorbeelden van <a href="#custommetamodelexamples">aangepaste metamodellen voor meer informatie.</a></p> </td> 
+    <p>Met de eigenschap multiLine wordt een bronformulierveld na conversie omgezet in een veld met meerdere regels in het adaptieve formulier. Zie Een tekenreeksveld <strong>omzetten in een veld</strong> met meerdere regels in voorbeelden van <a href="#custommetamodelexamples">aangepaste metamodellen voor meer informatie.</a></p> </td> 
   </tr>
   <td><p>mandatory</p></td> 
    <td> 
@@ -216,7 +216,7 @@ Met de eigenschap **name:afProperties** in het meta-model kunt u de volgende aan
 
 ## Aangepaste formuliervelden wijzigen met behulp van een aangepast metamodel {#modify-adaptive-form-fields-using-custom-meta-model}
 
-Uw organisatie kan patronen en bevestigingen naast die hebben die in het standaard meta-model worden vermeld. U kunt het standaardmetamodel uitbreiden om een patroon, validaties en entiteiten toe te voegen die specifiek zijn voor uw organisatie. De service voor automatische conversie van formulieren past het aangepaste metamodel toe op de formuliervelden tijdens de conversie. U kunt het metamodel blijven bijwerken aangezien de nieuwe patronen, de bevestigingen, en de entiteiten specifiek voor uw organisatie worden ontdekt.
+Uw organisatie kan patronen en bevestigingen naast die hebben die in het standaard meta-model worden vermeld. U kunt het standaardmetamodel uitbreiden om een patroon, validaties en entiteiten toe te voegen die specifiek zijn voor uw organisatie. Met de service voor automatische formulierconversie wordt het aangepaste metamodel tijdens de conversie toegepast op de formuliervelden. U kunt het metamodel blijven bijwerken aangezien de nieuwe patronen, de bevestigingen, en de entiteiten specifiek voor uw organisatie worden ontdekt.
 
 De service Automated Forms Conversion gebruikt een standaardmetamodel dat op de volgende locatie is opgeslagen om bronformuliervelden tijdens de conversie toe te wijzen aan de aangepaste formuliervelden:
 
@@ -252,7 +252,7 @@ Enkele voorbeelden die vaak worden gebruikt om aangepaste eigenschappen voor for
 
 #### Het label van een formulierveld wijzigen {#modify-the-label-of-a-form-field}
 
-**** Voorbeeld: Wijzig het bankrekeningnummer in het formulier in het aangepaste formulier na de conversie.
+**Voorbeeld:** Wijzig het bankrekeningnummer in het formulier in het aangepaste formulier na de conversie.
 
 In dit aangepaste metamodel gebruikt de conversieservice de eigenschap **title** als een zoekwoord. Nadat de tekst van het **bankrekeningnummer** in het formulier is opgehaald, vervangt de conversieservice de tekst door de tekenreeks **Customer account number** die wordt vermeld met de eigenschap **jcr:title** in de sectie **aem:afProperties** .
 
@@ -351,7 +351,7 @@ In dit aangepaste metamodel gebruikt de conversieservice tekst binnen **name:aff
 
 #### Validaties toevoegen aan adaptieve formuliervelden {#add-validations-to-adaptive-form-fields}
 
-**** Voorbeeld 1: Voeg een validatie toe aan het veld **Postcode** van het adaptieve formulier.
+**Voorbeeld 1:** Voeg een validatie toe aan het veld **Postcode** van het adaptieve formulier.
 
 In dit aangepaste metamodel gebruikt de conversieservice tekst binnen **name:affKeyword** als zoektrefwoord. Nadat de tekst van de **postcode** in het formulier is opgehaald, voegt de conversieservice een validatie toe aan het veld met de eigenschap **validatePictureClause** die is gedefinieerd in de sectie **ame:afProperties** . Op basis van de validatie moet de invoer die u opgeeft voor het veld **Postcode** in het adaptieve formulier na conversie zes tekens bevatten.
 
@@ -367,7 +367,7 @@ In dit aangepaste metamodel gebruikt de conversieservice tekst binnen **name:aff
 }
 ```
 
-**** Voorbeeld 2: Voeg een validatie toe aan het veld **Bankrekeningnummer** van het adaptieve formulier.
+**Voorbeeld 2:** Voeg een validatie toe aan het veld **Bankrekeningnummer** van het adaptieve formulier.
 
 In dit aangepaste metamodel gebruikt de conversieservice tekst binnen **name:affKeyword** als zoektrefwoord. Nadat de tekst van het **bankrekeningnummer** in het formulier is opgehaald, voegt de conversiedienst een validatie toe aan het veld met behulp van de **verplichte** eigenschap die is gedefinieerd in de sectie **name:afProperties** . Op basis van de validatie moet u een waarde voor het veld **Bankrekeningnummer** opgeven voordat u het formulier na conversie verzendt.
 
@@ -419,7 +419,7 @@ In dit aangepaste metamodel gebruikt de conversieservice tekst binnen **name:aff
 
 #### Aanvullende opties toevoegen aan de vervolgkeuzelijst {#add-additional-options-to-the-drop-down-list}
 
-**** Voorbeeld: Voeg **Sri Lanka** als extra optie aan een bestaande drop-down lijst toe gebruikend een douane meta-model.
+**Voorbeeld:** Voeg **Sri Lanka** als extra optie aan een bestaande drop-down lijst toe gebruikend een douane meta-model.
 
 Als u een extra optie wilt toevoegen, werkt u de **opsommingseigenschap** bij met de nieuwe optie. In dit voorbeeld werkt u de **enum** -eigenschap bij met **Sri Lanka** als een extra optie. Waarden die worden vermeld in de **opsommingseigenschap** enum worden weergegeven in de vervolgkeuzelijst.
 
@@ -447,19 +447,19 @@ Als u een extra optie wilt toevoegen, werkt u de **opsommingseigenschap** bij me
 
 #### Een tekenreeksveld omzetten in een veld met meerdere regels {#convert-a-string-field-to-a-multi-line-field}
 
-**** Voorbeeld: Zet het veld **Adres** van het type tekenreeks om in een veld met meerdere regels in het formulier na conversie.
+**Voorbeeld:** Zet het veld **Adres** van het type tekenreeks om in een veld met meerdere regels in het formulier na conversie.
 
-In dit aangepaste metamodel gebruikt de conversieservice tekst binnen **name:affKeyword** als zoektrefwoord. Nadat de tekst van het **Adres** in de vorm wordt teruggewonnen, zet de dienst het tekstgebied in een multi-line gebied gebruikend het **multiline** bezit dat in de **a.afProperties** sectie wordt bepaald.
+In dit aangepaste metamodel gebruikt de conversieservice tekst binnen **name:affKeyword** als zoektrefwoord. Nadat de tekst van het **Adres** in de vorm wordt teruggewonnen, zet de dienst het tekstgebied in een multi-line gebied gebruikend het **multiLine** bezit dat in de **a.afProperties** sectie wordt bepaald.
 
 ```
 {
- "multiline" : {
+ "multiLine" : {
    "aem:affKeyword": [
       "Address"
     ],
     "type" : "string",
     "aem:afProperties": {
-      "multiline": "true"
+      "multiLine": "true"
     }
   }
 }

@@ -7,7 +7,7 @@ uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 translation-type: tm+mt
-source-git-commit: 8e373b978535cd6616072cf50c223bd7f4f7c35a
+source-git-commit: 12b4df8feb19fdc6e723c4d7301d299f26676716
 
 ---
 
@@ -18,16 +18,38 @@ Dit document bevat richtlijnen en aanbevelingen waarmee u beheerders, auteurs en
 
 ## Aanbevolen werkwijzen
 
-De conversieservice converteert PDF-formulieren die beschikbaar zijn in uw AEM Forms-exemplaar naar adaptieve formulieren. U kunt alle PDF-formulieren naar wens tegelijk of gefaseerd uploaden. Houd rekening met het volgende voordat u de formulieren uploadt:
+De conversieservice converteert PDF-formulieren die beschikbaar zijn in uw AEM Forms-exemplaar naar adaptieve formulieren. Met de onderstaande aanbevolen procedures kunt u de conversiesnelheid en nauwkeurigheid verbeteren. Bovendien helpen deze beste praktijken u tijd besparen die aan na omzettingsactiviteiten wordt doorgebracht.
+
+### Voordat u bronformulieren uploadt
+U kunt alle PDF-formulieren naar wens tegelijk of gefaseerd uploaden. Houd rekening met het volgende voordat u de formulieren uploadt:
 
 * Houd het aantal formulieren in een map kleiner dan 15 en houd het totale aantal pagina&#39;s in een map kleiner dan 50.
 * Houd de map kleiner dan 10 MB. Formulieren niet in een submap bewaren.
 * Houd het aantal pagina&#39;s in een formulier kleiner dan 15.
+* Indelen van brondocumenten in een batch van 8-15 documenten. Bronformulieren met algemene adaptieve formulierfragmenten in één batch bewaren.
 * Upload de beveiligde formulieren niet. De service converteert formulieren die met een wachtwoord zijn beveiligd niet.
-* Do not upload the [PDF Portfolios](https://helpx.adobe.com/nl/acrobat/using/overview-pdf-portfolios.html). De service converteert geen PDF-portfolio&#39;s naar adaptieve formulieren.
-* Upload geen gescande, gekleurde, niet-Engelse en ingevulde formulieren. Dergelijke formulieren worden niet ondersteund.
+* Do not upload the [PDF Portfolios](https://helpx.adobe.com/nl/acrobat/using/overview-pdf-portfolios.html). De service converteert een PDF-portfolio niet naar een adaptief formulier.
+* Upload geen gescande, gekleurde, niet-Engelse taal en ingevulde formulieren. Dergelijke formulieren worden niet ondersteund.
 * Upload geen bronformulieren met spaties in de bestandsnaam. Verwijder de ruimte uit de naam van het bestand voordat u de formulieren uploadt.
-* Gebruik adaptieve formuliersjablonen om de kop- en voettekst op te geven voor het adaptieve uitvoerformulier. De service negeert de header-voettekst van PDF-brondocumenten en gebruikt de header-voettekst die is opgegeven in de adaptieve formuliersjabloon.
+
+Wanneer u een XDP-formulier gebruikt voor conversie, voert u de volgende stappen uit voordat u de XDP-bronformulieren uploadt:
+
+* Analyseer het XDP-formulier en los visuele problemen op. Zorg ervoor dat het brondocument de bedoelde besturingselementen en structuren gebruikt. Het bronformulier kan bijvoorbeeld selectievakjes hebben in plaats van keuzerondjes voor één selectie. Schakel selectievakjes in op keuzerondjes om een adaptief formulier met de gewenste onderdelen te maken.
+* [Voeg bindingen aan het XDP-formulier](http://www.adobe.com/go/learn_aemforms_designer_65) toe voordat u de conversie start. Wanneer bindingen beschikbaar zijn in het XDP-bronformulier, past de service tijdens de conversie automatisch bindingen toe op de bijbehorende adaptieve formuliervelden. Hiermee bespaart u de tijd die nodig is om de bindingen handmatig toe te passen.
+* [Voeg Adobe Sign-tags](https://helpx.adobe.com/sign/using/text-tag.html) toe aan het XDP-bestand. De service converteert Adobe Sign-tags automatisch naar overeenkomende aangepaste formuliervelden. Adaptieve formulieren ondersteunen een beperkt aantal Adobe-handtekeningvelden. Zie Adobe Sign [gebruiken in een adaptieve formulierdocumentatie](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html) voor de volledige lijst met ondersteunde velden.
+* Gebruik subformulieren in XDP-documenten om deelvensters in adaptieve formulieren te maken. De dienst zet elk subformulier in een adaptief vormpaneel tijdens omzetting om.
+* Complexe tabellen in XDP-documenten indien mogelijk omzetten in eenvoudige tabellen.
+
+### Voordat u de conversie start
+
+* Aangepaste formuliersjablonen maken. Sjablonen helpen u bij het opgeven van een uniforme structuur voor de vormen van uw organisatie of afdeling.
+* Geef de kop- en voettekst op in de aangepaste formuliersjablonen. De service negeert de kop-voettekst van brondocumenten en gebruikt de header-voettekst die is opgegeven in de adaptieve formuliersjabloon.
+* Maak adaptieve formulierthema&#39;s. Thema&#39;s zorgen voor een uniforme vormgeving van uw organisatie of afdeling.
+* Formuliergegevensmodel configureren voor opslaan en ophalen van een gegevensbron. Maak en configureer lees- en schrijfservices voor het formuliergegevensmodel.
+* Maak adaptieve formulierfragmenten en configureer de service voor het gebruik van adaptieve formulierfragmenten.
+* Gemeenschappelijke workflowmodellen voorbereiden voor de formulieren die automatisering van bedrijfsprocessen vereisen.
+* Indien nodig Adobe Analytics configureren
+
 
 ## Leer complexe patronen
 

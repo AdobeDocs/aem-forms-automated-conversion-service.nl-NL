@@ -7,7 +7,7 @@ uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 translation-type: tm+mt
-source-git-commit: cab926fc408a1a680853ee557e36354938f7424a
+source-git-commit: a5d663c2a59895eb71eb5287586bc6b3862927fc
 
 ---
 
@@ -35,11 +35,11 @@ U kunt alle PDF-formulieren naar wens tegelijk of gefaseerd uploaden. Houd reken
 
 Wanneer u een XDP-formulier gebruikt voor conversie, voert u de volgende stappen uit voordat u de XDP-bronformulieren uploadt:
 
-* Analyseer het XDP-formulier en los visuele problemen op. Zorg ervoor dat het brondocument de bedoelde besturingselementen en structuren gebruikt. Het bronformulier kan bijvoorbeeld selectievakjes hebben in plaats van keuzerondjes voor één selectie. Schakel selectievakjes in naar keuzerondjes om een adaptief formulier met de gewenste onderdelen te maken.
+* Analyseer het XDP-formulier en los visuele problemen op. Zorg ervoor dat het brondocument de bedoelde besturingselementen en structuren gebruikt. Het bronformulier kan bijvoorbeeld selectievakjes hebben in plaats van keuzerondjes voor één selectie. Schakel selectievakjes in op keuzerondjes om een adaptief formulier met de gewenste onderdelen te maken.
 * [Voeg bindingen aan het XDP-formulier](http://www.adobe.com/go/learn_aemforms_designer_65) toe voordat u de conversie start. Wanneer bindingen beschikbaar zijn in het XDP-bronformulier, past de service tijdens de conversie automatisch bindingen toe op de bijbehorende adaptieve formuliervelden. Hiermee bespaart u de tijd die nodig is om de bindingen handmatig toe te passen.
 * [Voeg Adobe Sign-tags](https://helpx.adobe.com/sign/using/text-tag.html) toe aan het XDP-bestand. De service converteert Adobe Sign-tags automatisch naar overeenkomende aangepaste formuliervelden. Adaptieve formulieren ondersteunen een beperkt aantal Adobe-handtekeningvelden. Zie Adobe Sign [gebruiken in een adaptieve formulierdocumentatie](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html) voor de volledige lijst met ondersteunde velden.
 * Gebruik subformulieren in XDP-documenten om deelvensters in adaptieve formulieren te maken. De dienst zet elk subformulier in een adaptief vormpaneel tijdens omzetting om.
-* Complexe tabellen in XDP-documenten indien mogelijk omzetten in eenvoudige tabellen.
+* Complexe tabellen in XDP-documenten indien mogelijk omzetten in eenvoudige tabellen. Een tabel met formuliervelden in tabelcellen, cellen met een oneven grootte, cellen met een rij- of kolombereik, samengevoegde cellen, gedeeltelijke randen of geen zichtbare rand wordt als een complexe tabel beschouwd. Een tabel met een van de bovengenoemde items wordt als een complexe tabel beschouwd.
 
 ### Voordat u de conversie start
 

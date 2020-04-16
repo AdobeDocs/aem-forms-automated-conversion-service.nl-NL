@@ -6,7 +6,7 @@ seo-description: Gemeenschappelijke AFCS-kwesties en de bijbehorende oplossingen
 contentOwner: khsingh
 topic-tags: forms
 translation-type: tm+mt
-source-git-commit: aebfde420d02bd4184022ecb42496a379d66a3b5
+source-git-commit: 65dd07048b3cc7d9434568a8188dc08a1db66ada
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: aebfde420d02bd4184022ecb42496a379d66a3b5
 
 Het artikel bevat informatie over installatie-, configuratie- en beheerproblemen die zich kunnen voordoen in een productieomgeving van de Automated Forms Conversion Service. Het document bevat ook basisstappen voor het oplossen van problemen en uitleg voor algemene foutberichten.
 
-### Algemene fouten {#commonerrors}
+## Algemene fouten {#commonerrors}
 
 | Fout | Voorbeeld |
 |--- |--- |

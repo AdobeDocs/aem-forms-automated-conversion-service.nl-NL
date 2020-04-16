@@ -6,7 +6,7 @@ seo-description: Gemeenschappelijke AFCS-kwesties en de bijbehorende oplossingen
 contentOwner: khsingh
 topic-tags: forms
 translation-type: tm+mt
-source-git-commit: 65dd07048b3cc7d9434568a8188dc08a1db66ada
+source-git-commit: f8147653c9d0d0fbecfb06a7baa858f26a0406c4
 
 ---
 
@@ -20,5 +20,6 @@ Het artikel bevat informatie over installatie-, configuratie- en beheerproblemen
 
 | Fout | Voorbeeld |
 |--- |--- |
-| **Foutbericht**<br> De header van het toegangstoken is niet beschikbaar. <br><br>**Reden **waarom<br>een beheerder meerdere IMS-configuraties heeft gemaakt of de IMS-configuratie de AFCS-service in Adobe Cloud niet kan bereiken.<br><br>**Resolutie**<br> als er veelvoudige configuraties zijn, schrap alle configuraties en [creeer een nieuwe configuratie](configure-service.md#obtainpubliccertificates). <br> Als er enige configuratie is, gebruik **[!UICONTROL Health Check]** om connectiviteit [te](configure-service.md#createintegrationoption)controleren. | ![Kleurformulier](assets/invalid-ims-configuration.png) |
-| **Foutbericht** <br> Kan geen verbinding maken met de service.  <br><br>**Reden **<br>dat de onjuiste service-URL of geen service-URL wordt vermeld in de cloudservices van Automated Forms Conversion Service.<br><br>**Correctie** van de resolutie <br> Correct [Dienst URL](configure-service.md#configure-the-cloud-service) in de Diensten van de Wolk van de Omzetting van de Automated Forms. | ![Kleurformulier](assets/wrong-endpoint-configured.png) |
+| **Foutbericht**<br> De header van het toegangstoken is niet beschikbaar. <br><br>**Reden **waarom<br>een beheerder meerdere IMS-configuraties heeft gemaakt of de IMS-configuratie de AFCS-service in Adobe Cloud niet kan bereiken.<br><br>**Resolutie**<br> als er veelvoudige configuraties zijn, schrap alle configuraties en [creeer een nieuwe configuratie](configure-service.md#obtainpubliccertificates). <br> Als er enige configuratie is, gebruik **[!UICONTROL Health Check]** om connectiviteit [te](configure-service.md#createintegrationoption)controleren. | ![De header van het toegangstoken is niet beschikbaar](assets/invalid-ims-configuration.png) |
+| **Foutbericht** <br> Kan geen verbinding maken met de service.  <br><br>**Reden **<br>dat de onjuiste service-URL of geen service-URL wordt vermeld in de cloudservices van Automated Forms Conversion Service.<br><br>**Correctie** van de resolutie <br> Correct [Dienst URL](configure-service.md#configure-the-cloud-service) in de Diensten van de Wolk van de Omzetting van de Automated Forms. | ![Kan geen verbinding maken met de service.](assets/wrong-endpoint-configured.png) |
+| **Foutbericht** <br> Kan geen verbinding maken met de service.  <br><br>**Reden **<br>dat de onjuiste service-URL of geen service-URL wordt vermeld in de cloudservices van Automated Forms Conversion Service.<br><br>**Correctie** van de resolutie <br> Correct [Dienst URL](configure-service.md#configure-the-cloud-service) in de Diensten van de Wolk van de Omzetting van de Automated Forms. | ![Kan geen verbinding maken met de service.](assets/wrong-endpoint-configured.png) |

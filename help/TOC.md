@@ -1,26 +1,27 @@
 ---
 cloud: experience-cloud
 product: experience manager
-sub-product: forms conversion service
+sub-product: service voor conversie van formulieren
 audience: end-user
 user-guide-title: Adobe Experience Manager Forms Automated Conversion Service
 translation-type: tm+mt
-source-git-commit: a6eed86bf4581a4c20aa8e2c3fddbf88d1ac7b97
+source-git-commit: 4b9f3f4fe3b3901cb99c9374ff40e8f49855237f
 
 ---
 
 
 # Inhoudsopgave {#using}
-+ [Releaseopmerkingen](release-notes.md)
-+ [Inleiding tot de service Automated Forms Conversion](introduction.md)
-+ [De service Automated Forms Conversion configureren](configure-service.md)
-+ [Afdrukformulieren converteren naar aangepaste formulieren](convert-existing-forms-to-adaptive-forms.md)
++ [Release-opmerkingen](release-notes.md)
++ [Inleiding](introduction.md)
++ [De service configureren](configure-service.md)
++ [Printformulieren converteren naar adaptieve formulieren](convert-existing-forms-to-adaptive-forms.md)
 + [Geconverteerde formulieren controleren en corrigeren](review-correct-ui-edited.md)
-+ [Het standaardmetamodel uitbreiden](extending-the-default-meta-model.md)
-+ [Aanbevolen vooraf ingevulde en verzendworkflows voor gegevensbronnen voor adaptieve formulieren](prefill-submit-forms.md)
-+ [Aanbevolen workflows om het genereren van documenten voor adaptieve formulieren mogelijk te maken](enable-document-of-record-generation.md)
-+ [Aangepast formulier integreren met database met AEM-workflow](submit-converted-adaptive-form-to-database.md)
++ [Het standaard metamodel uitbreiden](extending-the-default-meta-model.md)
++ [Aanbevolen vooraf ingevulde gegevens gebaseerd op gegevensbron en workflows toevoegen voor adaptieve formulieren](prefill-submit-forms.md)
++ [Aanbevolen workflows om document van recordgeneratie voor adaptieve workflows in te schakelen](enable-document-of-record-generation.md)
++ [Adaptief formulier integreren met database door middel van AEM-workflow](submit-converted-adaptive-form-to-database.md)
 + [Veelgestelde vragen](frequently-asked-questions.md)
-+ [Beste praktijken en overwegingen](styles-and-pattern-considerations-and-best-practices.md)
++ [Best practices en overwegingen](styles-and-pattern-considerations-and-best-practices.md)
 + [Bekende problemen](known-issues.md)
++ [Los de dienst problemen op](troubleshoot-afcs.md)
 

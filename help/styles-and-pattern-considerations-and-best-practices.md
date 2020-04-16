@@ -7,7 +7,7 @@ uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 translation-type: tm+mt
-source-git-commit: 83e35b3cf21c1348c09dcddbae3edf77990457d0
+source-git-commit: 43b9b30e7e912081756050aa002a9e398d1d74fc
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: 83e35b3cf21c1348c09dcddbae3edf77990457d0
 
 Dit document bevat richtlijnen en aanbevelingen waarmee u beheerders, auteurs en ontwikkelaars van formulieren kunt helpen bij het werken met de service Automated Forms Conversion. Hierin worden de beste werkwijzen besproken, van het voorbereiden van bronformulieren tot het corrigeren van complexe patronen die enige extra inspanning vereisen voor automatische conversie. Deze beste praktijken dragen collectief aan de algemene prestaties en de output van de Geautomatiseerde dienst van de Omzetting van Vormen bij.
 
-## Aanbevolen werkwijzen
+## Aanbevolen procedures
 
 De conversieservice converteert PDF-formulieren die beschikbaar zijn in uw AEM Forms-exemplaar naar adaptieve formulieren. Met de onderstaande aanbevolen procedures kunt u de conversiesnelheid en nauwkeurigheid verbeteren. Bovendien helpen deze beste praktijken u tijd besparen die aan na omzettingsactiviteiten wordt doorgebracht.
 
@@ -35,16 +35,16 @@ U kunt alle PDF-formulieren naar wens tegelijk of gefaseerd uploaden. Houd reken
 
 Wanneer u een XDP-formulier gebruikt voor conversie, voert u de volgende stappen uit voordat u de XDP-bronformulieren uploadt:
 
-* Analyseer het XDP-formulier en los visuele problemen op. Zorg ervoor dat het brondocument de bedoelde besturingselementen en structuren gebruikt. Het bronformulier kan bijvoorbeeld selectievakjes hebben in plaats van keuzerondjes voor één selectie. Schakel selectievakjes in op keuzerondjes om een adaptief formulier met de gewenste onderdelen te maken.
+* Analyseer het XDP-formulier en los visuele problemen op. Zorg ervoor dat het brondocument de beoogde besturingselementen en structuren gebruikt. Het bronformulier kan bijvoorbeeld selectievakjes hebben in plaats van keuzerondjes voor één selectie. Schakel selectievakjes in naar keuzerondjes om een adaptief formulier met de gewenste onderdelen te maken.
 * [Voeg bindingen aan het XDP-formulier](http://www.adobe.com/go/learn_aemforms_designer_65) toe voordat u de conversie start. Wanneer bindingen beschikbaar zijn in het XDP-bronformulier, past de service tijdens de conversie automatisch bindingen toe op de bijbehorende adaptieve formuliervelden. Hiermee bespaart u de tijd die nodig is om de bindingen handmatig toe te passen.
 * [Voeg Adobe Sign-tags](https://helpx.adobe.com/sign/using/text-tag.html) toe aan het XDP-bestand. De service converteert Adobe Sign-tags automatisch naar overeenkomende aangepaste formuliervelden. Adaptieve formulieren ondersteunen een beperkt aantal Adobe-handtekeningvelden. Zie Adobe Sign [gebruiken in een adaptieve formulierdocumentatie](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html) voor de volledige lijst met ondersteunde velden.
-* Complexe tabellen in XDP-documenten indien mogelijk omzetten in eenvoudige tabellen. Een tabel met formuliervelden in tabelcellen, cellen met een oneven grootte, cellen met een rij- of kolombereik, samengevoegde cellen, gedeeltelijke randen of geen zichtbare rand wordt als een complexe tabel beschouwd. Een tabel met een van de bovengenoemde items wordt als een complexe tabel beschouwd.
+* Complexe tabellen in XDP-documenten indien mogelijk omzetten in eenvoudige tabellen. Een tabel met formuliervelden in tabelcellen, cellen met een oneven grootte, cellen met een rij- of kolombereik, samengevoegde cellen, gedeeltelijke randen of geen zichtbare rand wordt als een complexe tabel beschouwd. Een tabel met een van de bovenstaande items wordt als een complexe tabel beschouwd.
 <!-- * Use sub-forms in XDP documents to create panels in adaptive forms. Service converts each sub-form to one or more adaptive form panels during conversion. -->
 
 ### Voordat u de conversie start
 
 * Aangepaste formuliersjablonen maken. Sjablonen helpen u bij het opgeven van een uniforme structuur voor de vormen van uw organisatie of afdeling.
-* Geef de kop- en voettekst op in de aangepaste formuliersjablonen. De service negeert de kop-voettekst van brondocumenten en gebruikt de header-voettekst die is opgegeven in de adaptieve formuliersjabloon.
+* Geef de kop- en voettekst op in de aangepaste formuliersjablonen. De service negeert de voettekst voor de koptekst van brondocumenten en gebruikt de voettekst voor de koptekst die is opgegeven in de adaptieve formuliersjabloon.
 * Maak adaptieve formulierthema&#39;s. Thema&#39;s zorgen voor een uniforme vormgeving van uw organisatie of afdeling.
 * Formuliergegevensmodel configureren voor opslaan en ophalen van een gegevensbron. Maak en configureer lees- en schrijfservices voor het formuliergegevensmodel.
 * Maak adaptieve formulierfragmenten en configureer de service voor het gebruik van adaptieve formulierfragmenten.
@@ -65,12 +65,12 @@ De dienst zou beginnen correcte gebieden of panelen aan deze patronen te identif
 | Patroon | Voorbeeld |
 |--- |--- |
 | **Patroonservice** <br> converteert gekleurde PDF-formulieren niet naar een adaptief formulier. <br><br>**Resolutie **<br>Gebruik PDF-formulieren voor zwart-wit of grijswaarden. | ![Kleurformulier](assets/best-practice-coloured-forms.png) |
-| **Met Patroonservice** <br>worden gevulde PDF-formulieren niet naar een adaptief formulier geconverteerd. <br><br>**Resolutie **<br>Gebruik lege adaptieve formulieren. | ![Formulier invullen](assets/best-practice-filled-forms.png) |
+| **Met Patroonservice** <br>worden ingevulde PDF-formulieren niet naar een adaptief formulier geconverteerd. <br><br>**Resolutie **<br>Gebruik lege adaptieve formulieren. | ![Formulier invullen](assets/best-practice-filled-forms.png) |
 | **De Patroonservice** <br>kan tekst en velden in een dicht formulier niet herkennen. <br><br>**Resolutie **<br>Vergroot de breedte tussen tekst en velden van een dicht formulier voordat u begint met omzetten. |  |
 | **Patroonservice** <br>ondersteunt gescande formulieren niet. <br><br>**Resolutie **gebruikt<br>geen gescande formulieren. | ![Gescande vorm](assets/scanned-forms.png) |
 | **Met de Patroonservice** <br>worden geen afbeeldingen en tekst in afbeeldingen geëxtraheerd. <br><br>**Resolutie **<br>voegt handmatig afbeeldingen of tekst toe aan geconverteerde formulieren. | ![Afbeelding met tekstformulier](assets/best-practice-image-with-text.png) |
 | **Patroontabellen** <br>met gestippelde of onduidelijke randen en randen worden niet omgezet. <br><br>**Resolutie **: tabellen<br>gebruiken met duidelijke expliciete grenzen en randen. ondersteund. | ![Niet-duidelijk tabelformulier](assets/best-practice-table-dotted-non-clear.png) |
-| **Patroonadaptief** <br> formulier ondersteunt geen verticale tekst uit het vak. De service zet verticale tekst dus niet om in de overeenkomende tekst Adaptive Forms. <br><br>**Resolutie **<br>Gebruik indien nodig een adaptieve formuliereditor om verticale tekst toe te voegen. | ![Niet-duidelijk tabelformulier](assets/vertical-text.png) |
+| **Patroonadaptieve** <br> formulieren ondersteunen geen verticale tekst uit het vak. De service zet verticale tekst dus niet om in de overeenkomende tekst Adaptive Forms. <br><br>**Resolutie **<br>Gebruik indien nodig een adaptieve formuliereditor om verticale tekst toe te voegen. | ![Niet-duidelijk tabelformulier](assets/vertical-text.png) |
 
 
 

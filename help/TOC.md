@@ -5,7 +5,7 @@ sub-product: service voor conversie van formulieren
 audience: end-user
 user-guide-title: Adobe Experience Manager Forms Automated Conversion Service
 translation-type: tm+mt
-source-git-commit: 4b9f3f4fe3b3901cb99c9374ff40e8f49855237f
+source-git-commit: 90f577a3bc75afdb596ad1dea27cd833e1c996ce
 
 ---
 
@@ -23,5 +23,5 @@ source-git-commit: 4b9f3f4fe3b3901cb99c9374ff40e8f49855237f
 + [Veelgestelde vragen](frequently-asked-questions.md)
 + [Best practices en overwegingen](styles-and-pattern-considerations-and-best-practices.md)
 + [Bekende problemen](known-issues.md)
-+ [Los de dienst problemen op](troubleshoot-afcs.md)
++ [Problemen oplossen](troubleshoot-afcs.md)
 

@@ -4,8 +4,8 @@ product: experience manager
 sub-product: conversieservice voor formulieren
 audience: end-user
 user-guide-title: Service voor automatische conversie van Adobe Experience Manager Forms
-translation-type: ht
-source-git-commit: 56e4696c0372223e0b27f1c313382a2a637b6db1
+translation-type: tm+mt
+source-git-commit: 41fb68ef566f5bd44d6f47f31de0b0edeeb978f2
 
 ---
 
@@ -14,6 +14,7 @@ source-git-commit: 56e4696c0372223e0b27f1c313382a2a637b6db1
 
 + [Release-opmerkingen](release-notes.md)
 + [Inleiding](introduction.md)
++ [Best practices en overwegingen](styles-and-pattern-considerations-and-best-practices.md)
 + [Service configureren](configure-service.md)
 + [Printformulieren converteren naar adaptieve formulieren](convert-existing-forms-to-adaptive-forms.md)
 + [Geconverteerde formulieren controleren en corrigeren](review-correct-ui-edited.md)
@@ -22,6 +23,5 @@ source-git-commit: 56e4696c0372223e0b27f1c313382a2a637b6db1
 + [Aanbevolen workflows om document van recordgeneratie voor adaptieve workflows in te schakelen](enable-document-of-record-generation.md)
 + [Adaptief formulier integreren met database door middel van AEM-workflow](submit-converted-adaptive-form-to-database.md)
 + [Veelgestelde vragen](frequently-asked-questions.md)
-+ [Best practices en overwegingen](styles-and-pattern-considerations-and-best-practices.md)
 + [Bekende problemen](known-issues.md)
 + [Problemen oplossen](troubleshoot-afcs.md)

@@ -2,7 +2,10 @@
 title: De service voor automatische conversie van formulieren configureren
 description: AEM-instantie klaar om de service Automated Forms Conversion te gebruiken
 translation-type: tm+mt
-source-git-commit: 68824c2f398d00141d67996121f7b758af16d2e4
+source-git-commit: e1ef5be14fd3f1ec7e6ccf569c8d76518dfc5c6b
+workflow-type: tm+mt
+source-wordcount: '2519'
+ht-degree: 7%
 
 ---
 
@@ -17,13 +20,13 @@ In deze Help ziet u hoe een AEM-beheerder de service Automated Forms Conversion 
 
 * SMTP-mailservers configureren
 
->[!VIDEO](https://video.tv.adobe.com/v/29267/)
+<!--- >[!VIDEO](https://video.tv.adobe.com/v/29267/) 
 
-**Bekijk de video of lees het artikel om de service Automated Forms Conversion te configureren**
+**Watch the video or read the article to configure Automated Forms Conversion service** -->
 
 ## Onboarding{#onboarding}
 
-De service is gratis beschikbaar voor klanten op locatie met AEM 6.4 Forms en AEM 6.5 Forms en Adobe Managed Service Enterprise-klanten. U kunt contact opnemen met het Adobe-verkoopteam of uw Adobe-vertegenwoordiger om toegang tot de service aan te vragen.
+De service is gratis beschikbaar voor AEM 6.4 Forms en AEM 6.5 Forms On-Premise-termijnklanten en Adobe Managed Service Enterprise-klanten. U kunt contact opnemen met het Adobe-verkoopteam of uw Adobe-vertegenwoordiger om toegang tot de service aan te vragen.
 
 Adobe maakt toegang voor uw organisatie mogelijk en biedt de vereiste rechten aan de persoon die is aangewezen als beheerder in uw organisatie. De beheerder kan toegang verlenen aan de AEM Forms-ontwikkelaars (gebruikers) van uw organisatie om verbinding te maken met de service.
 
@@ -61,7 +64,7 @@ Nadat u AEM hebt gedownload, raadpleegt u het [implementeren en onderhouden](htt
 
 Download en installeer het nieuwste AEM Service Pack. Voor gedetailleerde instructies zie, of [AEM 6.4 de Nota&#39;s](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) van de Versie van het Pak van de Dienst of [AEM 6.5 de Nota&#39;s](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html)van de Versie van het Pak van de Dienst.
 
-### AEM Forms add-on-pakket downloaden en installeren {#downloadaemformsaddon}
+### AEM Forms add-on-pakket downloaden en installeren  {#downloadaemformsaddon}
 
 Een AEM-exemplaar bevat basisformuliermogelijkheden. Voor de conversieservice zijn alle mogelijkheden van AEM Forms vereist. Download en installeer het invoegpakket AEM Forms om alle mogelijkheden van AEM Forms te benutten. Het pakket is vereist om de conversieservice in te stellen en uit te voeren. Zie Mogelijkheden voor gegevensvastlegging [installeren en configureren voor gedetailleerde instructies.](https://helpx.adobe.com/experience-manager/6-5/forms/using/installing-configuring-aem-forms-osgi.html)
 
@@ -69,19 +72,16 @@ Een AEM-exemplaar bevat basisformuliermogelijkheden. Voor de conversieservice zi
 > Zorg ervoor dat u de verplichte configuraties na de installatie uitvoert nadat u het invoegpakket hebt geïnstalleerd.
 
 
-### (Optioneel) Installeer het aansluitingspakket {#installConnectorPackage}
+### (Optioneel) Installeer het aansluitingspakket  {#installConnectorPackage}
 
-Installeer aansluitpakket 1.1.38 of hoger om de functies voor [automatisch detecteren van logische secties](convert-existing-forms-to-adaptive-forms.md#run-the-conversion) en de verbeteringen die zijn geleverd in release AFC-2020.03.1 te gebruiken. U kunt het aansluitingspakket [downloaden van AEM Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1).
-
->[!NOTE]
-> Als u al beschikt over een servicemilieu voor automatische Forms Conversion die de nieuwste functies van de conversieservice kan gebruiken, installeert u het meest recente servicepakket, het nieuwste invoegpakket voor AEM Forms en het nieuwste aansluitingspakket in de aangegeven volgorde.
+Het aansluitpakket biedt vroege toegang tot de functies voor [automatisch detecteren van logische secties](convert-existing-forms-to-adaptive-forms.md#run-the-conversion) en verbeteringen die zijn geleverd in release AFC-2020.03.1. Installeer het pakket niet als u geen functie en verbeteringen in AFC-2020.03.1 nodig hebt.  U kunt het aansluitingspakket [downloaden van AEM Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1).
 
 
 ### Aangepaste thema&#39;s en sjablonen maken {#referencepackage}
 
 Als u AEM in [productiemodus](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/production-ready.html) start (geen samplcontent-runmode), worden de referentiepakketten niet geïnstalleerd. De referentiepakketten bevatten voorbeeldthema&#39;s en sjablonen. Voor de service voor automatische formulierconversie zijn ten minste één thema en één sjabloon vereist om een PDF-formulier naar een adaptief formulier te converteren. Creeer een douanethema en een malplaatje van uw eigen en de [puntdienstconfiguratie](#configure-the-cloud-service) om douanesjablonen en thema&#39;s te gebruiken alvorens de dienst te gebruiken.
 
-## De service configureren {#configure-the-service}
+## Service configureren {#configure-the-service}
 
 Voordat u verdergaat met het configureren van de service en het verbinden van uw lokale exemplaar met de service die wordt uitgevoerd op Adobe Cloud, dient u meer te weten te komen over de personen en rechten die nodig zijn om verbinding te maken met de service. De dienst gebruikt twee verschillende types van persona&#39;s, beheerders en ontwikkelaars:
 
@@ -159,7 +159,7 @@ Met een openbaar certificaat kunt u uw profiel verifiëren op Adobe I/O.
 
 1. Selecteer het **[!UICONTROL Create new certificate]** selectievakje en geef een alias op. De alias fungeert als naam voor het dialoogvenster. Tik op **[!UICONTROL Create certificate]**. Er wordt een dialoogvenster weergegeven. Klik op **[!UICONTROL OK]**. Het certificaat wordt gemaakt.
 
-1. Tik op **[!UICONTROL Download Public Key]** het certificaatbestand *AEM-Adobe-IMS.crt* en sla dit op uw computer op. Het certificaatbestand wordt gebruikt om integratie in Adobe I/O-console [te](#createintegration)maken. Tik op **[!UICONTROL Next]**.
+1. Tap **[!UICONTROL Download Public Key]** and save the *AEM-Adobe-IMS.crt* certificate file on your machine. The certificate file is used to [create integration on Adobe I/O Console](#createintegration). Tik op **[!UICONTROL Next]**.
 
 1. Geef het volgende op:
 
@@ -183,27 +183,26 @@ Met een openbaar certificaat kunt u uw profiel verifiëren op Adobe I/O.
 
 Als u de service Automated Forms Conversion wilt gebruiken, maakt u een integratie in Adobe I/O. De integratie genereert API Key, Client Secret, Payload (JWT).
 
-1. Meld u aan bij [https://console.adobe.io/](https://console.adobe.io/). Gebruik uw Adobe-id en ontwikkelaarsaccount die uw beheerder heeft ingericht om u aan te melden bij de Adobe I/O-console.
+1. Meld u aan bij https://console.adobe.io/. Gebruik uw Adobe-id en ontwikkelaarsaccount die uw beheerder heeft ingericht om u aan te melden bij de Adobe I/O-console.
+1. Selecteer uw organisatie in de rechterbovenhoek. Neem contact op met de beheerder als u uw organisatie niet kent.
+1. Tik op **[!UICONTROL Create new project]**. Er verschijnt een scherm om aan de slag te gaan met uw nieuwe project. Tik op **[!UICONTROL Add API]**. Er verschijnt een scherm met een lijst van alle API&#39;s die voor uw account zijn ingeschakeld.
+1. Selecteer **[!UICONTROL Automated Forms Conversion service]** en tik op **[!UICONTROL Next]**. Er verschijnt een scherm om de API te configureren.
+1. Selecteer de [!UICONTROL Upload your public key] optie, upload het AEM-Adobe-IMS.crt-bestand dat is gedownload in de sectie [Openbare certificaten](#obtainpubliccertificates) verkrijgen en tik op **[!UICONTROL Next]**. De optie Create a new Service Account (JWT) credential wordt weergegeven. Tik op **[!UICONTROL Next]**.
+1. Selecteer een productprofiel en tik op **[!UICONTROL Save configured API]**. Selecteer het profiel dat u hebt gemaakt terwijl u toegang [verleent aan ontwikkelaars van uw organisatie](#adduseranddevs). Neem contact op met de beheerder als u niet weet welk profiel u moet selecteren.
+1. Tik **[!UICONTROL Service Account (JWT)]** om de API-sleutel, het clientgeheim en andere informatie weer te geven die nodig is om uw lokale AEM-instantie te verbinden met de service voor automatische conversie van formulieren. De informatie op de pagina wordt gebruikt om configuratie IMS op uw lokale machine tot stand te brengen.
 
-1. Tik op **[!UICONTROL View Integrations]**. Er verschijnt een scherm met alle beschikbare integraties.
-1. Selecteer uw organisatie in de vervolgkeuzelijst onder **[!UICONTROL Integrations]**. Tik **[!UICONTROL New Integration]**, selecteer **[!UICONTROL Access an API]** en tik **[!UICONTROL Continue]**.
-1. Selecteer **[!UICONTROL Experience Cloud]** > **[!UICONTROL Automated Forms Conversion]** en tik **[!UICONTROL Continue]**. Als de optie Formulierconversie automatiseren voor u is uitgeschakeld, controleert u of u de juiste organisatie hebt geselecteerd in het keuzemenu boven de **[!UICONTROL Adobe Services]** optie. Neem contact op met de beheerder als u uw organisatie niet kent.
-
-   ![Automatische formulierconversie selecteren](assets/create-new-integration.png)
-
-1. Geef een naam en beschrijving voor de integratie op. Tik op het bestand AEM-Adobe-IMS.crt **[!UICONTROL Select a File from your computer]** en upload het bestand dat u hebt gedownload in de sectie [Openbare certificaten](#obtainpubliccertificates) verkrijgen.
-1. Selecteer het profiel dat u hebt gemaakt terwijl u toegang [verleent aan ontwikkelaars van uw organisatie](#adduseranddevs) en tik op **[!UICONTROL Create Integration]**. De integratie wordt tot stand gebracht.
-1. Tik **[!UICONTROL Continue to integration details]** om de integratiegegevens weer te geven. De pagina bevat API-sleutel, clientgeheim en andere informatie die vereist is om uw lokale AEM-instantie te verbinden met de service voor automatische Forms Conversion. De informatie op de pagina wordt gebruikt om configuratie IMS op uw lokale machine tot stand te brengen.
-
-   ![API-sleutel, clientgeheim en payload-informatie van een integratie](assets/integration-details.png)
-
-1. Open de pagina van de Configuratie IMS op uw lokale instantie. U hebt de pagina geopend aan het einde van de sectie. [Overheidscertificaat](#obtainpubliccertificates)verkrijgen.
+1. Open de pagina van de Configuratie IMS op uw lokale instantie. U hebt de pagina open gelaten aan het einde van de sectie voor [Openbaar certificaat verkrijgen](#obtainpubliccertificates).
 
    ![Titel, API-sleutel, clientgeheim en payload opgeven ](assets/ims-configuration-details.png)
 
-1. Geef API-sleutel en clientgeheim op de technische pagina van Adobe IMS op. Gebruik de waarden die op de integratiepagina zijn opgegeven.
+1. Geef API-sleutel en clientgeheim op de technische pagina van Adobe IMS op. Gebruik de waarden die zijn opgegeven in Service Account (JWT) van de pagina Adobe Developer Console.
 
-   **Voor nuttige lading, gebruik de code die op het JWT lusje van de integratiepagina wordt verstrekt.** Tik op  **[!UICONTROL Save]**. De IMS-configuratie wordt gemaakt. Sluit de integratiepagina.
+   >[!NOTE]
+   >
+   >
+   >Gebruik voor het laden de code op het tabblad Genereer JWT van de pagina Service Account (JWT) van Adobe Developer Console.
+
+1. Tik op **[!UICONTROL Save]**. De IMS-configuratie wordt gemaakt.
 
    ![Waarden van JWT-veld gebruiken voor payload-veld](assets/jwt.png)
 
@@ -211,13 +210,13 @@ Als u de service Automated Forms Conversion wilt gebruiken, maakt u een integrat
    >
    >Maak slechts één IMS-configuratie. Maak niet meer dan één IMS-configuratie.
 
-1. Selecteer de IMS-configuratie en tik op **[!UICONTROL Check Health]**. Er wordt een dialoogvenster weergegeven. Tik op **[!UICONTROL Check]**. Bij een geslaagde verbinding wordt het bericht *Met succes* opgehaalde token weergegeven.
+1. Select the IMS configuration and tap **[!UICONTROL Check Health]**. Er wordt een dialoogvenster weergegeven. Tik op **[!UICONTROL Check]**. Bij een geslaagde verbinding wordt het bericht *Token retrieved successfully* weergegeven.
 
    ![Bij een geslaagde verbinding wordt het bericht met succes opgehaalde token weergegeven. ](assets/health-check.png)
 
    <br/> <br/>
 
-#### De cloudservice configureren {#configure-the-cloud-service}
+#### Configure the cloud service {#configure-the-cloud-service}
 
 Maak een cloudserviceconfiguratie om uw AEM-instantie aan te sluiten op de conversieservice. U kunt hiermee ook een sjabloon, thema en formulierfragmenten opgeven voor conversie. U kunt meerdere configuraties voor cloudservices maken, afzonderlijk voor elke set formulieren. U kunt bijvoorbeeld een aparte configuratie voor de formulieren van de verkoopafdeling en een aparte configuratie voor de formulieren voor klantenondersteuning hebben. Voer de volgende stappen uit om een configuratie van de wolkendienst tot stand te brengen:
 
@@ -261,7 +260,7 @@ Maak een cloudserviceconfiguratie om uw AEM-instantie aan te sluiten op de conve
    </table>
 
    * Als de bron een op XFA-Gebaseerde vorm met uitbreiding .XDP is, dan behoudt de output DOR de XFA lay-out, anders gebruikt de omzettingsdienst een uit-van-de-doos malplaatje om DOR voor andere op XFA-Gebaseerde vormen te produceren.
-   * Wanneer een XFA-formulier wordt verzonden, worden de gegevens van het formulier opgeslagen als een XML-element of een kenmerk. Bijvoorbeeld, `<Amount currency="USD"> 10.00 </Amount>`. De valuta wordt opgeslagen als een kenmerk en valutabedrag, 10,00 als een element. Gegevens van een adaptief formulier verzenden heeft geen kenmerken, het heeft alleen elementen. Als een XFA-formulier wordt geconverteerd naar een adaptief formulier, bevatten de adaptieve formulierverzendgegevens dus een element voor elk van deze kenmerken. Bijvoorbeeld:
+   * Wanneer een XFA-formulier wordt verzonden, worden de gegevens van het formulier opgeslagen als een XML-element of een kenmerk. Bijvoorbeeld, `<Amount currency="USD"> 10.00 </Amount>`. De valuta wordt opgeslagen als een kenmerk en valutabedrag, 10,00 als een element. Gegevens van een adaptief formulier verzenden heeft geen kenmerken, het heeft alleen elementen. Als een XFA-formulier wordt geconverteerd naar een adaptief formulier, bevatten de adaptieve formulierverzendgegevens dus een element voor elk van deze kenmerken. Bijvoorbeeld,
 
    ```css
       {

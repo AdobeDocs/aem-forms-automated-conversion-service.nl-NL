@@ -8,7 +8,10 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: c0ca850a0a1e82e34364766601011d6367b218ac
+source-git-commit: 5031050795a558795c151e9f3c26a16736566adf
+workflow-type: tm+mt
+source-wordcount: '1464'
+ht-degree: 8%
 
 ---
 
@@ -42,7 +45,7 @@ De conversieservice converteert PDF-formulieren die beschikbaar zijn in uw AEM F
 * Houd het aantal pagina&#39;s in een formulier kleiner dan 15.
 * Upload de beveiligde formulieren niet. De service converteert formulieren die met een wachtwoord zijn beveiligd niet.
 * Upload geen bronformulieren met spaties in de bestandsnaam. Verwijder de ruimte uit de naam van het bestand voordat u de formulieren uploadt.
-* Upload geen [PDF-portfolio&#39;s](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html). De service converteert een PDF-portfolio niet naar een adaptief formulier.
+* Upload geen [PDF-portfolio&#39;s](https://helpx.adobe.com/nl/acrobat/using/overview-pdf-portfolios.html). De service converteert een PDF-portfolio niet naar een adaptief formulier.
 * Lees de secties [Bekende problemen](known-issues.md) en [Beste praktijken en overwegingen](styles-and-pattern-considerations-and-best-practices.md) en breng voorgestelde veranderingen in vormen aan.
 
 Voer de volgende stappen uit om de formulieren te uploaden die moeten worden geconverteerd naar een map in uw AEM Forms-instantie:
@@ -91,7 +94,7 @@ Als u deze optie selecteert, genereert de conversieservice een adaptief formulie
 
 
    * Selecteer de **[!UICONTROL Auto-detect multi-column layout of input forms]** optie om de indeling van het bronformulier te behouden voor grote schermen zoals desktops en laptops. De optie is handig als u de indeling van bronformulieren met meerdere kolommen wilt behouden. Als een bron-PDF bijvoorbeeld een indeling met twee kolommen heeft, genereert de service een adaptief uitvoerformulier met een indeling met twee kolommen voor schermschermen met groot scherm en een lay-out met één kolom voor apparaten met klein scherm, zoals mobiele telefoons. De eigenschap heeft sommige bekende kwesties met de structuur van het gegevensbronschema. Zie het [artikel over bekende problemen](known-issues.md) voor meer informatie.
-   * Standaard maakt de service een apart bovenste venster voor elke pagina van een PDF-formulier. U kunt nu de **[!UICONTROL Auto-detect logical sections]** optie gebruiken om geen deelvensters op paginaniveau (op paginanummers gebaseerde deelvensters) te maken en alleen logische deelvensters te maken. De velden die niet tot een sectie met een voorafgaande logische sectie behoren, en velden van een logische sectie die zich over twee aangrenzende pagina&#39;s uitstrekken, worden in één logische sectie samengevoegd. Als sommige velden van een logische sectie zich bijvoorbeeld aan het einde van pagina 1 bevinden en sommige zich aan het begin van pagina 2 bevinden, worden al deze velden opgenomen in één logische sectie.
+   * De service creëert standaard een aparte, bovenliggende laag voor elke pagina van een PDF-formulier. Now, you can use the **[!UICONTROL Auto-detect logical sections]** option to not create page level panels (page number-based panels) and create only logical panels. Hierbij worden ook de velden die niet bij een sectie met een voorafgaande logische sectie horen en de velden van een logische sectie die verspreid zijn over twee aangrenzende pagina&#39;s samengevoegd tot één enkele logische sectie. Als sommige velden van een logische sectie bijvoorbeeld aan het einde van pagina 1 staan en sommige zich aan het begin van pagina 2 bevinden, worden al deze velden samengevoegd tot één enkele logische sectie.
 
       >[!NOTE]
       > U hebt het schakelaarpakket 1.1.38 of hierboven nodig om de **[!UICONTROL Auto-detect logical sections]** eigenschap te gebruiken.

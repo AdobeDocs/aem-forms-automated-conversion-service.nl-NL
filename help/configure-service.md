@@ -2,9 +2,9 @@
 title: De service voor automatische conversie van formulieren configureren
 description: AEM-instantie klaar om de service Automated Forms Conversion te gebruiken
 translation-type: tm+mt
-source-git-commit: 7e94acb29f30603d9b22fbee9dc8052fafa5704b
+source-git-commit: 117280695bfddad627e5f7bcb54ff019bbf2026a
 workflow-type: tm+mt
-source-wordcount: '2528'
+source-wordcount: '2531'
 ht-degree: 7%
 
 ---
@@ -139,7 +139,7 @@ De service Automated Forms Conversion gebruikt de Day CQ-mailservice om e-mailme
 
 #### Gebruiker toevoegen aan de groep met gebruikers van het formulier {#adduserstousergroup}
 
-Geef een e-mailadres op in het profiel van de AEM-gebruiker die is aangewezen om de service uit te voeren. Zorg ervoor dat de gebruiker lid is van de gebruikersgroep [Formulieren](https://helpx.adobe.com/experience-manager/6-4/forms/using/forms-groups-privileges-tasks.html) . E-mails worden verzonden naar het e-mailadres van de gebruiker die de conversie uitvoert. U kunt als volgt een e-mailadres voor de gebruiker opgeven en gebruiker toevoegen aan de gebruikersgroep voor formulieren:
+Geef een e-mailadres op in het profiel van de AEM-gebruiker die is aangewezen om de service uit te voeren. Zorg ervoor dat de gebruiker lid is van de gebruikersgroep [Formulieren](https://helpx.adobe.com/experience-manager/6-4/forms/using/forms-groups-privileges-tasks.html) . E-mails worden verzonden naar het e-mailadres van de gebruiker die de conversie uitvoert. U kunt als volgt een e-mailadres voor de gebruiker opgeven en gebruiker toevoegen aan de gebruikersgroep Formulieren:
 
 1. Meld u aan bij de auteur-instantie van AEM Forms als AEM-beheerder. Meld u aan met uw lokale AEM-referenties. Gebruik Adobe-id niet om u aan te melden. Tap **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.
 
@@ -183,7 +183,7 @@ Met een openbaar certificaat kunt u uw profiel verifiëren op Adobe I/O.
 
 Als u de service Automated Forms Conversion wilt gebruiken, maakt u een project en voegt u de Automated Forms Configuration Service API toe aan het project in de Adobe Developer Console. De integratie genereert API Key, Client Secret, Payload (JWT).
 
-1. Meld u aan bij https://console.adobe.io/. Gebruik uw Adobe-id en ontwikkelaarsaccount die uw beheerder heeft ingericht om u aan te melden bij de Adobe I/O-console.
+1. Meld u aan bij [https://console.adobe.io/](https://console.adobe.io/). Gebruik uw Adobe-id en ontwikkelaarsaccount die uw beheerder heeft ingericht om u aan te melden bij de Adobe I/O-console.
 1. Selecteer uw organisatie in de rechterbovenhoek. Neem contact op met de beheerder als u uw organisatie niet kent.
 1. Tik op **[!UICONTROL Create new project]**. Er verschijnt een scherm om aan de slag te gaan met uw nieuwe project. Tik op **[!UICONTROL Add API]**. Er verschijnt een scherm met een lijst van alle API&#39;s die voor uw account zijn ingeschakeld.
 1. Selecteer **[!UICONTROL Automated Forms Conversion service]** en tik op **[!UICONTROL Next]**. Er verschijnt een scherm om de API te configureren.

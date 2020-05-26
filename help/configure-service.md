@@ -2,9 +2,9 @@
 title: De service voor automatische conversie van formulieren configureren
 description: AEM-instantie klaar om de service Automated Forms Conversion te gebruiken
 translation-type: tm+mt
-source-git-commit: e1ef5be14fd3f1ec7e6ccf569c8d76518dfc5c6b
+source-git-commit: 7e94acb29f30603d9b22fbee9dc8052fafa5704b
 workflow-type: tm+mt
-source-wordcount: '2519'
+source-wordcount: '2528'
 ht-degree: 7%
 
 ---
@@ -123,7 +123,7 @@ Nadat een beheerder u toegang tot de ontwikkelaar biedt, kunt u uw lokale AEM Fo
 * [E-mailmeldingen configureren](configure-service.md#configureemailnotification)
 * [Gebruiker toevoegen aan de groep met gebruikers van het formulier](#adduserstousergroup)
 * [Openbare certificaten verkrijgen](#obtainpubliccertificates)
-* [Adobe I/O-integratie maken](#createintegration)
+* [De service-API&#39;s configureren in de Adobe Developer Console](#createintegration)
 * [De cloudservice configureren](configure-service.md#configure-the-cloud-service)
 
 #### E-mailmelding configureren {#configureemailnotification}
@@ -159,12 +159,12 @@ Met een openbaar certificaat kunt u uw profiel verifiëren op Adobe I/O.
 
 1. Selecteer het **[!UICONTROL Create new certificate]** selectievakje en geef een alias op. De alias fungeert als naam voor het dialoogvenster. Tik op **[!UICONTROL Create certificate]**. Er wordt een dialoogvenster weergegeven. Klik op **[!UICONTROL OK]**. Het certificaat wordt gemaakt.
 
-1. Tap **[!UICONTROL Download Public Key]** and save the *AEM-Adobe-IMS.crt* certificate file on your machine. The certificate file is used to [create integration on Adobe I/O Console](#createintegration). Tik op **[!UICONTROL Next]**.
+1. Tap **[!UICONTROL Download Public Key]** and save the *AEM-Adobe-IMS.crt* certificate file on your machine. Het certificaatbestand wordt gebruikt om de service-API&#39;s in Adobe Developer Console [te](#createintegration)configureren. Tik op **[!UICONTROL Next]**.
 
 1. Geef het volgende op:
 
    * Titel: Geef een titel op.
-   * Autorisatieserver: [https://ims-na1.adobelogin.com](https://ims-na1.adobelogin.com)
+   * Autorisatieserver: [https://ims-na1.adobelogin.com](https://ims-na1.adobelogin.com)\
    Laat de overige velden voorlopig leeg (later te verstrekken). Laat de pagina open.
 
    <!--
@@ -179,9 +179,9 @@ Met een openbaar certificaat kunt u uw profiel verifiëren op Adobe I/O.
    <li>Step text</li>
    -->
 
-#### Adobe I/O-integratie maken {#createintegration}
+#### De service-API&#39;s configureren in Adobe Developer Console {#createintegration}
 
-Als u de service Automated Forms Conversion wilt gebruiken, maakt u een integratie in Adobe I/O. De integratie genereert API Key, Client Secret, Payload (JWT).
+Als u de service Automated Forms Conversion wilt gebruiken, maakt u een project en voegt u de Automated Forms Configuration Service API toe aan het project in de Adobe Developer Console. De integratie genereert API Key, Client Secret, Payload (JWT).
 
 1. Meld u aan bij https://console.adobe.io/. Gebruik uw Adobe-id en ontwikkelaarsaccount die uw beheerder heeft ingericht om u aan te melden bij de Adobe I/O-console.
 1. Selecteer uw organisatie in de rechterbovenhoek. Neem contact op met de beheerder als u uw organisatie niet kent.
@@ -203,8 +203,6 @@ Als u de service Automated Forms Conversion wilt gebruiken, maakt u een integrat
    >Gebruik voor het laden de code op het tabblad Genereer JWT van de pagina Service Account (JWT) van Adobe Developer Console.
 
 1. Tik op **[!UICONTROL Save]**. De IMS-configuratie wordt gemaakt.
-
-   ![Waarden van JWT-veld gebruiken voor payload-veld](assets/jwt.png)
 
    >[!CAUTION]
    >

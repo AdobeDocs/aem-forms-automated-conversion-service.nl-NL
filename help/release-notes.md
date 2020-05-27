@@ -1,9 +1,9 @@
 ---
 title: Wat is er nieuw? Releaseopmerkingen - Service voor automatische conversie van formulieren
 description: 'Kom meer te weten over de nieuwste functies en bugfixes voor de service voor automatische conversie van formulieren '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5031050795a558795c151e9f3c26a16736566adf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '305'
 ht-degree: 100%
 

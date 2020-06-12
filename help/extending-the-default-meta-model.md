@@ -7,7 +7,10 @@ uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 translation-type: tm+mt
-source-git-commit: ffab4d916cbd545078f4b72b8de5c9968f23b0da
+source-git-commit: 77bdb4e88194bd634dea125852ff2a897bc24678
+workflow-type: tm+mt
+source-wordcount: '2372'
+ht-degree: 1%
 
 ---
 
@@ -22,9 +25,7 @@ Meta-model is een JSON-schema. Voordat u begint met meta-model, moet u controler
 
 ## Standaardmetamodel {#default-meta-model}
 
-De geautomatiseerde dienst van de Omzetting van Vormen heeft een standaardmetamodel. Het is een JSON-schema en bevindt zich in Adobe Cloud met andere componenten van de service Automated Forms Conversion. U kunt een kopie van het metamodel vinden op uw lokale AEM-server op:
-
-http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/global.schema.json.
+De geautomatiseerde dienst van de Omzetting van Vormen heeft een standaardmetamodel. Het is een JSON-schema en bevindt zich in Adobe Cloud met andere componenten van de service Automated Forms Conversion. U kunt een kopie van het metamodel vinden op uw lokale AEM-server op: http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/global.schema.json. U kunt ook hier [](assets/global.schema.json) klikken om het standaardschema te openen of te downloaden.
 
 Het schema van meta-model wordt afgeleid uit schemaentiteiten in https://schema.org/docs/schemas.html. Het heeft Persoon, PostalAddress, LocalBusiness, en meer entiteiten zoals die op https://schema.org worden bepaald. Elke entiteit van het metamodel volgt het JSON-schemaobjecttype. De volgende code vertegenwoordigt een structuur van een metamodel van het steekproef:
 
@@ -385,7 +386,7 @@ In dit aangepaste metamodel gebruikt de conversieservice tekst binnen **name:aff
 
 #### Een tekstveld omzetten in een vervolgkeuzelijst in het aangepaste formulier {#convert-a-text-field-to-drop-down-list-in-the-adaptive-form}
 
-**Voorbeeld**: Zet het **landveld** van het type tekenreeks in het formulier om vóór de conversie naar vervolgkeuzemogelijkheden in het adaptieve formulier na conversie.
+**Voorbeeld**: Zet het **landveld** van het type tekenreeks in het formulier om vóór de conversie naar vervolgkeuzemogelijkheden in het aangepaste formulier na conversie.
 
 In dit aangepaste metamodel gebruikt de conversieservice tekst binnen **name:affKeyword** als zoektrefwoord. Nadat de **landtekst** in het formulier is opgehaald, converteert de conversieservice het veld naar de volgende opties in de vervolgkeuzelijst met behulp van de eigenschap **enum** :
 

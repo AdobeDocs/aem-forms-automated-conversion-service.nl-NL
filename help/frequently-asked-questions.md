@@ -7,9 +7,9 @@ uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 translation-type: tm+mt
-source-git-commit: b1df14a331dc4aef7ce6383dec0091fa6db1fd7b
+source-git-commit: 3b3bb98352e23544d32c39f0bfb5f0d9b7ae99cf
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1686'
 ht-degree: 5%
 
 ---
@@ -63,7 +63,7 @@ ht-degree: 5%
 
 1. **De service heeft formulieren niet geconverteerd. Wat is de reden en hoe moet dit probleem worden opgelost?**
 De meest voorkomende redenen voor het mislukken van de conversie zijn:</p>
-   * Voor de conversie zijn beveiligde PDF forms beschikbaar. Gebruik geen met wachtwoord beveiligde of beveiligde PDF forms voor conversie.
+   * Voor de conversie worden beveiligde PDF forms verstrekt. Gebruik geen met wachtwoord beveiligde of beveiligde PDF forms voor conversie.
    * De internetverbinding wordt onderbroken. Zorg ervoor dat u tijdens de conversie verbinding hebt met internet.
    * De bron-PDF heeft een afbeelding van het formulier in plaats van het daadwerkelijke formulier.
    * De service is onjuist geconfigureerd, de service-URL is niet opgegeven of de service-URL is onjuist. Controleer de [serviceconfiguratie](configure-service.md#configure-the-cloud-service) op **[!UICONTROL AEM]** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion configuration]**.
@@ -92,7 +92,7 @@ De meest voorkomende redenen voor het mislukken van de conversie zijn:</p>
    U kunt het metamodel gebruiken om de formulierobjecten toe te wijzen aan een aangepaste formuliercomponent van uw keuze en validaties, regels, gegevenspatronen, Help-tekst en toegankelijkheidseigenschappen voor de componenten vooraf te configureren. Alle opgegeven eigenschappen worden tijdens de conversie toegepast. U kunt het metamodel gebruiken om gemeenschappelijke eigenschappen op gebieden toe te passen. Hiermee kunt u bepaalde herhaalde problemen in verschillende formulieren verminderen.<br/><br/>
 
 1. **Wat zijn de opties voor formulieren met gevoelige gegevens, zoals PII-gegevens (Personal Identified Information)?**
-De service ondersteunt alleen lege of niet-ingevulde formulieren. Upload geen ingevulde formulieren of formulieren met persoonlijk identificeerbare gegevens (PII). Verwijder ook voorgevulde gegevens en witte PII, vertrouwelijke en eigen informatie in bronformulieren. <br/>
+De service ondersteunt alleen lege of niet-ingevulde formulieren. Upload geen ingevulde formulieren of formulieren met persoonlijk identificeerbare gegevens (PII). Verwijder ook voorgevulde gegevens, persoonlijk identificeerbare informatie (PII), vertrouwelijke informatie en merkgebonden informatie in bronformulieren. <br/>
 
 1. **Waar moeten de kop- en voetteksten worden geplaatst?**
    <p>Plaats de kop- en voettekst in een sjabloon voor aangepaste formulieren. Als het bron-PDF-formulier koptekst en voettekst bevat, detecteert en vervangt de service gedetecteerde kop- en voettekst door een kop- en voettekst die beschikbaar is in een adaptief formuliersjabloon tijdens de conversie. Als het aangepaste formulier een extra kop- of voettekst bevat, kunt u de editor <a href="review-correct-ui-edited.md">Reviseren en corrigeren</a> gebruiken om de kop- of voettekst te herstellen of te verwijderen.</p> <br />

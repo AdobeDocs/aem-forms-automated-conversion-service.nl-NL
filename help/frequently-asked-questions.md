@@ -7,7 +7,10 @@ uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 translation-type: tm+mt
-source-git-commit: 022b86b77c4a524f320cbcbcd6bad4403ddf57d8
+source-git-commit: b1df14a331dc4aef7ce6383dec0091fa6db1fd7b
+workflow-type: tm+mt
+source-wordcount: '1685'
+ht-degree: 5%
 
 ---
 
@@ -15,21 +18,21 @@ source-git-commit: 022b86b77c4a524f320cbcbcd6bad4403ddf57d8
 # Veelgestelde vragen{#frequently-asked-questions}
 
 1. **Welke versie van AEM Forms steunt de Geautomatiseerde dienst van de Omzetting van Vormen?**
-   <p>De geautomatiseerde dienst van de Omzetting van Vormen steunt Vormen AEM 6.4 en Vormen AEM 6.5. Het werkt met zowel AEM-formulieren op OSGi als AEM-formulieren op JEE. U hebt het nieuwste invoegpakket voor AEM Forms bovenop de AEM-auteurinstantie nodig om de service te kunnen gebruiken. Voor gedetailleerde instructies, zie de Geautomatiseerde dienst van de Omzetting <a href="configure-service.md">van Vormen</a> vormen.</p> 
+   <p>De geautomatiseerde dienst van de Omzetting van Vormen steunt Vormen AEM 6.4 en Vormen AEM 6.5. Het werkt met zowel AEM Forms op OSGi als AEM vormen op JEE. U hebt het nieuwste invoegpakket voor AEM Forms boven op de AEM-auteurinstantie nodig om de service te kunnen gebruiken. For detailed instructions, see <a href="configure-service.md">Configure the Automated Forms Conversion</a> service.</p> 
     <br>
 
 1. **Kan de dienst op-gebouw worden geïnstalleerd?**
    <p>Adobe traint regelmatig AI- en ML-algoritmen van de service Automated Forms Conversion met nieuwe gegevensset om de nauwkeurigheid van de conversie te verbeteren. De bijgewerkte algoritmen worden periodiek geïmplementeerd op de conversieservice die op Adobe Cloud wordt uitgevoerd. Alle klanten van de dienst worden geprofiteerd van de bijgewerkte algoritmen. Dus, de wolk-ontvangen centrale plaatsing is het best geschikt voor de Geautomatiseerde dienst van de Omzetting van Vormen om onophoudelijk verbeteringen aan alle klanten te leren en te leveren.</p> 
-    <p>De service converteert lege formulieren naar adaptieve formulieren. De service ondersteunt geen ingevulde formulieren en het ophalen van gegevens uit ingevulde formulieren. Gegevens uit ingevulde formulieren verwijderen en de door eigendomsrechten beschermde informatie uit de formulieren verwijderen of whitelist verwijderen voordat de formulieren ter conversie naar service worden gestuurd</p> <br>
+    <p>De service converteert lege formulieren naar adaptieve formulieren. De service ondersteunt geen ingevulde formulieren en het ophalen van gegevens uit ingevulde formulieren. Gegevens uit ingevulde formulieren verwijderen en eigen informatie uit de formulieren verwijderen of toestaan voordat de formulieren ter conversie naar de service worden verzonden</p> <br>
 
-1. **Biedt de service ondersteuning voor alle indelingen van PDF-formulieren? Welke talen worden ondersteund?**
-   <p>De service kan niet-interactieve PDF-formulieren, XDP- en PDF-formulieren op basis van XFA en AcroForms converteren naar adaptieve formulieren. De service ondersteunt geen gescande of ingevulde formulieren. Zie het <a href="known-issues.md">artikel over bekende problemen</a> voor andere beperkingen.<br /> </p> 
+1. **Steunt de dienst alle formaten van PDF forms? Welke talen worden ondersteund?**
+   <p>De service kan niet-interactieve PDF forms, XDP en PDF forms op basis van XFA en AcroForms converteren naar adaptieve formulieren. De service ondersteunt geen gescande of ingevulde formulieren. Zie het <a href="known-issues.md">artikel over bekende problemen</a> voor andere beperkingen.<br /> </p> 
     <p>Wij voegen regelmatig steun voor andere brontypes toe. Houd de sectie <a href="introduction.md">supportedPDF-formulieren</a> op uw controlelijst voor een regelmatige update van nieuw toegevoegde functies en mogelijkheden.</p>
 
-   De service kan alleen Engelstalige formulieren converteren naar adaptieve formulieren. U kunt de gegenereerde adaptieve formulieren naar een andere taal vertalen met behulp van de [AEM-vertaalworkflow.](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> </br>
+   De service kan alleen Engelstalige formulieren converteren naar adaptieve formulieren. U kunt de gegenereerde adaptieve formulieren naar een andere taal vertalen met de [AEM-vertaalworkflow.](https://helpx.adobe.com/nl/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> </br>
 
 1. **Kan de service een XDP produceren in plaats van een adaptief formulier?**
-   <p>De service produceert geen XDP-uitvoer. Wij voegen regelmatig eigenschappen en aan de dienst toe. Houd de <a href="introduction.md">ondersteunde talen en de sectie PDF-formulieren</a> op uw controlelijst voor een regelmatige update van nieuwe functies en mogelijkheden.</p> <br>
+   <p>De service produceert geen XDP-uitvoer. Wij voegen regelmatig eigenschappen en aan de dienst toe. Houd de <a href="introduction.md">ondersteunde talen en PDF forms</a> op uw controlelijst voor een regelmatige update van nieuw toegevoegde functies en mogelijkheden.</p> <br>
 
 1. **Wat is het type gegenereerd schema?**
    <p>U kunt de service gebruiken om het volgende te genereren: </p>
@@ -41,16 +44,16 @@ source-git-commit: 022b86b77c4a524f320cbcbcd6bad4403ddf57d8
    <p>Nee, de service converteert een Microsoft Word-formulier niet naar een adaptief formulier. U kunt een Microsoft Word-formulier opslaan als PDF-formulier en het PDF-formulier converteren naar een adaptief formulier. Het volledige proces is </p> <br>
 
    1. Met Adobe Acrobat kunt u Word-document [converteren naar een niet-interactieve PDF](https://helpx.adobe.com/acrobat/how-to/create-pdf-files-word-excel-website.html).
-   1. Met Adobe Acrobat kunt u de geproduceerde PDF-formulieren [converteren naar invulbaar PDF-formulier](https://helpx.adobe.com/acrobat/how-to/convert-word-excel-paper-pdf-forms.html).
+   1. Met Adobe Acrobat kunt u de geproduceerde PDF forms [converteren naar een invulbaar PDF-formulier](https://helpx.adobe.com/acrobat/how-to/convert-word-excel-paper-pdf-forms.html).
    1. Met Adobe Acrobat kunt u formuliervelden handmatig bijwerken en corrigeren.
    1. Sla het PDF-formulier op. Nu kunt u het formulier met de conversieservice gebruiken om een adaptief formulier te genereren. U kunt het formulier ook gebruiken als Document of Record-sjabloon.
 
 
 1. **Kan de service gescande papieren formulieren en gekleurde formulieren converteren naar adaptieve formulieren?**
-   <p>De service kan PDF-formulieren converteren naar adaptieve formulieren. De service ondersteunt geen gescande of ingevulde formulieren. Zie het <a href="known-issues.md">artikel over bekende problemen</a> voor andere beperkingen.</p> <br>
+   <p>De service kan PDF forms omzetten in adaptieve formulieren. De service ondersteunt geen gescande of ingevulde formulieren. Zie het <a href="known-issues.md">artikel over bekende problemen</a> voor andere beperkingen.</p> <br>
 
 1. **Kan de service een gescand formulier of alleen een afbeelding van een formulier converteren naar een adaptief formulier?**
-   <p>De service biedt geen ondersteuning voor het converteren van gescande formulieren of een afbeelding van een formulier naar een adaptieve out-of-the-box. Met Adobe Acrobat kunt u de afbeelding van een formulier echter converteren naar een PDF-formulier. Gebruik vervolgens de service om het PDF-formulier te converteren naar een adaptief formulier. Gebruik altijd een afbeelding van hoge kwaliteit van het formulier voor conversie in Acrobat. Het verbetert de kwaliteit van de omzetting.</p> <br>
+   <p>De service biedt geen ondersteuning voor het converteren van gescande formulieren of een afbeelding van een formulier naar een adaptieve out-of-the-box. Met Adobe Acrobat kunt u de afbeelding van een formulier echter converteren naar een PDF-formulier. Gebruik vervolgens de service om het PDF-formulier naar een adaptief formulier te converteren. Zorg dat de afbeelding van het formulier altijd van hoge kwaliteit is als u het wilt converteren in Acrobat. Dit verbetert de kwaliteit van de conversie.</p> <br>
 
 1. **Sommige op XDP gebaseerde formulieren gebruiken formulierfragmenten, waar moeten deze formulierfragmenten worden geüpload?**
    <p class="MsoNormal">Upload formulierfragmenten naar de conversiemap en zorg dat de oorspronkelijke mapstructuur behouden blijft. Relatieve paden die worden gebruikt in op XDP gebaseerde formulieren en formulierfragmenten, blijven behouden.</p> <br>
@@ -60,7 +63,7 @@ source-git-commit: 022b86b77c4a524f320cbcbcd6bad4403ddf57d8
 
 1. **De service heeft formulieren niet geconverteerd. Wat is de reden en hoe moet dit probleem worden opgelost?**
 De meest voorkomende redenen voor het mislukken van de conversie zijn:</p>
-   * Beveiligde PDF-formulieren worden meegeleverd bij de conversie. Gebruik geen met wachtwoord beveiligde of beveiligde PDF-formulieren voor conversie.
+   * Voor de conversie zijn beveiligde PDF forms beschikbaar. Gebruik geen met wachtwoord beveiligde of beveiligde PDF forms voor conversie.
    * De internetverbinding wordt onderbroken. Zorg ervoor dat u tijdens de conversie verbinding hebt met internet.
    * De bron-PDF heeft een afbeelding van het formulier in plaats van het daadwerkelijke formulier.
    * De service is onjuist geconfigureerd, de service-URL is niet opgegeven of de service-URL is onjuist. Controleer de [serviceconfiguratie](configure-service.md#configure-the-cloud-service) op **[!UICONTROL AEM]** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion configuration]**.
@@ -69,7 +72,7 @@ De meest voorkomende redenen voor het mislukken van de conversie zijn:</p>
       2. Selecteer de configuratie. Klik op de **[!UICONTROL Check Health]** knop in de koptekst en klik op **[!UICONTROL Check]**. Als dit gelukt is, krijgt u een **[!UICONTROL Token retrieved successfully!]** bericht. <br> <br>
 
 1. **Heeft het gebruik van aangepaste lettertypen invloed op de conversie?**
-   <p>Wanneer een niet-interactief PDF-formulier wordt geconverteerd naar een adaptief formulier, worden de fonts ingesloten in het PDF-formulier om de conversiekwaliteit te verbeteren. De ondersteuning voor het insluiten van lettertypen is beperkt tot niet-interactieve PDF-formulieren. Voor een optimale conversie van PDF-formulieren op basis van AcroForm en XFA worden fallback-fonts gebruikt.</p> 
+   <p>Wanneer een niet-interactief PDF-formulier wordt geconverteerd naar een adaptief formulier, worden de fonts ingesloten in het PDF-formulier om de conversiekwaliteit te verbeteren. De ondersteuning voor het insluiten van lettertypen is beperkt tot niet-interactieve PDF forms. Voor een optimale conversie van op AcroForm en XFA gebaseerde PDF forms worden fallback-lettertypen gebruikt.</p> 
     <p>Alleen formulieren die beschikbaar zijn in de map met aangepaste lettertypen die wordt vermeld in het directoryveld <strong>voor</strong> klantlettertypen van de configuratie <strong> CQ-DAM-Handler-Gibson Font Manager Service</strong> , worden ingesloten in een niet-interactief PDF-formulier.</p> 
     <p> </p> <br>
 
@@ -95,10 +98,11 @@ De service ondersteunt alleen lege of niet-ingevulde formulieren. Upload geen in
    <p>Plaats de kop- en voettekst in een sjabloon voor aangepaste formulieren. Als het bron-PDF-formulier koptekst en voettekst bevat, detecteert en vervangt de service gedetecteerde kop- en voettekst door een kop- en voettekst die beschikbaar is in een adaptief formuliersjabloon tijdens de conversie. Als het aangepaste formulier een extra kop- of voettekst bevat, kunt u de editor <a href="review-correct-ui-edited.md">Reviseren en corrigeren</a> gebruiken om de kop- of voettekst te herstellen of te verwijderen.</p> <br />
 
 1. **Hoeveel tijd bespaart de dienst in vergelijking met het handproces om activa (thema&#39;s, malplaatjes) te plannen, te creëren, en het publiceren van een adaptief vorm?**
-   <p>De hoeveelheid tijd is afhankelijk van de grootte en complexiteit van invoerformulieren en het aantal aanvragen. De service is bedoeld om de tijd die nodig is om waarde te verhogen aanzienlijk te verminderen door PDF-formulieren in veel sneller tempo te converteren naar adaptieve formulieren dan bij het handmatig converteren van formulieren. </p> <br />
+   <p>De hoeveelheid tijd is afhankelijk van de grootte en complexiteit van invoerformulieren en het aantal aanvragen. De service is van plan de tijd die nodig is om waarde te bereiken aanzienlijk te beperken door PDF forms in veel sneller tempo om te zetten in adaptieve formulieren dan bij het handmatig converteren van formulieren. </p> <br />
 
 1. **Wat te doen als ik een fout met betrekking tot bibliotheken RSA ontmoet? Het foutbericht is vergelijkbaar met het onderstaande bericht:** <br/>
-   `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&amp;lt;init&amp;gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>De bovengenoemde fout komt voor wanneer de laarsdelegatie niet voor bibliotheken RSA/BouncyCastle wordt gevormd. Voer de volgende stappen uit om het probleem op te lossen:
+   `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&amp;lt;init&amp;gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>
+De bovengenoemde fout komt voor wanneer de laarsdelegatie niet voor bibliotheken RSA/BouncyCastle wordt gevormd. Voer de volgende stappen uit om het probleem op te lossen:
    <p> </p>
 
    1. Stop de AEM-instantie. Navigate to the `[AEM installation directory]\crx-quickstart\conf\` folder. Open het bestand sling.properties voor bewerking. Als u een AEM-instantie start `[AEM installation directory]\crx-quickstart\bin\start.bat` , bewerkt u de eigenschappen sling.properties op `[AEM_root]\crx-quickstart\`.

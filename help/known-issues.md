@@ -7,9 +7,9 @@ uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
 translation-type: tm+mt
-source-git-commit: 902131e27d458b88f7f5c5f85c90de89f77e4bd7
+source-git-commit: 1c48cc1b271bfea19ac2394eaf40be21060a349e
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '774'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ Voordat u de service AEM Forms Automated Forms Conversion gaat gebruiken, moet u
    * Biedt geen ondersteuning voor herhaalbare deelvensters voor op XFA gebaseerde formulieren.
    * Als u een lijst in een lijst gebruikend de Redacteur van het Overzicht en van de Correctie wijzigt, past de rijbreedte niet automatisch aan en de tekst zou over aan de volgende rij van de lijst kunnen spill.
    * De **[!UICONTROL Auto-detect multi-column layout from input forms]** functie werkt niet met Revisie en Juiste editor en Formulierfragmenten.
-   * Krabbelhandtekening die is gemaakt met de redacteur voor revisie en correctie, wordt niet geladen in gepubliceerde adaptieve formulieren. Gebruikers kunnen geen adaptief formulier ondertekenen met dergelijke componenten voor krabbelhandtekeningen.
+   * De scripthandtekening die is gemaakt met de redacteur voor revisie en correctie kan niet worden geladen voor gepubliceerde adaptieve formulieren.
 
 
 * Voor XFA-formulieren:

@@ -8,9 +8,9 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: 019ae541117f037f11703a88162ec3ab4cb67947
+source-git-commit: 5fdf997fdde07cc4546accebddb85a248f36e057
 workflow-type: tm+mt
-source-wordcount: '1480'
+source-wordcount: '1477'
 ht-degree: 8%
 
 ---
@@ -24,7 +24,7 @@ AEM Forms Automated Forms Conversion Service, aangedreven door Adobe Sensei, zet
 
 * [**De conversieservice configureren **](configure-service.md)
 
-* **De[sjablonen](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)voorbereiden die op geconverteerde formulieren moeten worden toegepast:** Met behulp van een sjabloon kunt u consistente branding toepassen op alle adaptieve formulieren. Bovendien worden met de service Automated Forms Conversion geen kop- en voettekst van PDF-brondocumenten geëxtraheerd en gebruikt. U kunt adaptieve formuliersjablonen gebruiken om kop- en voettekst op te geven. De kop- en voettekst die in de sjabloon is opgegeven, worden tijdens de conversie op het adaptieve formulier toegepast. Wanneer u een omslag voor de malplaatjes creeert, selecteer de controle doorbladert de optie van de Configuratie **[!UIC]** voor iedereen.
+* **De[sjablonen](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)voorbereiden die op geconverteerde formulieren moeten worden toegepast:** Met behulp van een sjabloon kunt u consistente branding toepassen op alle adaptieve formulieren. Bovendien worden met de service Automated Forms Conversion geen kop- en voettekst van PDF-brondocumenten geëxtraheerd en gebruikt. U kunt adaptieve formuliersjablonen gebruiken om kop- en voettekst op te geven. De kop- en voettekst die in de sjabloon is opgegeven, worden tijdens de conversie op het adaptieve formulier toegepast. Wanneer u een map voor de sjablonen maakt, selecteert u de **[!UICONTROL Browse configurations]** optie voor iedereen.
 
 * **Bereid de[thema](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html)&#39;s voor die op geconverteerde formulieren moeten worden toegepast:** Met een thema kunt u een consistente stijl toepassen op alle adaptieve vormen van uw organisatie.
 

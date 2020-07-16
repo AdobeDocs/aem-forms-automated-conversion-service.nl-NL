@@ -2,9 +2,9 @@
 title: Wat is er nieuw? Releaseopmerkingen - Service voor automatische conversie van formulieren
 description: 'Kom meer te weten over de nieuwste functies en bugfixes voor de service voor automatische conversie van formulieren '
 translation-type: tm+mt
-source-git-commit: 9fe3de9decbebc66c07d99b21424e3183599c64a
+source-git-commit: caa019d1a7dd1968a52df5ec5be4755e1c6c4ee6
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '326'
 ht-degree: 94%
 
 ---
@@ -28,7 +28,7 @@ De service voor automatische conversie van formulieren wordt voortdurend verbete
 
 ### Wat is er verbeterd?
 
-Verbetering in de automatische conversie van tekst-, formulier- en keuzegroepen naar overeenkomende adaptieve formuliercomponenten.
+Verbeteringen in de automatische conversie van tekst-, formulier- en keuzegroepen naar overeenkomende adaptieve formuliercomponenten.
 
 ## 20 maart 2020 (AFC-2020.03.1)
 

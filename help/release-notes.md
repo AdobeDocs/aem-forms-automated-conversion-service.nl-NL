@@ -2,10 +2,10 @@
 title: Wat is er nieuw? Releaseopmerkingen - Service voor automatische conversie van formulieren
 description: 'Kom meer te weten over de nieuwste functies en bugfixes voor de service voor automatische conversie van formulieren '
 translation-type: tm+mt
-source-git-commit: caa019d1a7dd1968a52df5ec5be4755e1c6c4ee6
+source-git-commit: 1c6bdd03d5a3ac37a11a31e5c7948c28412b67aa
 workflow-type: tm+mt
 source-wordcount: '326'
-ht-degree: 94%
+ht-degree: 92%
 
 ---
 
@@ -46,7 +46,7 @@ De service kan nu efficiënter lijsten met opsommingstekens en genummerde lijste
 
 ### Speciale instructies
 
-**Connectorpakket voor de service voor automatische conversie van formulieren installeren**
+**Verbindingspakket voor automatische Forms Conversion Service installeren**
 
 U hebt het connectorpakket 1.1.38 of hoger nodig om de nieuwste functies en verbeteringen van de release AFC-2020.03.1 te gebruiken. U kunt het connectorpakket downloaden via [AEM Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1).
 

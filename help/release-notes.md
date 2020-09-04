@@ -46,7 +46,7 @@ De service kan nu efficiënter lijsten met opsommingstekens en genummerde lijste
 
 ### Speciale instructies
 
-**Verbindingspakket voor automatische Forms Conversion Service installeren**
+**Automatisch Forms Conversion Service-aansluitpakket installeren**
 
 U hebt het connectorpakket 1.1.38 of hoger nodig om de nieuwste functies en verbeteringen van de release AFC-2020.03.1 te gebruiken. U kunt het connectorpakket downloaden via [AEM Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1).
 

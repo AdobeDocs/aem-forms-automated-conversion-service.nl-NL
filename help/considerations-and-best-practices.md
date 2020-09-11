@@ -10,9 +10,9 @@ discoiquuid: b786e40a-202e-4e17-a2f5-1f77c46538c2
 privatebeta: true
 index: false
 translation-type: tm+mt
-source-git-commit: 356eb083b889a1bf151c32bc5f01a6d263b96274
+source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '555'
 ht-degree: 6%
 
 ---
@@ -20,26 +20,13 @@ ht-degree: 6%
 
 # [Best practices en overwegingen NIET publiceren] {#do-not-publish-best-practices-and-considerations}
 
-Met de service AEM Forms Geautomatiseerde conversie wordt een PDF-formulier geconverteerd naar een adaptief formulier. De service gebruikt kunstmatige intelligentie en computerleeralgoritmen om de indeling en velden van het bronformulier te begrijpen. Elke computerleerservice leert voortdurend van brongegevens en produceert een verbeterde uitvoer bij elke klus. Deze diensten leren van ervaringen als mensen.
+AEM Forms Automated Conversion-service converteert een PDF-formulier naar een adaptief formulier. De service gebruikt kunstmatige intelligentie en computerleeralgoritmen om de indeling en velden van het bronformulier te begrijpen. Elke computerleerservice leert voortdurend van brongegevens en produceert een verbeterde uitvoer bij elke klus. Deze diensten leren van ervaringen als mensen.
 
-De service Automated Forms Conversion wordt getraind op een groot aantal formulieren. Het identificeert gemakkelijk gebieden in een bronvorm en produceert adaptieve vormen. Er zijn echter enkele velden en stijlen in PDF forms die gemakkelijk zichtbaar zijn voor het oog, maar moeilijk te begrijpen zijn voor de service. De service kan verschillende veldtypen of deelvensters toewijzen aan bepaalde velden of stijlen. Alle dergelijke veld- en stijlpatronen worden hieronder weergegeven.
+De geautomatiseerde Forms Conversion-service is opgeleid voor een groot aantal formulieren. Het identificeert gemakkelijk gebieden in een bronvorm en produceert adaptieve vormen. Er zijn echter enkele velden en stijlen in PDF forms die gemakkelijk zichtbaar zijn voor het oog, maar moeilijk te begrijpen zijn voor de service. De service kan verschillende veldtypen of deelvensters toewijzen aan bepaalde velden of stijlen. Alle dergelijke veld- en stijlpatronen worden hieronder weergegeven.
 
 De dienst zou beginnen correcte gebieden of panelen aan deze patronen te identificeren en toe te wijzen aangezien het het leren van de brongegevens houdt. Voorlopig kunt u de [redacteur van het Overzicht en van het Correct](review-correct-ui-edited.md) gebruiken om dergelijke kwesties te bevestigen. Voordat u de problemen gaat verhelpen of verder gaat lezen, moet u vertrouwd zijn met [adaptieve formuliercomponenten](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html).
 
 ## Algemeen {#general}
-
-<!--
-Comment Type: draft
-
-<ul>
-<li>Service does not convert filled PDF forms to adaptive form. Use empty adaptive forms.Service does not convert colored PDF forms to adaptive form. Use  and white or grayscale adaptive forms. <br /> </li>
-<li>Service does not convert filled PDF forms to adaptive form. Use empty adaptive forms.</li>
-<li>Service does not support scanned forms. Do not use scanned forms. </li>
-<li>Service can fail to recognize text and fields in a dense form. Increase the width between text and fields of a dense form before starting the conversion.</li>
-<li>Service does not extract images. Manually add images to converted forms.</li>
-<li>Service does not extract text present within an image. Manually add text to the adaptive form.</li>
-</ul>
--->
 
 <table border="1" cellpadding="1" cellspacing="0" style="border-collapse: separate; border-spacing: 0px;" width="100%"> 
  <tbody>
@@ -47,11 +34,6 @@ Comment Type: draft
    <td width="30%">Bekende patronen en resolutie</td> 
    <td width="70%">Voorbeeld</td> 
   </tr>
-  <tr>
-   <td><p><strong>Patroon</strong></p> <p>De service zet gekleurde PDF forms niet om in een adaptieve vorm.</p> <p> </p> <p><strong>Resolutie</strong></p> <p>Gebruik PDF forms in zwart-wit of grijswaarden. </p> </td> 
-   <td style="text-align: left;"> <img src="assets/coloured-form.png" /></td> 
-  </tr>
-  <tr>
    <td><p><strong>Patroon</strong></p> <p>Service zet gevulde PDF forms niet om in een adaptieve vorm.</p> <p> </p> <p><strong>Resolutie</strong></p> <p>Gebruik lege adaptieve formulieren.</p> </td> 
    <td style="text-align: left;"><img src="assets/pre-filled-form.png" /></td> 
   </tr>

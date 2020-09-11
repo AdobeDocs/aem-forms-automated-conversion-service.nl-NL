@@ -2,10 +2,10 @@
 title: Wat is er nieuw? Releaseopmerkingen - Service voor automatische conversie van formulieren
 description: 'Kom meer te weten over de nieuwste functies en bugfixes voor de service voor automatische conversie van formulieren '
 translation-type: tm+mt
-source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
+source-git-commit: bf14583de678ef963b0f2084c3da4624c9304b30
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 88%
+source-wordcount: '338'
+ht-degree: 89%
 
 ---
 
@@ -28,7 +28,7 @@ De service voor automatische conversie van formulieren wordt voortdurend verbete
 
 ### Nieuwe functies
 
-U kunt de service nu ook gebruiken om gekleurd PDF-formulier te converteren naar adaptieve formulieren.
+Toegevoegde ondersteuning voor het converteren van gekleurd PDF-formulier naar adaptieve formulieren.
 
 ### Wat is er verbeterd?
 

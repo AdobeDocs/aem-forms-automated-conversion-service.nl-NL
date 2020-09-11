@@ -2,21 +2,21 @@
 title: Bekende problemen
 seo-title: Bekende problemen
 description: bekende problemen en beperkingen voor Automated Forms Conversion Service
-seo-description: Voordat u de service AEM Forms Automated Forms Conversion gaat gebruiken, moet u meer weten over de bekende problemen en beperkingen van de service
+seo-description: Voordat u de AEM Forms Automated Forms Conversion-service gaat gebruiken, dient u meer te weten te komen over de bekende problemen en beperkingen van de service
 uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
 translation-type: tm+mt
-source-git-commit: 1c48cc1b271bfea19ac2394eaf40be21060a349e
+source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '768'
 ht-degree: 1%
 
 ---
 
 # Bekende problemen en beperkingen {#known-issues-limitations}
 
-Voordat u de service AEM Forms Automated Forms Conversion gaat gebruiken, moet u de volgende bekende problemen en beperkingen controleren:
+Voordat u AEM Forms Automated Forms Conversion Service gaat gebruiken, moet u de volgende bekende problemen en beperkingen controleren:
 
 ## Known issues {#known-issues}
 
@@ -27,7 +27,7 @@ Voordat u de service AEM Forms Automated Forms Conversion gaat gebruiken, moet u
    * Heeft geen handeling voor ongedaan maken. Met de knop Opslaan worden de wijzigingen permanent opgeslagen.
    * Biedt geen ondersteuning voor herhaalbare deelvensters voor op XFA gebaseerde formulieren.
    * Als u een lijst in een lijst gebruikend de Redacteur van het Overzicht en van de Correctie wijzigt, past de rijbreedte niet automatisch aan en de tekst zou over aan de volgende rij van de lijst kunnen spill.
-   * De **[!UICONTROL Auto-detect multi-column layout from input forms]** functie werkt niet met Revisie en Juiste editor en Formulierfragmenten.
+   * De **[!UICONTROL Auto-detect multi-column layout from input forms]** functie werkt niet met Revisie- en correctiefunctie en Form Fragments.
    * De scripthandtekening die is gemaakt met de redacteur voor revisie en correctie kan niet worden geladen voor gepubliceerde adaptieve formulieren.
 
 
@@ -69,12 +69,12 @@ Voordat u de service AEM Forms Automated Forms Conversion gaat gebruiken, moet u
 
 ## Beperkingen {#limitations}
 
-* PDF forms met een complexe dynamische indeling, velden met gestippelde omtrek, gevulde velden of gekleurde velden worden niet ondersteund.
+* PDF forms met een complexe dynamische indeling, velden met gestippelde omtrek of gevulde velden worden niet ondersteund.
 * Afbeeldingen en tekst in de afbeeldingen worden niet geïdentificeerd. Voeg handmatig afbeeldingen toe aan geconverteerde formulieren.
 * XDP-illustraties worden niet ondersteund.
 * PDF forms die groter zijn dan 15 pagina&#39;s, worden niet ondersteund.
 * Gecodeerde, met een wachtwoord beveiligde en beveiligde documenten worden niet geconverteerd. Verwijder codering of wachtwoorden voordat u de conversie uitvoert.
-* Complexe tabellen, zoals tabellen zonder kader, geneste tabellen, tabellen met gekleurde rijen en tabellen met plaatsaanduidingswaarden, worden niet ondersteund. Gebruik de aangepaste formuliereditor om na de conversie complexe tabellen toe te voegen of te wijzigen. Alleen eenvoudige tabellen met lege velden, juiste kopteksten en duidelijke grenzen worden ondersteund.
+* Complexe tabellen, zoals tabellen zonder kader, geneste tabellen en tabellen met plaatsaanduidingswaarden, worden niet ondersteund. Gebruik de aangepaste formuliereditor om na de conversie complexe tabellen toe te voegen of te wijzigen. Alleen eenvoudige tabellen met lege velden, juiste kopteksten en duidelijke grenzen worden ondersteund.
 * De service converteert alleen Engelstalige formulieren naar adaptieve formulieren. You can translate converted adaptive forms to another language using [AEM translation workflow](https://helpx.adobe.com/nl/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
-* AEM 6.4 Forms ondersteunt geen automatische detectie van de layout van meerdere kolommen van invoerformulieren.
+* AEM 6.4 Forms biedt geen ondersteuning voor automatische detectie van meerkolomindeling van invoerformulieren.
 

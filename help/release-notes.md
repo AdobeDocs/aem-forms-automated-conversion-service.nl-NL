@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 9b904622fcf421d82a183569d915926a2761d3f5
 workflow-type: tm+mt
 source-wordcount: '338'
-ht-degree: 89%
+ht-degree: 96%
 
 ---
 
@@ -32,7 +32,7 @@ Extra ondersteuning voor het converteren van gekleurde PDF forms naar adaptieve 
 
 ### Wat is er verbeterd?
 
-Verbeteringen in de automatische conversie van tekst-, formulier- en keuzegroepen naar overeenkomende adaptieve formuliercomponenten.
+Verbeteringen voor automatische conversie van tekst-, formulier- en keuzegroepvelden naar overeenkomende componenten voor adaptieve formulieren.
 
 
 ## 20 maart 2020 (AFC-2020.03.1)
@@ -51,7 +51,7 @@ De service kan nu efficiënter lijsten met opsommingstekens en genummerde lijste
 
 ### Speciale instructies
 
-**Automatisch Forms Conversion Service-aansluitpakket installeren**
+**Connectorpakket voor de service voor automatische conversie van formulieren installeren**
 
 U hebt het connectorpakket 1.1.38 of hoger nodig om de nieuwste functies en verbeteringen van de release AFC-2020.03.1 te gebruiken. U kunt het connectorpakket downloaden via [AEM Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1).
 

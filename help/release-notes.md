@@ -1,11 +1,11 @@
 ---
 title: Wat is er nieuw? Releaseopmerkingen - Service voor automatische conversie van formulieren
 description: 'Kom meer te weten over de nieuwste functies en bugfixes voor de service voor automatische conversie van formulieren '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9b904622fcf421d82a183569d915926a2761d3f5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '338'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -26,9 +26,9 @@ De service voor automatische conversie van formulieren wordt voortdurend verbete
 
 ## 16 juli 2020 (AFC-2020.07.0)
 
-### Nieuwe functies
+### Wat is er nieuw?
 
-Extra ondersteuning voor het converteren van gekleurde PDF forms naar adaptieve formulieren.
+Ondersteuning toegevoegd voor het converteren van gekleurde PDF-formulieren naar adaptieve formulieren.
 
 ### Wat is er verbeterd?
 

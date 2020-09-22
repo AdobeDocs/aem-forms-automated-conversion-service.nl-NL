@@ -1,6 +1,5 @@
 ---
-title: '[NIET PUBLICEREN] Tips en trucs '
-seo-title: '[NIET PUBLICEREN] Tips en trucs '
+title: 'Best practices en overwegingen '
 description: 'null'
 seo-description: 'null'
 page-status-flag: never-activated
@@ -10,15 +9,19 @@ discoiquuid: b786e40a-202e-4e17-a2f5-1f77c46538c2
 privatebeta: true
 index: false
 translation-type: tm+mt
-source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
+source-git-commit: bc7a0a86a211214d6e43e7c95809f6f40fe267f8
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 6%
+source-wordcount: '542'
+ht-degree: 8%
 
 ---
 
 
-# [Best practices en overwegingen NIET publiceren] {#do-not-publish-best-practices-and-considerations}
+# Best practices en overwegingen {#do-not-publish-best-practices-and-considerations}
+
+<!--
+[DO NOT PUBLISH]
+-->
 
 AEM Forms Automated Conversion-service converteert een PDF-formulier naar een adaptief formulier. De service gebruikt kunstmatige intelligentie en computerleeralgoritmen om de indeling en velden van het bronformulier te begrijpen. Elke computerleerservice leert voortdurend van brongegevens en produceert een verbeterde uitvoer bij elke klus. Deze diensten leren van ervaringen als mensen.
 

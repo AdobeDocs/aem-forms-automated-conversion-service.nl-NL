@@ -7,10 +7,10 @@ uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 translation-type: tm+mt
-source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
+source-git-commit: 14e6d1fba9f27fde4fe24de83cb00c9847ea4e90
 workflow-type: tm+mt
-source-wordcount: '1709'
-ht-degree: 5%
+source-wordcount: '1822'
+ht-degree: 4%
 
 ---
 
@@ -132,4 +132,11 @@ De bovengenoemde fout komt voor wanneer de laarsdelegatie niet voor bibliotheken
    <br/>
 
 1. **Hoe wijzigt u automatisch het omhulsel van adaptieve formuliertekst?**
+
    <p>U kunt adaptief vanuit thema's of stijleditor gebruiken om de behuizing van een veld met een adaptief formulier te wijzigen. U kunt bijvoorbeeld de themaeditor openen en de waarde van de eigenschap Case van alle tekst van het formulier instellen op hoofdletters, kleine letters of hoofdletters. U kunt ook de optie CSS overschrijven in de themaeditor gebruiken om verschillende typen stijlen te maken.</p>
+
+1. **Kan ik Adobe Sign-teksttags gebruiken met de Automated Forms Conversion-service?**
+
+   <p> Wanneer u de Automated Forms Conversion Service gebruikt om een PDF-formulier te converteren naar een adaptief formulier en het PDF-formulier heeft Adobe Sign-tekstcodes, worden deze codes geconverteerd naar de bijbehorende adaptieve formuliervelden en worden de ondertekenaardetails automatisch ingevuld.  Deze functie is alleen beschikbaar voor Acro Forms en adaptieve formulieren ondersteunen een beperkt aantal Adobe Sign-velden.</p>  </br>
+
+   <p> Voor de volledige lijst met ondersteunde codes opent u een formulier in de editor voor adaptieve formulieren en voegt u een Adobe Sign-blok toe. Gebruik Adobe Sign-blok om alle ondersteunde Adobe Sign-velden te zoeken. Er wordt een vervolgkeuzelijst weergegeven waarin alle ondersteunde velden worden geselecteerd.</p>

@@ -8,9 +8,9 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: 14e6d1fba9f27fde4fe24de83cb00c9847ea4e90
+source-git-commit: fa8a27021fbccdd1c6c0721a6e5c032db486e262
 workflow-type: tm+mt
-source-wordcount: '1579'
+source-wordcount: '1585'
 ht-degree: 7%
 
 ---
@@ -30,8 +30,8 @@ AEM Forms Automated Forms Conversion Service, aangedreven door Adobe Sensei, zet
 
 * **Adobe Sign-tekstcodes toevoegen aan bron-PDF-documenten:** Als het PDF-bronformulier [Adobe Sign-tekstcodes](https://helpx.adobe.com/sign/using/text-tag.html)heeft, worden deze codes automatisch geconverteerd naar de bijbehorende aangepaste formuliervelden en worden de ondertekenaardetails automatisch ingevuld. Deze functie is alleen beschikbaar voor AcroForms en adaptieve formulieren ondersteunen een beperkt aantal Adobe Sign-velden.
 
-
-   Voor de volledige lijst met ondersteunde codes opent u een formulier in de editor voor adaptieve formulieren en voegt u een Adobe Sign-blok toe. Gebruik Adobe Sign-blok om alle ondersteunde Adobe Sign-velden te zoeken. Er wordt een vervolgkeuzelijst weergegeven waarin alle ondersteunde velden worden geselecteerd.
+   </br>
+    Het adaptieve formulier ondersteunt alleen: handtekening, tekst, nummer, datum, vervolgkeuzelijst, keuzerondje, selectievakje, initiaal, handtekeningblok, digitale handtekening, de titel van de ondertekenaar, e-mail van de ondertekenaar, bedrijf van de ondertekenaar, datum van ondertekening en Adobe Sign-velden met de volledige naam van de ondertekenaar. De service converteert tekstcodes van alleen de bovengenoemde velden naar overeenkomende aangepaste formuliervelden.
 
 ## Het conversieproces starten {#start-the-conversion-process}
 

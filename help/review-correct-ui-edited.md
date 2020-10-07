@@ -1,13 +1,16 @@
 ---
 title: Geconverteerde formulieren controleren en corrigeren
 seo-title: Geconverteerde formulieren controleren en corrigeren
-description: Controleer en corrigeer de adaptieve formulieren die door de service Automated Forms Conversion zijn geconverteerd.
-seo-description: De adaptieve formulieren die zijn geconverteerd door de service Automated Forms Conversion controleren en corrigeren
+description: Controleer en corrigeer de adaptieve formulieren die door de Automated Forms Conversion-service zijn geconverteerd.
+seo-description: De adaptieve formulieren die zijn geconverteerd door de Automated Forms Conversion-service controleren en corrigeren
 uuid: 5a0a6d24-dff6-4732-b607-24848b07b26d
 topic-tags: forms
 discoiquuid: f45ab2d7-5234-42d6-aeb6-b2cb1a7ce3c2
 translation-type: tm+mt
-source-git-commit: 3303c72b7d644dd183c036ba3cc48e629a9a503e
+source-git-commit: 3c12751cad2b3c04ad66a98ac17f20f648530d0f
+workflow-type: tm+mt
+source-wordcount: '2536'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ De AEM Forms Automated Forms Conversion-service identificeert velden, inhoud en 
 * Verifieer de geïdentificeerde lijsten, resize de kolommen, en wijzig celinhoud
 * Onjuist geïdentificeerde velden verwijderen
 
-Nadat u de vereiste wijzigingen hebt aangebracht, verzendt u de PDF-formulieren opnieuw naar de conversieservice. Als de conversie is voltooid, worden bijgewerkte elementen, waaronder het adaptieve formulier en schema, gedownload naar uw AEM Forms-instantie. U kunt het proces herhalen totdat de gewenste ervaring is opgedaan. ![](assets/stages-of-form-2.gif)
+Nadat u de vereiste wijzigingen hebt aangebracht, stuurt u de PDF forms opnieuw naar de conversieservice. Als de conversie is gelukt, worden bijgewerkte elementen, waaronder het adaptieve formulier en schema, naar uw AEM Forms-exemplaar gedownload. U kunt het proces herhalen totdat de gewenste ervaring is opgedaan. ![](assets/stages-of-form-2.gif)
 
 U hebt de browser Google Chrome, Mozilla FireFox of Microsoft Edge nodig om de revisie en juiste editor te kunnen gebruiken. De editor biedt geen ondersteuning voor Internet Explorer.
 
@@ -42,7 +45,7 @@ De redacteur van het Overzicht en van het Correct verstrekt een gemakkelijk te g
 
 ![Gebruikersinterface controleren en corrigeren](assets/reviewcorrectui.png)
 
-**************A. Inhoudsbrowser** B. Eigenschappenbrowser **C.** Werkbalk **D. Knop Eigenschappen** E. Filterknop **F. Opslaan, knop** G. PDF-formulier dat is overschreven door geïdentificeerde velden
+**A.** Inhoudsbrowser **B.** Eigenschappenbrowser **C.** Werkbalk **D.** Knop Eigenschappen **E.** Filterknop **F.** Opslaan, knop **G.** PDF-formulier dat is overschreven door geïdentificeerde velden
 
 Na de eerste geslaagde conversie wordt het PDF-brondocument door de conversieservice bedekt met geïdentificeerde velden en componenten. Deze velden of componenten zijn van het type: Tekst, veld, deelvenster, keuzegroep en tabel:
 
@@ -80,29 +83,29 @@ Als u de conversies wilt controleren, selecteert u het bron-PDF-document dat voo
 
    U kunt een deelvenster verwijderen of degroeperen om het te verwijderen. Wanneer u de verwijderoptie gebruikt, worden de onderliggende velden of componenten van het deelvenster ook verwijderd:
 
-   * Als u een deelvenster wilt verwijderen, selecteert u het deelvenster en tikt u op het ![](assets/delete-icon.png) pictogram Verwijderen op de werkbalk. Tik in het bevestigingsvenster op **[!UICONTROL Confirm]**. Tik **[!UICONTROL Save]** om de wijzigingen op te slaan.
+   * Als u een deelvenster wilt verwijderen, selecteert u het deelvenster en tikt u op het ![](assets/delete-icon.png) pictogram Verwijderen op de werkbalk. Tik in het bevestigingsvenster op **[!UICONTROL Confirm]**. Tap **[!UICONTROL Save]** to save the changes.
 
-   * Als u een deelvenster wilt degroeperen, selecteert u het deelvenster en tikt u op het pictogram voor degroeperen op de werkbalk. Het deelvenster wordt gedegroepeerd en onderliggende velden van het deelvenster degroeperen worden aangepast aan het bovenliggende veld. Tik op **[!UICONTROL Save]**om de wijzigingen op te slaan.
+   * Als u een deelvenster wilt degroeperen, selecteert u het deelvenster en tikt u op het pictogram voor degroeperen op de werkbalk. Het deelvenster wordt gedegroepeerd en onderliggende velden van het deelvenster degroeperen worden aangepast aan het bovenliggende veld. Tap **[!UICONTROL Save]**to save the changes.
 
 1. **Logische tekstgroepen** maken: Valideer de geïdentificeerde teksten op volledigheid en juistheid. Controleer ook of de tekst logisch in de juiste deelvensters of groepen is geplaatst. Bijvoorbeeld, in een lay-out met meerdere kolommen, de teksten van één logische groep en geplaatst in een andere groep.
 
    * Als u de volledigheid en juistheid van de tekst wilt controleren, gebruikt u de ![](assets/toggle_eye.png) filterknop om alleen tekst weer te geven, klikt u op elke tekst en valideert u. Corrigeer eventueel de spelling, typos of grammaticale problemen.
 
-   * Tik op + en tik op **[!UICONTROL Text]**. Teken het vak, open de eigenschappenbrowser en typ de tekst die u aan het vak Inhoud wilt toevoegen.
+   * Tik op + om tekst aan het formulier toe te voegen. Tik op **[!UICONTROL Text]**. Teken het vak, open de eigenschappenbrowser en typ de tekst die u aan het vak Inhoud wilt toevoegen.
 
-1. **** Tabellen controleren: Controleer of alle randen van de tabel zijn geïdentificeerd. Zorg er ook voor dat de inhoud van de cellen correct wordt geïdentificeerd.
+1. **Tabellen controleren:** Controleer of alle randen van de tabel zijn geïdentificeerd. Zorg er ook voor dat de inhoud van de cellen correct wordt geïdentificeerd.
 
    * Als u gemiste randen wilt herkennen, gebruikt u de optie **[!UICONTROL Add Column]** of **[!UICONTROL Add Row]** .
 
    * Als u extra randen wilt verwijderen, gebruikt u de optie **[!UICONTROL Delete Column]** of **[!UICONTROL Delete Row]** .
 
-Tik op de **[!UICONTROL Save & Convert]** knop nadat u de vereiste wijzigingen hebt aangebracht om de PDF-formulieren opnieuw naar de conversieservice te verzenden. Elk veld wordt geconverteerd naar een overeenkomende adaptieve veldcomponent. Na de conversie worden de bijgewerkte elementen, inclusief het adaptieve formulier en het schema, gedownload naar uw AEM Forms-instantie. Afhankelijk van de complexiteit van het formulier kan het enige tijd duren voordat de conversie is voltooid.
+Tik op de **[!UICONTROL Save & Convert]** knop nadat u de vereiste wijzigingen hebt aangebracht om de PDF forms naar de conversieservice te sturen. Elk veld wordt geconverteerd naar een overeenkomende adaptieve veldcomponent. Na de conversie worden de bijgewerkte elementen, inclusief het adaptieve formulier en het schema, gedownload naar uw AEM Forms-exemplaar. Afhankelijk van de complexiteit van het formulier kan het enige tijd duren voordat de conversie is voltooid.
 
 ![Opslaan en omzetten](assets/save-and-convert.png)
 
 Nadat u de basiscontroles hebt uitgevoerd, kunt u het formulier controleren om specifieke problemen in uw organisatie op te lossen. Deze problemen kunnen te maken hebben met het toevoegen van ontbrekende velden, enzovoort. U kunt de sectie [Gebruik van de het Overzicht en Correcte redacteurshulpmiddelen](review-correct-ui-edited.md#use-the-review-and-correct-editor-tools) bekijken om over alle hulpmiddelen te leren de redacteur verstrekt om dergelijke kwesties te bevestigen.
 
-U kunt ook identieke problemen herkennen die zich voordoen in bijna al uw formulieren en dergelijke patronen rapporteren aan Adobe. Gebruik de redacteur van het Overzicht en van het Correct tot de gewenste ervaring wordt bereikt.
+U kunt ook werken aan het herkennen van identieke problemen die zich voordoen in bijna alle formulieren en dergelijke patronen rapporteren aan Adobe. Gebruik de redacteur van het Overzicht en van het Correct tot de gewenste ervaring wordt bereikt.
 
 ## De redacteurshulpmiddelen van het Overzicht en van het Correcte gebruiken {#use-the-review-and-correct-editor-tools}
 
@@ -125,7 +128,7 @@ Bepaalde componenten van het afdrukformulier worden mogelijk niet door de conver
 
 Tik **[!UICONTROL +]** en tik op een component om een component aan het formulier toe te voegen **[!UICONTROL Field]**. Teken een vak dat het label en het invoervak van het veld bedekt. In de bovenstaande voorbeeldafbeelding wordt bijvoorbeeld de veldcomponent gebruikt om het label en het waardevak **Geboortedatum** eronder aan het formulier toe te voegen. Wanneer u het vak tekent, identificeert de conversieservice het type veld. U kunt het type veld desgewenst wijzigen vanuit de eigenschappenbrowser. Nadat u de component hebt gemaakt, opent u de eigenschappenbrowser en stelt u de eigenschappen van de component in.
 
-Tik op **[!UICONTROL Save]** de knop om de wijzigingen op te slaan of gebruik de **[!UICONTROL Save & Convert]** knop om de PDF-formulieren opnieuw naar de conversieservice te verzenden.
+Tik op **[!UICONTROL Save]** de knop om de wijzigingen op te slaan of gebruik de **[!UICONTROL Save & Convert]** knop om de PDF forms opnieuw naar de conversieservice te sturen.
 
 ### Een tabel toevoegen of bewerken {#addedittable}
 
@@ -154,11 +157,11 @@ Selecteer het veld dat u wilt converteren, tikken ![](assets/smock_shuffle_18_n.
 | Veld | Tekst- of keuzegroep |
 | Keuzegroep | Tekst of deelvenster |
 
-Open na de conversie de eigenschappenbrowser, geef een label op en geef andere vereiste eigenschappen op. Tik op de **[!UICONTROL Save]** knop om de wijzigingen op te slaan of gebruik de knop Opslaan en converteren om de PDF-formulieren opnieuw naar de conversieservice te verzenden.
+Open na de conversie de eigenschappenbrowser, geef een label op en geef andere vereiste eigenschappen op. Tik op de **[!UICONTROL Save]** knop om de wijzigingen op te slaan of gebruik de knop Opslaan en converteren om de PDF forms opnieuw naar de conversieservice te verzenden.
 
 ### Een deelvenster maken of verwijderen {#create-or-remove-a-panel}
 
-De conversieservice voegt verwante componenten en inhoud van afdrukformulieren samen tot een deelvenster. Het formulier kan bijvoorbeeld een adresvenster hebben met velden zoals naam, naam, plotnummer, gebied, plaats, staat, postcode en land. Deze velden worden gegroepeerd in een deelvenster. Een formulier kan meerdere deelvensters hebben.
+De conversieservice voegt verwante componenten en inhoud van afdrukformulieren samen tot een paneel. Het formulier kan bijvoorbeeld een adresvenster hebben met velden zoals naam, naam, plotnummer, gebied, plaats, staat, postcode en land. Deze velden worden gegroepeerd in een deelvenster. Een formulier kan meerdere deelvensters hebben.
 
 Met de conversieservice kunt u deelvensters maken die componenten hebben die geen relatie hebben met andere componenten of een relatieve component uit het deelvenster laten. Met de gereedschappen voor groepen of degroeperen kunt u dergelijke deelvensters corrigeren:
 
@@ -166,7 +169,7 @@ Met de conversieservice kunt u deelvensters maken die componenten hebben die gee
 
 * Als u een deelvenster wilt maken, gebruikt u de Ctrl-toets (Windows of Linux) of de Control-toets (Mac) om verwante componenten te selecteren en tikt u op ![groep](assets/group.jpg) om een deelvenster te maken. Open de eigenschappenbrowser om de eigenschappen van het deelvenster op te geven.
 
-Tik op **[!UICONTROL Save]** de knop om de wijzigingen op te slaan of gebruik de **[!UICONTROL Save & Convert]** knop om de PDF-formulieren opnieuw naar de conversieservice te verzenden.
+Tik op **[!UICONTROL Save]** de knop om de wijzigingen op te slaan of gebruik de **[!UICONTROL Save & Convert]** knop om de PDF forms opnieuw naar de conversieservice te sturen.
 
 ### Een deelvenster of component verwijderen {#delete-a-panel-or-component}
 
@@ -178,11 +181,11 @@ Als u een deelvenster of een component wilt verwijderen, selecteert u een deelve
 
 Elke component van het formulier heeft een set eigenschappen, zoals naam, titel en type. Als u de eigenschappen van een component wilt instellen, selecteert u de component en tikt u op de browser met de eigenschappen. Eigenschappen van de geselecteerde component worden weergegeven. Wijzig de eigenschappen of stel deze in.
 
-Tik op **[!UICONTROL Save]** de knop om de wijzigingen op te slaan of gebruik de **[!UICONTROL Save & Convert]** knop om de PDF-formulieren opnieuw naar de conversieservice te verzenden.
+Tik op **[!UICONTROL Save]** de knop om de wijzigingen op te slaan of gebruik de **[!UICONTROL Save & Convert]** knop om de PDF forms opnieuw naar de conversieservice te sturen.
 
 ### Een formulier verzenden voor conversie {#send-a-form-for-conversion}
 
-Als u alle vereiste wijzigingen hebt aangebracht in de redacteur voor revisie en correctie, kunt u het formulier opnieuw verzenden voor conversie. Tik op het formulier om het te converteren **[!UICONTROL Save & Convert]**. De toepassing **[!UICONTROL Sent for conversion label]** wordt toegepast op de map met het brondocument en het bijgewerkte bronformulier wordt geüpload naar de conversieservice die wordt uitgevoerd op Adobe I/O.
+Als u alle vereiste wijzigingen hebt aangebracht in de redacteur voor revisie en correctie, kunt u het formulier opnieuw verzenden voor conversie. Tik op het formulier om het te converteren **[!UICONTROL Save & Convert]**. Het **[!UICONTROL Sent for conversion label]** wordt toegepast op de map met het brondocument en het bijgewerkte bronformulier wordt geüpload naar de conversieservice die wordt uitgevoerd op Adobe I/O.
 
 Afhankelijk van de complexiteit van het formulier kan het enige tijd duren voordat het formulier wordt geconverteerd. Nadat de conversie is voltooid, worden het geconverteerde adaptieve formulier en de bijbehorende middelen naar de computer gedownload. U kunt het formulier reviseren in de editor nadat de conversie is voltooid en het adaptieve formulier openen in de [aangepaste formuliereditor](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html) voor de definitieve set correcties, indien nodig.
 
@@ -204,3 +207,4 @@ Comment Type: draft
 ## Previous {#previous}
 
 [Use Automated Forms Conversion service](convert-existing-forms-to-adaptive-forms.md)
+-->

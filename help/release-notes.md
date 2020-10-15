@@ -1,9 +1,9 @@
 ---
 title: Wat is er nieuw? Releaseopmerkingen - Service voor automatische conversie van formulieren
 description: 'Kom meer te weten over de nieuwste functies en bugfixes voor de service voor automatische conversie van formulieren '
-translation-type: ht
-source-git-commit: 9b904622fcf421d82a183569d915926a2761d3f5
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 8808e2d9c762617ba67e2f1ab4e103f828e11c58
+workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 100%
 
@@ -43,7 +43,7 @@ Verbeteringen voor automatische conversie van tekst-, formulier- en keuzegroepve
 
 De service creëert standaard een aparte, bovenliggende laag voor elke pagina van een PDF-formulier. Nu kunt u de optie **[!UICONTROL Auto-detect logical sections]** gebruiken om de lagen op paginaniveau (de op paginanummer gebaseerde lagen) te laten vallen en alleen logische lagen te maken. Hierbij worden ook de velden die niet bij een sectie met een voorafgaande logische sectie horen en de velden van een logische sectie die verspreid zijn over twee aangrenzende pagina&#39;s samengevoegd tot één enkele logische sectie. Als sommige velden van een logische sectie bijvoorbeeld aan het einde van pagina 1 staan en sommige zich aan het begin van pagina 2 bevinden, worden al deze velden samengevoegd tot één enkele logische sectie.
 
-### Wat is er verbeterd?
+### Wat is er verbeterd? {#improvements}
 
 **Verbeterde detectie van lijsten**
 

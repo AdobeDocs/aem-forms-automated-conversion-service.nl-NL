@@ -8,7 +8,7 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: 19c688ae925774c008683be8b92afcbfb9f2bcdb
+source-git-commit: 0bff37d64df233dc52310266e306edb734887727
 workflow-type: tm+mt
 source-wordcount: '1599'
 ht-degree: 7%
@@ -30,7 +30,7 @@ AEM Forms Automated Forms Conversion Service, aangedreven door Adobe Sensei, zet
 
 * **Adobe Sign-tekstcodes toevoegen aan bron-PDF-documenten:** Wanneer een PDF-bronformulier [Adobe Sign-tekstcodes](https://helpx.adobe.com/sign/using/text-tag.html)heeft, behoudt de service tijdens de conversie alle aan de ondertekenaar gerelateerde informatie. Het gegenereerde adaptieve formulier vult alle ondertekenaardetails in terwijl het adaptieve formulier naar de Adobe Sign-service wordt verzonden voor ondertekening. De functie is alleen beschikbaar voor AcroForms en de eigenschappen van het adaptieve formulier worden exact uitgelijnd met de eigenschappen van AcroForm.
 
-Als u Adobe Sign-tekstcodes wilt toevoegen aan uw bron-PDF-documenten, vervangt u de naam van het veld in het bron-PDF-document door een [tekstcode](https://helpx.adobe.com/sign/using/text-tag.html) of gebruikt u de optie Converteren naar Adobe Sign-formulier, zoals beschreven in [Formulieren maken met Acrobat DC](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html#) -artikel.
+   Als u Adobe Sign-tekstcodes wilt toevoegen aan uw bron-PDF-documenten, vervangt u de naam van het veld in het bron-PDF-document door een [tekstcode](https://helpx.adobe.com/sign/using/text-tag.html) of gebruikt u de optie Converteren naar Adobe Sign-formulier, zoals beschreven in [Formulieren maken met Acrobat DC](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html#) -artikel.
 
 
 
@@ -44,7 +44,7 @@ Nadat u uw AEM hebt aangesloten met AEM Forms Conversion Service, kunt u uw PDF 
 
 ### PDF forms uploaden naar uw AEM Forms-server {#upload-pdf-forms-to-your-aem-forms-server}
 
-De conversieservice converteert PDF forms die beschikbaar zijn op uw AEM Forms-exemplaar naar adaptieve formulieren. U kunt alle PDF forms tegelijk uploaden of, indien nodig, gefaseerd. Houd rekening met het volgende voordat u de formulieren uploadt:
+De conversieservice converteert PDF forms die beschikbaar zijn op uw AEM Forms-exemplaar naar adaptieve formulieren. U kunt alle PDF forms in één keer uploaden of gefaseerd, naar wens. Houd rekening met het volgende voordat u de formulieren uploadt:
 
 * Houd het aantal formulieren in een map kleiner dan 15 en houd het totale aantal pagina&#39;s in een map kleiner dan 50.
 * Houd de map kleiner dan 10 MB. Formulieren niet in een submap bewaren.

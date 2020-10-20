@@ -1,15 +1,22 @@
 ---
-source-git-commit: 5f945d77db476387159d342511b82691cf7708ee
+source-git-commit: 55bee52ffe5dce8f6fd43f6212a8b6d5772d2a31
+workflow-type: tm+mt
 translation-type: tm+mt
+source-wordcount: '517'
+ht-degree: 16%
 
 ---
 # Contribute-artikel
 
-Wij verwelkomen de bijdragen van onze gemeenschap en medewerkers van Adobe buiten de documentatieteams.
+| EXL-PR | EXL | Voorvertoning | Activeren | Gepubliceerd | Help |
+|--- |--- |--- |--- |--- |--- |
+| [![Status samenstellen](https://docs.ci.corp.adobe.com/view/exl-pr/job/aem-forms-automated-conversion-service.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/aem-forms-automated-conversion-service.en_pr-exl/lastBuild/) | [![Status samenstellen](https://docs.ci.corp.adobe.com/view/exl-pr/job/aem-forms-automated-conversion-service.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/aem-forms-automated-conversion-service.en_exl/lastBuild/lastBuild) | [Voorbeeld-URL](https://experienceleague.corp.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [Live URL](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/home.html?lang=en) | [Ontwerphandleiding](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/introduction.html?lang=en) |
 
-## Adobe Open Source Code of Conduct
+Wij verwelkomen de bijdragen van onze gemeenschap en Adobe werknemers buiten de documentatieteams.
 
-Dit project heeft de [Open Source Code of Conduct](code-of-conduct.md) van Adobe of de [.NET Foundation-gedragscode](https://dotnetfoundation.org/code-of-conduct)goedgekeurd. Zie het artikel [Bijdragen](contributing.md) voor meer informatie.
+## Adobe Open-Source-gedragscode
+
+Dit project heeft de [Adobe-gedragscode voor open source](code-of-conduct.md) of de [.NET Foundation-gedragscode](https://dotnetfoundation.org/code-of-conduct) overgenomen. Zie het artikel [Bijdragen](contributing.md) voor meer informatie.
 
 ## Over uw bijdragen aan Adobe-inhoud
 
@@ -21,13 +28,13 @@ Hoe u een bijdrage levert, hangt af van wie u bent en van het soort veranderinge
 
 Om een verzoek voor te leggen, klik het **Logboek een kwestie** verbinding in een artikel, dat een kwestie in GitHub opent. Geef een titel en een beschrijving op en klik op **Nieuwe uitgave** verzenden.
 
-Om minder belangrijke updates te verzoeken, klik **geef deze paginakoppeling** in een artikel uit, dat het bronartikel in GitHub opent. Gebruik GitHub UI om uw updates te maken. Zie de algemene handleiding voor [Adobe Docs-medewerkers](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) voor meer informatie.
+Om minder belangrijke updates te verzoeken, klik **geef deze paginakoppeling** in een artikel uit, dat het bronartikel in GitHub opent. Gebruik GitHub UI om uw updates te maken. Raadpleeg de algemene handleiding voor [Adobe Docs-contribuanten](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) voor meer informatie.
 
-Kleine correcties of verduidelijkingen die u voor documentatie en codevoorbeelden in dit antwoord opgeeft, worden behandeld in de gebruiksvoorwaarden van Adobe.
+Kleine correcties of verduidelijkingen die u ter documentatie en codevoorbeelden in dit antwoord aanbrengt, worden behandeld in de gebruiksvoorwaarden van de Adobe.
 
 ### Belangrijke wijzigingen of nieuwe artikelen van leden van de gemeenschap
 
-Als u deel uitmaakt van de Adobe-community en een artikel wilt maken of belangrijke wijzigingen wilt indienen, klikt u op het tabblad **Uitgaven** in de GitHub-opslagplaats om een uitgave in te dienen. Deze voorlegging begint een gesprek met het documentatieteam. U moet samenwerken met de schrijver (of een andere Adobe-medewerker) om nieuwe inhoud te publiceren.
+Als u deel uitmaakt van de Adobe-community en een artikel wilt maken of belangrijke wijzigingen wilt indienen, klikt u op het tabblad **Problemen** in de GitHub-opslagplaats om een probleem in te dienen. Met deze indiening start u een gesprek met het documentatieteam. U moet samenwerken met de schrijver (of een andere Adobe-medewerker) om nieuwe content te publiceren.
 
 <!--
 If you submit a pull request with significant changes to documentation and code examples, you'll see a message in the pull request asking you to submit an online contribution license agreement (CLA). You must complete the online form before we can review your pull request.

@@ -8,9 +8,9 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: 0bff37d64df233dc52310266e306edb734887727
+source-git-commit: 773dae94d4e65b72de3518ebf5be4350db34fbb0
 workflow-type: tm+mt
-source-wordcount: '1599'
+source-wordcount: '1605'
 ht-degree: 7%
 
 ---
@@ -28,7 +28,7 @@ AEM Forms Automated Forms Conversion Service, aangedreven door Adobe Sensei, zet
 
 * **Bereid de [thema](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html) &#39;s voor die op geconverteerde formulieren moeten worden toegepast:** Met een thema kunt u een consistente stijl toepassen op alle adaptieve vormen van uw organisatie.
 
-* **Adobe Sign-tekstcodes toevoegen aan bron-PDF-documenten:** Wanneer een PDF-bronformulier [Adobe Sign-tekstcodes](https://helpx.adobe.com/sign/using/text-tag.html)heeft, behoudt de service tijdens de conversie alle aan de ondertekenaar gerelateerde informatie. Het gegenereerde adaptieve formulier vult alle ondertekenaardetails in terwijl het adaptieve formulier naar de Adobe Sign-service wordt verzonden voor ondertekening. De functie is alleen beschikbaar voor AcroForms en de eigenschappen van het adaptieve formulier worden exact uitgelijnd met de eigenschappen van AcroForm.
+* **Adobe Sign-tekstcodes toevoegen aan bron-PDF-documenten:** Wanneer een PDF-bronformulier [Adobe Sign-tekstcodes](https://helpx.adobe.com/sign/using/text-tag.html)heeft, behoudt de service tijdens de conversie alle aan Adobe Sign gerelateerde informatie. Het gegenereerde adaptieve formulier zorgt ervoor dat de informatie over de ondertekenaar van de bijbehorende adaptieve formuliervelden intact blijft terwijl het adaptieve formulier naar de Adobe Sign-service wordt verzonden voor ondertekening. De functie is alleen beschikbaar voor AcroForms en de eigenschappen van het adaptieve formulier worden exact uitgelijnd met de eigenschappen van AcroForm.
 
    Als u Adobe Sign-tekstcodes wilt toevoegen aan uw bron-PDF-documenten, vervangt u de naam van het veld in het bron-PDF-document door een [tekstcode](https://helpx.adobe.com/sign/using/text-tag.html) of gebruikt u de optie Converteren naar Adobe Sign-formulier, zoals beschreven in [Formulieren maken met Acrobat DC](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html#) -artikel.
 

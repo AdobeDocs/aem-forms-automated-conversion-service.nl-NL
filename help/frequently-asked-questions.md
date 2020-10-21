@@ -7,7 +7,7 @@ uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 translation-type: tm+mt
-source-git-commit: c4f0d07b38cdb6aa162a0b61abe12fe9d1677a8c
+source-git-commit: 49f1b6c93529ab30141503ab884801cf1c37b20b
 workflow-type: tm+mt
 source-wordcount: '1866'
 ht-degree: 4%
@@ -142,4 +142,4 @@ De bovengenoemde fout komt voor wanneer de laarsdelegatie niet voor bibliotheken
    <p> Voor de volledige lijst met ondersteunde codes opent u een formulier in de editor voor adaptieve formulieren en voegt u een Adobe Sign-blok toe. Gebruik Adobe Sign-blok om alle ondersteunde Adobe Sign-velden te zoeken. Er wordt een vervolgkeuzelijst weergegeven waarin alle ondersteunde velden worden geselecteerd.</p>
 
 1. **Hoe maakt u een PDF-formulier dat geschikt is voor Adobe Sign?**
-Als u een PDF-formulier met Adobe Sign wilt maken, voegt u [Adobe Sign-tekstcodes](https://helpx.adobe.com/sign/using/text-tag.html) toe aan veldnamen of gebruikt u de optie [Converteren naar Adobe Sign-formulier](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html) . </br>
+   </p>Een PDF-formulier maken dat geschikt is voor Adobe Sign:</p> Voeg [Adobe Sign-tekstcodes] (https://helpx.adobe.com/sign/using/text-tag.html) toe aan veldnamen of gebruik de optie [Converteren naar Adobe Sign-formulier] (https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html). </br>

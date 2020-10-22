@@ -7,9 +7,9 @@ uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
 translation-type: tm+mt
-source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
+source-git-commit: 589eacfd6200f4336b7a4a7708e10f3dfe08406d
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '808'
 ht-degree: 1%
 
 ---
@@ -77,4 +77,7 @@ Voordat u AEM Forms Automated Forms Conversion Service gaat gebruiken, moet u de
 * Complexe tabellen, zoals tabellen zonder kader, geneste tabellen en tabellen met plaatsaanduidingswaarden, worden niet ondersteund. Gebruik de aangepaste formuliereditor om na de conversie complexe tabellen toe te voegen of te wijzigen. Alleen eenvoudige tabellen met lege velden, juiste kopteksten en duidelijke grenzen worden ondersteund.
 * De service converteert alleen Engelstalige formulieren naar adaptieve formulieren. You can translate converted adaptive forms to another language using [AEM translation workflow](https://helpx.adobe.com/nl/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 * AEM 6.4 Forms biedt geen ondersteuning voor automatische detectie van meerkolomindeling van invoerformulieren.
+* Informatie die is gecodeerd met kleuren in het PDF-bronformulier, wordt niet overgedragen naar het adaptieve formulier.
+* Kleuren van PDF-bronformulier worden overgedragen naar aangepaste formulierthema&#39;s.
+* Gekleurde PDF forms worden behandeld als grijswaardenformulieren en velden worden dienovereenkomstig gedetecteerd.
 

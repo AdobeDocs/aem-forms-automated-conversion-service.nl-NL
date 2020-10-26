@@ -7,9 +7,9 @@ uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 translation-type: tm+mt
-source-git-commit: 7b8e013af91430e86c0014c7a1695abb05c3c0f2
+source-git-commit: 92cd241915ef5818fb004a8982674b4f6753c171
 workflow-type: tm+mt
-source-wordcount: '1866'
+source-wordcount: '1825'
 ht-degree: 4%
 
 ---
@@ -138,8 +138,6 @@ De bovengenoemde fout komt voor wanneer de laarsdelegatie niet voor bibliotheken
 1. **Kan ik Adobe Sign-teksttags gebruiken met de Automated Forms Conversion-service?**
 
    <p> Wanneer u de Automated Forms Conversion Service gebruikt om een PDF-formulier te converteren naar een adaptief formulier en het PDF-formulier heeft Adobe Sign-tekstcodes, worden deze codes geconverteerd naar de bijbehorende adaptieve formuliervelden en worden de ondertekenaardetails automatisch ingevuld.  Deze functie is alleen beschikbaar voor Acro Forms en adaptieve formulieren ondersteunen een beperkt aantal Adobe Sign-velden.</p>  </br>
-
-   <p> Voor de volledige lijst met ondersteunde codes opent u een formulier in de editor voor adaptieve formulieren en voegt u een Adobe Sign-blok toe. Gebruik Adobe Sign-blok om alle ondersteunde Adobe Sign-velden te zoeken. Er wordt een vervolgkeuzelijst weergegeven waarin alle ondersteunde velden worden geselecteerd.</p>
 
 1. **Hoe maakt u een PDF-formulier dat geschikt is voor Adobe Sign?**
 

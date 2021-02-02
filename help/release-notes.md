@@ -2,7 +2,7 @@
 title: Wat is er nieuw? Releaseopmerkingen - Service voor automatische conversie van formulieren
 description: 'Kom meer te weten over de nieuwste functies en bugfixes voor de service voor automatische conversie van formulieren '
 translation-type: tm+mt
-source-git-commit: 3fa3f484268c7cbe655408f90d53ae8d28b3a7ee
+source-git-commit: 765f7bd4126fe4b8f4dd92c4b3eb556dae4e9ff0
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 93%
@@ -23,8 +23,7 @@ De service voor automatische conversie van formulieren wordt voortdurend verbete
 * Speciale instructies
 * Geplande wijzigingen
 
-
-## 1 februari 2021 (AFC-2021.01.2)
+## 20 februari 2021 (AFC-2021.01.2)
 
 ### Wat is er verbeterd?
 

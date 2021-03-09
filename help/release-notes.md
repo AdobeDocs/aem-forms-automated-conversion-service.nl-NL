@@ -2,10 +2,10 @@
 title: Wat is er nieuw? Releaseopmerkingen - Service voor automatische conversie van formulieren
 description: 'Kom meer te weten over de nieuwste functies en bugfixes voor de service voor automatische conversie van formulieren '
 translation-type: tm+mt
-source-git-commit: 765f7bd4126fe4b8f4dd92c4b3eb556dae4e9ff0
+source-git-commit: 70dc18347e072ccd7c1625f6831554ecfc13f2fb
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 93%
+source-wordcount: '386'
+ht-degree: 88%
 
 ---
 
@@ -23,38 +23,44 @@ De service voor automatische conversie van formulieren wordt voortdurend verbete
 * Speciale instructies
 * Geplande wijzigingen
 
-## 20 februari 2021 (AFC-2021.01.2)
+## 03 mrt. 2021 (AFC-2021.02.2) {#mar-2021}
 
-### Wat is er verbeterd?
+### Wat is er verbeterd?{#march-2021-improvements}
+
+Verbeteringen in het ordenen van formulierinhoud in keuzegroepen en velden terwijl een bronformulier wordt geconverteerd naar een adaptief formulier.
+
+## 20 februari 2021 (AFC-2021.01.2) {#feb-2021}
+
+### Wat is er verbeterd?{#feb-2021-improvements}
 
 Verbeteringen in het ordenen van formulierinhoud in deelvensters en het genereren van titels voor deelvensters tijdens het omzetten van een bronformulier in een adaptief formulier.
 
-## 16 juli 2020 (AFC-2020.07.2)
+## 16 juli 2020 (AFC-2020.07.2) {#jul-2020}
 
-### Wat is er nieuw?
+### Wat is er nieuw?{#whats-new-jul-2020-}
 
 Ondersteuning toegevoegd voor het converteren van gekleurde PDF-formulieren naar adaptieve formulieren.
 
-### Wat is er verbeterd?
+### Wat is er verbeterd?{#jul-2020-improvements}
 
 Verbeteringen voor automatische conversie van tekst-, formulier- en keuzegroepvelden naar overeenkomende componenten voor adaptieve formulieren.
 
 
-## 20 maart 2020 (AFC-2020.03.1)
+## 20 maart 2020 (AFC-2020.03.1) {#mar-2020}
 
-### Vroegtijdige toegang
+### Vroegtijdige toegang {#early-access}
 
 **Automatisch logische secties in een formulier detecteren**
 
 De service creëert standaard een aparte, bovenliggende laag voor elke pagina van een PDF-formulier. Nu kunt u de optie **[!UICONTROL Auto-detect logical sections]** gebruiken om de lagen op paginaniveau (de op paginanummer gebaseerde lagen) te laten vallen en alleen logische lagen te maken. Hierbij worden ook de velden die niet bij een sectie met een voorafgaande logische sectie horen en de velden van een logische sectie die verspreid zijn over twee aangrenzende pagina&#39;s samengevoegd tot één enkele logische sectie. Als sommige velden van een logische sectie bijvoorbeeld aan het einde van pagina 1 staan en sommige zich aan het begin van pagina 2 bevinden, worden al deze velden samengevoegd tot één enkele logische sectie.
 
-### Wat is er verbeterd? {#improvements}
+### Wat is er verbeterd? {#mar-2020-improvements}
 
 **Verbeterde detectie van lijsten**
 
 De service kan nu efficiënter lijsten met opsommingstekens en genummerde lijsten detecteren.
 
-### Speciale instructies
+### Speciale instructies  {#special-instructions}
 
 **Connectorpakket voor de service voor automatische conversie van formulieren installeren**
 

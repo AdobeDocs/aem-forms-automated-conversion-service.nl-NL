@@ -1,17 +1,14 @@
 ---
 cloud: experience-cloud
-solution-title: Automated Forms Conversion Service
-solution-hub-url: https://helpx.adobe.com/support/experience-manager/6-5.html
-solution-icon: assets/experience-cloud-logo-24.png
-getting-started-title: Aan de slag
-getting-started-url: https://helpx.adobe.com/experience-manager/tutorials.html
-tutorials-title: Zelfstudies
-tutorials-url: https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/aem-forms-automated-conversion-service.en
+git-repo: https://git.corp.adobe.com/AdobeDocs/aem-forms-automated-conversion-service.nl-NL
 index: y
+feature-set: Experience Manager Forms
 translation-type: tm+mt
-source-git-commit: cf97c1b8dabb36793ca05ddbc328a1a0ddba93eb
+source-git-commit: 9e931f3eeb3138345cfe0076652bdd3c300dbb35
+workflow-type: tm+mt
+source-wordcount: '130'
+ht-degree: 1%
 
 ---
 
@@ -28,11 +25,11 @@ Het bestand metadata.md bevat metagegevens op repo-niveau die worden doorgegeven
 | aan de slag-url | Aan de slag met Help-pagina koppelen |
 | zelfstudies-url | Koppeling maken naar videozelfstudies: helpx-zelfstudies of KT-zelfstudies |
 | mini-toc-niveaus | Hiermee bepaalt u het aantal kopniveaus dat wordt weergegeven in de rechterrails. default is 2 |
-| git-repo | Hiermee geeft u de locatie op van het hoofdrepo voor intern gebruik |
+| git-repo | Hiermee wordt de locatie van het master repo voor intern gebruik opgegeven |
 
 In bestand TOC.md
 
-| metadata | wat het doet |
+| metagegevens | wat het doet |
 |--- |--- |
 | user-guide-title | Gebruikt in artikelkoptekst als koppeling |
 | gebruikershandleiding-url | Opent helpx-hubpagina |

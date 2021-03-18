@@ -1,10 +1,11 @@
 ---
 title: De service voor automatische conversie van formulieren configureren
 description: Klaar uw AEM instantie om de dienst van de Automatede form conversion te gebruiken
+role: Bedrijfs Praktijk, Beheerder
 translation-type: tm+mt
-source-git-commit: 741ff89370a5215b70d90c49eea220171efe9339
+source-git-commit: 9baad788f3e871eb4ce2cbda4bbf4d2e2ac6dd95
 workflow-type: tm+mt
-source-wordcount: '2547'
+source-wordcount: '2550'
 ht-degree: 7%
 
 ---
@@ -114,7 +115,7 @@ De ontwikkelaars zijn leden van uw organisatie die wordt aangewezen om de omzett
 
 Herhaal bovenstaande stappen voor alle gebruikers.  Zie [Ontwikkelaars beheren](https://helpx.adobe.com/enterprise/using/manage-developers.html) voor meer informatie over het toevoegen van ontwikkelaars.
 
-Nadat een beheerder ontwikkelaars heeft toegevoegd aan het Adobe I/O-profiel, worden de ontwikkelaars via e-mail op de hoogte gesteld. Nadat ontwikkelaars de e-mail hebben ontvangen, kunnen ze een lokale AEM Forms-instantie verbinden met de service Automatede form conversion op Adobe Cloud[.](#connectafcadobeio)
+Nadat een beheerder ontwikkelaars heeft toegevoegd aan het Adobe I/O-profiel, worden de ontwikkelaars via e-mail op de hoogte gesteld. Nadat ontwikkelaars de e-mail hebben ontvangen, kunnen ze een lokale AEM Forms-instantie verbinden met de service Automatede form conversion op Adobe Cloud](#connectafcadobeio).[
 
 ### (Alleen voor ontwikkelaars) Sluit uw lokale AEM Forms-instantie aan op de service Automatede forms conversion op Adobe Cloud {#connectafcadobeio}
 
@@ -159,7 +160,7 @@ Met een openbaar certificaat kunt u uw profiel verifiëren op Adobe I/O.
 
 1. Selecteer het selectievakje **[!UICONTROL Create new certificate]** en geef een alias op. De alias fungeert als naam voor het dialoogvenster. Tik op **[!UICONTROL Create certificate]**. Er wordt een dialoogvenster weergegeven. Klik op **[!UICONTROL OK]**. Het certificaat wordt gemaakt.
 
-1. Tik **[!UICONTROL Download Public Key]** en sla het certificaatbestand *AEM-Adobe-IMS.crt* op uw computer op. Het certificaatbestand wordt gebruikt om de service-API&#39;s op de Adobe Developer Console[ te configureren. ](#createintegration) Tik op **[!UICONTROL Next]**.
+1. Tik **[!UICONTROL Download Public Key]** en sla het certificaatbestand *AEM-Adobe-IMS.crt* op uw computer op. Het certificaatbestand wordt gebruikt om de service-API&#39;s op de Adobe Developer Console](#createintegration) te configureren. [ Tik op **[!UICONTROL Next]**.
 
 1. Geef het volgende op:
 
@@ -184,7 +185,7 @@ Met een openbaar certificaat kunt u uw profiel verifiëren op Adobe I/O.
 
 Om de dienst van de Automatede form conversion te gebruiken, creeer een project en voeg Geautomatiseerde de Dienst API van de Configuratie van Forms aan het project op de Console van de Ontwikkelaar van Adobe toe. De integratie genereert API Key, Client Secret, Payload (JWT).
 
-1. Meld u aan bij [https://console.adobe.io/](https://console.adobe.io/). Gebruik uw Adobe ID, ontwikkelaarsaccount die uw beheerder heeft ingericht om u aan te melden bij de Adobe I/O-console.
+1. Meld u aan bij [https://console.adobe.io/](https://console.adobe.io/). Gebruik uw Adobe ID, ontwikkelaarsaccount die uw beheerder heeft ingericht om u aan te melden bij de Adobe I/O-console voor aanmelding.
 1. Selecteer uw organisatie in de rechterbovenhoek. Neem contact op met de beheerder als u uw organisatie niet kent.
 1. Tik op **[!UICONTROL Create new project]**. Er verschijnt een scherm om aan de slag te gaan met uw nieuwe project. Tik op **[!UICONTROL Add API]**. Er verschijnt een scherm met een lijst van alle API&#39;s die voor uw account zijn ingeschakeld.
 1. Selecteer **[!UICONTROL Automated Forms Conversion service]** en tik **[!UICONTROL Next]**. Er verschijnt een scherm om de API te configureren.
@@ -259,7 +260,7 @@ Maak een cloudserviceconfiguratie om uw AEM aan te sluiten op de conversieservic
    </table>
 
    * Als de bron een op XFA-Gebaseerde vorm met uitbreiding .XDP is, dan behoudt de output DOR de XFA lay-out, anders gebruikt de omzettingsdienst een uit-van-de-doos malplaatje om DOR voor andere op XFA-Gebaseerde vormen te produceren.
-   * Wanneer een XFA-formulier wordt verzonden, worden de gegevens van het formulier opgeslagen als een XML-element of een kenmerk. Bijvoorbeeld, `<Amount currency="USD"> 10.00 </Amount>`. De valuta wordt opgeslagen als een kenmerk en valutabedrag, 10,00 als een element. Gegevens van een adaptief formulier verzenden heeft geen kenmerken, het heeft alleen elementen. Dus wanneer een XFA-formulier wordt geconverteerd naar een adaptief formulier, bevatten de adaptieve formulierverzendgegevens een element voor elk van deze kenmerken. Bijvoorbeeld,
+   * Wanneer een XFA-formulier wordt verzonden, worden de gegevens van het formulier opgeslagen als een XML-element of een kenmerk. Bijvoorbeeld, `<Amount currency="USD"> 10.00 </Amount>`. De valuta wordt opgeslagen als een kenmerk en valutabedrag, 10,00 als een element. Gegevens van een adaptief formulier verzenden heeft geen kenmerken, het heeft alleen elementen. Als een XFA-formulier wordt geconverteerd naar een adaptief formulier, bevatten de adaptieve formulierverzendgegevens dus een element voor elk van deze kenmerken. Bijvoorbeeld,
 
    ```css
       {

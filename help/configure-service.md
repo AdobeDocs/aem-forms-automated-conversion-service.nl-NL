@@ -3,10 +3,10 @@ title: De service voor automatische conversie van formulieren configureren
 description: Klaar uw AEM instantie om de dienst van de Automatede form conversion te gebruiken
 role: Bedrijfs Praktijk, Beheerder
 translation-type: tm+mt
-source-git-commit: 9baad788f3e871eb4ce2cbda4bbf4d2e2ac6dd95
+source-git-commit: a9bab62fbe5ecc4b233e9bc55b9e461a5967b471
 workflow-type: tm+mt
-source-wordcount: '2550'
-ht-degree: 7%
+source-wordcount: '2673'
+ht-degree: 6%
 
 ---
 
@@ -17,7 +17,7 @@ In deze Help wordt beschreven hoe een AEM beheerder de service Automatede form c
 
 * Adobe Experience Manager- en AEM-pakketten installeren, configureren en beheren,
 
-* Linux- en Microsoft Windows-besturingssystemen gebruiken
+* Werken met Linux®- en Microsoft® Windows®-besturingssystemen
 
 * SMTP-mailservers configureren
 
@@ -27,7 +27,7 @@ In deze Help wordt beschreven hoe een AEM beheerder de service Automatede form c
 
 ## Onboarding{#onboarding}
 
-De service is gratis beschikbaar voor AEM 6.4 Forms en AEM 6.5 Forms On-Premise-termijnklanten en Adobe Managed Service Enterprise-klanten. U kunt contact opnemen met het Adobe-verkoopteam of uw Adobe-vertegenwoordiger om toegang tot de service aan te vragen.
+De service is gratis beschikbaar voor AEM 6.4 Forms en AEM 6.5 Forms On-Premise-term klanten en Adobe-Managed Service Enterprise-klanten. U kunt contact opnemen met het Adobe-verkoopteam of uw Adobe-vertegenwoordiger om toegang tot de service aan te vragen. De service is ook gratis en vooraf ingeschakeld voor AEM Forms als klanten van een Cloud Service.
 
 Adobe maakt toegang voor uw organisatie mogelijk en biedt de vereiste rechten aan de persoon die is aangewezen als beheerder in uw organisatie. De beheerder kan toegang verlenen aan de AEM Forms-ontwikkelaars (gebruikers) van uw organisatie om verbinding te maken met de service.
 
@@ -37,35 +37,37 @@ U vereist het volgende om de Dienst van de Automatede form conversion te gebruik
 
 * De dienst van de automatede form conversion wordt toegelaten voor uw organisatie
 * Een Adobe ID-account met beheerdersrechten voor de conversieservice
-* Een up-to-date AEM 6.4 of AEM 6.5-auteurinstantie met de nieuwste AEM Service Pack
+* Een actieve AEM 6.4, AEM 6.5, of AEM Forms als instantie van de Cloud Service auteur met recentste AEM Service Pack of recentste updates.
 * Een AEM gebruiker (op uw AEM) die lid is van een formulier-gebruikersgroep
 
 ## De omgeving {#setuptheservice} instellen
 
 Voordat u de service gebruikt, moet u de AEM auteur voorbereiden om verbinding te maken met de service die wordt uitgevoerd op Adobe Cloud. Voer de volgende stappen in de vermelde reeks uit om uw exemplaar voor de service voor te bereiden:
 
-1. [Download en installeer AEM 6.4 of AEM 6.5](#aemquickstart)
+1. [Download en installeer AEM 6.4, AEM 6.5 of AEM Forms aan boord als Cloud Service](#aemquickstart)
 1. [Download en installeer de nieuwste AEM Service Pack](#servicepack)
 1. [Download en installeer het nieuwste AEM Forms Add-on-pakket](#downloadaemformsaddon)
 1. (optioneel) [Download en installeer het nieuwste connectorpakket](#installConnectorPackage)
 1. [Aangepaste thema&#39;s en sjablonen maken](#referencepackage)
 
-### Download en installeer AEM 6.4 of AEM 6.5 {#aemquickstart}
+### Download en installeer AEM 6.4 of AEM 6.5 of AEM Forms aan boord als Cloud Service {#aemquickstart}
 
 
-De de dienstlooppas van de automatede form conversion op AEM auteursinstantie. U hebt AEM 6.4 of AEM 6.5 nodig om een AEM auteur-instantie in te stellen. Als u niet AEM, download het van de volgende plaatsen:
+De de dienstlooppas van de automatede form conversion op AEM auteursinstantie. U hebt AEM 6.4, AEM 6.5 of AEM Forms als Cloud Service nodig om een AEM auteurinstantie in te stellen.
 
-* Als u een bestaande AEM klant bent, downloadt u AEM 6.4 of AEM 6.5 van [Adobe-licentiewebsite](http://licensing.adobe.com).
+* Als u AEM 6.4 of AEM 6.5 niet in gebruik hebt, kunt u het downloaden van de onderstaande locaties. Nadat u AEM downloadt, voor instructies aan opstelling een AEM auteursinstantie, zie [opstellen en handhaven](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#defaultlocalinstall):
 
-* Als u een partner van de Adobe bent, gebruik [Adobe Partner Training Programma](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) om AEM 6.4 of AEM 6.5 te verzoeken.
+   * Als u een bestaande AEM klant bent, downloadt u AEM 6.4 of AEM 6.5 van [Adobe-licentiewebsite](http://licensing.adobe.com).
 
-Nadat u AEM downloadt, voor instructies aan opstelling een AEM auteursinstantie, zie [opstellen en handhaven](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#defaultlocalinstall).
+   * Als u een partner van de Adobe bent, gebruik [Adobe Partner Training Programma](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) om AEM 6.4 of AEM 6.5 te verzoeken.
 
-### Download en installeer AEM nieuwste Service Pack {#servicepack}
+* Als u AEM Forms als Cloud Service gebruikt, zie aan boord aan [AEM Forms als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-forms-cloud-service.html?lang=en#setup-environment) en [opstelling een lokale ontwikkelomgeving](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?lang=en#setup-environment).
+
+### (Alleen voor AEM 6.4 en AEM 6.5) Download en installeer AEM nieuwste Service Pack {#servicepack}
 
 Download en installeer de nieuwste AEM Service Pack. Voor gedetailleerde instructies, zie, of [AEM 6.4 de Nota&#39;s van de Versie van het Pak ](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) of [AEM 6.5 de Nota&#39;s van de Versie van het Pak van de Dienst ](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html).
 
-### AEM Forms-invoegtoepassing downloaden en installeren {#downloadaemformsaddon}
+### (Alleen voor AEM 6.4 en AEM 6.5) Download en installeer het AEM Forms-invoegpakket {#downloadaemformsaddon}
 
 Een AEM-exemplaar bevat basisfuncties voor formulieren. Voor de conversieservice zijn alle mogelijkheden van AEM Forms vereist. Download en installeer het invoegpakket voor AEM Forms om alle mogelijkheden van AEM Forms te benutten. Het pakket is vereist om de conversieservice in te stellen en uit te voeren. Zie [Mogelijkheden voor het vastleggen van gegevens installeren en configureren.](https://helpx.adobe.com/experience-manager/6-5/forms/using/installing-configuring-aem-forms-osgi.html)
 
@@ -73,28 +75,30 @@ Een AEM-exemplaar bevat basisfuncties voor formulieren. Voor de conversieservice
 > Zorg ervoor dat u de verplichte configuraties na de installatie uitvoert nadat u het invoegpakket hebt geïnstalleerd.
 
 
-### (Optioneel) Download en installeer het aansluitingspakket {#installConnectorPackage}
+<!-- ### (Optional) Download and install connector package  {#installConnectorPackage}
 
-Het aansluitpakket biedt vroege toegang tot de [Auto-Detection logical sections](convert-existing-forms-to-adaptive-forms.md#run-the-conversion) functies en verbeteringen die zijn geleverd in release AFC-2020.03.1. Installeer het pakket niet als u geen functie en verbeteringen in AFC-2020.03.1 nodig hebt.  U kunt [het schakelaarpakket van AEM Pakket Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1) downloaden.
+The connector package provides early access to the [Auto-detect logical sections](convert-existing-forms-to-adaptive-forms.md#run-the-conversion) features and improvements delivered in release AFC-2020.03.1. Do not install the package if you do not require feature and improvements delivered in AFC-2020.03.1.  You can [download the connector package from AEM Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1). -->
 
 
 ### Aangepaste thema&#39;s en sjablonen maken {#referencepackage}
 
-Als u AEM start in [productiemodus](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/production-ready.html) (geen samplcontent runmode), worden de referentiepakketten niet geïnstalleerd. De referentiepakketten bevatten voorbeeldthema&#39;s en sjablonen. Voor de service automatede form conversion zijn ten minste één thema en één sjabloon nodig om een PDF forms om te zetten in een adaptief formulier. Creeer een douanethema en een malplaatje van uw en punt [de dienstconfiguratie](#configure-the-cloud-service) om douanesjablonen en thema&#39;s te gebruiken alvorens de dienst te gebruiken.
+Als u AEM 6.4 of AEM 6.5 start in [productiemodus](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/production-ready.html) (modus voor het uitvoeren van geen samplinhoud), worden de referentiepakketten niet geïnstalleerd. De referentiepakketten bevatten voorbeeldthema&#39;s en sjablonen. Voor de service automatede form conversion zijn ten minste één thema en één sjabloon vereist om een PDF-formulier naar een adaptief formulier te converteren. Creeer een douanethema en een malplaatje van uw en punt [de dienstconfiguratie](#configure-the-cloud-service) om douanesjablonen en thema&#39;s te gebruiken alvorens de dienst te gebruiken.
+
+U kunt ook het [AEM Forms Reference Assets](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)-pakket downloaden en installeren op uw Author-instantie. Er worden enkele referentiethema&#39;s en sjablonen gemaakt.
 
 ## Service configureren {#configure-the-service}
 
 Voordat u verdergaat om de service te configureren en uw lokale instantie te verbinden met de service die wordt uitgevoerd op Adobe Cloud, dient u meer te weten te komen over de personen en rechten die nodig zijn om verbinding te maken met de service. De dienst gebruikt twee verschillende types van persona&#39;s, beheerders en ontwikkelaars:
 
-* **Beheerders**: Beheerders zijn verantwoordelijk voor het beheer van Adobe-software en -services voor hun organisatie. Beheerders verlenen toegang aan ontwikkelaars in hun organisatie om verbinding te maken met de service Automatede form conversion die wordt uitgevoerd op Adobe Cloud. Wanneer een beheerder is ingericht voor een organisatie, ontvangt de beheerder een e-mail met titel **[!UICONTROL 'You now have administrator rights to manage Adobe software and services for your organization']**. Als u een beheerder bent, controleer uw brievenbus voor e-mail met bovengenoemde titel en ga aan [verlenen toegang tot ontwikkelaars van uw organisatie](#adduseranddevs) te werk.
+* **Beheerders**: Beheerders zijn verantwoordelijk voor het beheer van Adobe-software en -services voor hun organisatie. Beheerders verlenen toegang aan ontwikkelaars in hun organisatie om verbinding te maken met de service Automatede form conversion die wordt uitgevoerd op Adobe Cloud. Wanneer een beheerder is ingericht voor een organisatie, ontvangt de beheerder een e-mail met titel **[!UICONTROL 'You now have administrator rights to manage Adobe software and services for your organization']**. Als u een beheerder bent, controleer uw brievenbus voor e-mail met eerder vermelde titel en ga aan [verlenen toegang tot ontwikkelaars van uw organisatie](#adduseranddevs).
 
-![e-mail voor toegangsbeheer](assets/admin-console-adobe-io-access-grantedx75.png)
+![E-mail met toegangsrechten voor beheerder](assets/admin-console-adobe-io-access-grantedx75.png)
 
-* **Ontwikkelaars**: Een ontwikkelaar maakt verbinding met een lokale AEM Forms-auteurinstantie met een Automatede form conversion-service die wordt uitgevoerd op Adobe Cloud. Wanneer een beheerder rechten toekent aan een ontwikkelaar om verbinding te maken met de service Automatede form conversion, wordt een e-mail met de titel U hebt nu toegang tot ontwikkelaars om de integratie van de Adobe API voor uw organisatie te beheren, verzonden naar de ontwikkelaar. Als u een ontwikkelaar bent, controleert u uw postvak op e-mail met bovengenoemde titel en gaat u verder naar [Sluit uw lokale AEM aan op de service Automatede form conversion op Adobe Cloud.](#connectafcadobeio)
+* **Ontwikkelaars**: Een ontwikkelaar maakt verbinding met een lokale AEM Forms-auteurinstantie met een Automatede form conversion-service die wordt uitgevoerd op Adobe Cloud. Wanneer een beheerder rechten toekent aan een ontwikkelaar om verbinding te maken met de service Automatede form conversion, wordt een e-mail met de titel U hebt nu toegang tot ontwikkelaars om de integratie van de Adobe API voor uw organisatie te beheren, verzonden naar de ontwikkelaar. Als u een ontwikkelaar bent, controleert u uw postvak op e-mail met de eerder vermelde titel en gaat u verder naar [Sluit uw lokale AEM aan op de service Automatede form conversion op Adobe Cloud.](#connectafcadobeio)
 
-![ontwikkel toegang verlenen e-mail](assets/email-developer-accessx94.png)
+![Toegang tot ontwikkelaar per e-mail](assets/email-developer-accessx94.png)
 
-### (Alleen voor beheerders) Toegang verlenen aan ontwikkelaars van uw organisatie {#adduseranddevs}
+### (Alleen voor beheerders van AEM 6.4 en AEM 6.5) Toegang verlenen aan ontwikkelaars van uw organisatie {#adduseranddevs}
 
 Nadat Adobe toegang voor uw organisatie toelaat en vereiste voorrechten aan de beheerder verstrekt, kan de beheerder zich aanmelden in Admin Console (gedetailleerde instructies hieronder), een profiel creëren, en ontwikkelaars toevoegen aan het profiel. Ontwikkelaars kunnen een lokale versie van AEM Forms verbinden met de service Automatede forms conversion op Adobe Cloud.
 
@@ -113,7 +117,7 @@ De ontwikkelaars zijn leden van uw organisatie die wordt aangewezen om de omzett
    1. Voer het e-mailadres en (optioneel) de naam en achternaam van de ontwikkelaar in.
    1. Selecteer productprofielen. Tik op **[!UICONTROL Save]**.
 
-Herhaal bovenstaande stappen voor alle gebruikers.  Zie [Ontwikkelaars beheren](https://helpx.adobe.com/enterprise/using/manage-developers.html) voor meer informatie over het toevoegen van ontwikkelaars.
+Herhaal bovenstaande stappen voor alle gebruikers. Zie [Ontwikkelaars beheren](https://helpx.adobe.com/enterprise/using/manage-developers.html) voor meer informatie over het toevoegen van ontwikkelaars.
 
 Nadat een beheerder ontwikkelaars heeft toegevoegd aan het Adobe I/O-profiel, worden de ontwikkelaars via e-mail op de hoogte gesteld. Nadat ontwikkelaars de e-mail hebben ontvangen, kunnen ze een lokale AEM Forms-instantie verbinden met de service Automatede form conversion op Adobe Cloud](#connectafcadobeio).[
 
@@ -131,12 +135,16 @@ Nadat een beheerder u ontwikkelaarstoegang verleent, kunt u uw lokale instantie 
 
 De service automatede form conversion gebruikt de Dagelijkse CQ-mailservice om e-mailberichten te verzenden. Deze e-mailmeldingen bevatten informatie over geslaagde of mislukte conversies. Sla deze stappen over als u geen melding wilt ontvangen. Voer de volgende stappen uit om de Day CQ Mail Service te configureren:
 
-1. Ga naar AEM configuratiemanager op `http://localhost:4502/system/console/configMgr`
-1. Open de configuratie van de Day CQ Mail Service. Geef een waarde op voor de velden **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port]** en **[!UICONTROL From address]**. Klik op **[!UICONTROL Save]**.
+* Voor AEM 6.4 Forms of AEM 6.5 Forms:
 
-   U kunt contact opnemen met uw e-mailserviceprovider of IT-beheerder voor informatie over de hostnaam en poort van SMTP-server. U kunt elk geldig e-mailadres gebruiken in het veld Van. Bijvoorbeeld notification@example.com of donotreply@example.com.
+   1. Ga naar AEM configuratiemanager op `http://localhost:4502/system/console/configMgr`
+   1. Open de configuratie van de Day CQ Mail Service. Geef een waarde op voor de velden **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port]** en **[!UICONTROL From address]**. Klik op **[!UICONTROL Save]**.
 
-1. Open de **[!UICONTROL Day CQ Link Externalizer]** configuratie. Geef in het veld **[!UICONTROL Domains]** de werkelijke hostnaam of het werkelijke IP-adres en het poortnummer op voor lokale instanties, auteurs en publicatieinstanties. Klik op **[!UICONTROL Save]**.
+      U kunt contact opnemen met uw e-mailserviceprovider of IT-beheerder voor informatie over de hostnaam en poort van SMTP-server. U kunt elk geldig e-mailadres gebruiken in het veld Van. Bijvoorbeeld notification@example.com of donotreply@example.com.
+
+   1. Open de **[!UICONTROL Day CQ Link Externalizer]** configuratie. Geef in het veld **[!UICONTROL Domains]** de werkelijke hostnaam of het werkelijke IP-adres en het poortnummer op voor lokale instanties, auteurs en publicatieinstanties. Klik op **[!UICONTROL Save]**.
+
+* Voor AEM Forms als Cloud Service [log een ondersteuningsticket om de e-mailservice in te schakelen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
 
 #### Gebruiker toevoegen aan de groep gebruikers van het formulier {#adduserstousergroup}
 
@@ -148,7 +156,7 @@ Geef een e-mailadres op in het profiel van de AEM gebruiker die is aangewezen om
 1. Geef een e-mailadres op in het veld **[!UICONTROL Email]** en tik **[!UICONTROL Save]**. De e-mails worden naar het opgegeven e-mailadres verzonden wanneer de conversie is voltooid of mislukt.
 1. Tik op het tabblad **Groepen**. Typ en selecteer op het tabblad Groep selecteren de groep **forms-users**. Tik **Opslaan en sluiten**. De gebruiker is nu lid van de groep met gebruikers van het formulier.
 
-#### Openbare certificaten verkrijgen {#obtainpubliccertificates}
+#### (Alleen voor AEM 6.4 en AEM 6.5) Openbare certificaten verkrijgen {#obtainpubliccertificates}
 
 Met een openbaar certificaat kunt u uw profiel verifiëren op Adobe I/O.
 
@@ -160,7 +168,7 @@ Met een openbaar certificaat kunt u uw profiel verifiëren op Adobe I/O.
 
 1. Selecteer het selectievakje **[!UICONTROL Create new certificate]** en geef een alias op. De alias fungeert als naam voor het dialoogvenster. Tik op **[!UICONTROL Create certificate]**. Er wordt een dialoogvenster weergegeven. Klik op **[!UICONTROL OK]**. Het certificaat wordt gemaakt.
 
-1. Tik **[!UICONTROL Download Public Key]** en sla het certificaatbestand *AEM-Adobe-IMS.crt* op uw computer op. Het certificaatbestand wordt gebruikt om de service-API&#39;s op de Adobe Developer Console](#createintegration) te configureren. [ Tik op **[!UICONTROL Next]**.
+1. Tik **[!UICONTROL Download Public Key]** en sla het certificaatbestand *AEM-Adobe-IMS.crt* op uw computer op. Het certificaatbestand wordt gebruikt om de service-API&#39;s in de Adobe Developer Console](#createintegration) te configureren. [ Tik op **[!UICONTROL Next]**.
 
 1. Geef het volgende op:
 
@@ -181,7 +189,7 @@ Met een openbaar certificaat kunt u uw profiel verifiëren op Adobe I/O.
    <li>Step text</li>
    -->
 
-#### De service-API&#39;s configureren in de Adobe Developer Console {#createintegration}
+#### (Alleen voor AEM 6.4 en AEM 6.5) Configureer de service-API&#39;s in de Adobe Developer Console {#createintegration}
 
 Om de dienst van de Automatede form conversion te gebruiken, creeer een project en voeg Geautomatiseerde de Dienst API van de Configuratie van Forms aan het project op de Console van de Ontwikkelaar van Adobe toe. De integratie genereert API Key, Client Secret, Payload (JWT).
 
@@ -216,12 +224,12 @@ Om de dienst van de Automatede form conversion te gebruiken, creeer een project 
 
    <br/> <br/>
 
-#### De cloudservice {#configure-the-cloud-service} configureren
+#### De Cloud Service {#configure-the-cloud-service} configureren
 
-Maak een cloudserviceconfiguratie om uw AEM aan te sluiten op de conversieservice. U kunt hiermee ook een sjabloon, thema en formulierfragmenten opgeven voor conversie. U kunt meerdere configuraties voor cloudservices maken, afzonderlijk voor elke set formulieren. U kunt bijvoorbeeld een aparte configuratie voor de formulieren van de verkoopafdeling en een aparte configuratie voor de formulieren voor klantenondersteuning hebben. Voer de volgende stappen uit om een configuratie van de wolkendienst tot stand te brengen:
+Creeer een configuratie van de Cloud Service om uw AEM instantie aan de omzettingsdienst te verbinden. U kunt hiermee ook een sjabloon, thema en formulierfragmenten opgeven voor conversie. U kunt meerdere configuraties voor cloudservices maken, afzonderlijk voor elke set formulieren. U kunt bijvoorbeeld een aparte configuratie voor de formulieren van de verkoopafdeling en een aparte configuratie voor de formulieren voor klantenondersteuning hebben. Voer de volgende stappen uit om een configuratie van de wolkendienst tot stand te brengen:
 
 1. Tik in uw AEM Forms-instantie op **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** **[!UICONTROL Cloud Services]** > **[!UICONTROL Automate Forms Conversion Configuration]**.
-1. Tik op de map **[!UICONTROL Global]** en tik **[!UICONTROL Create]**. De pagina om de configuratie van de Automatede form conversion tot stand te brengen verschijnt. De configuratie wordt gemaakt in de map Global. U kunt de configuratie ook maken in een andere map die al bestaat of een nieuwe map voor uw configuraties maken.
+1. Tik op de map **[!UICONTROL Global]** en tik **[!UICONTROL Create]**. De pagina om de configuratie van de Automatede form conversion tot stand te brengen verschijnt. De configuratie wordt gemaakt in de map Global. U kunt de configuratie ook maken in een andere map die bestaat of een map voor uw configuraties maken.
 
 1. Geef op de pagina **[!UICONTROL Create Automated Forms Conversion Configuration]** een waarde op voor de volgende velden en tik **[!UICONTROL Next]**.
 
@@ -254,7 +262,7 @@ Maak een cloudserviceconfiguratie om uw AEM aan te sluiten op de conversieservic
    </tr>
    <tr>
    <td>Analyse inschakelen</td>
-   <td>Selecteer de optie om Adobe Analytics in te schakelen op alle geconverteerde formulieren. Controleer voordat u deze optie gebruikt of Adobe Analytics is ingeschakeld voor uw AEM Forms-exemplaar.</td>
+   <td>(Alleen voor AEM 6.4 en AEM 6.5) Selecteer de optie om Adobe Analytics in te schakelen op alle geconverteerde formulieren. Controleer voordat u deze optie gebruikt of Adobe Analytics is ingeschakeld voor uw AEM Forms-exemplaar.</td>
    </tr>
    </tbody>
    </table>

@@ -2,10 +2,10 @@
 title: Inleiding
 description: 'Printformulieren sneller converteren naar adaptieve formulieren '
 translation-type: tm+mt
-source-git-commit: c4f0d07b38cdb6aa162a0b61abe12fe9d1677a8c
+source-git-commit: 53b88de185ed1b6669ecfc3c7c6649d5627741e9
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 92%
+source-wordcount: '685'
+ht-degree: 69%
 
 ---
 
@@ -17,22 +17,22 @@ De service voor automatische conversie helpt de digitalisering en modernisering 
 * Benodigde inspanning te besparen om printformulieren om te zetten in adaptieve formulieren
 * Patronen en geschikte validaties toe te passen tijdens conversie
 * Document van record te genereren tijdens conversie
-* Veelvoorkomende velden te groeperen in herbruikbare formulierfragmenten
+* Veelvoorkomende velden groeperen in herbruikbare formulierfragmenten
 * Adobe Analytics in te schakelen tijdens conversie
 
-![Het is eenvoudig. Geef ons gewoon uw bronformulieren en laat alles aan ons over. Wij zorgen voor mooie adaptieve formulieren. Uiteraard kunt u het resultaat naar wens aanpassen. ](assets/pdf-to-adaptive-form-gitx50.gif)
+![Het is eenvoudig. U geeft ons de bronformulieren en laat alles aan ons over. We bieden je prachtige adaptieve vormen. U kunt altijd naar wens met de uitvoer tikken. ](assets/pdf-to-adaptive-form-gitx50.gif)
 
 ## Onboarding {#onboarding}
 
-De service is gratis beschikbaar voor AEM 6.4 Forms en AEM 6.5 Forms On-Premise-termijnklanten en Adobe Managed Service Enterprise-klanten. U kunt contact opnemen met het Adobe-verkoopteam of uw Adobe-vertegenwoordiger om toegang tot de service aan te vragen.
+De service is gratis beschikbaar voor AEM 6.4 Forms en AEM 6.5 Forms On-Premise-term klanten en Adobe-Managed Service Enterprise-klanten. U kunt contact opnemen met het Adobe-verkoopteam of uw Adobe-vertegenwoordiger om toegang tot de service aan te vragen. De service is ook gratis en vooraf ingeschakeld voor AEM Forms als klanten van een Cloud Service.
 
 Adobe maakt toegang voor uw organisatie mogelijk en biedt de vereiste rechten aan de persoon die is aangewezen als beheerder in uw organisatie. De beheerder kan toegang verlenen aan de AEM Forms-ontwikkelaars (gebruikers) van uw organisatie om verbinding te maken met de service. Raadpleeg [De service voor automatische conversie van formulieren configureren](configure-service.md) voor meer informatie.
 
-## Ondersteunde PDF-formulieren en talen {#supported-languages-and-pdf-forms}
+## Ondersteunde PDF forms en talen {#supported-languages-and-pdf-forms}
 
 De service ondersteunt niet-interactieve PDF-formulieren, formulieren die zijn gemaakt met Adobe Acrobat (AcroForms) en op XFA gebaseerde formulieren die zijn gemaakt met AEM Forms of Adobe LiveCycle.
 
-De service biedt ook ondersteuning voor PDF forms die geschikt zijn voor Adobe Sign. Als het PDF-bronformulier Adobe Sign-tekstcodes heeft, behoudt de service tijdens de conversie alle Adobe Sign-gerelateerde informatie en worden de ondertekenaargegevens in de bron-PDF gekoppeld aan de bijbehorende adaptieve formuliervelden. De functie is alleen beschikbaar voor AcroForms.
+De service biedt ook ondersteuning voor PDF forms die zijn ingeschakeld voor Adobe Sign. Als het PDF-bronformulier Adobe Sign-tekstcodes heeft, behoudt de service tijdens de conversie alle Adobe Sign-gerelateerde informatie en worden de ondertekenaargegevens in de bron-PDF gekoppeld aan de bijbehorende adaptieve formuliervelden. De functie is alleen beschikbaar voor AcroForms.
 
 De service kan alleen Engelstalige formulieren converteren naar adaptieve formulieren. U kunt de gegenereerde adaptieve formulieren naar een andere taal vertalen met de [AEM-vertaalworkflow](https://helpx.adobe.com/nl/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 
@@ -51,14 +51,14 @@ De service voor automatische conversie van formulieren draait op Adobe Cloud. [C
 Nadat uw AEM Forms-omgeving is geconfigureerd, [uploadt u uw PDF-formulieren](convert-existing-forms-to-adaptive-forms.md) naar uw AEM-instantie en [start u de conversie ](convert-existing-forms-to-adaptive-forms.md#run-the-conversion) om uw PDF-formulieren te converteren naar adaptieve formulieren. Houd rekening met het volgende voordat u de formulieren uploadt:
 
 * Upload de beveiligde formulieren niet. De service converteert geen met een wachtwoord beveiligde en versleutelde formulieren.
-* Upload geen gescande, gekleurde, niet-Engelse en ingevulde formulieren. Dergelijke formulieren worden niet ondersteund.
+* Upload geen gescande, gekleurde, niet-Engelse taal en ingevulde formulieren. Dergelijke formulieren worden niet ondersteund.
 * Upload geen PDF-formulieren met spaties in de bestandsnaam.
-* Upload geen [PDF-portfolio&#39;s](https://helpx.adobe.com/nl/acrobat/using/overview-pdf-portfolios.html). De service converteert geen PDF-portfolio&#39;s naar adaptieve formulieren.
+* Upload geen [PDF-portfolio&#39;s](https://helpx.adobe.com/nl/acrobat/using/overview-pdf-portfolios.html). De service converteert een PDF-Portfolio niet naar een adaptief formulier.
 * Breng de voorgestelde wijzigingen in PDF-formulieren aan. Deze worden beschreven in het artikel [Best practices en overwegingen](styles-and-pattern-considerations-and-best-practices.md).
 * Lees het artikel [Bekende problemen](known-issues.md) om valkuilen te vermijden.
 
 ### 3. Geconverteerde formulieren controleren {#review-converted-forms}
 
-Formulieren kunnen complexe vereisten voor het vastleggen van gegevens hebben wat betreft de lay-out van velden, naamgeving of impliciete suggesties die mogelijk niet goed worden vastgelegd door op AI/ML gebaseerde detectielogica. Zodra de automatische conversie is voltooid, kunt u de [editor voor controleren en corrigeren](review-correct-ui-edited.md) gebruiken om geconverteerde formulieren te controleren, waar nodig bij te werken en verbeterde resultaten produceren die dichter bij gewenste ervaring liggen. Nadat u de wijzigingen heeft aangebracht, stuurt u het formulier opnieuw voor conversie.
+In werkelijkheid kunnen formulieren complexe vereisten voor gegevensvastlegging hebben op het gebied van veldindeling, naamgeving of impliciete suggesties die mogelijk niet nauwkeurig worden vastgelegd door op AI/ML gebaseerde detectielogica. Zodra de automatische conversie is voltooid, kunt u de [editor voor controleren en corrigeren](review-correct-ui-edited.md) gebruiken om geconverteerde formulieren te controleren, waar nodig bij te werken en verbeterde resultaten produceren die dichter bij gewenste ervaring liggen. Nadat u de wijzigingen heeft aangebracht, stuurt u het formulier opnieuw voor conversie.
 
-De benodigde tijd voor automatische conversie hangt af van verschillende factoren, zoals de grootte van het invoerformulier, de complexiteit ervan en de wachtrij van de service. De gebruiker wordt regelmatig op de hoogte gebracht van de voortgang via de statusindicator in de map/het bestand. Wanneer de conversie is voltooid, wordt er ook een melding verstuurd naar het geconfigureerde e-mailadres.
+De tijd die nodig is voor automatische conversie is afhankelijk van verschillende factoren, zoals de grootte van het invoerformulier, de complexiteit van het formulier, de lening in de verwerkingswachtrij van de service. De gebruiker wordt regelmatig op de hoogte gebracht van de voortgang via de statusindicator in de map/het bestand. Wanneer de conversie is voltooid, wordt er ook een melding verstuurd naar het geconfigureerde e-mailadres.

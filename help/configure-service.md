@@ -1,7 +1,7 @@
 ---
 title: De service voor automatische conversie van formulieren configureren
 description: Klaar uw AEM instantie om de dienst van de Automatede form conversion te gebruiken
-role: Bedrijfs Praktijk, Beheerder
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: a9bab62fbe5ecc4b233e9bc55b9e461a5967b471
 workflow-type: tm+mt

@@ -1,14 +1,13 @@
 ---
 title: Wat is er nieuw? Releaseopmerkingen - Service voor automatische conversie van formulieren
-description: 'Kom meer te weten over de nieuwste functies en bugfixes voor de service voor automatische conversie van formulieren '
-translation-type: tm+mt
-source-git-commit: 70dc18347e072ccd7c1625f6831554ecfc13f2fb
+description: Kom meer te weten over de nieuwste functies en bugfixes voor de service voor automatische conversie van formulieren
+exl-id: fccafbc9-28c1-4736-922c-24d675b25213
+source-git-commit: fd568dca4ac552a1d9695d13ece1d03b2c1457b1
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 88%
+source-wordcount: '409'
+ht-degree: 84%
 
 ---
-
 
 # Release-opmerkingen
 
@@ -23,25 +22,31 @@ De service voor automatische conversie van formulieren wordt voortdurend verbete
 * Speciale instructies
 * Geplande wijzigingen
 
+## 24 juni 2021 (AFC-2021.06.2) {#june-2021}
+
+### Wat is er verbeterd? {#june-2021-improvements}
+
+Verbeterde nauwkeurigheid voor het automatisch detecteren van logische secties in de bronformulieren en het converteren van deze secties naar overeenkomstige adaptieve formulierdeelvensters.
+
 ## 03 mrt. 2021 (AFC-2021.02.2) {#mar-2021}
 
-### Wat is er verbeterd?{#march-2021-improvements}
+### Wat is er verbeterd? {#march-2021-improvements}
 
 Verbeteringen in het ordenen van formulierinhoud in keuzegroepen en velden terwijl een bronformulier wordt geconverteerd naar een adaptief formulier.
 
 ## 20 februari 2021 (AFC-2021.01.2) {#feb-2021}
 
-### Wat is er verbeterd?{#feb-2021-improvements}
+### Wat is er verbeterd? {#feb-2021-improvements}
 
 Verbeteringen in het ordenen van formulierinhoud in deelvensters en het genereren van titels voor deelvensters tijdens het omzetten van een bronformulier in een adaptief formulier.
 
 ## 16 juli 2020 (AFC-2020.07.2) {#jul-2020}
 
-### Wat is er nieuw?{#whats-new-jul-2020-}
+### Wat is er nieuw? {#whats-new-jul-2020-}
 
 Ondersteuning toegevoegd voor het converteren van gekleurde PDF-formulieren naar adaptieve formulieren.
 
-### Wat is er verbeterd?{#jul-2020-improvements}
+### Wat is er verbeterd? {#jul-2020-improvements}
 
 Verbeteringen voor automatische conversie van tekst-, formulier- en keuzegroepvelden naar overeenkomende componenten voor adaptieve formulieren.
 
@@ -60,7 +65,7 @@ De service creëert standaard een aparte, bovenliggende laag voor elke pagina va
 
 De service kan nu efficiënter lijsten met opsommingstekens en genummerde lijsten detecteren.
 
-### Speciale instructies  {#special-instructions}
+### Speciale instructies {#special-instructions}
 
 **Connectorpakket voor de service voor automatische conversie van formulieren installeren**
 

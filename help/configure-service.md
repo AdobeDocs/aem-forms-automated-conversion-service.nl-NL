@@ -2,14 +2,13 @@
 title: De service voor automatische conversie van formulieren configureren
 description: Klaar uw AEM instantie om de dienst van de Automatede form conversion te gebruiken
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: a9bab62fbe5ecc4b233e9bc55b9e461a5967b471
+exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
+source-git-commit: 17d1c447d8aa68341214270932fb076b512422af
 workflow-type: tm+mt
-source-wordcount: '2673'
+source-wordcount: '2670'
 ht-degree: 6%
 
 ---
-
 
 # De service voor automatische conversie van formulieren configureren {#about-this-help}
 
@@ -40,7 +39,7 @@ U vereist het volgende om de Dienst van de Automatede form conversion te gebruik
 * Een actieve AEM 6.4, AEM 6.5, of AEM Forms als instantie van de Cloud Service auteur met recentste AEM Service Pack of recentste updates.
 * Een AEM gebruiker (op uw AEM) die lid is van een formulier-gebruikersgroep
 
-## De omgeving {#setuptheservice} instellen
+## De omgeving instellen {#setuptheservice}
 
 Voordat u de service gebruikt, moet u de AEM auteur voorbereiden om verbinding te maken met de service die wordt uitgevoerd op Adobe Cloud. Voer de volgende stappen in de vermelde reeks uit om uw exemplaar voor de service voor te bereiden:
 
@@ -67,7 +66,7 @@ De de dienstlooppas van de automatede form conversion op AEM auteursinstantie. U
 
 Download en installeer de nieuwste AEM Service Pack. Voor gedetailleerde instructies, zie, of [AEM 6.4 de Nota&#39;s van de Versie van het Pak ](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) of [AEM 6.5 de Nota&#39;s van de Versie van het Pak van de Dienst ](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html).
 
-### (Alleen voor AEM 6.4 en AEM 6.5) Download en installeer het AEM Forms-invoegpakket {#downloadaemformsaddon}
+### (Alleen voor AEM 6.4 en AEM 6.5) Download en installeer het AEM Forms-invoegpakket  {#downloadaemformsaddon}
 
 Een AEM-exemplaar bevat basisfuncties voor formulieren. Voor de conversieservice zijn alle mogelijkheden van AEM Forms vereist. Download en installeer het invoegpakket voor AEM Forms om alle mogelijkheden van AEM Forms te benutten. Het pakket is vereist om de conversieservice in te stellen en uit te voeren. Zie [Mogelijkheden voor het vastleggen van gegevens installeren en configureren.](https://helpx.adobe.com/experience-manager/6-5/forms/using/installing-configuring-aem-forms-osgi.html)
 
@@ -121,7 +120,7 @@ Herhaal bovenstaande stappen voor alle gebruikers. Zie [Ontwikkelaars beheren](h
 
 Nadat een beheerder ontwikkelaars heeft toegevoegd aan het Adobe I/O-profiel, worden de ontwikkelaars via e-mail op de hoogte gesteld. Nadat ontwikkelaars de e-mail hebben ontvangen, kunnen ze een lokale AEM Forms-instantie verbinden met de service Automatede form conversion op Adobe Cloud](#connectafcadobeio).[
 
-### (Alleen voor ontwikkelaars) Sluit uw lokale AEM Forms-instantie aan op de service Automatede forms conversion op Adobe Cloud {#connectafcadobeio}
+### (Alleen voor ontwikkelaars) Verbind uw lokale AEM Forms-instantie met de Automatede form conversion-service op Adobe Cloud {#connectafcadobeio}
 
 Nadat een beheerder u ontwikkelaarstoegang verleent, kunt u uw lokale instantie van AEM Forms met de dienst verbinden van de Automatede form conversion die op Adobe Cloud loopt. Voer de volgende stappen in de vermelde reeks uit om uw AEM Forms-instantie te verbinden met de service:
 
@@ -131,7 +130,7 @@ Nadat een beheerder u ontwikkelaarstoegang verleent, kunt u uw lokale instantie 
 * [De service-API&#39;s configureren in de Adobe Developer Console](#createintegration)
 * [De cloudservice configureren](configure-service.md#configure-the-cloud-service)
 
-#### E-mailmelding {#configureemailnotification} configureren
+#### E-mailmelding configureren {#configureemailnotification}
 
 De service automatede form conversion gebruikt de Dagelijkse CQ-mailservice om e-mailberichten te verzenden. Deze e-mailmeldingen bevatten informatie over geslaagde of mislukte conversies. Sla deze stappen over als u geen melding wilt ontvangen. Voer de volgende stappen uit om de Day CQ Mail Service te configureren:
 
@@ -146,9 +145,9 @@ De service automatede form conversion gebruikt de Dagelijkse CQ-mailservice om e
 
 * Voor AEM Forms als Cloud Service [log een ondersteuningsticket om de e-mailservice in te schakelen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
 
-#### Gebruiker toevoegen aan de groep gebruikers van het formulier {#adduserstousergroup}
+#### Gebruiker toevoegen aan de groep met gebruikers van het formulier {#adduserstousergroup}
 
-Geef een e-mailadres op in het profiel van de AEM gebruiker die is aangewezen om de service uit te voeren. Zorg ervoor dat de gebruiker lid is van de [notatie gebruiker](https://helpx.adobe.com/experience-manager/6-4/forms/using/forms-groups-privileges-tasks.html) groep. E-mails worden verzonden naar het e-mailadres van de gebruiker die de conversie uitvoert. U kunt als volgt een e-mailadres voor de gebruiker opgeven en gebruiker toevoegen aan de gebruikersgroep Formulieren:
+Geef een e-mailadres op in het profiel van de AEM gebruiker die is aangewezen om de service uit te voeren. Zorg ervoor dat de gebruiker lid is van de [notatie gebruiker](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html) groep. E-mails worden verzonden naar het e-mailadres van de gebruiker die de conversie uitvoert. U kunt als volgt een e-mailadres voor de gebruiker opgeven en gebruiker toevoegen aan de gebruikersgroep voor formulieren:
 
 1. Meld u als AEM beheerder aan bij de auteur-instantie van AEM Forms. Gebruik uw lokale AEM om u aan te melden. Gebruik Adobe ID niet om u aan te melden. Tik **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.
 
@@ -156,7 +155,7 @@ Geef een e-mailadres op in het profiel van de AEM gebruiker die is aangewezen om
 1. Geef een e-mailadres op in het veld **[!UICONTROL Email]** en tik **[!UICONTROL Save]**. De e-mails worden naar het opgegeven e-mailadres verzonden wanneer de conversie is voltooid of mislukt.
 1. Tik op het tabblad **Groepen**. Typ en selecteer op het tabblad Groep selecteren de groep **forms-users**. Tik **Opslaan en sluiten**. De gebruiker is nu lid van de groep met gebruikers van het formulier.
 
-#### (Alleen voor AEM 6.4 en AEM 6.5) Openbare certificaten verkrijgen {#obtainpubliccertificates}
+#### (Alleen voor AEM 6.4 en AEM 6.5) Overheidscertificaten verkrijgen {#obtainpubliccertificates}
 
 Met een openbaar certificaat kunt u uw profiel verifiëren op Adobe I/O.
 
@@ -224,7 +223,7 @@ Om de dienst van de Automatede form conversion te gebruiken, creeer een project 
 
    <br/> <br/>
 
-#### De Cloud Service {#configure-the-cloud-service} configureren
+#### De Cloud Service configureren {#configure-the-cloud-service}
 
 Creeer een configuratie van de Cloud Service om uw AEM instantie aan de omzettingsdienst te verbinden. U kunt hiermee ook een sjabloon, thema en formulierfragmenten opgeven voor conversie. U kunt meerdere configuraties voor cloudservices maken, afzonderlijk voor elke set formulieren. U kunt bijvoorbeeld een aparte configuratie voor de formulieren van de verkoopafdeling en een aparte configuratie voor de formulieren voor klantenondersteuning hebben. Voer de volgende stappen uit om een configuratie van de wolkendienst tot stand te brengen:
 

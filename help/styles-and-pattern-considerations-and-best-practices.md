@@ -6,14 +6,13 @@ seo-description: Lijst van stijlen en patronen in bron PDF forms die de dienst v
 uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
-translation-type: tm+mt
-source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
+exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
+source-git-commit: 17d1c447d8aa68341214270932fb076b512422af
 workflow-type: tm+mt
 source-wordcount: '1259'
 ht-degree: 3%
 
 ---
-
 
 # Aanbevolen werkwijzen en bekende complexe patronen {#Best-practices-and-considerations2}
 
@@ -25,7 +24,7 @@ De conversieservice converteert PDF forms die beschikbaar zijn op uw AEM [!DNL F
 
 ### Voordat u de bron uploadt
 
-U kunt alle PDF forms tegelijk uploaden of, indien nodig, gefaseerd. Houd rekening met het volgende voordat u de formulieren uploadt:
+U kunt alle PDF forms in één keer uploaden of gefaseerd, naar wens. Houd rekening met het volgende voordat u de formulieren uploadt:
 
 * Houd het aantal formulieren in een map kleiner dan 15 en houd het totale aantal pagina&#39;s in een map kleiner dan 50.
 * Houd de map kleiner dan 10 MB. Bewaar formulieren niet in submappen.
@@ -40,7 +39,7 @@ Wanneer u een XDP-formulier gebruikt voor conversie, voert u de volgende stappen
 
 * Analyseer het XDP-formulier en los visuele problemen op. Zorg ervoor dat het brondocument de beoogde besturingselementen en structuren gebruikt. Het bronformulier kan bijvoorbeeld selectievakjes hebben in plaats van keuzerondjes voor één selectie. Schakel selectievakjes in op keuzerondjes om een adaptief formulier met de gewenste onderdelen te maken.
 * [Voeg bindingen toe aan het XDP-](http://www.adobe.com/go/learn_aemforms_designer_65) formulier voordat u de conversie start. Wanneer bindingen beschikbaar zijn in het XDP-bronformulier, past de service tijdens de conversie automatisch bindingen toe op de bijbehorende adaptieve formuliervelden. Hiermee bespaart u de tijd die nodig is om de bindingen handmatig toe te passen.
-* [Voeg Adobe Sign-](https://helpx.adobe.com/sign/using/text-tag.html) tags toe aan het XDP-bestand. De service converteert Adobe Sign-tags automatisch naar overeenkomende aangepaste formuliervelden. Adaptieve Forms ondersteunt een beperkt aantal Adobe Sign-velden. Zie [Adobe Sign gebruiken in een adaptieve vorm](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html) documentatie voor de volledige lijst met ondersteunde velden.
+* [Voeg Adobe Sign-](https://helpx.adobe.com/sign/using/text-tag.html) tags toe aan het XDP-bestand. De service converteert Adobe Sign-tags automatisch naar overeenkomende aangepaste formuliervelden. Adaptieve Forms ondersteunt een beperkt aantal Adobe Sign-velden. Zie [Adobe Sign gebruiken in een adaptieve vorm](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html?lang=en) documentatie voor de volledige lijst met ondersteunde velden.
 * Complexe tabellen in XDP-documenten indien mogelijk omzetten in eenvoudige tabellen. Een tabel met formuliervelden in tabelcellen, cellen met een oneven grootte, cellen met een rij- of kolombereik, samengevoegde cellen, gedeeltelijke randen of geen zichtbare rand wordt als een complexe tabel beschouwd. Een tabel met een van de bovenstaande items wordt als een complexe tabel beschouwd.
 <!-- * Use sub-forms in XDP documents to create panels in adaptive forms. Service converts each sub-form to one or more adaptive form panels during conversion. -->
 
@@ -76,7 +75,7 @@ De dienst zou beginnen correcte gebieden of panelen aan deze patronen te identif
 
 
 
-### Keuzegroep {#choice-group}
+### Keuzegroep  {#choice-group}
 
 | Patroon | Resolutie |
 |--- |--- |

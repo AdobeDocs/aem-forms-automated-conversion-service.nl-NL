@@ -9,13 +9,12 @@ user-guide-title: Service voor automatische conversie van Adobe Experience Manag
 user-guide-description: PDF-formulieren converteren naar responsieve HTML-formulieren die geschikt zijn voor mobiel.
 breadcrumb-title: Gids voor automatische conversie van formulieren
 breadcrumb-url: /docs/aem-forms-automated-conversion-service/using/introduction.html
-feature: Adaptive Forms
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 8c4cf4ff72e9ca7e8daa76f495abd75a865cd2f7
+feature: Adaptieve Forms
+role: User
+source-git-commit: 6aae2035969e99abca0d310d8b023e2c22a9e938
 workflow-type: tm+mt
-source-wordcount: '95'
-ht-degree: 95%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +22,7 @@ ht-degree: 95%
 # Service voor automatische conversie van Adobe Experience Manager Forms {#using}
 
 + [Inleiding](introduction.md)
-+ [Releaseopmerkingen](release-notes.md)
++ [Release-opmerkingen](release-notes.md)
 + [Best practices en overwegingen](styles-and-pattern-considerations-and-best-practices.md)
 + [Service configureren](configure-service.md)
 + [Printformulieren converteren naar adaptieve formulieren](convert-existing-forms-to-adaptive-forms.md)

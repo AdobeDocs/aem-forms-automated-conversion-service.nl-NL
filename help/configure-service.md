@@ -3,10 +3,10 @@ title: De service voor automatische conversie van formulieren configureren
 description: Klaar uw AEM instantie om de dienst van de Automatede form conversion te gebruiken
 role: User, Admin
 exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
-source-git-commit: 6aae2035969e99abca0d310d8b023e2c22a9e938
+source-git-commit: 264208305996e98ff2dbccf0e63027b4c757754c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2682'
+ht-degree: 6%
 
 ---
 
@@ -241,9 +241,7 @@ Creeer een configuratie van de Cloud Service om uw AEM instantie aan de omzettin
    | Sjabloonmodel | Standaardsjabloon die op geconverteerde formulieren moet worden toegepast. U kunt altijd een andere sjabloon opgeven voordat u de conversie start. Een sjabloon bevat basisstructuur en initiële inhoud voor een adaptief formulier. U kunt een sjabloon kiezen uit de sjablonen die u buiten het vak plaatst. U kunt ook een aangepaste sjabloon maken. |
    | Thema | Standaardthema dat op geconverteerde formulieren moet worden toegepast. U kunt altijd een ander thema opgeven voordat u de conversie start.  U kunt op het pictogram klikken om een thema te kiezen dat buiten het vak wordt weergegeven. U kunt ook een aangepast thema maken. |
    | Bestaande fragmenten | Plaats van bestaande fragmenten, indien aanwezig. |
-   | Aangepast metamodel | Pad van het bestand .schema.json van het aangepaste metamodel. |
-
-
+   | Aangepast metamodel | Pad van het bestand .schema.json van het aangepaste metamodel. U kunt aparte metamodellen maken voor de talen Engels, Frans, Duits en Spaans. |
 
 1. Geef op het tabblad **[!UICONTROL Advanced]** van de pagina **[!UICONTROL Create Automated Forms Conversion Configuration]** een waarde op voor het volgende veld:
 

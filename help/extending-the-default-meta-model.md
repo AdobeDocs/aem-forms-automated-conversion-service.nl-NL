@@ -6,14 +6,13 @@ seo-description: Het standaardmetamodel uitbreiden om patronen, validaties en en
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
-translation-type: tm+mt
-source-git-commit: 77bdb4e88194bd634dea125852ff2a897bc24678
+exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
+source-git-commit: 3f91fc0541f8fe8dbc997ae0b401c8a0a49347dd
 workflow-type: tm+mt
-source-wordcount: '2372'
+source-wordcount: '2569'
 ht-degree: 1%
 
 ---
-
 
 # Het standaard metamodel uitbreiden {#extend-the-default-meta-model}
 
@@ -25,7 +24,7 @@ Meta-model is een JSON-schema. Voordat u begint met meta-model, moet u controler
 
 ## Standaardmetamodel {#default-meta-model}
 
-De dienst van de automatede form conversion heeft een standaard meta-model. Het is een JSON-schema en bevindt zich op Adobe Cloud met andere onderdelen van de service Automatede form conversion. U kunt een exemplaar van het metamodel op uw lokale AEM server vinden bij: http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/global.schema.json. U kunt ook [hier ](assets/global.schema.json) klikken om tot het standaardschema toegang te hebben of te downloaden.
+De dienst van de automatede form conversion heeft een standaard meta-model. Het is een JSON-schema en bevindt zich op Adobe Cloud met andere onderdelen van de service Automatede form conversion. U kunt een exemplaar van het metamodel op uw lokale AEM server vinden bij: http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/`global.schema.json`. U kunt ook [hier ](assets/en.globalschema.json) klikken om tot het Engelse taalschema toegang te hebben of te downloaden. Het metamodel voor [Franstalige](assets/fr.globalschema.json), [Duitse](assets/de.globalschema.json) en [Spaanse](assets/es.globalschema.json) talen is ook beschikbaar voor downloaden.
 
 Het schema van meta-model wordt afgeleid uit schemaentiteiten in https://schema.org/docs/schemas.html. Het heeft Persoon, PostalAddress, LocalBusiness, en meer entiteiten zoals die op https://schema.org worden bepaald. Elke entiteit van het metamodel volgt het JSON-schemaobjecttype. De volgende code vertegenwoordigt een structuur van een metamodel van het steekproef:
 
@@ -45,7 +44,7 @@ Het schema van meta-model wordt afgeleid uit schemaentiteiten in https://schema.
     }
 ```
 
-## Standaard metamodel {#download-the-default-meta-model} downloaden
+## Het standaardmetamodel downloaden {#download-the-default-meta-model}
 
 Voer de volgende stappen uit om het standaard meta-model aan het lokale dossiersysteem te downloaden:
 
@@ -65,7 +64,7 @@ Voer de volgende stappen uit om het standaard meta-model aan het lokale dossiers
    <li>Step text</li>
    -->
 
-## Het metamodel {#understanding-the-meta-model} begrijpen
+## Het metamodel begrijpen {#understanding-the-meta-model}
 
 Een metamodel verwijst naar een JSON-schemabestand dat entiteiten bevat. Alle entiteiten in het JSON-schemabestand bevatten een naam en een id. Elke entiteit kan meerdere eigenschappen bevatten. De entiteiten en de eigenschappen kunnen variëren op basis van het domein. U kunt een schemabestand met trefwoorden en veldconfiguraties uitbreiden om schema-eigenschappen toe te wijzen aan adaptieve formuliercomponenten.
 
@@ -215,7 +214,46 @@ Met de eigenschap **aem:afProperties** in het metamodel kunt u de volgende aanvu
  </tbody> 
 </table>
 
-## Aangepaste formuliervelden wijzigen met behulp van aangepast metamodel {#modify-adaptive-form-fields-using-custom-meta-model}
+## Een aangepast model in uw eigen taal maken{#language-specific-meta-model}
+
+U kunt een taalspecifiek metamodel maken. Een dergelijk metamodel helpt u toewijzingsregels te maken in de taal van uw keuze. Met de service automatede form conversion kunt u metamodellen maken in de volgende talen:
+
+* Engels(en)
+* Frans(fr)
+* Duits(de)
+* Spaans()
+
+Voeg de metatag *aem:Language* toe aan de bovenkant van een metamodel om zijn taal te specificeren. Bijvoorbeeld,
+
+```JSON
+"metaTags": {
+        "aem:Language": "de"
+    }
+```
+
+Engels is de standaardtaal van metamodellen.
+
+### Overwegingen bij het maken van een taalspecifiek metamodel
+
+* Zorg ervoor dat elke sleutel in het Engels heet. Bijvoorbeeld emailAddress.
+* Zorg ervoor dat alle entiteitverwijzingen en vooraf gedefinieerde waarden van alle *id*-toetsen in het Engels zijn gesteld. Bijvoorbeeld &quot;id&quot;: &quot;ContactPoint&quot; / &quot;$ref&quot;: &quot;Entiteit&quot;.
+* Zorg ervoor dat de beschrijving of berichten die in een metamodel zijn opgenomen voor de volgende toetsen overeenkomt met de taal van het metamodel:
+   * aem:affKeyword
+   * titel
+   * beschrijving
+   * enumNames
+   * shortDescription
+   * validatePictureClauseMessage
+
+   Wanneer de taal van het metamodel bijvoorbeeld Frans is (&quot;aem:Language&quot;: &quot;fr&quot;), moet u ervoor zorgen dat alle beschrijvingen en berichten in het Frans zijn gesteld.
+
+* Zorg ervoor dat alle [JSON-schemaeigenschappen](#jsonschemaproperties) alleen ondersteunde waarden gebruiken.
+
+In de volgende afbeelding ziet u voorbeelden van het metamodel voor de Engelse taal en het overeenkomstige metamodel voor de Franse taal:
+
+![](assets/language-specific-meta-model-comparison.png)
+
+## Aangepaste formuliervelden wijzigen met behulp van een aangepast metamodel {#modify-adaptive-form-fields-using-custom-meta-model}
 
 Uw organisatie kan patronen en bevestigingen naast die hebben die in het standaard meta-model worden vermeld. U kunt het standaardmetamodel uitbreiden om een patroon, validaties en entiteiten toe te voegen die specifiek zijn voor uw organisatie. Tijdens de conversie past de service automatede form conversion het aangepaste metamodel toe op de formuliervelden. U kunt het metamodel blijven bijwerken aangezien de nieuwe patronen, de bevestigingen, en de entiteiten specifiek voor uw organisatie worden ontdekt.
 
@@ -237,7 +275,7 @@ Voer de volgende stappen uit om een aangepast meta-model tijdens omzetting te ge
 1. Geef op het tabblad **[!UICONTROL Basic]** de locatie van het aangepaste metamodel op in het veld **[!UICONTROL Custom Meta-model]** en tik **[!UICONTROL Save & Close]**.
 1. [Voer de ](convert-existing-forms-to-adaptive-forms.md#start-the-conversion-process) conversie uit om het aangepaste metamodel toe te passen op het conversieproces.
 
-### Aangepaste voorbeelden van metamodel {#custommetamodelexamples}
+### Voorbeelden van aangepaste metamodel {#custommetamodelexamples}
 
 Enkele voorbeelden die vaak worden gebruikt om aangepaste eigenschappen voor formuliervelden te wijzigen, zijn:
 
@@ -251,7 +289,7 @@ Enkele voorbeelden die vaak worden gebruikt om aangepaste eigenschappen voor for
 * Aanvullende opties toevoegen aan de vervolgkeuzelijst
 * Een tekenreeksveld omzetten in een veld met meerdere regels
 
-#### Het label van een formulierveld {#modify-the-label-of-a-form-field} wijzigen
+#### Het label van een formulierveld wijzigen {#modify-the-label-of-a-form-field}
 
 **Voorbeeld:** Wijzig het label Bankrekeningnummer in het formulier in Aangepast rekeningnummer in het adaptieve formulier na de conversie.
 
@@ -269,7 +307,7 @@ In dit aangepaste metamodel gebruikt de conversieservice de eigenschap **title**
 }
 ```
 
-#### Het type formulierveld {#modify-the-type-of-a-form-field} wijzigen
+#### Het type van een formulierveld wijzigen {#modify-the-type-of-a-form-field}
 
 **Voorbeeld**: Wijzig het  **tekstveld voor het** bankrekeningnummer van het formulier vóór de conversie naar een nummerveld in het adaptieve formulier na conversie.
 
@@ -350,7 +388,7 @@ In dit aangepaste metamodel gebruikt de conversieservice tekst binnen **aem:affK
 }
 ```
 
-#### Validaties toevoegen aan aangepaste formuliervelden {#add-validations-to-adaptive-form-fields}
+#### Validaties toevoegen aan adaptieve formuliervelden {#add-validations-to-adaptive-form-fields}
 
 **Voorbeeld 1:** Voeg een validatie toe aan het veld  **Postal** Codefield van het adaptieve formulier.
 
@@ -418,7 +456,7 @@ In dit aangepaste metamodel gebruikt de conversieservice tekst binnen **aem:affK
 }
 ```
 
-#### Extra opties toevoegen aan de vervolgkeuzelijst {#add-additional-options-to-the-drop-down-list}
+#### Aanvullende opties toevoegen aan de vervolgkeuzelijst {#add-additional-options-to-the-drop-down-list}
 
 **Voorbeeld:** Voeg  **Sri** Kanalen als extra optie aan een bestaande drop-down lijst toe gebruikend een douane meta-model.
 

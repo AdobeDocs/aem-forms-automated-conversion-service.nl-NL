@@ -1,14 +1,13 @@
 ---
 title: Inleiding
-description: 'Printformulieren sneller converteren naar adaptieve formulieren '
-translation-type: tm+mt
-source-git-commit: 53b88de185ed1b6669ecfc3c7c6649d5627741e9
+description: Printformulieren sneller converteren naar adaptieve formulieren
+exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
+source-git-commit: fed54ea64e19c77868e8e58e29e909cf4447f696
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 69%
+source-wordcount: '690'
+ht-degree: 65%
 
 ---
-
 
 # Inleiding {#introduction-to-automated-forms-conversion-service}
 
@@ -34,7 +33,7 @@ De service ondersteunt niet-interactieve PDF-formulieren, formulieren die zijn g
 
 De service biedt ook ondersteuning voor PDF forms die zijn ingeschakeld voor Adobe Sign. Als het PDF-bronformulier Adobe Sign-tekstcodes heeft, behoudt de service tijdens de conversie alle Adobe Sign-gerelateerde informatie en worden de ondertekenaargegevens in de bron-PDF gekoppeld aan de bijbehorende adaptieve formuliervelden. De functie is alleen beschikbaar voor AcroForms.
 
-De service kan alleen Engelstalige formulieren converteren naar adaptieve formulieren. U kunt de gegenereerde adaptieve formulieren naar een andere taal vertalen met de [AEM-vertaalworkflow](https://helpx.adobe.com/nl/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
+De service kan Engelse, Franse, Duitse en Spaanse taalformulieren omzetten in aangepaste formulieren. U kunt de gegenereerde adaptieve formulieren ook naar een andere taal vertalen met behulp van [AEM vertaalworkflow](https://helpx.adobe.com/nl/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 
 ## Conversieworkflow  {#conversion-workflow}
 

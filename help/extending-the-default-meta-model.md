@@ -7,9 +7,9 @@ uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
-source-git-commit: 3f91fc0541f8fe8dbc997ae0b401c8a0a49347dd
+source-git-commit: 28e07a0264edaaeef22d211f411f7908ca0abaed
 workflow-type: tm+mt
-source-wordcount: '2569'
+source-wordcount: '2591'
 ht-degree: 1%
 
 ---
@@ -221,23 +221,23 @@ U kunt een taalspecifiek metamodel maken. Een dergelijk metamodel helpt u toewij
 * Engels(en)
 * Frans(fr)
 * Duits(de)
-* Spaans()
+* Spaans
 
 Voeg de metatag *aem:Language* toe aan de bovenkant van een metamodel om zijn taal te specificeren. Bijvoorbeeld,
 
 ```JSON
 "metaTags": {
-        "aem:Language": "de"
+        "aem:Language": "fr"
     }
 ```
 
-Engels is de standaardtaal van metamodellen.
+Wanneer geen taal wordt gespecificeerd, is de dienst van mening dat meta-model in het Engels taal is.
 
 ### Overwegingen bij het maken van een taalspecifiek metamodel
 
 * Zorg ervoor dat elke sleutel in het Engels heet. Bijvoorbeeld emailAddress.
-* Zorg ervoor dat alle entiteitverwijzingen en vooraf gedefinieerde waarden van alle *id*-toetsen in het Engels zijn gesteld. Bijvoorbeeld &quot;id&quot;: &quot;ContactPoint&quot; / &quot;$ref&quot;: &quot;Entiteit&quot;.
-* Zorg ervoor dat de beschrijving of berichten die in een metamodel zijn opgenomen voor de volgende toetsen overeenkomt met de taal van het metamodel:
+* Zorg ervoor dat alle entiteitverwijzingen en vooraf gedefinieerde waarden van alle id-sleutel alleen ASCII-tekens bevatten. Bijvoorbeeld &quot;id&quot;: &quot;ContactPoint&quot; / &quot;$ref&quot;: &quot;#ContactPoint&quot;.
+* Zorg ervoor dat alle waarden die overeenkomen met de volgende toetsen zich in de opgegeven taal van het metamodel bevinden:
    * aem:affKeyword
    * titel
    * beschrijving
@@ -247,7 +247,7 @@ Engels is de standaardtaal van metamodellen.
 
    Wanneer de taal van het metamodel bijvoorbeeld Frans is (&quot;aem:Language&quot;: &quot;fr&quot;), moet u ervoor zorgen dat alle beschrijvingen en berichten in het Frans zijn gesteld.
 
-* Zorg ervoor dat alle [JSON-schemaeigenschappen](#jsonschemaproperties) alleen ondersteunde waarden gebruiken.
+* Zorg ervoor dat alle [JSON-schemaeigenschappen](#jsonschemaproperties) alleen ondersteunde waarden gebruiken. De eigenschap type kan bijvoorbeeld alleen geselecteerde waarden van String, Number, Integer en Boolean omvatten.
 
 In de volgende afbeelding ziet u voorbeelden van het metamodel voor de Engelse taal en het overeenkomstige metamodel voor de Franse taal:
 

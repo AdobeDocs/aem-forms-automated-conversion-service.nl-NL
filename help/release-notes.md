@@ -2,9 +2,9 @@
 title: Wat is er nieuw? Releaseopmerkingen - Service voor automatische conversie van formulieren
 description: Kom meer te weten over de nieuwste functies en bugfixes voor de service voor automatische conversie van formulieren
 exl-id: fccafbc9-28c1-4736-922c-24d675b25213
-source-git-commit: 3f91fc0541f8fe8dbc997ae0b401c8a0a49347dd
+source-git-commit: 3bf065a754d8e8f97a660eb2ae39f37341bb4668
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '428'
 ht-degree: 80%
 
 ---
@@ -24,7 +24,7 @@ De service voor automatische conversie van formulieren wordt voortdurend verbete
 
 ## 29 juli 2021 (AFC-2021.07.2) {#july-2021}
 
-* Mogelijkheid toegevoegd om PDF forms in het Frans, Duits en Spaans om te zetten in adaptieve formulieren.
+* Mogelijkheid toegevoegd om een PDF-formulier in het Frans, Duits en Spaans te converteren naar een adaptief formulier.
 
 ## 24 juni 2021 (AFC-2021.06.2) {#june-2021}
 

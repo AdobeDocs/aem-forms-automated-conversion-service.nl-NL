@@ -7,9 +7,9 @@ uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
-source-git-commit: 17d1c447d8aa68341214270932fb076b512422af
+source-git-commit: c070651253877408466231ab80a6b7e0d04a9fab
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1257'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ De conversieservice converteert PDF forms die beschikbaar zijn op uw AEM [!DNL F
 
 ### Voordat u de bron uploadt
 
-U kunt alle PDF forms in één keer uploaden of gefaseerd, naar wens. Houd rekening met het volgende voordat u de formulieren uploadt:
+U kunt alle PDF forms tegelijk uploaden of, indien nodig, gefaseerd. Houd rekening met het volgende voordat u de formulieren uploadt:
 
 * Houd het aantal formulieren in een map kleiner dan 15 en houd het totale aantal pagina&#39;s in een map kleiner dan 50.
 * Houd de map kleiner dan 10 MB. Bewaar formulieren niet in submappen.
@@ -32,7 +32,7 @@ U kunt alle PDF forms in één keer uploaden of gefaseerd, naar wens. Houd reken
 * Indelen van brondocumenten in een batch van 8-15 documenten. Bronformulieren met algemene adaptieve formulierfragmenten in één batch bewaren.
 * Upload de beveiligde formulieren niet. De service converteert formulieren die met een wachtwoord zijn beveiligd niet.
 * Upload de [PDF-Portfolio](https://helpx.adobe.com/nl/acrobat/using/overview-pdf-portfolios.html) niet. De service converteert een PDF-Portfolio niet naar een adaptief formulier.
-* Upload geen gescande, niet-Engelse taal en ingevulde formulieren. Dergelijke formulieren worden niet ondersteund.
+* Upload gescande en ingevulde formulieren niet. Dergelijke formulieren worden niet ondersteund.
 * Upload geen bronformulieren met spaties in de bestandsnaam. Verwijder de ruimte uit de naam van het bestand voordat u de formulieren uploadt.
 
 Wanneer u een XDP-formulier gebruikt voor conversie, voert u de volgende stappen uit voordat u de XDP-bronformulieren uploadt:

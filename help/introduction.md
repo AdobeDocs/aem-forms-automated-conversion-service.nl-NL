@@ -2,10 +2,10 @@
 title: Inleiding
 description: Printformulieren sneller converteren naar adaptieve formulieren
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
-source-git-commit: fed54ea64e19c77868e8e58e29e909cf4447f696
+source-git-commit: af05922f9eb76b7b0a30601824c6006fe555ea80
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 65%
+source-wordcount: '699'
+ht-degree: 64%
 
 ---
 
@@ -50,7 +50,7 @@ De service voor automatische conversie van formulieren draait op Adobe Cloud. [C
 Nadat uw AEM Forms-omgeving is geconfigureerd, [uploadt u uw PDF-formulieren](convert-existing-forms-to-adaptive-forms.md) naar uw AEM-instantie en [start u de conversie ](convert-existing-forms-to-adaptive-forms.md#run-the-conversion) om uw PDF-formulieren te converteren naar adaptieve formulieren. Houd rekening met het volgende voordat u de formulieren uploadt:
 
 * Upload de beveiligde formulieren niet. De service converteert geen met een wachtwoord beveiligde en versleutelde formulieren.
-* Upload geen gescande, gekleurde, niet-Engelse taal en ingevulde formulieren. Dergelijke formulieren worden niet ondersteund.
+* Upload geen gescande, gekleurde, ingevulde formulieren en formulieren in een andere taal dan Engels, Frans, Duits en Spaans. Dergelijke formulieren worden niet ondersteund.
 * Upload geen PDF-formulieren met spaties in de bestandsnaam.
 * Upload geen [PDF-portfolio&#39;s](https://helpx.adobe.com/nl/acrobat/using/overview-pdf-portfolios.html). De service converteert een PDF-Portfolio niet naar een adaptief formulier.
 * Breng de voorgestelde wijzigingen in PDF-formulieren aan. Deze worden beschreven in het artikel [Best practices en overwegingen](styles-and-pattern-considerations-and-best-practices.md).

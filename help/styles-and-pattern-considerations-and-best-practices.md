@@ -7,9 +7,9 @@ uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
-source-git-commit: 86ffe3a6aa0257afe06310dbbc7a5ff8db3060e2
+source-git-commit: 65b0d6f6568ce7915b1a8bd85981bead967d869c
 workflow-type: tm+mt
-source-wordcount: '1257'
+source-wordcount: '1267'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,7 @@ U kunt alle PDF forms tegelijk uploaden of, indien nodig, gefaseerd. Houd rekeni
 * Indelen van brondocumenten in een batch van 8-15 documenten. Bronformulieren met algemene adaptieve formulierfragmenten in één batch bewaren.
 * Upload de beveiligde formulieren niet. De service converteert formulieren die met een wachtwoord zijn beveiligd niet.
 * Upload de [PDF-Portfolio](https://helpx.adobe.com/nl/acrobat/using/overview-pdf-portfolios.html) niet. De service converteert een PDF-Portfolio niet naar een adaptief formulier.
-* Upload gescande en ingevulde formulieren niet. Dergelijke formulieren worden niet ondersteund.
+* Upload gescande, gevulde en formulieren niet in een andere taal dan Engels, Frans, Duits en Spaans. Dergelijke formulieren worden niet ondersteund.
 * Upload geen bronformulieren met spaties in de bestandsnaam. Verwijder de ruimte uit de naam van het bestand voordat u de formulieren uploadt.
 
 Wanneer u een XDP-formulier gebruikt voor conversie, voert u de volgende stappen uit voordat u de XDP-bronformulieren uploadt:

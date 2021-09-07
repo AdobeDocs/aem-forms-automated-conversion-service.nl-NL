@@ -1,15 +1,15 @@
 ---
 title: Veelgestelde vragen
-seo-title: Veelgestelde vragen
+seo-title: Frequently asked questions
 description: Veelgestelde vragen of veelgestelde vragen
-seo-description: veelgestelde vragen over de service Automatede form conversion
+seo-description: frequently asked questions for Automated Forms Conversion Service
 uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 exl-id: 3a29f8d4-8ea0-49eb-bfe0-0eab5f0c52c7
-source-git-commit: af05922f9eb76b7b0a30601824c6006fe555ea80
+source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
 workflow-type: tm+mt
-source-wordcount: '1830'
+source-wordcount: '1821'
 ht-degree: 4%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 4%
    <p>De service kan niet-interactieve PDF forms, XDP en PDF forms op basis van XFA en AcroForms converteren naar adaptieve formulieren. De service ondersteunt geen gescande of ingevulde formulieren. Voor andere beperkingen, zie <a href="known-issues.md">bekende kwesties</a> artikel.<br /> </p> 
     <p>Wij voegen regelmatig steun voor andere brontypes toe. Houd de sectie <a href="introduction.md">supportedPDF-formulieren</a> op uw controlelijst voor een regelmatige update van toegevoegde functies en mogelijkheden.</p>
 
-   De service kan alleen Engelse, Franse, Duitse en Spaanse taalformulieren converteren naar adaptieve formulieren. U kunt de gegenereerde adaptieve formulieren naar een andere taal vertalen met de [AEM-vertaalworkflow.](https://helpx.adobe.com/nl/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> </br>
+   De service kan alleen de taalformulieren Engels, Frans, Duits, Spaans, Italiaans en Portugees converteren naar adaptieve formulieren. U kunt de gegenereerde adaptieve formulieren naar een andere taal vertalen met de [AEM-vertaalworkflow.](https://helpx.adobe.com/nl/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> </br>
 
 1. **Kan de service een XDP produceren in plaats van een adaptief formulier?**
 
@@ -73,7 +73,7 @@ ht-degree: 4%
 1. **De service heeft formulieren niet geconverteerd. Wat is de reden en hoe moet dit probleem worden opgelost?**
 De meest voorkomende redenen voor het mislukken van de conversie zijn:
 </p>
-   * Voor de conversie zijn beveiligde PDF forms beschikbaar. Gebruik geen met wachtwoord beveiligde of beveiligde PDF forms voor conversie.
+   * Voor de conversie worden beveiligde PDF forms verstrekt. Gebruik geen met wachtwoord beveiligde of beveiligde PDF forms voor conversie.
    * De internetverbinding wordt onderbroken. Zorg ervoor dat u tijdens de conversie verbinding hebt met internet.
    * De bron-PDF heeft een afbeelding van het formulier in plaats van het daadwerkelijke formulier.
    * De service is onjuist geconfigureerd, de service-URL is niet opgegeven of de service-URL is onjuist. Controleer de [serviceconfiguratie](configure-service.md#configure-the-cloud-service) op **[!UICONTROL AEM]** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion configuration]**.

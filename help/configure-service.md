@@ -3,9 +3,9 @@ title: De service voor automatische conversie van formulieren configureren
 description: Klaar uw AEM instantie om de dienst van de Automatede form conversion te gebruiken
 role: User, Admin
 exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
-source-git-commit: 264208305996e98ff2dbccf0e63027b4c757754c
+source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
 workflow-type: tm+mt
-source-wordcount: '2682'
+source-wordcount: '2684'
 ht-degree: 6%
 
 ---
@@ -72,7 +72,6 @@ Een AEM-exemplaar bevat basisfuncties voor formulieren. Voor de conversieservice
 
 >[!NOTE]
 > Zorg ervoor dat u de verplichte configuraties na de installatie uitvoert nadat u het invoegpakket hebt geïnstalleerd.
-
 
 <!-- ### (Optional) Download and install connector package  {#installConnectorPackage}
 
@@ -204,7 +203,7 @@ Om de dienst van de Automatede form conversion te gebruiken, creeer een project 
 
    ![Titel, API-sleutel, clientgeheim en payload opgeven  ](assets/ims-configuration-details.png)
 
-1. Geef API-sleutel en clientgeheim op de technische pagina Adobe IMS op. Gebruik de waarden die op de de consolepagina van de Ontwikkelaar van de Adobe op de Rekening van de Dienst (JWT) worden gespecificeerd.
+1. Geef API-sleutel en clientgeheim op de technische pagina van Adobe IMS op. Gebruik de waarden die op de de consolepagina van de Ontwikkelaar van de Adobe op de Rekening van de Dienst (JWT) worden gespecificeerd.
 
    >[!NOTE]
    >
@@ -241,7 +240,7 @@ Creeer een configuratie van de Cloud Service om uw AEM instantie aan de omzettin
    | Sjabloonmodel | Standaardsjabloon die op geconverteerde formulieren moet worden toegepast. U kunt altijd een andere sjabloon opgeven voordat u de conversie start. Een sjabloon bevat basisstructuur en initiële inhoud voor een adaptief formulier. U kunt een sjabloon kiezen uit de sjablonen die u buiten het vak plaatst. U kunt ook een aangepaste sjabloon maken. |
    | Thema | Standaardthema dat op geconverteerde formulieren moet worden toegepast. U kunt altijd een ander thema opgeven voordat u de conversie start.  U kunt op het pictogram klikken om een thema te kiezen dat buiten het vak wordt weergegeven. U kunt ook een aangepast thema maken. |
    | Bestaande fragmenten | Plaats van bestaande fragmenten, indien aanwezig. |
-   | Aangepast metamodel | Pad van het bestand .schema.json van het aangepaste metamodel. U kunt aparte metamodellen maken voor de talen Engels, Frans, Duits en Spaans. |
+   | Aangepast metamodel | Pad van het bestand .schema.json van het aangepaste metamodel. U kunt aparte metamodellen maken voor de talen Engels, Frans, Duits, Spaans, Italiaans en Portugees. |
 
 1. Geef op het tabblad **[!UICONTROL Advanced]** van de pagina **[!UICONTROL Create Automated Forms Conversion Configuration]** een waarde op voor het volgende veld:
 

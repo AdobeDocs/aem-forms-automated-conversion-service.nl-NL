@@ -1,15 +1,15 @@
 ---
 title: Bekende problemen
-seo-title: Bekende problemen
+seo-title: Known Issues
 description: bekende problemen en beperkingen voor de service Automatede form conversion
-seo-description: Voordat u de AEM Forms Automatede form conversion-service gaat gebruiken, moet u meer weten over de bekende problemen en beperkingen van de service
+seo-description: Before you begin using AEM Forms Automated Forms Conversion service, learn about the known issues and limitations of the service
 uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
 exl-id: 35f59e02-e38e-473a-94c8-123e0a85ac8e
-source-git-commit: af05922f9eb76b7b0a30601824c6006fe555ea80
+source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '794'
 ht-degree: 1%
 
 ---
@@ -75,7 +75,7 @@ Voordat u de AEM Forms Automatede form conversion-service gaat gebruiken, moet u
 * PDF forms die groter zijn dan 15 pagina&#39;s, worden niet ondersteund.
 * Gecodeerde, met een wachtwoord beveiligde en beveiligde documenten worden niet geconverteerd. Verwijder codering of wachtwoorden voordat u de conversie uitvoert.
 * Complexe tabellen, zoals tabellen zonder kader, geneste tabellen en tabellen met plaatsaanduidingswaarden, worden niet ondersteund. Gebruik de aangepaste formuliereditor om na de conversie complexe tabellen toe te voegen of te wijzigen. Alleen eenvoudige tabellen met lege velden, juiste kopteksten en duidelijke grenzen worden ondersteund.
-* De service converteert alleen Engelse, Franse, Duitse en Spaanse formulieren naar adaptieve formulieren. U kunt omgezette adaptieve formulieren naar een andere taal vertalen met behulp van [AEM vertaalworkflow](https://helpx.adobe.com/nl/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
+* De service converteert alleen de taalformulieren Engels, Frans, Duits, Spaans, Italiaans en Portugees naar adaptieve formulieren. U kunt omgezette adaptieve formulieren naar een andere taal vertalen met behulp van [AEM vertaalworkflow](https://helpx.adobe.com/nl/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 * AEM 6.4 Forms biedt geen ondersteuning voor automatische detectie van meerkolomindeling van invoerformulieren.
 * Informatie die is gecodeerd met kleuren in het PDF-bronformulier, wordt niet overgedragen naar het adaptieve formulier.
 * Kleuren van PDF-bronformulier worden niet overgedragen naar aangepaste formulierthema&#39;s.

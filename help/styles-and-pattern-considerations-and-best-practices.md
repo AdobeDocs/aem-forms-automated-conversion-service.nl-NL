@@ -1,16 +1,16 @@
 ---
 title: 'Best practices en overwegingen '
-seo-title: 'Best practices en overwegingen '
+seo-title: Best practices and considerations
 description: Beste werkwijzen en overwegingen voor de dienst van de Automatede form conversion
-seo-description: Lijst van stijlen en patronen in bron PDF forms die de dienst van de Automatede form conversion moeilijk vindt te identificeren
+seo-description: List of styles and patterns in source PDF forms which Automated Forms Conversion service finds difficult to identify
 uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
-source-git-commit: 9d107d2dfc64fd84d4f734ded5898612ce9a3295
+source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
 workflow-type: tm+mt
-source-wordcount: '1267'
-ht-degree: 3%
+source-wordcount: '1247'
+ht-degree: 2%
 
 ---
 
@@ -33,7 +33,7 @@ U kunt alle PDF forms tegelijk uploaden of, indien nodig, gefaseerd. Houd rekeni
 * Upload de beveiligde formulieren niet. De service converteert formulieren die met een wachtwoord zijn beveiligd niet.
 * Upload de [PDF-Portfolio](https://helpx.adobe.com/nl/acrobat/using/overview-pdf-portfolios.html) niet. De service converteert een PDF-Portfolio niet naar een adaptief formulier.
 * Upload geen bronformulieren met spaties in de bestandsnaam. Verwijder de ruimte uit de naam van het bestand voordat u de formulieren uploadt.
-* Upload gescande, gevulde en formulieren niet in een andere taal dan Engels, Frans, Duits en Spaans. Dergelijke formulieren worden niet ondersteund.
+* U mag geen gescande, gevulde en formulieren uploaden in een andere taal dan Engels, Frans, Duits, Spaans, Italiaans en Portugees. Dergelijke formulieren worden niet ondersteund.
 
 Wanneer u een XDP-formulier gebruikt voor conversie, voert u de volgende stappen uit voordat u de XDP-bronformulieren uploadt:
 

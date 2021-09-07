@@ -1,15 +1,15 @@
 ---
 title: Het standaard metamodel uitbreiden
-seo-title: Het standaard metamodel uitbreiden
+seo-title: Extend the default meta-model
 description: Het standaardmetamodel uitbreiden om patronen, validaties en entiteiten toe te voegen die specifiek zijn voor uw organisatie en configuraties toe te passen op adaptieve formuliervelden terwijl de service Automatede form conversion wordt uitgevoerd.
-seo-description: Het standaardmetamodel uitbreiden om patronen, validaties en entiteiten toe te voegen die specifiek zijn voor uw organisatie en configuraties toe te passen op adaptieve formuliervelden terwijl de service Automatede form conversion wordt uitgevoerd.
+seo-description: Extend the default meta-model to add pattern, validations, and entities specific to your organization and apply configurations to adaptive form fields while running the Automated Forms Conversion service.
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
-source-git-commit: 28e07a0264edaaeef22d211f411f7908ca0abaed
+source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
 workflow-type: tm+mt
-source-wordcount: '2591'
+source-wordcount: '2565'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Meta-model is een JSON-schema. Voordat u begint met meta-model, moet u controler
 
 ## Standaardmetamodel {#default-meta-model}
 
-De dienst van de automatede form conversion heeft een standaard meta-model. Het is een JSON-schema en bevindt zich op Adobe Cloud met andere onderdelen van de service Automatede form conversion. U kunt een exemplaar van het metamodel op uw lokale AEM server vinden bij: http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/`global.schema.json`. U kunt ook [hier ](assets/en.globalschema.json) klikken om tot het Engelse taalschema toegang te hebben of te downloaden. Het metamodel voor [Franstalige](assets/fr.globalschema.json), [Duitse](assets/de.globalschema.json) en [Spaanse](assets/es.globalschema.json) talen is ook beschikbaar voor downloaden.
+De dienst van de automatede form conversion heeft een standaard meta-model. Het is een JSON-schema en bevindt zich op Adobe Cloud met andere onderdelen van de service Automatede form conversion. U kunt een exemplaar van het metamodel op uw lokale AEM server vinden bij: http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/`global.schema.json`. U kunt ook [hier ](assets/en.globalschema.json) klikken om tot het Engelse taalschema toegang te hebben of te downloaden. Het metamodel voor [Franstalig](assets/fr.globalschema.json), [Duits](assets/de.globalschema.json) [Spaans](assets/es.globalschema.json), [Italiaans](assets/it.globalschema.json) en [Portugees](assets/pt_br.globalschema.json) talen zijn ook beschikbaar voor downloaden.
 
 Het schema van meta-model wordt afgeleid uit schemaentiteiten in https://schema.org/docs/schemas.html. Het heeft Persoon, PostalAddress, LocalBusiness, en meer entiteiten zoals die op https://schema.org worden bepaald. Elke entiteit van het metamodel volgt het JSON-schemaobjecttype. De volgende code vertegenwoordigt een structuur van een metamodel van het steekproef:
 
@@ -222,6 +222,8 @@ U kunt een taalspecifiek metamodel maken. Een dergelijk metamodel helpt u toewij
 * Frans(fr)
 * Duits(de)
 * Spaans
+* Italiaans(it)
+* Portugees (pt-br)
 
 Voeg de metatag *aem:Language* toe aan de bovenkant van een metamodel om zijn taal te specificeren. Bijvoorbeeld,
 

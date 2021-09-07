@@ -2,9 +2,9 @@
 title: Inleiding
 description: Printformulieren sneller converteren naar adaptieve formulieren
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
-source-git-commit: af05922f9eb76b7b0a30601824c6006fe555ea80
+source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '703'
 ht-degree: 64%
 
 ---
@@ -33,7 +33,7 @@ De service ondersteunt niet-interactieve PDF-formulieren, formulieren die zijn g
 
 De service biedt ook ondersteuning voor PDF forms die zijn ingeschakeld voor Adobe Sign. Als het PDF-bronformulier Adobe Sign-tekstcodes heeft, behoudt de service tijdens de conversie alle Adobe Sign-gerelateerde informatie en worden de ondertekenaargegevens in de bron-PDF gekoppeld aan de bijbehorende adaptieve formuliervelden. De functie is alleen beschikbaar voor AcroForms.
 
-De service kan Engelse, Franse, Duitse en Spaanse taalformulieren omzetten in aangepaste formulieren. U kunt de gegenereerde adaptieve formulieren ook naar een andere taal vertalen met behulp van [AEM vertaalworkflow](https://helpx.adobe.com/nl/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
+De service kan formulieren in het Engels, Frans, Duits, Spaans, Italiaans en Portugees omzetten in aangepaste formulieren. U kunt de gegenereerde adaptieve formulieren ook naar een andere taal vertalen met behulp van [AEM vertaalworkflow](https://helpx.adobe.com/nl/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 
 ## Conversieworkflow  {#conversion-workflow}
 
@@ -50,7 +50,7 @@ De service voor automatische conversie van formulieren draait op Adobe Cloud. [C
 Nadat uw AEM Forms-omgeving is geconfigureerd, [uploadt u uw PDF-formulieren](convert-existing-forms-to-adaptive-forms.md) naar uw AEM-instantie en [start u de conversie ](convert-existing-forms-to-adaptive-forms.md#run-the-conversion) om uw PDF-formulieren te converteren naar adaptieve formulieren. Houd rekening met het volgende voordat u de formulieren uploadt:
 
 * Upload de beveiligde formulieren niet. De service converteert geen met een wachtwoord beveiligde en versleutelde formulieren.
-* Upload geen gescande, gekleurde, ingevulde formulieren en formulieren in een andere taal dan Engels, Frans, Duits en Spaans. Dergelijke formulieren worden niet ondersteund.
+* Upload geen gescande, gekleurde, ingevulde formulieren en formulieren in een andere taal dan Engels, Frans, Duits, Spaans, Italiaans en Portugees. Dergelijke formulieren worden niet ondersteund.
 * Upload geen PDF-formulieren met spaties in de bestandsnaam.
 * Upload geen [PDF-portfolio&#39;s](https://helpx.adobe.com/nl/acrobat/using/overview-pdf-portfolios.html). De service converteert een PDF-Portfolio niet naar een adaptief formulier.
 * Breng de voorgestelde wijzigingen in PDF-formulieren aan. Deze worden beschreven in het artikel [Best practices en overwegingen](styles-and-pattern-considerations-and-best-practices.md).

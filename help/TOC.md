@@ -1,20 +1,19 @@
 ---
 cloud: Experience Cloud
 product: experience manager
-sub-product: conversieservice voor formulieren
+sub-product: forms conversion service
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 audience: end-user
 user-guide-title: Service voor automatische conversie van Adobe Experience Manager Forms
 user-guide-description: PDF-formulieren converteren naar responsieve HTML-formulieren die geschikt zijn voor mobiel.
 breadcrumb-title: Gids voor automatische conversie van formulieren
-breadcrumb-url: /docs/aem-forms-automated-conversion-service/using/introduction.html
-feature: Adaptieve Forms
+feature: Adaptive Forms
 role: User
-source-git-commit: 6aae2035969e99abca0d310d8b023e2c22a9e938
+source-git-commit: 5e1b1c1aa0ac51e23d009e7a85b0e071ff842b04
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '87'
+ht-degree: 100%
 
 ---
 

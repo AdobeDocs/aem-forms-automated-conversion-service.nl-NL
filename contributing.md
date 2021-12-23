@@ -1,43 +1,61 @@
 ---
-source-git-commit: 5f945d77db476387159d342511b82691cf7708ee
-translation-type: tm+mt
+source-git-commit: 2f85c45eda63751a60997d670804c34e21634359
+workflow-type: tm+mt
+source-wordcount: '534'
+ht-degree: 2%
 
 ---
-# Bijdragen
+# Contributing to Adobe Experience Manager Cloud Service Documentation
 
-Bedankt dat u hebt gekozen om bij te dragen!
+Thank you for choosing to contribute to Adobe Experience Manager Cloud Service documentation! We welcome content contributions from our entire reader community as well as from fellow Adobe employees.
 
-Hieronder volgt een reeks richtlijnen die moeten worden gevolgd wanneer u een bijdrage levert aan dit project.
+This file describes how you can contribute as well as points out the guidelines to follow when making your contributions.
 
-## Gedragscode
+## Adobe Open Source Code of Conduct
 
-Dit project voldoet aan de Adobe- [gedragscode](code-of-conduct.md). Door deel te nemen, wordt u verwacht deze code te handhaven. Meld onacceptabel gedrag aan[Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
+[](code-of-conduct.md) By contributing to AEM documentation, you agree to adhere to this code of conduct. [](mailto:Grp-opensourceoffice@adobe.com)
 
-## Documentatie voor de bijdragegids
+## Guidelines for Contributing
 
-Zie de [handleiding](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html)voor contribuanten.
+While we welcome any contributions to improve AEM documentation, we do ask that contributions adhere to certain guidelines and standards where possible. [](guidelines.md)
 
-## Heb je een vraag?
+## How to Contribute
 
-Begin met het indienen van een probleem. De bestaande comités voor dit project werken aan consensus over de richting van het project en leveren oplossingen binnen de verschillende thema&#39;s (indien van toepassing).
+We want to make it as easy as possible to submit your contributions. You can contribute in two ways:
 
-## Licentieovereenkomst voor contribuant
+* [Create an issue](#create-an-issue)
+* [Create a pull request](#create-a-pull-request)
 
-Alle bijdragen van derden aan dit project moeten vergezeld gaan van een ondertekende bijdrageovereenkomst. Dit geeft de toestemming van Adobe om uw bijdragen als deel van het project opnieuw te verdelen. [Onderteken onze CLA](https://opensource.adobe.com/cla.html). U hoeft slechts één keer een Adobe CLA te verzenden, dus als u al een eerder hebt verzonden, kunt u het beste gaan!
+Which method you choose depends on how comfortable you are editing the documentation in GitHub yourself.
 
-## Codebeoordelingen
+>[!NOTE]
+>
+>[](https://www.adobe.com/legal/terms.html)
 
-Alle inzendingen moeten de vorm aannemen van een &quot;pull&quot;-verzoek en door de projectdeelnemers worden beoordeeld. Lees de documentatie [van het trektrekkingsverzoek van](https://help.github.com/articles/about-pull-requests/)GitHub voor meer informatie bij het verzenden van trekkingsverzoeken.
+### Create an Issue {#create-an-issue}
 
-<!--
-Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
-submitting a pull request!
--->
+Do you have a suggestion, observation about the current docs, or question the way something is described? Then please create an issue. Issues are also excellent if you have something to contribute, but don&#39;t feel comfortable editing the docs or making a pull request yourself.
 
-## Van contribuant aan vastleggingen
+Issues allow you to easily describe your idea for improvement to the docs and an AEM Docs Team member can review it. ****
 
-We houden van bijdragen van onze gemeenschap! Als u een stap verder wilt gaan dan contribuant en een commissie met volledige schrijftoegang en een inspraak in het project wilt worden, moet u aan het project worden uitgenodigd. De bestaande commissies maken gebruik van een intern nominatieproces dat een luie consensus moet bereiken (stilte is goedkeuring) voordat uitnodigingen worden gedaan. Als u vindt dat u gekwalificeerd bent en dieper betrokken wilt worden, voelt u vrij om bestaande toezeggingen te bereiken om daarover een gesprek te hebben.
+### Create a Pull Request {#create-a-pull-request}
 
-## Beveiligingsproblemen
+If you see a problem and know exactly how to fix it, consider creating a pull request. Pull requests allow you to make your own edits to the documentation, which are then reviewed for inclusion by an AEM Docs Team member. ****
 
-Beveiligingsproblemen moeten niet worden gerapporteerd in deze Issue Tracker. In plaats daarvan [dient u een probleem in bij onze beveiligingsexperts](https://helpx.adobe.com/security/alertus.html)
+[](https://opensource.adobe.com/cla.html)  Dit geeft Adobe de toestemming om uw bijdragen als deel van het project opnieuw te verdelen. You only need to submit an Adobe CLA one time, so if you have submitted one previously, you are good to go!
+
+### Quick Video Introduction
+
+Have a look at the following video for a quick overview of how to create issues and pull requests.
+
+>[!VIDEO](https://video.tv.adobe.com/v/27069)
+
+### Contributions from Adobe Employees
+
+`AdobeDocs`
+
+We of course are happy for any contribution and will review your contribution if it is made on the public repository, however pull requests from Adobe employees are easier to process and can be approved faster on the corporate repo. Please make sure that any proprietary information is only discussed on the corporate repo.
+
+## Further Information
+
+[](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)

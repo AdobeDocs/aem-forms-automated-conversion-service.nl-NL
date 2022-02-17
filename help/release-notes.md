@@ -2,10 +2,10 @@
 title: Wat is er nieuw? Releaseopmerkingen - Service voor automatische conversie van formulieren
 description: Kom meer te weten over de nieuwste functies en bugfixes voor de service voor automatische conversie van formulieren
 exl-id: fccafbc9-28c1-4736-922c-24d675b25213
-source-git-commit: 833cada8efcc3f0a0e5788c1ab99a95d814e0153
+source-git-commit: eab71506513605728d8f925ab6e7e9bead7ca6fc
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 71%
+source-wordcount: '451'
+ht-degree: 66%
 
 ---
 
@@ -22,13 +22,17 @@ De service voor automatische conversie van formulieren wordt voortdurend verbete
 * Speciale instructies
 * Geplande wijzigingen
 
-## 29 juli 2021 (AFC-2021.08.0) {#aug-2021}
+## 24 feb. 2022 (AFC-2022.02.0) {#feb-2022}
+
+* Extra mogelijkheden aan [secties automatisch omzetten in fragmenten](convert-existing-forms-to-adaptive-forms.md) om de weergavesnelheid van geconverteerde formulieren te verbeteren en het gemakkelijker te maken om grote formulieren in een adaptieve formuliereditor te laden.
+
+## 29 aug. 2021 (AFC-2021.08.0) {#aug-2021}
 
 * Toegevoegde mogelijkheid om PDF forms in het Italiaans en het Portugees om te zetten in een adaptieve vorm.
 
 ## 29 juli 2021 (AFC-2021.07.2) {#july-2021}
 
-* Mogelijkheid toegevoegd om een PDF-formulier in het Frans, Duits en Spaans te converteren naar een adaptief formulier.
+* Mogelijkheid toegevoegd om een PDF-formulier in het Frans, Duits en Spaans om te zetten in een adaptieve vorm.
 
 ## 24 juni 2021 (AFC-2021.06.2) {#june-2021}
 
@@ -57,7 +61,6 @@ Ondersteuning toegevoegd voor het converteren van gekleurde PDF-formulieren naar
 ### Wat is er verbeterd? {#jul-2020-improvements}
 
 Verbeteringen voor automatische conversie van tekst-, formulier- en keuzegroepvelden naar overeenkomende componenten voor adaptieve formulieren.
-
 
 ## 20 maart 2020 (AFC-2020.03.1) {#mar-2020}
 

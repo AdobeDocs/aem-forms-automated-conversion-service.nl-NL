@@ -23,7 +23,7 @@ De service voor automatische conversie helpt de digitalisering en modernisering 
 
 ## Onboarding {#onboarding}
 
-De service is gratis beschikbaar voor AEM 6.4 Forms en AEM 6.5 Forms On-Premise-term klanten en Adobe-Managed Service Enterprise-klanten. U kunt contact opnemen met het Adobe-verkoopteam of uw Adobe-vertegenwoordiger om toegang tot de service aan te vragen. De service is ook gratis en vooraf ingeschakeld voor AEM Forms als klanten van een Cloud Service.
+De service is gratis beschikbaar voor AEM 6.4 Forms en AEM 6.5 Forms On-Premise-term klanten en Adobe-Managed Service Enterprise-klanten. U kunt contact opnemen met het Adobe-verkoopteam of uw Adobe-vertegenwoordiger om toegang tot de service aan te vragen. De service is ook gratis en vooraf ingeschakeld voor as a Cloud Service AEM Forms-klanten.
 
 Adobe maakt toegang voor uw organisatie mogelijk en biedt de vereiste rechten aan de persoon die is aangewezen als beheerder in uw organisatie. De beheerder kan toegang verlenen aan de AEM Forms-ontwikkelaars (gebruikers) van uw organisatie om verbinding te maken met de service. Raadpleeg [De service voor automatische conversie van formulieren configureren](configure-service.md) voor meer informatie.
 
@@ -31,9 +31,9 @@ Adobe maakt toegang voor uw organisatie mogelijk en biedt de vereiste rechten aa
 
 De service ondersteunt niet-interactieve PDF-formulieren, formulieren die zijn gemaakt met Adobe Acrobat (AcroForms) en op XFA gebaseerde formulieren die zijn gemaakt met AEM Forms of Adobe LiveCycle.
 
-De service biedt ook ondersteuning voor PDF forms die zijn ingeschakeld voor Adobe Sign. Als het PDF-bronformulier Adobe Sign-tekstcodes heeft, behoudt de service tijdens de conversie alle Adobe Sign-gerelateerde informatie en worden de ondertekenaargegevens in de bron-PDF gekoppeld aan de bijbehorende adaptieve formuliervelden. De functie is alleen beschikbaar voor AcroForms.
+De service biedt ook ondersteuning voor PDF forms die zijn ingeschakeld voor Adobe Sign. Als het PDF-bronformulier Adobe Sign-tekstcodes heeft, behoudt de service tijdens de conversie alle aan Adobe Sign gerelateerde informatie en worden de ondertekenaargegevens in de PDF van de bron gekoppeld aan de bijbehorende adaptieve formuliervelden. De functie is alleen beschikbaar voor AcroForms.
 
-De service kan formulieren in het Engels, Frans, Duits, Spaans, Italiaans en Portugees omzetten in aangepaste formulieren. U kunt de gegenereerde adaptieve formulieren ook naar een andere taal vertalen met behulp van [AEM vertaalworkflow](https://helpx.adobe.com/nl/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
+De service kan formulieren in het Engels, Frans, Duits, Spaans, Italiaans en Portugees omzetten in aangepaste formulieren. U kunt de gegenereerde adaptieve formulieren ook naar een andere taal vertalen met [AEM vertaalworkflow](https://helpx.adobe.com/nl/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 
 ## Conversieworkflow  {#conversion-workflow}
 
@@ -52,7 +52,7 @@ Nadat uw AEM Forms-omgeving is geconfigureerd, [uploadt u uw PDF-formulieren](co
 * Upload de beveiligde formulieren niet. De service converteert geen met een wachtwoord beveiligde en versleutelde formulieren.
 * Upload geen gescande, gekleurde, ingevulde formulieren en formulieren in een andere taal dan Engels, Frans, Duits, Spaans, Italiaans en Portugees. Dergelijke formulieren worden niet ondersteund.
 * Upload geen PDF-formulieren met spaties in de bestandsnaam.
-* Upload geen [PDF-portfolio&#39;s](https://helpx.adobe.com/nl/acrobat/using/overview-pdf-portfolios.html). De service converteert een PDF-Portfolio niet naar een adaptief formulier.
+* Upload geen [PDF-portfolio&#39;s](https://helpx.adobe.com/nl/acrobat/using/overview-pdf-portfolios.html). De service zet een PDF-Portfolio niet om in een adaptieve vorm.
 * Breng de voorgestelde wijzigingen in PDF-formulieren aan. Deze worden beschreven in het artikel [Best practices en overwegingen](styles-and-pattern-considerations-and-best-practices.md).
 * Lees het artikel [Bekende problemen](known-issues.md) om valkuilen te vermijden.
 

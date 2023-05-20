@@ -1,14 +1,14 @@
 ---
-title: 'Problemen oplossen voor de service voor automatische conversie van formulieren '
-seo-title: 'Problemen oplossen voor de service voor automatische conversie van formulieren '
-description: 'Veelvoorkomende problemen met de service voor automatische conversie van formulieren en hun oplossingen '
-seo-description: Veelvoorkomende problemen met de service voor automatische conversie van formulieren en hun oplossingen
+title: Problemen oplossen voor de service voor automatische conversie van formulieren
+seo-title: Troubleshoot Automated Forms Conversion Service (AFCS)
+description: Veelvoorkomende problemen met de service voor automatische conversie van formulieren en hun oplossingen
+seo-description: Common AFCS issues and their solutions
 contentOwner: khsingh
 topic-tags: forms
 exl-id: e8406ed9-37f5-4f26-be97-ad042f9ca57c
 source-git-commit: 5353a071f8633b36fc73c34c5d7629228659e2ba
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '649'
 ht-degree: 89%
 
 ---
@@ -32,7 +32,7 @@ Het document bevat basisstappen voor het oplossen van veelvoorkomende problemen.
 | **Foutbericht** <br> Gescande formulieren worden niet ondersteund.  <br><br>**Reden** <br> Het PDF-formulier bevat alleen gescande afbeeldingen van het formulier en bevat geen inhoudsstructuur. <br><br>**Oplossing** <br> De service biedt geen ondersteuning voor het converteren van gescande formulieren of een afbeelding van een formulier naar een adaptief standaardformulier. Met Adobe Acrobat kunt u de afbeelding van een formulier echter converteren naar een PDF-formulier. Gebruik vervolgens de service om het PDF-formulier naar een adaptief formulier te converteren. Zorg dat de afbeelding van het formulier altijd van hoge kwaliteit is als u het wilt converteren in Acrobat. Dit verbetert de kwaliteit van de conversie. | ![Kan geen verbinding maken met de service.](assets/scanned-forms-error.png) |
 | **Foutbericht** <br> Versleuteld PDF-formulier wordt niet ondersteund.  <br><br>**Reden** <br>De map bevat versleutelde PDF-formulieren. <br><br>**Oplossing** <br> De service biedt geen ondersteuning voor het converteren van een versleuteld PDF-formulier naar een adaptief formulier. Verwijder de versleuteling, upload het niet-versleutelde formulier en voer de conversie uit. | ![Kan geen verbinding maken met de service.](assets/secured-pdf-form.png) |
 | **Foutbericht** <br> Kan meta-model JSON-schema niet parseren.  <br><br>**Reden** <br> Het JSON-schema dat aan de service wordt geleverd is niet correct geformatteerd, bevat ongeldige tekens of gebruikt ongeldige syntaxis om componenten toe te wijzen.  <br><br>**Oplossing** <br> Controleer de formattering van het JSON-bestand. U kunt elke online JSON-validatie gebruiken om de opmaak en structuur van het schema te controleren. Raadpleeg het artikel [Het standaard meta-model uitbreiden](extending-the-default-meta-model.md) voor meer informatie over meta-model-syntaxis. | ![Kan geen verbinding maken met de service.](assets/invalid-meta-model-schema.png) |
-| **Fout (alleen in omgevingen op locatie)** <br> De  **[!UICONTROL Source Language]** optie vermeldt niet de juiste taal van een adaptief formulier. <br><br>**** <br> ReasonDe eigenschap jcr:language van het adaptieve formulier wordt niet correct ingesteld.  <br><br>**** <br> ResolutionOpen CRX-DE lijst, navigeer aan  `/content/forms/af/`, open de  `jcr:content` knoop, en plaats waarde van de knoop aan de correcte taal. Zie [Ondersteuning van lokalisatie toevoegen voor niet-ondersteunde landinstellingen](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html#add-localization-support-for-non-supported-locales) voor de lijst met ondersteunde talen. | ![Kan geen verbinding maken met de service.](assets/aem-forms-translation-project-language-unavailable.png) |
+| **Fout (alleen in omgevingen op locatie)** <br> De **[!UICONTROL Source Language]** wordt niet de juiste taal van een adaptief formulier weergegeven. <br><br>**Reden** <br> De eigenschap jcr:language van het adaptieve formulier wordt niet correct ingesteld.  <br><br>**Resolutie** <br> CRX-DE-lijst openen, navigeren naar `/content/forms/af/`, opent u de `jcr:content` en stel de waarde van het knooppunt in op de juiste taal. Voor de lijst met ondersteunde talen raadpleegt u [Ondersteuning voor lokalisatie toevoegen voor niet-ondersteunde landinstellingen](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html#add-localization-support-for-non-supported-locales). | ![Kan geen verbinding maken met de service.](assets/aem-forms-translation-project-language-unavailable.png) |
 
 <!--
 

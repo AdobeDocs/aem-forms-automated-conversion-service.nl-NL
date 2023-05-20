@@ -10,7 +10,7 @@ exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
 source-git-commit: e3ba3807668084495acb77f57ea2da6d5a53e626
 workflow-type: tm+mt
 source-wordcount: '2565'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -128,7 +128,7 @@ Het metamodel ondersteunt de volgende gemeenschappelijke eigenschappen van het J
    <th><strong>Beschrijving</strong></th> 
   </tr> 
   <tr> 
-   <td><p>title</p></td> 
+   <td><p>titel</p></td> 
    <td> 
     <p>De tekst die in de eigenschap title in een metamodel wordt genoemd, fungeert als trefwoord voor zoekacties in de gegenereerde adaptieve formuliervelden. U kunt bijvoorbeeld het label van een adaptief formulierveld wijzigen. Zie voor meer informatie <strong>Het label van een formulierveld wijzigen</strong> in <a href="#custommetamodelexamples">Voorbeelden van aangepaste metamodel.</a></p> </td> 
   </tr>
@@ -146,7 +146,7 @@ Het metamodel ondersteunt de volgende gemeenschappelijke eigenschappen van het J
      <li>Booleaans: Genereert een schakeloptie voor adaptieve formulieren.</li>
      </ul><p>Voor meer informatie bij het gebruiken van het typebezit in meta-model, zie <strong>Het type van een formulierveld wijzigen</strong> in <a href="#custommetamodelexamples">Voorbeelden van aangepaste metamodel.</a></p></td> 
   </tr>
-  <td><p>pattern</p></td> 
+  <td><p>patroon</p></td> 
    <td> 
     <p>De eigenschap pattern beperkt de waarde voor het gegenereerde adaptieve formulierveld op basis van een reguliere expressie. De volgende code in het metamodel beperkt bijvoorbeeld de waarde voor het gegenereerde adaptieve formulierveld tot tien cijfers:<br>"patroon": "/\\d{10}/"<br>Op dezelfde manier beperkt de volgende code in het metamodel de waarde van een gebied tot een specifieke datumformaat.<br> "patroon": "date{DD MMMM, YYYY}",</p> </td> 
   </tr>
@@ -193,7 +193,7 @@ U kunt de **aem:afProperties** eigenschap in het metamodel om de volgende aanvul
    <td> 
     <p>Met de eigenschap multiLine wordt een bronformulierveld na conversie omgezet in een veld met meerdere regels in het adaptieve formulier. Zie voor meer informatie <strong>Een tekenreeksveld omzetten in een veld met meerdere regels</strong> in <a href="#custommetamodelexamples">Voorbeelden van aangepaste metamodel.</a></p> </td> 
   </tr>
-  <td><p>mandatory</p></td> 
+  <td><p>verplicht</p></td> 
    <td> 
     <p>Met de eigenschap mandatory wordt de invoer voor een adaptief formulierveld na conversie als verplicht ingesteld.<br>Zie voor meer informatie <strong>Validaties toevoegen aan adaptieve formuliervelden</strong> in <a href="#custommetamodelexamples">Voorbeelden van aangepaste metamodel.</a></p>
     </td> 

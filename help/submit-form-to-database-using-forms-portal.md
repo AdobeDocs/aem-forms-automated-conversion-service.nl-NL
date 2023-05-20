@@ -1,21 +1,20 @@
 ---
 title: Aangepaste formulieren naar database verzenden met Forms Portal
-description: Het standaardmetamodel uitbreiden om patronen, validaties en entiteiten toe te voegen die specifiek zijn voor uw organisatie en configuraties toe te passen op adaptieve formuliervelden terwijl de service Automatede form conversion wordt uitgevoerd.
+description: Breid het standaardmetamodel uit om patroon, validaties en entiteiten toe te voegen specifiek voor uw organisatie en configuraties toe te passen op adaptieve formuliervelden terwijl de service Automatede form conversion wordt uitgevoerd.
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
-translation-type: tm+mt
 source-git-commit: ead1b4ee177029c60f095dc596b1f3db5878760e
 workflow-type: tm+mt
-source-wordcount: '1153'
-ht-degree: 1%
+source-wordcount: '1152'
+ht-degree: 0%
 
 ---
 
 
-# Aangepaste formulieren integreren met database met Forms Portal {#submit-forms-to-database-using-forms-portal}
+# Aangepaste formulieren integreren met database via Forms Portal {#submit-forms-to-database-using-forms-portal}
 
-Met de service automatede form conversion kunt u een niet-interactief PDF-formulier, een Acro-formulier of een op XFA gebaseerd PDF-formulier converteren naar een adaptief formulier. Tijdens het starten van het conversieproces kunt u een adaptief formulier genereren, met of zonder gegevensbindingen.
+Met de service automatede form conversion kunt u een niet-interactief PDF-formulier, een Acro-formulier of een XFA-formulier converteren naar een adaptief formulier. Tijdens het starten van het conversieproces kunt u een adaptief formulier genereren, met of zonder gegevensbindingen.
 
 Als u een adaptief formulier wilt genereren zonder gegevensbindingen, kunt u het geconverteerde adaptieve formulier na conversie integreren met een formuliergegevensmodel, XML-schema of JSON-schema. Als u echter een adaptief formulier genereert met gegevensbindingen, koppelt de conversieservice de adaptieve formulieren automatisch aan een JSON-schema en wordt een gegevensbinding gemaakt tussen de velden die beschikbaar zijn in het adaptieve formulier en het JSON-schema. Vervolgens kunt u het adaptieve formulier integreren met een door u gewenste database, gegevens in het formulier invullen en het naar de database verzenden via de Forms Portal.
 
@@ -30,12 +29,12 @@ Het voorbeeld, dat in dit artikel wordt besproken, is een referentie-implementat
 ## Voorwaarden {#pre-requisites}
 
 * Een AEM 6.4- of 6.5-auteurinstantie instellen
-* [nieuwste servicepack](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) voor uw AEM-exemplaar installeren
+* Installeren [nieuwste servicepack](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) voor uw AEM
 * Laatste versie van het AEM Forms-invoegpakket
-* [Automatede form conversion-service](configure-service.md) configureren
+* Configureren [automatede form conversion](configure-service.md)
 * Stel een database in. De database die wordt gebruikt in de voorbeeldimplementatie is MySQL 5.6.24. U kunt het geconverteerde adaptieve formulier echter integreren met elke gewenste database.
 
-## Verbinding tussen AEM instantie en database {#set-up-connection-aem-instance-database} instellen
+## Verbinding tussen AEM instantie en database instellen {#set-up-connection-aem-instance-database}
 
 Het instellen van een verbinding tussen een AEM instantie en een MYSQL-database bestaat uit:
 
@@ -53,9 +52,9 @@ Voer de volgende stappen uit, op alle auteur- en publicatieinstanties, om het be
 
 1. Ga naar http://[server]:[poort]/system/console/depfinder en zoek naar het pakket com.mysql.jdbc.
 1. Controleer in de kolom Geëxporteerd door of het pakket wordt geëxporteerd door een willekeurige bundel. Ga door als het pakket niet door enige bundel wordt uitgevoerd.
-1. Navigeer naar http://[server]:[poort]/system/console/bundles en klik op **[!UICONTROL Install/Update]**.
-1. Klik **[!UICONTROL Choose File]** en blader om het mysql-connector-java-5.1.39-bin.jar dossier te selecteren. Selecteer ook **[!UICONTROL Start Bundle]** en **[!UICONTROL Refresh Packages]** selectievakjes.
-1. Klik op **[!UICONTROL Install]** of **[!UICONTROL Update]**. Start de server opnieuw als de bewerking is voltooid.
+1. Ga naar http://[server]:[poort]/systeem/console/bundels en klik op **[!UICONTROL Install/Update]**.
+1. Klikken **[!UICONTROL Choose File]** en bladert u om het bestand mysql-connector-java-5.1.39-bin.jar te selecteren. Selecteer ook **[!UICONTROL Start Bundle]** en **[!UICONTROL Refresh Packages]** selectievakjes.
+1. Klikken **[!UICONTROL Install]** of **[!UICONTROL Update]**. Start de server opnieuw als de bewerking is voltooid.
 1. (Alleen Windows) Schakel de systeemfirewall van uw besturingssysteem uit.
 
 ### Schema en tabellen maken in de database {#create-schema-and-tables-in-database}
@@ -68,9 +67,9 @@ Voer de volgende stappen uit om schema en lijsten in het gegevensbestand tot sta
    CREATE SCHEMA `formsportal` ;
    ```
 
-   waarbij **formsportal** naar de naam van het schema verwijst.
+   waar **formsportief** verwijst naar de naam van het schema.
 
-1. Creeer een **data** lijst in het gegevensbestandschema gebruikend de volgende SQL verklaring:
+1. Een **data** tabel in het databaseschema met behulp van de volgende SQL-instructie:
 
    ```sql
     CREATE TABLE `data` (
@@ -82,7 +81,7 @@ Voer de volgende stappen uit om schema en lijsten in het gegevensbestand tot sta
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
    ```
 
-1. Creeer een **meta-gegevens** lijst in het gegevensbestandschema gebruikend de volgende SQL verklaring:
+1. Een **metagegevens** tabel in het databaseschema met behulp van de volgende SQL-instructie:
 
    ```sql
    CREATE TABLE `metadata` (
@@ -122,7 +121,7 @@ Voer de volgende stappen uit om schema en lijsten in het gegevensbestand tot sta
        ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
    ```
 
-1. Creeer een **extra metadatable** lijst in het gegevensbestandschema gebruikend de volgende SQL verklaring:
+1. Een **additionalmetadatable** tabel in het databaseschema met behulp van de volgende SQL-instructie:
 
    ```sql
    CREATE TABLE `additionalmetadatatable` (
@@ -134,7 +133,7 @@ Voer de volgende stappen uit om schema en lijsten in het gegevensbestand tot sta
        ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
    ```
 
-1. Creeer een **commenttable** lijst in het gegevensbestandschema gebruikend de volgende SQL verklaring:
+1. Een **opmerkelijk** tabel in het databaseschema met behulp van de volgende SQL-instructie:
 
    ```sql
    CREATE TABLE `commenttable` (
@@ -145,12 +144,12 @@ Voer de volgende stappen uit om schema en lijsten in het gegevensbestand tot sta
        `time` varchar(255) DEFAULT NULL);
    ```
 
-### Verbinding tussen AEM instantie en gegevensbestand {#configure-connection-between-aem-instance-and-database} vormen
+### Verbinding tussen AEM instantie en database configureren {#configure-connection-between-aem-instance-and-database}
 
 Voer de volgende configuratiestappen uit om een verbinding tussen AEM instantie en het gegevensbestand tot stand te brengen MYSQL:
 
-1. Ga naar AEM webconsoleconfiguratiepagina op *http://[host]:[port]/system/console/configMgr*.
-1. Klik om **[!UICONTROL Forms Portal Draft and Submission Configuration]** te openen in bewerkingsmodus.
+1. Ga naar AEM webconsoleconfiguratiepagina op *http://[host]:[poort]/system/console/configMgr*.
+1. Klik om te openen **[!UICONTROL Forms Portal Draft and Submission Configuration]** in bewerkingsmodus.
 1. Geef de waarden voor de eigenschappen op zoals in de volgende tabel wordt beschreven:
 
    <table> 
@@ -192,8 +191,8 @@ Voer de volgende configuratiestappen uit om een verbinding tussen AEM instantie 
     </tr>
     </tbody> 
     </table>
-1. Andere configuraties ongewijzigd laten en op **[!UICONTROL Save]** klikken.
-1. Zoek en klik om **[!UICONTROL Apache Sling Connection Pooled DataSource]** in te openen uitgeeft wijze in de Configuratie van de Console van het Web. Geef de waarden voor de eigenschappen op zoals in de volgende tabel wordt beschreven:
+1. Andere configuraties ongewijzigd laten en klikken **[!UICONTROL Save]**.
+1. Zoeken en klikken om te openen **[!UICONTROL Apache Sling Connection Pooled DataSource]** in geef wijze in de Configuratie van de Console van het Web uit. Geef de waarden voor de eigenschappen op zoals in de volgende tabel wordt beschreven:
 
    <table> 
     <tbody> 
@@ -268,35 +267,35 @@ Voer de volgende configuratiestappen uit om een verbinding tussen AEM instantie 
 
 Voer de volgende stappen uit, op alle auteur en publiceer instanties, om de steekproef te installeren en te vormen:
 
-1. Download het volgende **aem-fp-db-integration-sample-pkg-6.1.2.zip**-pakket naar uw bestandssysteem.
+1. Download het volgende **aem-fp-db-integration-sample-pkg-6.1.2.zip** aan uw bestandssysteem te verpakken.
 
-   [Bestand ophalen](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
+[Bestand ophalen](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
-1. Ga naar AEM pakketbeheer op *http://[host]:[port]/crx/packmgr/*.
+1. Ga naar AEM pakketbeheer op *http://[host]:[poort]/crx/packmgr/*.
 1. Klik op **[!UICONTROL Upload Package]**.
-1. Blader naar het **aem-fp-db-integration-sample-pkg-6.1.2.zip**-pakket en klik op **[!UICONTROL OK]**.
-1. Klik **[!UICONTROL Install]** naast het pakket om het pakket te installeren.
+1. Bladeren om de **aem-fp-db-integration-sample-pkg-6.1.2.zip** verpakken en klikken **[!UICONTROL OK]**.
+1. Klikken **[!UICONTROL Install]** naast het pakket om het pakket te installeren.
 
 ## Het geconverteerde adaptieve formulier configureren voor Forms Portal-integratie {#configure-converted-adaptive-form-for-forms-portal-integration}
 
 Voer de volgende stappen uit om het verzenden van aangepaste formulieren via de Forms Portal-pagina mogelijk te maken:
-1. [Voer de ](convert-existing-forms-to-adaptive-forms.md#start-the-conversion-process) conversie uit om een bronformulier om te zetten in een adaptief formulier.
+1. [De conversie uitvoeren](convert-existing-forms-to-adaptive-forms.md#start-the-conversion-process) om een bronformulier om te zetten in een adaptief formulier.
 1. Open het adaptieve formulier in de bewerkingsmodus.
-1. Tik op Form Container en selecteer Configure ![Configure adptive form](assets/configure-adaptive-form.png).
-1. Selecteer in de sectie **[!UICONTROL Submission]** **[!UICONTROL Forms Portal Submit Action]** in de vervolgkeuzelijst **[!UICONTROL Submit Action]**.
-1. Tik ![Sjabloonbeleid opslaan](assets/edit_template_done.png) om de instellingen op te slaan.
+1. Tik op Form Container en selecteer Configure ![Bijbehorende vorm configureren](assets/configure-adaptive-form.png).
+1. In de **[!UICONTROL Submission]** sectie, selecteert u **[!UICONTROL Forms Portal Submit Action]** van de **[!UICONTROL Submit Action]** vervolgkeuzelijst.
+1. Tikken ![Sjabloonbeleid opslaan](assets/edit_template_done.png) om de instellingen op te slaan.
 
-## De Forms Portal-pagina {#create-configure-forms-portal-page} maken en configureren
+## De pagina Forms Portal maken en configureren {#create-configure-forms-portal-page}
 
 Voer de volgende stappen uit om een Forms Portal-pagina te maken en deze zo te configureren dat u adaptieve formulieren kunt verzenden met deze pagina:
 
-1. Meld u aan bij de AEM auteur en tik op **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Sites]**.
-1. Selecteer de locatie waar u de nieuwe Forms Portal-pagina wilt opslaan en tik **[!UICONTROL Create]** > **[!UICONTROL Page]**.
-1. Selecteer de sjabloon voor de pagina, tik **[!UICONTROL Next]**, geef een titel voor de pagina op en tik **[!UICONTROL Create]**.
-1. Tik **[!UICONTROL Edit]** om de pagina te configureren.
-1. Tik in de paginakoptekst op ![Sjabloon bewerken](assets/edit_template_sites.png) > **[!UICONTROL Edit Template]** om de sjabloon van de pagina te openen.
-1. Tik op Layout Container en tik ![Sjabloonbeleid bewerken](assets/edit_template_policy.png). Schakel op het tabblad **[!UICONTROL Allowed Components]** de opties **[!UICONTROL Document Services]** en **[!UICONTROL Document Services Predicates]** in en tik ![Sjabloonbeleid opslaan](assets/edit_template_done.png).
-1. Voeg **[!UICONTROL Search & Lister]** component in de pagina in. Hierdoor worden alle bestaande adaptieve formulieren die beschikbaar zijn op het AEM weergegeven op de pagina.
-1. Voeg **[!UICONTROL Drafts & Submissions]** component in de pagina in. Twee tabbladen, **[!UICONTROL Draft Forms]** en **[!UICONTROL Submitted Forms]**, worden weergegeven op de pagina Forms Portal. Op het tabblad **[!UICONTROL Draft Forms]** wordt ook het geconverteerde adaptieve formulier weergegeven dat is gegenereerd met de stappen vermeld in [Het geconverteerde adaptieve formulier configureren voor Forms Portal-integratie](#configure-converted-adaptive-form-for-forms-portal-integration)
+1. Meld u aan bij de AEM auteur en tik op **[!UICONTROL Adobe Experience Manager]** >  **[!UICONTROL Sites]**.
+1. Selecteer de locatie waar u de nieuwe Forms Portal-pagina wilt opslaan en tik op **[!UICONTROL Create]** > **[!UICONTROL Page]**.
+1. Selecteer de sjabloon voor de pagina en tik op **[!UICONTROL Next]** geeft u een titel voor de pagina op en tikt u op **[!UICONTROL Create]**.
+1. Tikken **[!UICONTROL Edit]** om de pagina te configureren.
+1. Tik in de paginakoptekst op ![Sjabloon bewerken](assets/edit_template_sites.png)  > **[!UICONTROL Edit Template]** om de sjabloon van de pagina te openen.
+1. Tik op de container voor lay-out en tik op ![Sjabloonbeleid bewerken](assets/edit_template_policy.png). In de **[!UICONTROL Allowed Components]** tab, inschakelen **[!UICONTROL Document Services]** en **[!UICONTROL Document Services Predicates]** en tikken ![Sjabloonbeleid opslaan](assets/edit_template_done.png).
+1. Invoegen **[!UICONTROL Search & Lister]** op de pagina. Hierdoor worden alle bestaande adaptieve formulieren die beschikbaar zijn op het AEM weergegeven op de pagina.
+1. Invoegen **[!UICONTROL Drafts & Submissions]** op de pagina. Twee tabbladen, **[!UICONTROL Draft Forms]** en **[!UICONTROL Submitted Forms]**, weergegeven op de pagina Forms Portal. De **[!UICONTROL Draft Forms]** wordt ook het geconverteerde adaptieve formulier weergegeven dat is gegenereerd met de stappen vermeld in [Het geconverteerde adaptieve formulier configureren voor Forms Portal-integratie](#configure-converted-adaptive-form-for-forms-portal-integration)
 
-1. Tik op **[!UICONTROL Preview]**, tik op het geconverteerde adaptieve formulier, geef waarden op voor adaptieve formuliervelden en verzend het. De waarden die u opgeeft voor adaptieve formuliervelden worden verzonden naar de geïntegreerde database.
+1. Tikken **[!UICONTROL Preview]** tikken op het geconverteerde adaptieve formulier, waarden opgeven voor adaptieve formuliervelden en verzenden. De waarden die u opgeeft voor adaptieve formuliervelden worden verzonden naar de geïntegreerde database.

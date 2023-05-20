@@ -1,18 +1,17 @@
 ---
-title: 'Best practices en overwegingen '
+title: Best practices en overwegingen
 description: NIET PUBLICEREN
-seo-description: NIET PUBLICEREN
+seo-description: DO NOT PUBLISH
 page-status-flag: never-activated
 uuid: c2821264-39e2-44f8-b234-835c46f33fd5
 topic-tags: introduction
 discoiquuid: b786e40a-202e-4e17-a2f5-1f77c46538c2
 privatebeta: true
 index: false
-translation-type: tm+mt
 source-git-commit: b2d29c22a275f2dc6a82593cf5e441c8da0bba13
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 7%
+source-wordcount: '543'
+ht-degree: 4%
 
 ---
 
@@ -27,7 +26,7 @@ AEM Forms Automated Conversion-service converteert een PDF-formulier naar een ad
 
 De service automatede form conversion is opgeleid voor een groot aantal formulieren. Het identificeert gemakkelijk gebieden in een bronvorm en produceert adaptieve vormen. Er zijn echter enkele velden en stijlen in PDF forms die gemakkelijk zichtbaar zijn voor het oog, maar moeilijk te begrijpen zijn voor de service. De service kan verschillende veldtypen of deelvensters toewijzen aan bepaalde velden of stijlen. Alle dergelijke veld- en stijlpatronen worden hieronder weergegeven.
 
-De dienst zou beginnen correcte gebieden of panelen aan deze patronen te identificeren en toe te wijzen aangezien het het leren van de brongegevens houdt. Voorlopig kunt u [Revisie en Correct](review-correct-ui-edited.md) redacteur gebruiken om dergelijke problemen op te lossen. Voordat u de problemen gaat verhelpen of verder gaat lezen, moet u bekend zijn met [adaptieve formuliercomponenten](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html).
+De dienst zou beginnen correcte gebieden of panelen aan deze patronen te identificeren en toe te wijzen aangezien het het leren van de brongegevens houdt. Voorlopig kunt u [Reviseren en corrigeren](review-correct-ui-edited.md) editor om dergelijke problemen op te lossen. Voordat u de problemen gaat verhelpen of verder gaat lezen, moet u zich vertrouwd maken met [adaptieve formuliercomponenten](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html).
 
 ## Algemeen {#general}
 
@@ -59,7 +58,7 @@ De dienst zou beginnen correcte gebieden of panelen aan deze patronen te identif
  </tbody>
 </table>
 
-## Keuzegroep {#choice-group}
+## Keuzegroep  {#choice-group}
 
 <table border="1" cellpadding="1" cellspacing="0" width="100%"> 
  <tbody>

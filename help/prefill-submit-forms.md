@@ -1,21 +1,20 @@
 ---
 title: Aanbevolen vooraf ingevulde gegevens gebaseerd op gegevensbron en workflows toevoegen voor adaptieve formulieren
-seo-title: Opties voor vooraf invullen en verzenden van aangepaste formulieren
+seo-title: Prefill and submit options for adaptive forms
 description: Workflows op basis van gegevensbron vooraf invullen en verzenden voor adaptieve formulieren die zijn gegenereerd met de service Automatede form conversion.
-seo-description: Workflows op basis van gegevensbron vooraf invullen en verzenden voor adaptieve formulieren die zijn gegenereerd met de service Automatede form conversion.
+seo-description: Data-source based prefill and submit workflows for adaptive forms generated using Automated Forms Conversion Service.
 uuid: 91409a82-141c-4233-82b1-1539a0b250f8
 contentOwner: khsingh
 topic-tags: forms
 discoiquuid: cad34fff-7f9f-4a27-8b5c-d0a523903eec
 privatebeta: true
-translation-type: tm+mt
-source-git-commit: caccb547a5741eb0e70ddf75630a661f8fe75cb3
+exl-id: 5deef8f5-5098-47c1-b696-b2db59e92931
+source-git-commit: 1a3f79925f25dcc7dbe007f6e634f6e3a742bf72
 workflow-type: tm+mt
-source-wordcount: '2459'
+source-wordcount: '2437'
 ht-degree: 1%
 
 ---
-
 
 # Aanbevolen vooraf ingevulde gegevens gebaseerd op gegevensbron en workflows toevoegen voor adaptieve formulieren {#recommended-data-source-btased-prefill-and-submit-workflows-for-adaptive-forms}
 
@@ -38,18 +37,18 @@ In dit artikel worden de aanbevolen workflows beschreven voor het vooraf invulle
   <tr> 
    <td><p>Formuliergegevensmodel, OData of een andere service van derden</p></td> 
    <td> 
-    <p><strong>Optie 1</strong>: U selecteert formuliergegevensmodel, OData of een andere service van derden als gegevensbron. U <a href="#generate-adaptive-forms-with-no-data-binding">genereert een adaptief formulier zonder gegevensbinding</a> met de service Automatede form conversion. U bindt de adaptieve formuliervelden handmatig aan entiteiten van het formuliergegevensmodel en gebruikt de optie Vooraf ingevulde service formuliergegevensmodel om veldwaarden vooraf in te vullen. Met de optie Verzenden met gebruik van het formuliergegevensmodel kunt u het aangepaste formulier verzenden.</p></td> 
+    <p><strong>Optie 1</strong>: U selecteert formuliergegevensmodel, OData of een andere service van derden als gegevensbron. U <a href="#generate-adaptive-forms-with-no-data-binding">een adaptief formulier zonder gegevensbinding genereren</a> het gebruiken van de dienst van de Automatede form conversion. U bindt de adaptieve formuliervelden handmatig aan entiteiten van het formuliergegevensmodel en gebruikt de optie Vooraf ingevulde service formuliergegevensmodel om veldwaarden vooraf in te vullen. Met de optie Verzenden met gebruik van het formuliergegevensmodel kunt u het aangepaste formulier verzenden.</p></td> 
   </tr>
   <tr> 
    <td></td> 
    <td> 
-   <p><strong>Optie 2</strong>: U selecteert formuliergegevensmodel, OData of een andere service van derden als gegevensbron. U <a href="#generate-adaptive-forms-with-no-data-binding">genereert een adaptief formulier zonder gegevensbinding</a> met de service Automatede form conversion. U bindt de aangepaste formuliervelden met de regeleditor aan het vooraf invullen van veldwaarden. Wijzig, indien nodig, de veldwaarden en verzend gegevens naar de crx-repository.</p>
+   <p><strong>Optie 2</strong>: U selecteert formuliergegevensmodel, OData of een andere service van derden als gegevensbron. U <a href="#generate-adaptive-forms-with-no-data-binding">een adaptief formulier zonder gegevensbinding genereren</a> het gebruiken van de dienst van de Automatede form conversion. U bindt de aangepaste formuliervelden met de regeleditor aan het vooraf invullen van veldwaarden. Wijzig, indien nodig, de veldwaarden en verzend gegevens naar de crx-repository.</p>
     </td> 
   </tr>
   <tr> 
    <td></td> 
    <td> 
-    <p>Voor geleidelijke instructies om deze werkschema's uit te voeren, zie <a href="#sqldatasource">Gegevensbestand, OData, of om het even welke derdedienst als gegevensbron gebruiken.</a></p> </td> 
+    <p>Zie voor stapsgewijze instructies om deze workflows uit te voeren <a href="#sqldatasource">Gebruik gegevensbestand, OData, of om het even welke derdedienst als gegevensbron.</a></p> </td> 
   </tr>
   <tr>
   <td><p>JSON Schema</p></td> 
@@ -59,33 +58,33 @@ In dit artikel worden de aanbevolen workflows beschreven voor het vooraf invulle
   <tr>
   <td></td> 
    <td> 
-    <p><strong>Optie 1</strong>: U  <a href="#generate-adaptive-forms-with-no-data-binding">genereert een adaptief formulier zonder </a> gegevensbinding met de service Automatede form conversion en configureert het JSON-schema als gegevensbron. U bindt de adaptieve formuliervelden handmatig aan het JSON-schema en <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">gebruik een van de ondersteunde protocollen</a> om veldwaarden vooraf in te vullen. Wijzig, indien nodig, de veldwaarden en verzend gegevens naar de crx-repository.</p></td> 
+    <p><strong>Optie 1</strong>: U <a href="#generate-adaptive-forms-with-no-data-binding">een adaptief formulier zonder gegevensbinding genereren</a> het gebruiken van de dienst van de Automatede form conversion en vormen het schema JSON als gegevensbron. U bindt de adaptieve formuliervelden handmatig aan het JSON-schema en <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">gebruik om het even welke gesteunde protocollen</a> om veldwaarden vooraf in te vullen. Wijzig, indien nodig, de veldwaarden en verzend gegevens naar de crx-repository.</p></td> 
   </tr>
   <tr>
   <td></td> 
    <td> 
-    <p>Zie <a href="#jsondatasource">JSON-schema gebruiken als gegevensbron voor stapsgewijze instructies om de werkstromen uit te voeren.</p></td> 
+    <p>Voor stapsgewijze instructies voor het uitvoeren van de workflows raadpleegt u <a href="#jsondatasource">Gebruik het JSON-schema als gegevensbron.</p></td> 
   </tr>
   <tr>
   <td></td> 
    <td> 
-    <p><strong>Optie 2</strong>: U  <a href="#generate-adaptive-forms-with-json-binding">genereert een adaptief formulier met JSON-</a> gegevensbinding via de service Automatede form conversion. De Prefill-service en het verzenden van formulieren werken naadloos. U hebt geen configuratiestappen nodig.</p> </td> 
+    <p><strong>Optie 2</strong>: U <a href="#generate-adaptive-forms-with-json-binding">een adaptief formulier genereren met JSON-gegevensbinding</a> het gebruiken van de dienst van de Automatede form conversion. De Prefill-service en het verzenden van formulieren werken naadloos. U hebt geen configuratiestappen nodig.</p> </td> 
   </tr>
    <tr>
   <td></td> 
    <td> 
-    <p>Zie <a href="#jsonwithdatabinding">JSON-schema gebruiken als gegevensbron voor stapsgewijze instructies om de workflows uit te voeren.</a></p> </td> 
+    <p>Voor stapsgewijze instructies voor het uitvoeren van de workflows raadpleegt u <a href="#jsonwithdatabinding">Gebruik het JSON-schema als gegevensbron.</a></p> </td> 
   </tr>
   <tr>
   <td><p>XSD-schema</p></td> 
    <td> 
-    <p>U selecteert XSD-schema als gegevensbron. Op basis van de geselecteerde gegevensbron <a href="#generate-adaptive-forms-with-no-data-binding">genereert u een adaptief formulier zonder gegevensbinding</a> met de service Automatede form conversion en configureert u XSD-schema als gegevensbron. U bindt de adaptieve formuliervelden handmatig aan het XSD-schema en <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">gebruik een van de ondersteunde protocollen</a> om veldwaarden vooraf in te vullen. Wijzig, indien nodig, de veldwaarden en verzend gegevens naar de crx-repository.</p>
+    <p>U selecteert XSD-schema als gegevensbron. Op basis van de geselecteerde gegevensbron kunt u <a href="#generate-adaptive-forms-with-no-data-binding">een adaptief formulier zonder gegevensbinding genereren</a> het gebruiken van de dienst van de Automatede form conversion en vormen XSD schema als gegevensbron. U koppelt de adaptieve formuliervelden handmatig aan het XSD-schema en <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">gebruik om het even welke gesteunde protocollen</a> om veldwaarden vooraf in te vullen. Wijzig, indien nodig, de veldwaarden en verzend gegevens naar de crx-repository.</p>
     </td> 
   </tr>
   <tr>
   <td></td> 
    <td> 
-    <p>Voor geleidelijke instructies om de werkschema's uit te voeren, zie <a href="#xsddatasource">XSD schema als gegevensbron gebruiken.</a></p>
+    <p>Voor stapsgewijze instructies voor het uitvoeren van de workflows raadpleegt u <a href="#xsddatasource">Gebruik XSD-schema als gegevensbron.</a></p>
     </td> 
   </tr>
  </tbody> 
@@ -103,30 +102,30 @@ De in dit artikel verstrekte informatie is gebaseerd op de veronderstelling dat 
 
 ## Voorwaarden {#pre-requisites}
 
-* Een [AEM auteur-instantie](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html) configureren
-* [Automatede form conversion-service op de AEM auteur-instantie configureren](configure-service.md)
+* Een [AEM](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html)
+* Configureren [De dienst van de automatede form conversion op de AEM auteursinstantie](configure-service.md)
 
 ## Monster van adaptief formulier {#sample-adaptive-form}
 
-Download het volgende voorbeeld-PDF-bestand als u de gebruiksgevallen wilt uitvoeren om veldwaarden vooraf in een adaptief formulier in te vullen en naar de gegevensbron te verzenden.
+Download het volgende voorbeeldbestand voor het PDF om de gebruiksgevallen voor het vooraf invullen van veldwaarden in een adaptief formulier uit te voeren en deze naar de gegevensbron te verzenden.
 
 Voorbeeldformulier voor het aanvragen van een lening
 
 [Bestand ophalen](assets/sample_loan_application_form.pdf)
 
-Het PDF-bestand fungeert als invoer voor de service Automatede form conversion. De service converteert dit bestand naar een adaptief formulier. De volgende afbeelding toont de voorbeeldtoepassing voor leningen in PDF-indeling.
+Het PDF-bestand fungeert als invoer voor de service Automatede form conversion. De service converteert dit bestand naar een adaptief formulier. In de volgende afbeelding wordt de voorbeeldtoepassing met een PDF-indeling weergegeven.
 
 ![aanvraagformulier voor een voorbeeldlening](assets/sample_form_new.png)
 
 ## Gegevens voorbereiden voor formuliermodel {#prepare-data-for-form-model}
 
-Met AEM Forms Data Integration kunt u verschillende gegevensbronnen configureren en verbinden. Nadat u een adaptief formulier hebt gegenereerd met behulp van het conversieproces, kunt u het formuliermodel definiëren op basis van een formuliergegevensmodel, XSD of een JSON-schema. U kunt een gegevensbestand, de Dynamica van Microsoft, of een andere derdedienst gebruiken om een model van vormgegevens tot stand te brengen.
+Met AEM Forms Data Integration kunt u verschillende gegevensbronnen configureren en verbinden. Nadat u een adaptief formulier hebt gegenereerd met behulp van het conversieproces, kunt u het formuliermodel definiëren op basis van een formuliergegevensmodel, XSD of een JSON-schema. U kunt een database, Microsoft Dynamics of een andere service van derden gebruiken om een formuliergegevensmodel te maken.
 
-Deze zelfstudie gebruikt de MySQL-database als bron voor het maken van een formuliergegevensmodel. Maak een **lensschema** in de database en voeg een **aanvrager** tabel toe aan het schema op basis van de velden die beschikbaar zijn in het adaptieve formulier.
+Deze zelfstudie gebruikt de MySQL-database als bron voor het maken van een formuliergegevensmodel. Een **lening** in de database en voeg een **aanvrager** tabel naar het schema op basis van de velden die beschikbaar zijn in het adaptieve formulier.
 
 ![Voorbeeldgegevens mysql](assets/sample_data_mysql.png)
 
-U kunt de volgende verklaring gebruiken DDL om de **aanvrager** lijst in gegevensbestand tot stand te brengen.
+U kunt de volgende verklaring gebruiken DDL om tot de **aanvrager** tabel in de database.
 
 ```sql
 CREATE TABLE `applicant` (
@@ -172,7 +171,7 @@ Voorbeeld van XSD-schema voor toepassing van een lening
 
 [Bestand ophalen](assets/loanapplication.xsd)
 
-Zie [Aangepaste formulieren maken met XML-schema](https://helpx.adobe.com/experience-manager/6-5/forms/using/adaptive-form-xml-schema-form-model.html) voor meer informatie over het gebruik van XSD-schema als het formuliermodel in adaptieve formulieren.
+Zie voor meer informatie over het gebruik van XSD-schema als formuliermodel in adaptieve formulieren [Aangepaste formulieren maken met XML-schema](https://helpx.adobe.com/experience-manager/6-5/forms/using/adaptive-form-xml-schema-form-model.html).
 
 Als u een JSON-schema gebruikt als formuliermodel voor het uitvoeren van de use cases, maakt u een JSON-bestand met de volgende tekst:
 
@@ -222,11 +221,11 @@ JSON-schema voor voorbeeldtoepassing
 
 [Bestand ophalen](assets/demo_schema.json)
 
-Zie [Aangepaste formulieren maken met het JSON-schema](https://helpx.adobe.com/experience-manager/6-5/forms/using/adaptive-form-json-schema-form-model.html) voor meer informatie over het gebruik van het JSON-schema als het formuliermodel in adaptieve formulieren.
+Ga voor meer informatie over het gebruik van JSON-schema als het formuliermodel in adaptieve formulieren naar [Aangepaste formulieren maken met JSON-schema](https://helpx.adobe.com/experience-manager/6-5/forms/using/adaptive-form-json-schema-form-model.html).
 
-## Aangepaste formulieren genereren zonder gegevensbinding {#generate-adaptive-forms-with-no-data-binding}
+## Aangepaste formulieren zonder gegevensbinding genereren {#generate-adaptive-forms-with-no-data-binding}
 
-Met de [service Automatede form conversion kunt u ](convert-existing-forms-to-adaptive-forms.md) het [voorbeeldaanvraagformulier voor een lening](#sample-adaptive-form) omzetten in een adaptief formulier zonder gegevensbinding. Schakel het selectievakje **[!UICONTROL Generate adaptive form(s) without data bindings]** in om het adaptieve formulier zonder gegevensbinding te genereren.
+Gebruik de [Omzetten van automatede form conversion](convert-existing-forms-to-adaptive-forms.md) de [aanvraagformulier voor een voorbeeldlening](#sample-adaptive-form) op een adaptief formulier zonder gegevensbinding. Zorg ervoor dat u de **[!UICONTROL Generate adaptive form(s) without data bindings]** Schakel het selectievakje in om het adaptieve formulier zonder gegevensbinding te genereren.
 
 ![Adaptief formulier zonder gegevensbinding](assets/generate_af_without_binding.png)
 
@@ -239,84 +238,83 @@ Nadat u een adaptief formulier zonder gegevensbinding hebt gegenereerd, selectee
 >[!NOTE]
 > Als het adaptieve formulier dat u met de service Automatede form conversion converteert meerdere velden met dezelfde naam bevat, moet u ervoor zorgen dat deze velden zijn gebonden aan gegevensbronentiteiten om een mogelijk gegevensverlies tijdens de verzending te voorkomen.
 
+### Gebruik gegevensbestand, OData, of om het even welke derdedienst als gegevensbron {#sqldatasource}
 
-### Database, OData of een service van derden gebruiken als gegevensbron {#sqldatasource}
-
-Hoofdlettergebruik: U genereert een adaptief formulier zonder gegevensbinding met de service Automatede form conversion en configureert de MYSQL-database als gegevensbron. U bindt de adaptieve formuliervelden handmatig aan formuliergegevensmodelentiteiten en gebruikt de optie **[!UICONTROL Form Data Model Prefill Service]** om veldwaarden vooraf in te vullen. Met de optie **[!UICONTROL Submit using Form Data Model]** kunt u het aangepaste formulier verzenden.
+Hoofdlettergebruik: U genereert een adaptief formulier zonder gegevensbinding met de service Automatede form conversion en configureert de MYSQL-database als gegevensbron. U bindt de aangepaste formuliervelden handmatig aan formuliergegevensmodelentiteiten en gebruikt de opdracht **[!UICONTROL Form Data Model Prefill Service]** gebruiken om veldwaarden vooraf in te vullen. U gebruikt de **[!UICONTROL Submit using Form Data Model]** om het adaptieve formulier in te dienen.
 
 Voordat u het gebruiksgeval uitvoert:
 
 * [MySQL-database configureren als gegevensbron](https://helpx.adobe.com/experience-manager/6-5/forms/using/configure-data-sources.html#configurerelationaldatabase)
 * [Het formuliergegevensmodel maken](https://helpx.adobe.com/experience-manager/6-5/forms/using/work-with-form-data-model.html)
 
-Gebaseerd op het gebruiksgeval, creeer **leenApplication** het model van vormgegevens en bind read de dienstargument aan een **[!UICONTROL Literal]** waarde. De letterlijke waarde van het telefoonaantal moet van één van de verslagen zijn die in het **aanvrager** schema van het gegevensbestand MySQL worden gevormd. De diensten gebruiken de waarde als argument om details van de gegevensbron te halen. U kunt [Kenmerk gebruikersprofiel of Aanvraagkenmerk](https://helpx.adobe.com/experience-manager/6-5/forms/using/work-with-form-data-model.html#bindargument) ook selecteren in de vervolgkeuzelijst **[!UICONTROL Binding To]**
+Maak op basis van het gebruiksgeval de **lening** formuliergegevensmodel en bind read service argument to a **[!UICONTROL Literal]** waarde. De letterlijke waarde van het telefoonaantal moet van één van de verslagen zijn die in worden gevormd **aanvrager** schema van de MySQL-database. De diensten gebruiken de waarde als argument om details van de gegevensbron te halen. U kunt ook [Kenmerk gebruikersprofiel of aanvraagkenmerk](https://helpx.adobe.com/experience-manager/6-5/forms/using/work-with-form-data-model.html#bindargument) van de **[!UICONTROL Binding To]** vervolgkeuzelijst
 
 ![Formuliergegevensmodel configureren](assets/configure_model_object.png)
 
 >[!NOTE]
 >
->Zorg ervoor dat u **get** en **insert** services aan het model met formuliergegevens toevoegt, configureer en test de services voordat u het gebruiksgeval uitvoert.
+>Zorg ervoor dat u **get** en **insert** de diensten aan het model van vormgegevens, vormen, en testen de diensten alvorens het gebruiksgeval uit te voeren.
 
 Voer de volgende stappen uit:
 
-1. Selecteer het geconverteerde **voorbeeldaanvraagformulier voor een lening** dat beschikbaar is in de map **[!UICONTROL output]** en tik **[!UICONTROL Properties]**.
-1. Tik op de tab **[!UICONTROL Form Model]**, selecteer **[!UICONTROL Form Data Model]** in de vervolgkeuzelijst **[!UICONTROL Select From]** en tik **[!UICONTROL Select Form Data Model]** om het formuliergegevensmodel **load** te selecteren. Tik **[!UICONTROL Save & Close]** om het formulier op te slaan.
-1. Selecteer het **voorbeeldaanvraagformulier voor leningen** en tik **[!UICONTROL Edit]**.
-1. Tik op het tabblad **[!UICONTROL Content]** op het configuratiepictogram:
+1. Omgezette selecteren **aanvraagformulier voor een voorbeeldlening** beschikbaar in **[!UICONTROL output]** map en tik **[!UICONTROL Properties]**.
+1. Tik op de knop **[!UICONTROL Form Model]** tab, selecteert u **[!UICONTROL Form Data Model]** van de **[!UICONTROL Select From]** vervolgkeuzelijst en tikken **[!UICONTROL Select Form Data Model]** om de **lening** formuliergegevensmodel. Tikken **[!UICONTROL Save & Close]** om het formulier op te slaan.
+1. Selecteer **aanvraagformulier voor een voorbeeldlening** en tikken **[!UICONTROL Edit]**.
+1. In de **[!UICONTROL Content]** tikt u op het configuratiepictogram:
 
    ![formuliercontainer configureren](assets/configure_form_container.png)
 
-   1. Selecteer in de sectie **[!UICONTROL Basic]** **[!UICONTROL Form Data Model Prefill service]** in de vervolgkeuzelijst **[!UICONTROL Prefill Service]**.
+   1. In de **[!UICONTROL Basic]** sectie, selecteert u **[!UICONTROL Form Data Model Prefill service]** van de **[!UICONTROL Prefill Service]** vervolgkeuzelijst.
 
-   1. Selecteer in de sectie **[!UICONTROL Submission]** **[!UICONTROL Submit using Form Data Model]** in de vervolgkeuzelijst **[!UICONTROL Submit Action]**.
+   1. In de **[!UICONTROL Submission]** sectie, selecteert u **[!UICONTROL Submit using Form Data Model]** van de **[!UICONTROL Submit Action]** vervolgkeuzelijst.
 
-   1. Selecteer het gegevensmodel met het veld **[!UICONTROL Data Model to submit]**.
-   1. Tik ![voltooid pictogram](assets/save_icon.svg) om de eigenschappen op te slaan.
+   1. Selecteer het gegevensmodel met de **[!UICONTROL Data Model to submit]** veld.
+   1. Tikken ![pictogram klaar](assets/save_icon.svg) om de eigenschappen op te slaan.
 
-1. Tik op het tekstvak Naam aanvrager en selecteer ![configure icon](assets/configure_icon.svg) (Configure).
+1. Tik op het tekstvak Naam aanvrager en selecteer ![Configuratiepictogram](assets/configure_icon.svg) (Configureren).
 
-   1. Selecteer **Aanvrager** > **Naam** in het veld Bindverwijzing en tik ![Voltooid pictogram](assets/save_icon.svg) om de eigenschappen op te slaan. Maak op dezelfde manier een gegevensbinding voor **Adres**, **Telefoonnummer**, **E-mail**, **Beroep**, **Jaarloon (in dollars)** en **Nee. van afhankelijke familieleden** gebieden met de modelentiteiten van vormgegevens.
+   1. Selecteer in het veld Bindverwijzing de optie **Aanvrager** > **Naam** en tikken ![pictogram klaar](assets/save_icon.svg) om de eigenschappen op te slaan. Maak op dezelfde manier een gegevensbinding voor de **Adres**, **Telefoonnummer**, **E-mail**, **Beroep**, **Jaarloon (in dollars)**, en **Nee. van afhankelijke gezinsleden** velden met entiteiten van het formuliergegevensmodel.
 
    ![Bindverwijzingen](assets/bind_references.png)
 
-1. Tik op **[!UICONTROL Preview]** om de vooraf ingevulde aangepaste waarden voor formuliervelden weer te geven.
-1. Wijzig, indien nodig, de veldwaarden en verzend het adaptieve formulier. De veldwaarden worden verzonden naar de MySQL-database. U kunt de **aanvrager** lijst in het gegevensbestand verfrissen om de bijgewerkte waarden in de lijst te bekijken.
+1. Tikken **[!UICONTROL Preview]** om de vooraf ingevulde aangepaste waarden voor formuliervelden weer te geven.
+1. Wijzig, indien nodig, de veldwaarden en verzend het adaptieve formulier. De veldwaarden worden verzonden naar de MySQL-database. U kunt de **aanvrager** in de database om de bijgewerkte waarden in de tabel weer te geven.
 
-**Hoofdlettergebruik:** u genereert een adaptief formulier zonder gegevensbinding met de service Automatede form conversion en configureert de MYSQL-database als gegevensbron. U bindt de aangepaste formuliervelden met de regeleditor aan het vooraf invullen van veldwaarden. Wijzig, indien nodig, de veldwaarden en verzend gegevens naar de crx-repository.
+**Hoofdlettergebruik:** U genereert een adaptief formulier zonder gegevensbinding met de service Automatede form conversion en configureert de MYSQL-database als gegevensbron. U bindt de aangepaste formuliervelden met de regeleditor aan het vooraf invullen van veldwaarden. Wijzig, indien nodig, de veldwaarden en verzend gegevens naar de crx-repository.
 
-Voer de volgende stappen uit om [regeleditor](https://helpx.adobe.com/experience-manager/6-5/forms/using/rule-editor.html) te gebruiken om de service van het formuliergegevensmodel aan te roepen om velden en vooraf ingevulde waarden in een adaptieve vorm te binden:
+Voer de volgende stappen uit om te gebruiken [regeleditor](https://helpx.adobe.com/experience-manager/6-5/forms/using/rule-editor.html) om de service van het formuliergegevensmodel aan te roepen om velden en vooraf ingevulde waarden in een adaptief formulier te binden:
 
-1. Selecteer het **voorbeeldaanvraagformulier voor een lening** in de map **[!UICONTROL output]** en tik **[!UICONTROL Edit]**.
-1. Tik op het tabblad **[!UICONTROL Content]** op het configuratiepictogram:
+1. Selecteer **aanvraagformulier voor een voorbeeldlening** in de **[!UICONTROL output]** map en tik **[!UICONTROL Edit]**.
+1. In de **[!UICONTROL Content]** tikt u op het configuratiepictogram:
 
    ![formuliercontainer configureren](assets/configure_form_container.png)
 
-   Selecteer in de sectie **[!UICONTROL Basic]** **[!UICONTROL Form Data Model Prefill service]** in de vervolgkeuzelijst **[!UICONTROL Prefill Service]**.
+   In de **[!UICONTROL Basic]** sectie, selecteert u **[!UICONTROL Form Data Model Prefill service]** van de **[!UICONTROL Prefill Service]** vervolgkeuzelijst.
 
-1. Tik op het tekstvak **[!UICONTROL Applicant Name]** en tik **[!UICONTROL Edit Rules]**.
+1. Tik op de knop **[!UICONTROL Applicant Name]** tekstvak en tikken **[!UICONTROL Edit Rules]**.
 
    ![Regels bewerken om gegevensbinding te maken](assets/edit_rules_bind_reference.png)
 
-1. Tik **[!UICONTROL Create]** op de pagina van de Redacteur van de Regel.
-1. Op de pagina **[!UICONTROL Rule Editor]**:
+1. Tikken **[!UICONTROL Create]** op de pagina Regeleditor.
+1. Op de **[!UICONTROL Rule Editor]** pagina:
 
-   1. Selecteer een status voor het tekstvak Naam aanvrager. Bijvoorbeeld **[!UICONTROL is initialized]**, wat resulteert in uitvoering van **[!UICONTROL Then]** voorwaarde wanneer u de vorm in **[!UICONTROL Preview]** wijze teruggeeft.
+   1. Selecteer een status voor het tekstvak Naam aanvrager. Bijvoorbeeld: **[!UICONTROL is initialized]**, hetgeen resulteert in de uitvoering van de **[!UICONTROL Then]** voorwaarde wanneer u het formulier weergeeft in **[!UICONTROL Preview]** in.
 
-   1. Selecteer in de sectie **[!UICONTROL Then]** **[!UICONTROL Invoke Service]** in de vervolgkeuzelijst **[!UICONTROL Select Action]**. Alle services op uw Forms-instantie worden weergegeven in de vervolgkeuzelijst.
+   1. In de **[!UICONTROL Then]** sectie, selecteert u **[!UICONTROL Invoke Service]** van de **[!UICONTROL Select Action]** vervolgkeuzelijst. Alle services op uw Forms-instantie worden weergegeven in de vervolgkeuzelijst.
 
-   1. Selecteer een **[!UICONTROL Get]**-service in de sectie waarin de modellen met formuliergegevens worden vermeld. In het veld Invoer wordt **phonenumber** weergegeven. Dit is de primaire sleutel die is gedefinieerd voor het **application** gegevensmodel. Het systeem haalt de waarden in het adaptieve formulier voor velden op in de sectie Uitvoer op basis van dit veld en vult deze waarden vooraf in.
+   1. Selecteer een **[!UICONTROL Get]** vanuit de sectie met de formuliergegevensmodellen. Het veld Invoer wordt weergegeven **phonenumber**, die de primaire sleutel is die voor de **aanvrager** gegevensmodel. Het systeem haalt de waarden in het adaptieve formulier voor velden op in de sectie Uitvoer op basis van dit veld en vult deze waarden vooraf in.
 
-   1. Maak een binding voor de adaptieve formuliervelden met de entiteiten van het formuliergegevensmodel met de sectie Uitvoer. Verbind bijvoorbeeld **[!UICONTROL Applicant Name]** adaptief formulierveld met de entiteit **name**.
+   1. Maak een binding voor de adaptieve formuliervelden met de entiteiten van het formuliergegevensmodel met de sectie Uitvoer. Bind bijvoorbeeld **[!UICONTROL Applicant Name]** adaptief formulierveld met de **name** entiteit.
 
-   1. Tik op **[!UICONTROL Done]**. Tik **[!UICONTROL Done]** nogmaals op de pagina van de Redacteur van de Regel.
+   1. Tik op **[!UICONTROL Done]**. Tikken **[!UICONTROL Done]** opnieuw op de pagina van de Redacteur van de Regel.
 
    ![Regeleditor om verwijzingen te binden](assets/rule_editor_bind_references.png)
 
-1. Tik op **[!UICONTROL Preview]** om de vooraf ingevulde aangepaste waarden voor formuliervelden weer te geven.
+1. Tikken **[!UICONTROL Preview]** om de vooraf ingevulde aangepaste waarden voor formuliervelden weer te geven.
 
    >[!NOTE]
    >
-   >Zorg ervoor dat de eigenschap **[!UICONTROL Return Array]** is ingesteld op OFF voor de service-eigenschap **get** in het formuliergegevensmodel dat is gekoppeld aan het adaptieve formulier.
+   >Zorg ervoor dat de **[!UICONTROL Return Array]** Eigenschap is ingesteld op UIT voor de **get** service-eigenschap in het formuliergegevensmodel dat aan het adaptieve formulier is gekoppeld.
 
 1. Wijzig, indien nodig, de veldwaarden en verzend het adaptieve formulier. De ingediende gegevens zijn beschikbaar op de volgende locatie in de crx-repository:
 
@@ -324,7 +322,7 @@ Voer de volgende stappen uit om [regeleditor](https://helpx.adobe.com/experience
 
 ### JSON-schema gebruiken als gegevensbron {#jsondatasource}
 
-**Hoofdlettergebruik:** u genereert een adaptief formulier zonder gegevensbinding met de service Automatede form conversion en configureert het JSON-schema als gegevensbron. U bindt de adaptieve formuliervelden handmatig aan het JSON-schema en gebruikt de optie **Voorvertonen met gegevens** om veldwaarden vooraf in te vullen. Wijzig, indien nodig, de veldwaarden en verzend gegevens naar de crx-repository.
+**Hoofdlettergebruik:** U genereert een adaptief formulier zonder gegevensbinding met de service Automatede form conversion en configureert het JSON-schema als gegevensbron. U bindt de aangepaste formuliervelden handmatig aan het JSON-schema en gebruikt de opdracht **Voorvertonen met gegevens** gebruiken om veldwaarden vooraf in te vullen. Wijzig, indien nodig, de veldwaarden en verzend gegevens naar de crx-repository.
 
 Controleer voordat u het gebruiksgeval uitvoert of:
 
@@ -333,14 +331,14 @@ Controleer voordat u het gebruiksgeval uitvoert of:
 
 Voer de volgende stappen uit:
 
-1. Selecteer het geconverteerde **voorbeeldaanvraagformulier voor een lening** beschikbaar in de map **output** en tik **[!UICONTROL Properties]**.
-1. Tik op de tab **[!UICONTROL Form Model]**, selecteer **[!UICONTROL Schema]** in de vervolgkeuzelijst **[!UICONTROL Select From]** en tik **[!UICONTROL Select Schema]** om het schema **demo.schema JSON** te uploaden dat is opgeslagen op het lokale bestandssysteem. Tik **[!UICONTROL Save & Close]** om het formulier op te slaan.
-1. Selecteer het **voorbeeldaanvraagformulier voor leningen** en tik **[!UICONTROL Edit]**.
-1. Tik op het tekstvak Naam aanvrager en selecteer ![configure icon](assets/configure_icon.svg) (Configure).
+1. Omgezette selecteren **aanvraagformulier voor een voorbeeldlening** beschikbaar in **output** map en tik **[!UICONTROL Properties]**.
+1. Tik op de knop **[!UICONTROL Form Model]** tab, selecteert u **[!UICONTROL Schema]** van de **[!UICONTROL Select From]** vervolgkeuzelijst en tikken **[!UICONTROL Select Schema]** om het **demo.schema JSON** schema opgeslagen op het lokale bestandssysteem. Tikken **[!UICONTROL Save & Close]** om het formulier op te slaan.
+1. Selecteer **aanvraagformulier voor een voorbeeldlening** en tikken **[!UICONTROL Edit]**.
+1. Tik op het tekstvak Naam aanvrager en selecteer ![Configuratiepictogram](assets/configure_icon.svg) (Configureren).
 
-   Selecteer **Aanvrager** > **Naam** in het veld Bindverwijzing en tik ![Voltooid pictogram](assets/save_icon.svg) om de eigenschappen op te slaan. Maak op dezelfde manier een gegevensbinding voor **Adres**, **Telefoonnummer**, **E-mail**, **Beroep**, **Jaarloon (in dollars)** en **Nee. van afhankelijke familieleden** gebieden met de JSON schemaentiteiten.
+   Selecteer in het veld Bindverwijzing de optie **Aanvrager** > **Naam** en tikken ![pictogram klaar](assets/save_icon.svg) om de eigenschappen op te slaan. Maak op dezelfde manier een gegevensbinding voor de **Adres**, **Telefoonnummer**, **E-mail**, **Beroep**, **Jaarloon (in dollars)**, en **Nee. van afhankelijke gezinsleden** velden met de JSON-schema-entiteiten.
 
-1. Selecteer nogmaals het geconverteerde **voorbeeldformulier voor de toepassing van een lening** in de map **[!UICONTROL output]** en selecteer **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**.</br>
+1. Omgezette selecteren **aanvraagformulier voor een voorbeeldlening** beschikbaar in **[!UICONTROL output]** map opnieuw en selecteer **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**.</br>
 
    Voorbeeldgegevensbestand downloaden</br>
 
@@ -352,7 +350,7 @@ Voer de volgende stappen uit:
 
 ### XSD-schema gebruiken als gegevensbron {#xsddatasource}
 
-**Hoofdlettergebruik:** u genereert een adaptief formulier zonder gegevensbinding met de service Automatede form conversion en configureert het XSD-schema als gegevensbron. U bindt de adaptieve formuliervelden handmatig aan het XSD-schema en gebruikt **Voorvertoning met gegevens** om veldwaarden vooraf in te vullen. Wijzig, indien nodig, de veldwaarden en verzend gegevens naar de crx-repository.
+**Hoofdlettergebruik:** U genereert een adaptief formulier zonder gegevensbinding met de service Automatede form conversion en configureert XSD-schema als gegevensbron. U bindt de aangepaste formuliervelden handmatig aan het XSD-schema en gebruikt de opdracht **Voorvertonen met gegevens** om veldwaarden vooraf in te vullen. Wijzig, indien nodig, de veldwaarden en verzend gegevens naar de crx-repository.
 
 Controleer voordat u het gebruiksgeval uitvoert of:
 
@@ -361,13 +359,13 @@ Controleer voordat u het gebruiksgeval uitvoert of:
 
 Voer de volgende stappen uit:
 
-1. Selecteer het geconverteerde **voorbeeldaanvraagformulier voor een lening** dat beschikbaar is in de map **[!UICONTROL output]** en tik **[!UICONTROL Properties]**.
-1. Tik op het tabblad **[!UICONTROL Form Model]**, selecteer **[!UICONTROL Schema]** in de vervolgkeuzelijst **[!UICONTROL Select From]** en tik **[!UICONTROL Select Schema]** om het **lende-toepassings** XSD-schema te uploaden dat is opgeslagen op het lokale bestandssysteem. Selecteer basiselement voor het XSD-schema en tik **[!UICONTROL Save & Close]** om het formulier op te slaan.
-1. Selecteer het **voorbeeldaanvraagformulier voor leningen** en tik **[!UICONTROL Edit]**.
-1. Tik op het tekstvak Naam aanvrager en selecteer ![configure icon](assets/configure_icon.svg) (Configure).
-Selecteer **Aanvrager** > **Naam** in het veld Bindverwijzing en tik ![Gereed pictogram](assets/save_icon.svg) om de eigenschappen op te slaan. Maak op dezelfde manier een gegevensbinding voor **Adres**, **Telefoonnummer**, **E-mail**, **Beroep**, **Jaarloon (in dollars)** en **Nee. van afhankelijke familieleden** gebieden met de XSD schemaentiteiten.
+1. Omgezette selecteren **aanvraagformulier voor een voorbeeldlening** beschikbaar in **[!UICONTROL output]** map en tik **[!UICONTROL Properties]**.
+1. Tik op de knop **[!UICONTROL Form Model]** tab, selecteert u **[!UICONTROL Schema]** van de **[!UICONTROL Select From]** vervolgkeuzelijst en tikken **[!UICONTROL Select Schema]** om het **lening** XSD-schema opgeslagen in het lokale bestandssysteem. Selecteer basiselement voor het XSD-schema en tik op **[!UICONTROL Save & Close]** om het formulier op te slaan.
+1. Selecteer **aanvraagformulier voor een voorbeeldlening** en tikken **[!UICONTROL Edit]**.
+1. Tik op het tekstvak Naam aanvrager en selecteer ![Configuratiepictogram](assets/configure_icon.svg) (Configureren).
+Selecteer in het veld Bindverwijzing de optie **Aanvrager** > **Naam** en tikken ![Gereed pictogram](assets/save_icon.svg) om de eigenschappen op te slaan. Maak op dezelfde manier een gegevensbinding voor de **Adres**, **Telefoonnummer**, **E-mail**, **Beroep**, **Jaarloon (in dollars)**, en **Nee. van afhankelijke gezinsleden** velden met de XSD-schema-entiteiten.
 
-1. Selecteer nogmaals het geconverteerde **voorbeeldformulier voor de toepassing van de lening** beschikbaar in de map **output** en selecteer **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**.</br>
+1. Omgezette selecteren **aanvraagformulier voor een voorbeeldlening** beschikbaar in **output** map opnieuw en selecteer **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**.</br>
 
    Voorbeeldgegevensbestand downloaden</br>
 
@@ -380,19 +378,19 @@ Selecteer **Aanvrager** > **Naam** in het veld Bindverwijzing en tik ![Gereed pi
 
 ## Aangepaste formulieren genereren met JSON-binding {#generate-adaptive-forms-with-json-binding}
 
-Met de [service Automatede form conversion kunt u ](convert-existing-forms-to-adaptive-forms.md) het [voorbeeldformulier voor de toepassing van een lening](#sample-adaptive-form) converteren naar een adaptief formulier met gegevensbinding. Zorg ervoor dat u het selectievakje **[!UICONTROL Generate adaptive form(s) without data bindings]** niet inschakelt tijdens het genereren van het adaptieve formulier.
+Gebruik de [Omzetten van automatede form conversion](convert-existing-forms-to-adaptive-forms.md) de [aanvraagformulier voor een voorbeeldlening](#sample-adaptive-form) in een adaptief formulier met gegevensbinding. Zorg ervoor dat u de optie **[!UICONTROL Generate adaptive form(s) without data bindings]** selectievakje tijdens het genereren van het adaptieve formulier.
 
 ![Aangepaste vorm met JSON-binding](assets/generate_af_with_data_bindings.png)
 
 ### JSON-schema gebruiken als gegevensbron {#jsonwithdatabinding}
 
-**Hoofdlettergebruik:** u genereert een adaptief formulier met JSON-gegevensbinding via de service Automatede form conversion. De Prefill-service en het verzenden van formulieren werken naadloos. U hebt geen configuratiestappen nodig.
+**Hoofdlettergebruik:** U genereert een adaptief formulier met JSON-gegevensbinding via de service Automatede form conversion. De Prefill-service en het verzenden van formulieren werken naadloos. U hebt geen configuratiestappen nodig.
 
-Zorg ervoor dat u [een adaptief formulier hebt met gegevensbinding](#generate-adaptive-forms-with-json-binding) voordat u het gebruiksgeval uitvoert.
+Controleer voordat u het gebruiksgeval uitvoert of [een adaptief formulier met gegevensbinding](#generate-adaptive-forms-with-json-binding).
 
 Voer de volgende stappen uit:
 
-1. Selecteer nogmaals het geconverteerde **voorbeeldformulier voor de toepassing van een lening** in de map **[!UICONTROL output]** en selecteer **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**.</br>
+1. Omgezette selecteren **aanvraagformulier voor een voorbeeldlening** beschikbaar in **[!UICONTROL output]** map opnieuw en selecteer **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**.</br>
 
    Voorbeeldgegevensbestand downloaden</br>
 
@@ -402,9 +400,9 @@ Voer de volgende stappen uit:
 
    `http://host name:port/crx/de/index.jsp#/content/forms/fp/admin/submit/data/latest file available in the folder`
 
-## Verzonden aangepaste JSON-formuliergegevens converteren naar XML-indeling {#convert-submitted-adaptive-form-data-to-xml}
+## Verzonden JSON-formuliergegevens converteren naar XML-indeling {#convert-submitted-adaptive-form-data-to-xml}
 
-Wanneer u waarden invoert in adaptieve formuliervelden en deze verzendt, zijn de gegevens beschikbaar in JSON-indeling in de crx-repository. U kunt de indeling van JSON-gegevens omzetten in XML met de API [org.apache.sling.commons.json.xml](https://sling.apache.org/apidocs/sling5/org/apache/sling/commons/json/xml/XML.html#toString) of de volgende voorbeeldcode:
+Wanneer u waarden invoert in adaptieve formuliervelden en deze verzendt, zijn de gegevens beschikbaar in JSON-indeling in de crx-repository. U kunt de indeling van JSON-gegevens omzetten in XML met behulp van [org.apache.sling.commons.json.xml](https://sling.apache.org/apidocs/sling5/org/apache/sling/commons/json/xml/XML.html#toString) API of de volgende voorbeeldcode:
 
 ```
 import org.apache.sling.commons.json.JSONException;

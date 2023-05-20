@@ -1,5 +1,5 @@
 ---
-title: 'PDF-formulieren converteren naar adaptieve formulieren '
+title: PDF-formulieren converteren naar adaptieve formulieren
 seo-title: Convert PDF forms to adaptive forms
 description: Voer de service Automatede form conversion uit om PDF forms om te zetten in adaptieve formulieren
 seo-description: Run the Automated Forms Conversion service to convert PDF forms to adaptive forms

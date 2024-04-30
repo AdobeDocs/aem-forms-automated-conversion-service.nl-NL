@@ -1,6 +1,6 @@
 ---
 title: Bekende problemen
-description: bekende problemen en beperkingen voor de service Automatede form conversion
+description: bekende problemen en beperkingen voor de service Automatede form conversion (AFCS)
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Administration
@@ -8,16 +8,16 @@ topic-tags: introduction
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 35f59e02-e38e-473a-94c8-123e0a85ac8e
-source-git-commit: 43616abd46a17a8eeda30a116f09b88780ce9a77
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
 workflow-type: tm+mt
-source-wordcount: '794'
-ht-degree: 1%
+source-wordcount: '789'
+ht-degree: 0%
 
 ---
 
 # Bekende problemen en beperkingen {#known-issues-limitations}
 
-Voordat u de AEM Forms Automatede form conversion-service gaat gebruiken, moet u de volgende bekende problemen en beperkingen controleren:
+Voordat u de AEM Forms Automatede form conversion-service (AFCS) gaat gebruiken, moet u de volgende bekende problemen en beperkingen controleren:
 
 ## Bekende problemen {#known-issues}
 
@@ -39,7 +39,7 @@ Voordat u de AEM Forms Automatede form conversion-service gaat gebruiken, moet u
    * De optie Keuzegroepen met één teken wordt niet geïdentificeerd
    * Wanneer het brondocument een dynamische XFA (.XDP) en het is [definieert gedrag van XFA-eigenschappen in een adaptieve vorm](https://helpx.adobe.com/experience-manager/6-5/forms/using/xfa-api-supported-in-adaptive-form.html#supportedxfaelementsandtheirmappinginadaptiveformsbr), wordt de aanwezigheidseigenschap van het brondocument niet gerespecteerd. Een veld in een brondocument is bijvoorbeeld gemarkeerd als verborgen en een script maakt het veld zichtbaar, maar het veld blijft zichtbaar in het adaptieve uitvoerformulier.
 
-* Wanneer u de **Invoerformulier van AcroForm gebruiken als Document of Record (DoR) voor gegenereerde adaptieve formulieren** kunt u het volgende overwegen:
+* Wanneer u de opdracht **Invoerformulier van AcroForm gebruiken als Document of Record (DoR) voor gegenereerde adaptieve formulieren** kunt u het volgende overwegen:
 
 <table>
     <tr>
@@ -55,7 +55,7 @@ Voordat u de AEM Forms Automatede form conversion-service gaat gebruiken, moet u
         <td><img  src="assets/large-text-box.png"/><br/><img  src="assets/small-text-box.png"/></td>
     </tr>
     <tr>
-        <td>Als de invoervelden niet worden uitgelijnd op het corresponderende tekstveld, wordt het invoerveld niet gedetecteerd.  </td>
+        <td>Als de invoervelden niet worden uitgelijnd op het overeenkomstige tekstveld, wordt het invoerveld niet gedetecteerd.  </td>
         <td><img  src="assets/non-alingned-fields.png"/></td>
     </tr>
     <tr >

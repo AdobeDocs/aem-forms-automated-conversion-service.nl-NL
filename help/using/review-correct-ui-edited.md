@@ -1,6 +1,6 @@
 ---
 title: Omgezette formulieren controleren en corrigeren
-description: Controleer en corrigeer de adaptieve formulieren die door de service Automatede form conversion zijn geconverteerd.
+description: Controleer en corrigeer de adaptieve formulieren die door de AFCS (Automatede form conversion Service) zijn geconverteerd.
 solution: Experience Manager Forms
 feature: Adaptive Forms, Foundation Components
 topic: Administration
@@ -8,16 +8,16 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 64330fa2-aa9d-4ba4-96df-b75deed3e693
-source-git-commit: 919886cda2ec50ddb9b403cbb0e92fec2821c10e
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
 workflow-type: tm+mt
-source-wordcount: '2510'
+source-wordcount: '2512'
 ht-degree: 0%
 
 ---
 
 # Omgezette formulieren controleren en corrigeren{#review-and-correct-converted-forms}
 
-De AEM Forms Automatede form conversion-service identificeert velden, inhoud en indeling van invoer-PDF document en converteert het PDF-document naar een adaptief formulier. Het adaptieve uitvoerformulier kan enkele ontbrekende of onjuist geconverteerde velden bevatten. U kunt de redacteur van het Overzicht en van de Correctie gebruiken om verbeteringen aan geïdentificeerde gebieden aan te brengen en het adaptieve formulier opnieuw te produceren om een output dichter aan de gewenste ervaring te krijgen. Na de eerste conversie kunt u het invoer-PDF-document in de editor openen naar:
+De AEM Forms Automatede form conversion Service (AFCS) identificeert velden, inhoud en indeling van invoer-PDF document en converteert het PDF-document naar een adaptief formulier. Het adaptieve uitvoerformulier kan enkele ontbrekende of onjuist geconverteerde velden bevatten. U kunt de redacteur van het Overzicht en van de Correctie gebruiken om verbeteringen aan geïdentificeerde gebieden aan te brengen en het adaptieve formulier opnieuw te produceren om een output dichter aan de gewenste ervaring te krijgen. Na de eerste conversie kunt u het invoer-PDF-document in de editor openen naar:
 
 * Alle velden en inhoud weergeven die tijdens de conversie zijn geïdentificeerd
 * Identificeer de gebieden en de inhoud die tijdens omzetting worden gemist

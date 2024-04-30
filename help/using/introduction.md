@@ -1,5 +1,5 @@
 ---
-title: Inleiding tot de dienst van de automatede form conversion
+title: Inleiding tot automatede form conversion (AFCS)
 description: Printformulieren sneller converteren naar adaptieve formulieren
 solution: Experience Manager Forms
 feature: Adaptive Forms, Foundation Components
@@ -8,16 +8,16 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
-source-git-commit: 919886cda2ec50ddb9b403cbb0e92fec2821c10e
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
 workflow-type: tm+mt
-source-wordcount: '703'
-ht-degree: 58%
+source-wordcount: '711'
+ht-degree: 52%
 
 ---
 
-# Inleiding {#introduction-to-automated-forms-conversion-service}
+# Automatede form conversion (AFCS) {#introduction-to-automated-forms-conversion-service}
 
-De service voor automatische conversie helpt de digitalisering en modernisering van gegevens vastleggen te versnellen door geautomatiseerde conversie van PDF-formulieren naar adaptieve formulieren. De service, mogelijk gemaakt door Adobe Sensei, converteert uw PDF-formulieren automatisch naar apparaatvriendelijke, responsieve en op HTML5 gebaseerde adaptieve formulieren. De service maakt gebruik van de bestaande investeringen in PDF Forms en XFA, maar past tijdens de conversie ook de juiste validaties, styling en lay-out toe op adaptieve formuliervelden. De service helpt om:
+De service automatede form conversion (AFCS) helpt de digitalisering en modernisering van de ervaring op het gebied van gegevensvastlegging te versnellen door de automatische conversie van PDF forms naar adaptieve formulieren. De service, mogelijk gemaakt door Adobe Sensei, converteert uw PDF-formulieren automatisch naar apparaatvriendelijke, responsieve en op HTML5 gebaseerde adaptieve formulieren. De service maakt gebruik van de bestaande investeringen in PDF Forms en XFA, maar past tijdens de conversie ook de juiste validaties, styling en lay-out toe op adaptieve formuliervelden. De service helpt om:
 
 * Benodigde inspanning te besparen om printformulieren om te zetten in adaptieve formulieren
 * Patronen en geschikte validaties toe te passen tijdens conversie
@@ -43,13 +43,13 @@ De service kan formulieren in het Engels, Frans, Duits, Spaans, Italiaans en Por
 
 ## Conversieworkflow  {#conversion-workflow}
 
-De service voor automatische conversie van formulieren draait op Adobe Cloud. U verbindt uw AEM-instantie aan de service, uploadt formulieren naar uw AEM-instantie en start de conversie. Het volledige conversieproces is zoals hieronder vermeld:
+AFCS (automatede form conversion Service) wordt uitgevoerd op Adobe Cloud. U verbindt uw AEM-instantie aan de service, uploadt formulieren naar uw AEM-instantie en start de conversie. Het volledige conversieproces is zoals hieronder vermeld:
 
 ![Workflow](assets/conversion-workflow.png)
 
 ### 1. De omgeving instellen {#set-up-the-environment}
 
-De service voor automatische conversie van formulieren draait op Adobe Cloud. [Configureer het Adobe I/O-account van uw organisatie en verbind uw lokale AEM-instantie](configure-service.md) met de conversieservice die wordt uitgevoerd op Adobe Cloud.
+AFCS (automatede form conversion Service) wordt uitgevoerd op Adobe Cloud. [Configureer het Adobe I/O-account van uw organisatie en verbind uw lokale AEM-instantie](configure-service.md) met de conversieservice die wordt uitgevoerd op Adobe Cloud.
 
 ### 2. PDF forms omzetten in adaptieve formulieren {#use-the-conversion-service}
 

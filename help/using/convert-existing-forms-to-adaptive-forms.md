@@ -1,27 +1,28 @@
 ---
 title: PDF forms converteren naar adaptieve formulieren
 seo-title: Convert PDF forms to adaptive forms
-description: Voer de service Automatede form conversion uit om PDF forms om te zetten in adaptieve formulieren
-seo-description: Run the Automated Forms Conversion service to convert PDF forms to adaptive forms
+description: Voer AFCS (Automatede form conversion Service) uit om PDF forms om te zetten in adaptieve formulieren
+seo-description: Run the Automated Forms Conversion service (AFCS) to convert PDF forms to adaptive forms
 contentOwner: khsingh
 topic-tags: forms
 feature: Adaptive Forms, Foundation Components
-source-git-commit: 444cc37ec6fa2af2d8d2952efd18368a5725e881
+exl-id: 415e05b5-5a90-490c-bf7c-d3365ce95e24
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1616'
 ht-degree: 6%
 
 ---
 
 # PDF forms converteren naar adaptieve formulieren {#convert-print-forms-to-adaptive-forms}
 
-AEM Forms Automatede form conversion Service, aangedreven door Adobe Sensei, zet uw PDF forms automatisch om in apparaatvriendelijke en responsieve adaptieve formulieren. Of u nu niet-interactieve PDF forms, Acro Forms of op XFA gebaseerde PDF forms gebruikt, de service Automatede form conversion kan deze formulieren eenvoudig converteren naar adaptieve formulieren. Voor informatie over de mogelijkheden, de omzettingswerkstroom en het aan boord gaan van informatie zie [Automatede form conversion](introduction.md) service.
+AEM Forms Automatede form conversion Service (AFCS), aangedreven door Adobe Sensei, zet uw PDF forms automatisch om in apparaatvriendelijke en responsieve adaptieve formulieren. Of u nu niet-interactieve PDF forms, Acro Forms of op XFA gebaseerde PDF forms gebruikt, de Automatede form conversion-service (AFCS) kan deze formulieren eenvoudig converteren naar adaptieve formulieren. Voor informatie over de mogelijkheden, de omzettingswerkstroom en het aan boord gaan van informatie zie [Automatede form conversion](introduction.md) service.
 
 ## Voorwaarden {#pre-requisites}
 
 * [**De conversieservice configureren**](configure-service.md)
 
-* **De [sjablonen](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html) toe te passen op geconverteerde formulieren:** Met behulp van een sjabloon kunt u consistente branding toepassen op alle adaptieve formulieren. Bovendien haalt en gebruikt de dienst van de Automatede form conversion geen kopbal en footer van bronPDF documenten. U kunt adaptieve formuliersjablonen gebruiken om kop- en voettekst op te geven. De kop- en voettekst die in de sjabloon is opgegeven, worden tijdens de conversie op het adaptieve formulier toegepast. Wanneer u een map voor de sjablonen maakt, selecteert u de **[!UICONTROL Browse configurations]** voor iedereen.
+* **De [sjablonen](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html) toe te passen op geconverteerde formulieren:** Met behulp van een sjabloon kunt u consistente branding toepassen op alle adaptieve formulieren. Bovendien haalt en gebruikt de dienst van de Automatede form conversion (AFCS) geen kopbal en footer van bronPDF documenten. U kunt adaptieve formuliersjablonen gebruiken om kop- en voettekst op te geven. De kop- en voettekst die in de sjabloon is opgegeven, worden tijdens de conversie op het adaptieve formulier toegepast. Wanneer u een map voor de sjablonen maakt, selecteert u de **[!UICONTROL Browse configurations]** voor iedereen.
 
 * **De [thema&#39;s](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html) toe te passen op geconverteerde formulieren:** Met een thema kunt u een consistente stijl toepassen op alle adaptieve vormen van uw organisatie.
 

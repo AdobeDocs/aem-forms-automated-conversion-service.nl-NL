@@ -8,31 +8,31 @@ topic-tags: introduction
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 3a29f8d4-8ea0-49eb-bfe0-0eab5f0c52c7
-source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
 workflow-type: tm+mt
-source-wordcount: '1799'
-ht-degree: 4%
+source-wordcount: '1777'
+ht-degree: 2%
 
 ---
 
 # Veelgestelde vragen{#frequently-asked-questions}
 
-1. **Welke versie van AEM Forms steunt de dienst van de Automatede form conversion?**
-   <p>De dienst van de automatede form conversion steunt AEM 6.4 Forms en AEM 6.5 Forms. Het werkt met zowel AEM Forms op OSGi als AEM vormen op JEE. Als u de service wilt gebruiken, hebt u het nieuwste AEM Forms-add-on-pakket naast AEM auteurinstantie nodig. Zie voor gedetailleerde instructies <a href="configure-service.md">De Automatede form conversion configureren</a> service.</p> 
+1. **Welke versie van AEM Forms ondersteunt de Automatede form conversion Service (AFCS)?**
+   <p>De dienst van de automatede form conversion (AFCS) steunt AEM 6.4 Forms en AEM 6.5 Forms. Het werkt met zowel AEM Forms op OSGi als AEM vormen op JEE. Als u de service wilt gebruiken, hebt u het nieuwste AEM Forms-add-on-pakket naast AEM auteurinstantie nodig. Zie voor gedetailleerde instructies <a href="configure-service.md">De Automatede form conversion configureren</a> service.</p> 
     <br>
 
 1. **Kan de dienst op-gebouw worden geïnstalleerd?**
-   <p>Adobe voert regelmatig AI- en ML-algoritmen van Automatede form conversion uit met nieuwe gegevensverzameling om de nauwkeurigheid van de conversie te verbeteren. De bijgewerkte algoritmen worden op gezette tijden geïmplementeerd op de conversieservice die op Adobe Cloud wordt uitgevoerd. Alle klanten van de dienst worden geprofiteerd van de bijgewerkte algoritmen. Dus, de wolk-ontvangen centrale plaatsing is het best geschikt voor de dienst van de Automatede form conversion om onophoudelijk verbeteringen aan alle klanten te leren en te leveren.</p> 
+   <p>Adobe treinen AI- en ML-algoritmen van de dienst Automatede form conversion (AFCS) op regelmatige basis met nieuwe gegevensverzameling om de nauwkeurigheid van de conversie te verbeteren. De bijgewerkte algoritmen worden op periodieke intervallen geïmplementeerd op de conversieservice die op de Adobe Cloud wordt uitgevoerd. Alle klanten van de dienst worden geprofiteerd van de bijgewerkte algoritmen. Dus, de wolk-ontvangen centrale plaatsing is het best geschikt voor de dienst van de Automatede form conversion (AFCS) om onophoudelijk verbeteringen aan alle klanten te leren en te leveren.</p> 
     <p>De service converteert lege formulieren naar adaptieve formulieren. De service ondersteunt geen ingevulde formulieren en het ophalen van gegevens uit ingevulde formulieren. Verwijder gegevens uit ingevulde formulieren en verwijder of lijst van gewenste personen bedrijfsspecifieke informatie uit de formulieren voordat u de formulieren ter conversie naar de service stuurt</p> <br>
 
 1. **Steunt de dienst alle formaten van PDF forms? Welke talen worden ondersteund?**
-   <p>De service kan niet-interactieve PDF forms, XDP en PDF forms op basis van XFA en AcroForms converteren naar adaptieve formulieren. De service ondersteunt geen gescande of ingevulde formulieren. Voor andere beperkingen raadpleegt u de <a href="known-issues.md">bekende problemen</a> artikel.<br /> </p> 
-    <p>Wij voegen regelmatig steun voor andere brontypes toe. De <a href="introduction.md">supportedPDF-formulieren</a> voor een regelmatige update van toegevoegde functies en mogelijkheden.</p>
+   <p>De service kan niet-interactieve PDF forms, XDP- en PDF forms op basis van XFA en AcroForms converteren naar adaptieve formulieren. De service ondersteunt geen gescande of ingevulde formulieren. Voor andere beperkingen raadpleegt u de <a href="known-issues.md">bekende problemen</a> artikel.<br /> </p> 
+    <p>Wij voegen regelmatig steun voor andere brontypes toe. Houd de <a href="introduction.md">supportedPDF-formulieren</a> voor een regelmatige update van toegevoegde functies en mogelijkheden.</p>
 
-   De service kan alleen de taalformulieren Engels, Frans, Duits, Spaans, Italiaans en Portugees converteren naar adaptieve formulieren. U kunt de gegenereerde adaptieve formulieren naar een andere taal vertalen met de [AEM-vertaalworkflow.](https://helpx.adobe.com/nl/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> </br>
+   De service kan alleen de taalformulieren Engels, Frans, Duits, Spaans, Italiaans en Portugees converteren naar adaptieve formulieren. U kunt de gegenereerde adaptieve formulieren in een andere taal vertalen met [AEM vertaalworkflow.](https://helpx.adobe.com/nl/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> </br>
 
 1. **Kan de service een XDP produceren in plaats van een adaptief formulier?**
-   <p>De service produceert geen XDP-uitvoer. Wij voegen regelmatig eigenschappen en aan de dienst toe. De <a href="introduction.md">ondersteunde talen en PDF forms</a> voor een regelmatige update van toegevoegde functies en mogelijkheden.</p> <br>
+   <p>De service produceert geen XDP-uitvoer. Wij voegen regelmatig eigenschappen en aan de dienst toe. Houd de <a href="introduction.md">ondersteunde talen en PDF forms</a> voor een regelmatige update van toegevoegde functies en mogelijkheden.</p> <br>
 
 1. **Wat is het type gegenereerd schema?**
    <p>U kunt de service gebruiken om het volgende te genereren: </p>
@@ -63,7 +63,7 @@ ht-degree: 4%
 
 1. **De service heeft formulieren niet geconverteerd. Wat is de reden en hoe moet dit probleem worden opgelost?**
 De meest voorkomende redenen voor het mislukken van de conversie zijn:</p>
-   * Voor de conversie worden beveiligde PDF forms verstrekt. Gebruik geen met wachtwoord beveiligde of beveiligde PDF forms voor conversie.
+   * Voor de conversie zijn beveiligde PDF forms beschikbaar. Gebruik geen met wachtwoord beveiligde of beveiligde PDF forms voor conversie.
    * De internetverbinding wordt onderbroken. Zorg ervoor dat u tijdens de conversie verbinding hebt met internet.
    * Source PDF heeft een afbeelding van het formulier in plaats van het daadwerkelijke formulier.
    * De service is onjuist geconfigureerd, de service-URL is niet opgegeven of de service-URL is onjuist. Controleer de [serviceconfiguratie](configure-service.md#configure-the-cloud-service) om **[!UICONTROL AEM]** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion configuration]**.
@@ -83,7 +83,7 @@ De meest voorkomende redenen voor het mislukken van de conversie zijn:</p>
    <p>De service converteert scripts van XFA-formulieren of Acro Forms niet automatisch naar overeenkomende aangepaste formulierregels. U (formulierauteurs) kunt de opdracht <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/rule-editor.html">Regeleditor</a> om interactiviteit toe te voegen aan een adaptief formulier.</p> <br>
 
 1. **Sommige formulierobjecten worden niet correct geconverteerd naar adaptieve formuliercomponenten. Hoe kan dit probleem worden opgelost?**
-   <p>De service automatede form conversion is opgeleid voor een groot aantal formulieren. Maar op AI/ML gebaseerde toepassingen worden beperkt door hun trainingsgegevens en patronen. Er kunnen meerdere veldtypen, indelingen, patronen en context zijn die zichtbaar zijn voor menselijke perceptie, maar moeilijk zijn voor automatische herkenning. De dienst kan dergelijke voorwerpen niet identificeren of hen verkeerd erkennen. U kunt <a href="review-correct-ui-edited.md" target="_blank">Reviseren en corrigeren</a> editor om de op het gebruikelijke formulier gebaseerde indeling van het invoerformulier aan te passen.</p> <br/>
+   <p>De service automatede form conversion (AFCS) is opgeleid op een groot aantal formulieren. Maar op AI/ML gebaseerde toepassingen worden beperkt door hun trainingsgegevens en patronen. Er kunnen meerdere veldtypen, indelingen, patronen en context zijn die zichtbaar zijn voor menselijke perceptie, maar moeilijk zijn voor automatische herkenning. De dienst kan dergelijke voorwerpen niet identificeren of hen verkeerd erkennen. U kunt <a href="review-correct-ui-edited.md" target="_blank">Reviseren en corrigeren</a> editor om de op het gebruikelijke formulier gebaseerde indeling van het invoerformulier aan te passen.</p> <br/>
 
 1. **Sommige correcties worden in verschillende formulieren herhaald. Kan de dienst alle dergelijke instanties in toekomstige omzettingen identificeren en bevestigen?**
 
@@ -98,7 +98,7 @@ De service ondersteunt alleen lege of niet-ingevulde formulieren. Upload geen in
    <p>Plaats de kop- en voettekst in een sjabloon voor aangepaste formulieren. Als het bronformulier voor PDF koptekst en voettekst bevat, detecteert en vervangt de service gedetecteerde kop- en voettekst door een kop- en voettekst die beschikbaar is in een adaptieve formuliersjabloon tijdens de conversie. Als er een extra kop- of voettekst in het aangepaste formulier is opgenomen, kunt u de opdracht <a href="review-correct-ui-edited.md">Reviseren en corrigeren</a> editor om een dergelijke kop- of voettekst te herstellen of te verwijderen.</p> <br />
 
 1. **Hoeveel tijd bespaart de dienst in vergelijking met het handproces om activa (thema&#39;s, malplaatjes) te plannen, te creëren, en het publiceren van een adaptief vorm?**
-   <p>De hoeveelheid tijd is afhankelijk van de grootte en complexiteit van invoerformulieren en het aantal aanvragen. De service is van plan de tijd die nodig is om waarde te bereiken aanzienlijk te beperken door PDF forms in veel sneller tempo om te zetten in adaptieve formulieren dan bij het handmatig converteren van formulieren. </p> <br />
+   <p>De hoeveelheid tijd is afhankelijk van de grootte en complexiteit van invoerformulieren en het aantal aanvragen. De service is van plan de tijd die nodig is om waarde te bereiken aanzienlijk te verminderen door PDF forms in adaptieve formulieren te converteren in een veel sneller tempo dan bij het handmatig converteren van formulieren. </p> <br />
 
 1. **Wat te doen als ik een fout met betrekking tot bibliotheken RSA ontmoet? Het foutbericht is vergelijkbaar met het onderstaande bericht:** <br/>
    `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&amp;lt;init&amp;gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>
@@ -114,10 +114,10 @@ De bovengenoemde fout komt voor wanneer de laarsdelegatie niet voor bibliotheken
 1. **Hoe wijzigt u automatisch het omhulsel van adaptieve formuliertekst?**
    <p>U kunt adaptief vanuit thema's of stijleditor gebruiken om de behuizing van een veld met een adaptief formulier te wijzigen. U kunt bijvoorbeeld de themaeditor openen en de waarde van de eigenschap Case van alle tekst van het formulier instellen op hoofdletters, kleine letters of hoofdletters. U kunt ook de optie CSS overschrijven in de themaeditor gebruiken om verschillende typen stijlen te maken.</p>
 
-1. **Kan ik Adobe Sign-tekstcodes gebruiken met de service Automatede form conversion?**
-   <p> Wanneer u met de service Automatede form conversion een PDF-formulier omzet in een adaptief formulier en het PDF-formulier Adobe Sign-tekstcodes heeft, worden deze codes geconverteerd naar de bijbehorende adaptieve formuliervelden en worden de ondertekenaardetails automatisch ingevuld.  Deze functie is alleen beschikbaar voor Acro Forms en adaptieve formulieren ondersteunen een beperkt aantal Adobe Sign-velden.</p>  </br>
+1. **Kan ik Adobe Sign-teksttags gebruiken met AFCS (Automatede form conversion Service)?**
+   <p> Wanneer u AFCS (Automatede form conversion Service) gebruikt om een PDF-formulier te converteren naar een adaptief formulier en het PDF-formulier Adobe Sign-tekstcodes heeft, worden deze codes geconverteerd naar de bijbehorende adaptieve formuliervelden en worden de ondertekenaardetails automatisch ingevuld.  Deze functie is alleen beschikbaar voor Acro Forms en adaptieve formulieren ondersteunen een beperkt aantal Adobe Sign-velden.</p>  </br>
 
 1. **Hoe kan ik een Adobe Sign-formulier voor PDF maken?**
    </p>Een Adobe Sign-formulier voor PDF maken:</p>
 
-   Toevoegen [Adobe Sign-teksttags](https://helpx.adobe.com/sign/using/text-tag.html) om veldnamen te gebruiken of de [Converteren naar Adobe Sign-formulier](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html) optie.
+   Toevoegen [Adobe Sign-teksttags](https://helpx.adobe.com/sign/using/text-tag.html) om veldnamen te gebruiken of de [Converteren naar Adobe Sign-formulier](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html) -optie.

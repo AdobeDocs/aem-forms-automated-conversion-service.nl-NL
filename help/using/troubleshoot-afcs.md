@@ -9,10 +9,10 @@ role: Admin, Developer
 level: Beginner, Intermediate
 contentOwner: khsingh
 exl-id: e8406ed9-37f5-4f26-be97-ad042f9ca57c
-source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 89%
+source-wordcount: '655'
+ht-degree: 85%
 
 ---
 
@@ -22,12 +22,12 @@ Het document bevat basisstappen voor het oplossen van veelvoorkomende problemen.
 
 <!--The article provides information on installation, configuration and administration issues that may arise in an Automated Forms Conversion Service production environment. -->
 
-## Veelvoorkomende fouten {#commonerrors}
+## Algemene fouten {#commonerrors}
 
 | Fout | Voorbeeld |
 |--- |--- |
 | **Foutbericht** <br> Koptekst van toegangstoken is niet beschikbaar. <br><br> **Reden** <br> Een beheerder heeft meerdere IMS-configuraties gemaakt of IMS-configuratie kan de AFCS-service op Adobe Cloud niet bereiken. <br><br>**Oplossing** <br> Als er meerdere configuraties zijn, verwijder dan alle configuraties en [maak een nieuwe configuratie aan](configure-service.md#obtainpubliccertificates). <br> Als er één configuratie is, gebruik dan **Statuscontrole** om [de verbinding te controleren](configure-service.md#createintegrationoption). | ![Koptekst van toegangstoken is niet beschikbaar](assets/invalid-ims-configurations.png) |
-| **Foutbericht** <br>Kan geen verbinding maken met de service.  <br><br>**Reden** <br> Onjuiste service-URL of er wordt geen service-URL vermeld in de Cloud-services van de service voor de automatische conversie van formulieren. <br><br>**Oplossing** <br> Pas de [service-URL](configure-service.md#configure-the-cloud-service) aan in de Cloud-services van de service voor de automatische conversie van formulieren. | ![Kan geen verbinding maken met de service.](assets/wrong-service-url-configured.png) |
+| **Foutbericht** <br>Kan geen verbinding maken met de service.  <br><br>**Reden** <br> Onjuiste service-URL of geen service-URL wordt vermeld in AFCS-cloudservices (Automatede form conversion Service). <br><br>**Resolutie** <br> Juist [Service-URL](configure-service.md#configure-the-cloud-service) in Automatede form conversion Service (AFCS) Cloud Services. | ![Kan geen verbinding maken met de service.](assets/wrong-service-url-configured.png) |
 | **Foutbericht** <br> De service kan het formulier niet converteren.  <br><br>**Reden** <br> U heeft problemen met netwerkverbinding, de service is niet beschikbaar vanwege gepland onderhoud of u ziet een onderbreking op Adobe Cloud. <br><br>**Oplossing** <br> Los problemen met uw netwerkverbinding op en controleer de status van de service op https://status.adobe.com/ voor geplande of ongeplande onderbrekingen. | ![Kan geen verbinding maken met de service.](assets/conversion-failure.png) |
 | **Foutbericht** <br> Er zijn meer dan 15 pagina&#39;s.  <br><br>**Reden** <br> Het bronformulier bestaat uit meer dan 15 pagina&#39;s.  <br><br>**Oplossing** <br> Gebruik Adobe Acrobat om formulieren van meer dan 15 pagina&#39;s te splitsen. Zorg dat het aantal pagina&#39;s van een formulier minder dan 15 is. | ![Kan geen verbinding maken met de service.](assets/number-of-pages.png) |
 | **Foutbericht** <br> Er zijn meer dan 15 bestanden.  <br><br>**Reden** <br>  De map bevat meer dan 15 formulieren. <br><br>**Oplossing** <br> Zorg dat er 15 of minder formulieren in de map zitten. Zorg dat het totale aantal pagina&#39;s in een map minder dan 50 is. Zorg dat de map minder dan 10 MB groot is. Bewaar formulieren niet in submappen. Organiseer bronformulieren in een reeks van 8-15 formulieren. | ![Kan geen verbinding maken met de service.](assets/number-of-pages.png) |
@@ -35,7 +35,7 @@ Het document bevat basisstappen voor het oplossen van veelvoorkomende problemen.
 | **Foutbericht** <br> Gescande formulieren worden niet ondersteund.  <br><br>**Reden** <br> Het PDF-formulier bevat alleen gescande afbeeldingen van het formulier en bevat geen inhoudsstructuur. <br><br>**Oplossing** <br> De service biedt geen ondersteuning voor het converteren van gescande formulieren of een afbeelding van een formulier naar een adaptief standaardformulier. Met Adobe Acrobat kunt u de afbeelding van een formulier echter converteren naar een PDF-formulier. Gebruik vervolgens de service om het PDF-formulier naar een adaptief formulier te converteren. Zorg dat de afbeelding van het formulier altijd van hoge kwaliteit is als u het wilt converteren in Acrobat. Dit verbetert de kwaliteit van de conversie. | ![Kan geen verbinding maken met de service.](assets/scanned-forms-error.png) |
 | **Foutbericht** <br> Versleuteld PDF-formulier wordt niet ondersteund.  <br><br>**Reden** <br>De map bevat versleutelde PDF-formulieren. <br><br>**Oplossing** <br> De service biedt geen ondersteuning voor het converteren van een versleuteld PDF-formulier naar een adaptief formulier. Verwijder de versleuteling, upload het niet-versleutelde formulier en voer de conversie uit. | ![Kan geen verbinding maken met de service.](assets/secured-pdf-form.png) |
 | **Foutbericht** <br> Kan meta-model JSON-schema niet parseren.  <br><br>**Reden** <br> Het JSON-schema dat aan de service wordt geleverd is niet correct geformatteerd, bevat ongeldige tekens of gebruikt ongeldige syntaxis om componenten toe te wijzen.  <br><br>**Oplossing** <br> Controleer de formattering van het JSON-bestand. U kunt elke online JSON-validatie gebruiken om de opmaak en structuur van het schema te controleren. Raadpleeg het artikel [Het standaard meta-model uitbreiden](extending-the-default-meta-model.md) voor meer informatie over meta-model-syntaxis. | ![Kan geen verbinding maken met de service.](assets/invalid-meta-model-schema.png) |
-| **Fout (alleen in omgevingen op locatie)** <br> De **[!UICONTROL Source Language]** wordt niet de juiste taal van een adaptief formulier weergegeven. <br><br>**Reden** <br> De eigenschap jcr:language van het adaptieve formulier wordt niet correct ingesteld.  <br><br>**Resolutie** <br> CRX-DE-lijst openen, navigeren naar `/content/forms/af/`, opent u de `jcr:content` en stel de waarde van het knooppunt in op de juiste taal. Voor de lijst met ondersteunde talen raadpleegt u [Ondersteuning voor lokalisatie toevoegen voor niet-ondersteunde landinstellingen](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html#add-localization-support-for-non-supported-locales). | ![Kan geen verbinding maken met de service.](assets/aem-forms-translation-project-language-unavailable.png) |
+| **Fout (alleen in omgevingen op locatie)** <br> De **[!UICONTROL Source Language]** wordt niet de juiste taal van een adaptief formulier weergegeven. <br><br>**Reden** <br> De eigenschap jcr:language van het adaptieve formulier wordt niet correct ingesteld.  <br><br>**Resolutie** <br> CRX-DE-lijst openen, navigeren naar `/content/forms/af/`, opent u de `jcr:content` en stel de waarde van het knooppunt in op de juiste taal. Zie voor de lijst met ondersteunde talen [Ondersteuning voor lokalisatie toevoegen voor niet-ondersteunde landinstellingen](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html#add-localization-support-for-non-supported-locales). | ![Kan geen verbinding maken met de service.](assets/aem-forms-translation-project-language-unavailable.png) |
 
 <!--
 
@@ -52,7 +52,7 @@ Het document bevat basisstappen voor het oplossen van veelvoorkomende problemen.
 <td><img alt="The access token header is not available" src="assets/invalid-ims-configuration.png" /></td>
 </tr>
 <tr>
-<td><strong>Error Message</strong> <br> Unable to connect to the service.  <br><br><strong>Reason</strong> <br> Incorrect service URL or no service URL is mentioned in Automated Forms Conversion Service cloud services. <br><br><strong>Resolution</strong> <br> Correct <a href="configure-service.md#configure-the-cloud-service">Service URL</a> in Automated Forms Conversion Service Cloud services.</td>
+<td><strong>Error Message</strong> <br> Unable to connect to the service.  <br><br><strong>Reason</strong> <br> Incorrect service URL or no service URL is mentioned in Automated Forms Conversion Service (AFCS) cloud services. <br><br><strong>Resolution</strong> <br> Correct <a href="configure-service.md#configure-the-cloud-service">Service URL</a> in Automated Forms Conversion Service (AFCS) Cloud services.</td>
 <td><img alt="Unable to connect to the service." src="assets/wrong-endpoint-configured.png" /></td>
 </tr>
 <tr>

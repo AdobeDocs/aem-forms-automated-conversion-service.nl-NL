@@ -1,6 +1,6 @@
 ---
-title: Het standaard metamodel uitbreiden
-description: Breid het standaardmetamodel uit om patroon, validaties en entiteiten toe te voegen specifiek voor uw organisatie en configuraties toe te passen op adaptieve formuliervelden terwijl de service Automatede form conversion wordt uitgevoerd.
+title: Het standaardmetamodel uitbreiden
+description: Breid het standaardmetamodel uit om een patroon, validaties en entiteiten toe te voegen die specifiek zijn voor uw organisatie en configuraties toe te passen op adaptieve formuliervelden terwijl de service Automatede form conversion (AFCS) wordt uitgevoerd.
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Administration
@@ -8,16 +8,16 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
-source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
 workflow-type: tm+mt
-source-wordcount: '2565'
+source-wordcount: '2569'
 ht-degree: 0%
 
 ---
 
-# Het standaard metamodel uitbreiden {#extend-the-default-meta-model}
+# Het standaardmetamodel uitbreiden {#extend-the-default-meta-model}
 
-Met de service automatede form conversion kunt u formulierobjecten herkennen en uitnemen van bronformulieren. Met Semantic-mapper kan de service bepalen hoe de geëxtraheerde objecten in een adaptieve vorm worden weergegeven. Een bronformulier kan bijvoorbeeld vele verschillende soorten representaties van een datum hebben. Met de semantische mapfunctie kunt u alle weergaven van datumformulierobjecten van het bronformulier toewijzen aan datumcomponent van de adaptieve formulieren. Met Semantic mapper kan de service ook validaties, regels, gegevenspatronen, Help-tekst en toegankelijkheidseigenschappen vooraf configureren en toepassen op adaptieve formuliercomponenten tijdens conversie.
+Met AFCS (automatede form conversion Service) kunt u formulierobjecten herkennen en uitnemen van bronformulieren. Met Semantic-mapper kan de service bepalen hoe de geëxtraheerde objecten in een adaptieve vorm worden weergegeven. Een bronformulier kan bijvoorbeeld vele verschillende soorten representaties van een datum hebben. Met de semantische mapfunctie kunt u alle weergaven van datumformulierobjecten van het bronformulier toewijzen aan datumcomponent van de adaptieve formulieren. Met Semantic mapper kan de service ook validaties, regels, gegevenspatronen, Help-tekst en toegankelijkheidseigenschappen vooraf configureren en toepassen op adaptieve formuliercomponenten tijdens conversie.
 
 ![](assets/meta-model.gif)
 
@@ -25,7 +25,7 @@ Meta-model is een JSON-schema. Voordat u begint met meta-model, moet u controler
 
 ## Standaardmetamodel {#default-meta-model}
 
-De dienst van de automatede form conversion heeft een standaard meta-model. Het is een JSON-schema en bevindt zich op Adobe Cloud met andere onderdelen van de service Automatede form conversion. U kunt een exemplaar van het metamodel op uw lokale AEM server vinden bij: http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/`global.schema.json`. U kunt ook [klik hier](assets/en.globalschema.json) om tot het Engelse taalschema toegang te hebben of te downloaden. Het metamodel voor [Frans](assets/fr.globalschema.json), [Duits](assets/de.globalschema.json) [Spaans](assets/es.globalschema.json), [Italiaans](assets/it.globalschema.json), en [Portugees](assets/pt_br.globalschema.json) talen kunnen ook worden gedownload .
+De dienst van de automatede form conversion (AFCS) heeft een standaardmetamodel. Het is een JSON-schema en bevindt zich op de Adobe Cloud met andere onderdelen van de AFCS (Automatede form conversion Service). U kunt een kopie van het metamodel vinden op uw lokale AEM op: http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/`global.schema.json`. U kunt [klik hier](assets/en.globalschema.json) om het Engelse taalschema te openen of te downloaden. Het metamodel voor [Frans](assets/fr.globalschema.json), [Duits](assets/de.globalschema.json) [Spaans](assets/es.globalschema.json), [Italiaans](assets/it.globalschema.json), en [Portugees](assets/pt_br.globalschema.json) talen kunnen ook worden gedownload .
 
 Het schema van meta-model wordt afgeleid uit schemaentiteiten in https://schema.org/docs/schemas.html. Het heeft Persoon, PostalAddress, LocalBusiness, en meer entiteiten zoals die op https://schema.org worden bepaald. Elke entiteit van het metamodel volgt het JSON-schemaobjecttype. De volgende code vertegenwoordigt een structuur van een metamodel van het steekproef:
 
@@ -51,7 +51,7 @@ Voer de volgende stappen uit om het standaard meta-model aan het lokale dossiers
 
 1. Meld u aan bij uw AEM Forms-exemplaar.
 1. Ga naar de **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** **>** **[!UICONTROL Meta Model]** map.
-1. Selecteer **[!UICONTROL global.schema.json]** bestand en tik **[!UICONTROL Download]**. Er wordt een dialoogvenster voor downloaden weergegeven. Selecteer **[!UICONTROL Download asset(s) as binary files]** optie. Tik op **[!UICONTROL Download]**. Er wordt een archief gedownload.
+1. Selecteer de **[!UICONTROL global.schema.json]** bestand en tik **[!UICONTROL Download]**. Er wordt een dialoogvenster voor downloaden weergegeven. Selecteer de **[!UICONTROL Download asset(s) as binary files]** -optie. Tik op **[!UICONTROL Download]**. Er wordt een archief gedownload.
 
    <!--
    Comment Type: draft
@@ -120,7 +120,7 @@ In dit voorbeeld zoekt de conversieservice naar de telefoon, de telefoon, de mob
 
 ### JSON-schemaeigenschappen voor gegenereerde adaptieve formuliervelden {#jsonschemaproperties}
 
-Het metamodel ondersteunt de volgende gemeenschappelijke eigenschappen van het JSON-schema voor adaptieve formuliervelden die worden gegenereerd met behulp van de service Automatede form conversion:
+Het metamodel ondersteunt de volgende gemeenschappelijke eigenschappen van het JSON-schema voor adaptieve formuliervelden die zijn gegenereerd met de Automatede form conversion-service (AFCS):
 
 <table> 
  <tbody> 
@@ -141,19 +141,19 @@ Het metamodel ondersteunt de volgende gemeenschappelijke eigenschappen van het J
    <td> 
     <p>De eigenschap type definieert het gegevenstype voor het gegenereerde adaptieve formulierveld. De mogelijke waarden voor de eigenschap title zijn:</p>
     <ul> 
-     <li>tekenreeks: Hiermee wordt een adaptief formulierveld van het tekstgegevenstype gegenereerd.</li> 
-     <li>getal: Hiermee genereert u een adaptief formulierveld met een numeriek gegevenstype.</li>
-     <li>integer: Genereert een adaptief formulierveld van een numeriek gegevenstype met subtype ingesteld op geheel getal.</li>
-     <li>Booleaans: Genereert een schakeloptie voor adaptieve formulieren.</li>
+     <li>tekenreeks: genereert een adaptief formulierveld met tekstgegevenstype.</li> 
+     <li>Getal: genereert een adaptief formulierveld met een numeriek gegevenstype.</li>
+     <li>geheel getal: genereert een adaptief formulierveld van een numeriek gegevenstype met subtype ingesteld op geheel getal.</li>
+     <li>Boolean: genereert een schakelbare adaptieve formuliercomponent.</li>
      </ul><p>Voor meer informatie bij het gebruiken van het typebezit in meta-model, zie <strong>Het type van een formulierveld wijzigen</strong> in <a href="#custommetamodelexamples">Voorbeelden van aangepaste metamodel.</a></p></td> 
   </tr>
   <td><p>patroon</p></td> 
    <td> 
-    <p>De eigenschap pattern beperkt de waarde voor het gegenereerde adaptieve formulierveld op basis van een reguliere expressie. De volgende code in het metamodel beperkt bijvoorbeeld de waarde voor het gegenereerde adaptieve formulierveld tot tien cijfers:<br>"patroon": "/\\d{10}/"<br>Op dezelfde manier beperkt de volgende code in het metamodel de waarde van een gebied tot een specifieke datumformaat.<br> "patroon": "date{DD MMMM, YYYY}",</p> </td> 
+    <p>De eigenschap pattern beperkt de waarde voor het gegenereerde adaptieve formulierveld op basis van een reguliere expressie. De volgende code in het metamodel beperkt bijvoorbeeld de waarde voor het gegenereerde adaptieve formulierveld tot tien cijfers:<br>"pattern": "/\\d{10}/"<br>Op dezelfde manier beperkt de volgende code in het metamodel de waarde van een gebied tot een specifieke datumformaat.<br> "patroon": "date{DD MMMM, YYYY}",</p> </td> 
   </tr>
   <td><p>format</p></td> 
    <td> 
-    <p>De eigenschap format beperkt de waarde voor het gegenereerde adaptieve formulierveld op basis van een benoemd patroon in plaats van een reguliere expressie. De mogelijke waarden voor de opmaakeigenschap zijn:<ul><li>e-mail: Hiermee genereert u een adaptieve e-mailformuliercomponent.</li><li>hostnaam: Hiermee genereert u een adaptief tekstvak-formuliercomponent.</li></ul>Voor meer informatie bij het gebruiken van het formaatbezit in meta-model, zie <strong>De indeling van een formulierveld wijzigen</strong> in <a href="#custommetamodelexamples">Voorbeelden van aangepaste metamodel.</a></p> </td> 
+    <p>De eigenschap format beperkt de waarde voor het gegenereerde adaptieve formulierveld op basis van een benoemd patroon in plaats van een reguliere expressie. De mogelijke waarden voor de opmaakeigenschap zijn:<ul><li>E-mail: Hiermee genereert u een adaptieve e-mailformuliercomponent.</li><li>hostnaam: genereert een tekstvak adaptieve formuliercomponent.</li></ul>Voor meer informatie bij het gebruiken van het formaatbezit in meta-model, zie <strong>De indeling van een formulierveld wijzigen</strong> in <a href="#custommetamodelexamples">Voorbeelden van aangepaste metamodel.</a></p> </td> 
   </tr>
   <td><p>enum en enumNames</p></td> 
    <td> 
@@ -164,9 +164,9 @@ Het metamodel ondersteunt de volgende gemeenschappelijke eigenschappen van het J
 
 ### Op trefwoorden gebaseerde zoekopdracht om eigenschappen toe te passen op gegenereerde adaptieve formuliervelden {#keywordsearch}
 
-De dienst van de automatede form conversion voert een sleutelwoordonderzoek op de bronvorm tijdens omzetting uit. Nadat de velden die aan de zoekcriteria voldoen, zijn gefilterd, past de conversieservice de eigenschappen die voor die velden in het metamodel zijn gedefinieerd toe op de gegenereerde adaptieve formuliervelden.
+De dienst van de automatede form conversion (AFCS) voert een sleutelwoordonderzoek op het bronvorm tijdens omzetting uit. Nadat de velden die aan de zoekcriteria voldoen, zijn gefilterd, past de conversieservice de eigenschappen die voor die velden in het metamodel zijn gedefinieerd toe op de gegenereerde adaptieve formuliervelden.
 
-Er wordt naar trefwoorden verwezen met de **aem:affKeyword** eigenschap.
+Er wordt met de **aem:affKeyword** eigenschap.
 
 ```
 {
@@ -177,11 +177,11 @@ Er wordt naar trefwoorden verwezen met de **aem:affKeyword** eigenschap.
 }
 ```
 
-In dit voorbeeld gebruikt de conversiedienst de tekst binnen **aem:affKeyword** als zoekwoord. Na het ophalen van de **Bankrekeningnummer** tekst in het formulier converteert de conversieservice het veld naar een **getal** tekst met de **type** eigenschap.
+In dit voorbeeld gebruikt de conversiedienst de tekst binnen **aem:affKeyword** als zoekwoord. Na het ophalen van de **Bankrekeningnummer** tekst in het formulier converteert de conversieservice het veld naar een **getal** tekst gebruiken met de **type** eigenschap.
 
 ### Aanvullende eigenschappen voor gegenereerde adaptieve formuliervelden {#additionalproperties}
 
-U kunt de **aem:afProperties** eigenschap in het metamodel om de volgende aanvullende eigenschappen te definiëren voor adaptieve formuliervelden die worden gegenereerd met behulp van de Automatede form conversion-service:
+U kunt de **aem:afProperties** eigenschap in het metamodel om de volgende aanvullende eigenschappen te definiëren voor adaptieve formuliervelden die zijn gegenereerd met AFCS (Automatede form conversion Service):
 
 <table> 
  <tbody> 
@@ -217,16 +217,16 @@ U kunt de **aem:afProperties** eigenschap in het metamodel om de volgende aanvul
 
 ## Een aangepast model in uw eigen taal maken{#language-specific-meta-model}
 
-U kunt een taalspecifiek metamodel maken. Een dergelijk metamodel helpt u toewijzingsregels te maken in de taal van uw keuze. Met de service automatede form conversion kunt u metamodellen maken in de volgende talen:
+U kunt een taalspecifiek metamodel maken. Een dergelijk metamodel helpt u toewijzingsregels te maken in de taal van uw keuze. Met AFCS (automatede form conversion Service) kunt u metamodellen maken in de volgende talen:
 
 * Engels(en)
 * Frans(fr)
 * Duits(de)
-* Spaans
+* Spaans(en)
 * Italiaans(it)
 * Portugees (pt-br)
 
-Voeg de *aem:Language* metatag markering aan de bovenkant een meta-model om zijn taal te specificeren. Bijvoorbeeld,
+Voeg de *aem:Language* metatag markering aan de bovenkant een meta-model om zijn taal te specificeren. Bijvoorbeeld:
 
 ```JSON
 "metaTags": {
@@ -248,7 +248,7 @@ Wanneer geen taal wordt gespecificeerd, is de dienst van mening dat meta-model i
    * shortDescription
    * validatePictureClauseMessage
 
-  Wanneer de taal van het metamodel bijvoorbeeld Frans is (&quot;aem:Language&quot;: &quot;fr&quot;), moet u ervoor zorgen dat alle beschrijvingen en berichten in het Frans zijn gesteld.
+  Wanneer de taal van het metamodel bijvoorbeeld Frans is (&quot;aem:Language&quot;: &quot;fr&quot;), moet u ervoor zorgen dat alle beschrijvingen en berichten in de Franse taal zijn geschreven.
 
 * Alles garanderen [Eigenschappen van JSON-schema](#jsonschemaproperties) alleen ondersteunde waarden gebruiken. De eigenschap type kan bijvoorbeeld alleen geselecteerde waarden van String, Number, Integer en Boolean omvatten.
 
@@ -258,9 +258,9 @@ In de volgende afbeelding ziet u voorbeelden van het metamodel voor de Engelse t
 
 ## Aangepaste formuliervelden wijzigen met behulp van een aangepast metamodel {#modify-adaptive-form-fields-using-custom-meta-model}
 
-Uw organisatie kan patronen en bevestigingen naast die hebben die in het standaard meta-model worden vermeld. U kunt het standaardmetamodel uitbreiden om een patroon, validaties en entiteiten toe te voegen die specifiek zijn voor uw organisatie. Tijdens de conversie past de service automatede form conversion het aangepaste metamodel toe op de formuliervelden. U kunt het metamodel blijven bijwerken aangezien de nieuwe patronen, de bevestigingen, en de entiteiten specifiek voor uw organisatie worden ontdekt.
+Uw organisatie kan patronen en bevestigingen naast die hebben die in het standaard meta-model worden vermeld. U kunt het standaardmetamodel uitbreiden om een patroon, validaties en entiteiten toe te voegen die specifiek zijn voor uw organisatie. AFCS (automatede form conversion Service) past tijdens de conversie het aangepaste metamodel toe op de formuliervelden. U kunt het metamodel blijven bijwerken aangezien de nieuwe patronen, de bevestigingen, en de entiteiten specifiek voor uw organisatie worden ontdekt.
 
-De service automatede form conversion gebruikt een standaardmetamodel dat op de volgende locatie is opgeslagen om bronformuliervelden tijdens de conversie toe te wijzen aan de aangepaste formuliervelden:
+De service automatede form conversion (AFCS) gebruikt een standaardmetamodel dat op de volgende locatie is opgeslagen om bronformuliervelden tijdens de conversie toe te wijzen aan de adaptieve formuliervelden:
 
 http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/global.schema.json
 
@@ -296,7 +296,7 @@ Enkele voorbeelden die vaak worden gebruikt om aangepaste eigenschappen voor for
 
 **Voorbeeld:** Wijzig het bankrekeningnummer in het formulier in het aangepaste formulier na de conversie.
 
-In dit aangepaste metamodel gebruikt de conversieservice het **titel** eigenschap als een zoekwoord. Na het ophalen van de **Bankrekeningnummer** tekst in het formulier vervangt de conversieservice de tekst door de **Klantrekeningnummer** tekenreeks die wordt vermeld met de **jcr:titel** eigenschap in de **aem:afProperties** sectie.
+In dit aangepaste metamodel gebruikt de conversieservice het **titel** eigenschap als een zoekwoord. Na het ophalen van de **Bankrekeningnummer** tekst in het formulier vervangt de conversieservice de tekst door de **Rekeningnummer klant** tekenreeks die wordt vermeld met de **jcr:titel** eigenschap in de **aem:afProperties** sectie.
 
 ```
 {
@@ -312,7 +312,7 @@ In dit aangepaste metamodel gebruikt de conversieservice het **titel** eigenscha
 
 #### Het type van een formulierveld wijzigen {#modify-the-type-of-a-form-field}
 
-**Voorbeeld**: De **Bankrekeningnummer** tekstveld in het formulier vóór conversie naar een nummertypeveld in het adaptieve formulier na conversie.
+**Voorbeeld**: Wijzig de **Bankrekeningnummer** tekstveld in het formulier vóór conversie naar een nummertypeveld in het adaptieve formulier na conversie.
 
 In dit aangepaste metamodel gebruikt de conversieservice de tekst binnen **aem:affKeyword** als zoekwoord. Na het ophalen van de **Bankrekeningnummer** tekst in het formulier converteert de conversieservice het veld naar een getaltype met behulp van de **type** eigenschap.
 
@@ -327,9 +327,9 @@ In dit aangepaste metamodel gebruikt de conversieservice de tekst binnen **aem:a
 
 #### Help-tekst toevoegen aan een formulierveld {#add-help-text-to-a-form-field}
 
-**Voorbeeld**: Voeg Help-tekst toe aan het dialoogvenster **Bankrekeningnummer** veld van het adaptieve formulier.
+**Voorbeeld**: Voeg Help-tekst toe aan de **Bankrekeningnummer** veld van het adaptieve formulier.
 
-In dit aangepaste metamodel gebruikt de conversieservice de tekst binnen **aem:affKeyword** als zoekwoord. Na het ophalen van de **Bankrekeningnummer** tekst in het formulier voegt de conversieservice de Help-tekst toe aan het aangepaste formulierveld met behulp van de **beschrijving** eigenschap.
+In dit aangepaste metamodel gebruikt de conversieservice de tekst binnen **aem:affKeyword** als zoekwoord. Na het ophalen van de **Bankrekeningnummer** De conversieservice voegt de Help-tekst in het aangepaste formulierveld toe met de **beschrijving** eigenschap.
 
 ```
 {
@@ -343,7 +343,7 @@ In dit aangepaste metamodel gebruikt de conversieservice de tekst binnen **aem:a
 
 #### Een formulierveld converteren naar meerkeuzevakken in het adaptieve formulier {#convert-a-form-field-to-multiple-choice-check-boxes-in-the-adaptive-form}
 
-**Voorbeeld**: Zet de **Land** veld van het type tekenreeks in het formulier vóór conversie naar selectievakjes in het adaptieve formulier na conversie.
+**Voorbeeld**: Converteer de **Land** veld van het type tekenreeks in het formulier vóór conversie naar selectievakjes in het adaptieve formulier na conversie.
 
 In dit aangepaste metamodel gebruikt de conversieservice tekst binnen **aem:affKeyword** als zoekwoord. Na het ophalen van de **Land** tekst in het formulier converteert de conversieservice het veld naar de volgende selectievakjes met behulp van de **enum** eigenschap:
 
@@ -377,7 +377,7 @@ In dit aangepaste metamodel gebruikt de conversieservice tekst binnen **aem:affK
 
 #### De indeling van een formulierveld wijzigen {#modify-the-format-of-a-form-field}
 
-**Voorbeeld**: De opmaak van de **E-mailadres** naar een e-mailindeling.
+**Voorbeeld**: Wijzig het formaat van **E-mailadres** naar een e-mailindeling.
 
 In dit aangepaste metamodel gebruikt de conversieservice tekst binnen **aem:affKeyword** als zoekwoord. Na het ophalen van de **E-mailadres** tekst in het formulier converteert de conversieservice het veld naar een e-mailindeling in de vorm van **format** eigenschap.
 
@@ -395,7 +395,7 @@ In dit aangepaste metamodel gebruikt de conversieservice tekst binnen **aem:affK
 
 **Voorbeeld 1:** Een validatie toevoegen aan de **Postcode** van het adaptieve formulier.
 
-In dit aangepaste metamodel gebruikt de conversieservice tekst binnen **aem:affKeyword** als het zoekwoord. Na het ophalen van de **Postcode** tekst in het formulier voegt de conversieservice een validatie toe aan het veld met behulp van de **validatePictureClause** eigenschap gedefinieerd in het dialoogvenster **aem:afProperties** sectie. De invoer die u opgeeft voor de **Postcode** in het adaptieve formulier na conversie moeten zes tekens worden opgenomen.
+In dit aangepaste metamodel gebruikt de conversieservice tekst binnen **aem:affKeyword** als het zoekwoord. Na het ophalen van de **Postcode** tekst in het formulier voegt de conversieservice een validatie toe aan het veld met behulp van de **validatePictureClause** in de **aem:afProperties** sectie. De invoer die u opgeeft voor de **Postcode** in het adaptieve formulier na conversie moeten zes tekens worden opgenomen.
 
 ```
 {
@@ -411,7 +411,7 @@ In dit aangepaste metamodel gebruikt de conversieservice tekst binnen **aem:affK
 
 **Voorbeeld 2:** Een validatie toevoegen aan de **Bankrekeningnummer** van het adaptieve formulier.
 
-In dit aangepaste metamodel gebruikt de conversieservice tekst binnen **aem:affKeyword** als het zoekwoord. Na het ophalen van de **Bankrekeningnummer** tekst in het formulier voegt de conversieservice een validatie toe aan het veld met behulp van de **verplicht** eigenschap gedefinieerd in het dialoogvenster **aem:afProperties** sectie. Op basis van de validatie moet u een waarde opgeven voor het dialoogvenster **Bankrekeningnummer** veld voordat het formulier wordt verzonden na conversie.
+In dit aangepaste metamodel gebruikt de conversieservice tekst binnen **aem:affKeyword** als het zoekwoord. Na het ophalen van de **Bankrekeningnummer** tekst in het formulier voegt de conversieservice een validatie toe aan het veld met behulp van de **verplicht** in de **aem:afProperties** sectie. Op basis van de validatie moet u een waarde opgeven voor het dialoogvenster **Bankrekeningnummer** veld voordat het formulier wordt verzonden na conversie.
 
 ```
 {
@@ -427,7 +427,7 @@ In dit aangepaste metamodel gebruikt de conversieservice tekst binnen **aem:affK
 
 #### Een tekstveld omzetten in een vervolgkeuzelijst in het aangepaste formulier {#convert-a-text-field-to-drop-down-list-in-the-adaptive-form}
 
-**Voorbeeld**: Zet de **Land** veld van het type tekenreeks in het formulier vóór conversie naar vervolgkeuzemogelijkheden in het adaptieve formulier na conversie.
+**Voorbeeld**: Converteer de **Land** veld van het type tekenreeks in het formulier vóór conversie naar vervolgkeuzemogelijkheden in het adaptieve formulier na conversie.
 
 In dit aangepaste metamodel gebruikt de conversieservice tekst binnen **aem:affKeyword** als het zoekwoord. Na het ophalen van de **Land** tekst in het formulier converteert de conversieservice het veld naar de volgende vervolgkeuzelijsten met behulp van de **enum** eigenschap:
 
@@ -491,7 +491,7 @@ Als u een extra optie wilt toevoegen, werkt u de **enum** met de nieuwe optie. I
 
 **Voorbeeld:** Zet de **Adres** veld van het type tekenreeks naar een veld met meerdere regels in het formulier na conversie.
 
-In dit aangepaste metamodel gebruikt de conversieservice tekst binnen **aem:affKeyword** als het zoekwoord. Na het ophalen van de **Adres** tekst in het formulier converteert de service het tekstveld naar een veld met meerdere regels met behulp van de **multiLine** eigenschap gedefinieerd in het dialoogvenster **aem:afProperties** sectie.
+In dit aangepaste metamodel gebruikt de conversieservice tekst binnen **aem:affKeyword** als het zoekwoord. Na het ophalen van de **Adres** tekst in het formulier converteert de service het tekstveld naar een veld met meerdere regels met behulp van de **multiLine** in de **aem:afProperties** sectie.
 
 ```
 {

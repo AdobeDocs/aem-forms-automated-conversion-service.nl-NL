@@ -1,6 +1,6 @@
 ---
-title: Best practices en overwegingen
-description: Beste werkwijzen en overwegingen voor de dienst van de Automatede form conversion
+title: Aanbevolen werkwijzen en overwegingen
+description: Beste werkwijzen en overwegingen voor de dienst van de Automatede form conversion (AFCS)
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Administration
@@ -8,16 +8,16 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
-source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
+source-git-commit: 4b227a2cd0253b8ab471007b41787de60c2a1851
 workflow-type: tm+mt
-source-wordcount: '1247'
-ht-degree: 2%
+source-wordcount: '1229'
+ht-degree: 1%
 
 ---
 
 # Aanbevolen werkwijzen en bekende complexe patronen {#Best-practices-and-considerations2}
 
-Dit document bevat richtlijnen en aanbevelingen die beheerders, auteurs en ontwikkelaars van formulieren kunnen gebruiken wanneer ze met [!DNL Automated Forms Conversion service]. Hierin worden de beste werkwijzen besproken, van het voorbereiden van bronformulieren tot het corrigeren van complexe patronen die enige extra inspanning vereisen voor automatische conversie. Deze beste praktijken dragen collectief aan de algemene prestaties en de output bij [!DNL Automated Forms Conversion service].
+Dit document bevat richtlijnen en aanbevelingen die beheerders, auteurs en ontwikkelaars van formulieren kunnen gebruiken wanneer ze met [!DNL Automated Forms Conversion service] (AFCS). Hierin worden de beste werkwijzen besproken, van het voorbereiden van bronformulieren tot het corrigeren van complexe patronen die enige extra inspanning vereisen voor automatische conversie. Deze beste praktijken dragen collectief aan de algemene prestaties en de output bij [!DNL Automated Forms Conversion service] (AFCS).
 
 ## Aanbevolen procedures
 
@@ -25,14 +25,14 @@ De conversieservice converteert PDF forms die beschikbaar zijn op uw AEM [!DNL F
 
 ### Voordat u de bron uploadt
 
-U kunt alle PDF forms tegelijk uploaden of, indien nodig, gefaseerd. Houd rekening met het volgende voordat u de formulieren uploadt:
+U kunt alle PDF forms in één keer of op een gefaseerde manier uploaden, zoals vereist. Houd rekening met het volgende voordat u de formulieren uploadt:
 
 * Houd het aantal formulieren in een map kleiner dan 15 en houd het totale aantal pagina&#39;s in een map kleiner dan 50.
-* Houd de map kleiner dan 10 MB. Bewaar formulieren niet in submappen.
+* Houd de map kleiner dan 10 MB. Formulieren niet in een submap bewaren.
 * Houd het aantal pagina&#39;s in een formulier kleiner dan 15.
 * Indelen van brondocumenten in een batch van 8-15 documenten. Bronformulieren met algemene adaptieve formulierfragmenten in één batch bewaren.
 * Upload de beveiligde formulieren niet. De service converteert formulieren die met een wachtwoord zijn beveiligd niet.
-* Upload de [PDF Portfolio](https://helpx.adobe.com/nl/acrobat/using/overview-pdf-portfolios.html). De service zet een PDF-Portfolio niet om in een adaptieve vorm.
+* Upload de [PDF Portfolio&#39;s](https://helpx.adobe.com/nl/acrobat/using/overview-pdf-portfolios.html). De service zet een PDF-Portfolio niet om in een adaptieve vorm.
 * Upload geen bronformulieren met spaties in de bestandsnaam. Verwijder de ruimte uit de naam van het bestand voordat u de formulieren uploadt.
 * U mag geen gescande, gevulde en formulieren uploaden in een andere taal dan Engels, Frans, Duits, Spaans, Italiaans en Portugees. Dergelijke formulieren worden niet ondersteund.
 
@@ -61,18 +61,18 @@ AEM [!DNL Forms Automated Conversion service] gebruikt kunstmatige intelligentie
 
 [!DNL Automated Forms Conversion service] is opgeleid voor een groot aantal formulieren. Het identificeert gemakkelijk gebieden in een bronvorm en produceert adaptieve vormen. Er zijn echter enkele velden en stijlen in PDF forms die gemakkelijk zichtbaar zijn voor het oog, maar moeilijk te begrijpen zijn voor de service. De service kan verschillende veldtypen of deelvensters toewijzen aan bepaalde velden of stijlen. Alle dergelijke veld- en stijlpatronen worden hieronder weergegeven.
 
-De dienst zou beginnen correcte gebieden of panelen aan deze patronen te identificeren en toe te wijzen aangezien het het leren van de brongegevens houdt. Voorlopig kunt u [Reviseren en corrigeren](review-correct-ui-edited.md) editor om dergelijke problemen op te lossen. Voordat u de problemen gaat verhelpen of verder gaat lezen, moet u zich vertrouwd maken met [adaptieve formuliercomponenten](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html).
+De dienst zou beginnen correcte gebieden of panelen aan deze patronen te identificeren en toe te wijzen aangezien het het leren van de brongegevens houdt. U kunt voorlopig [Reviseren en corrigeren](review-correct-ui-edited.md) editor om dergelijke problemen op te lossen. Voordat u de problemen gaat verhelpen of verder gaat lezen, moet u zich vertrouwd maken met [adaptieve formuliercomponenten](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html).
 
 ### Algemene patronen {#general}
 
 | Patroon | Voorbeeld |
 |--- |--- |
-| **Patroon** <br>De service zet gevulde PDF forms niet om in een adaptief formulier. <br><br>**Resolutie** <br>Gebruik lege adaptieve formulieren. | ![Formulier invullen](assets/best-practice-filled-forms.png) |
+| **Patroon** <br>Service converteert gevulde PDF forms niet naar een adaptief formulier. <br><br>**Resolutie** <br>Gebruik lege adaptieve formulieren. | ![Formulier invullen](assets/best-practice-filled-forms.png) |
 | **Patroon** <br>De service kan tekst en velden in een dicht formulier niet herkennen. <br><br>**Resolutie** <br> Vergroot de breedte tussen tekst en velden in een dicht formulier voordat u de conversie start. |  |
-| **Patroon** <br>De service ondersteunt geen gescande formulieren. <br><br>**Resolutie** <br>Gebruik geen gescande formulieren. | ![Gescande vorm](assets/scanned-forms.png) |
+| **Patroon** <br>De service biedt geen ondersteuning voor gescande formulieren. <br><br>**Resolutie** <br>Gebruik geen gescande formulieren. | ![Gescande vorm](assets/scanned-forms.png) |
 | **Patroon** <br>De service extraheert geen afbeeldingen en tekst binnen afbeeldingen. <br><br>**Resolutie** <br> Voeg handmatig afbeeldingen of tekst toe aan geconverteerde formulieren. | ![Afbeelding met tekstformulier](assets/best-practice-image-with-text.png) |
 | **Patroon** <br>Tabellen met gestippelde of onduidelijke grenzen en randen worden niet omgezet. <br><br>**Resolutie** <br>Gebruik tabellen met duidelijke expliciete grenzen en randen. ondersteund. | ![Niet-duidelijk tabelformulier](assets/best-practice-table-dotted-non-clear.png) |
-| **Patroon** <br> Adaptieve formulieren ondersteunen geen verticale tekst uit het vak. De service zet verticale tekst dus niet om in de bijbehorende adaptieve Forms-tekst. <br><br>**Resolutie** <br> Gebruik indien nodig een aangepaste formuliereditor om verticale tekst toe te voegen. | ![Niet-duidelijk tabelformulier](assets/vertical-text.png) |
+| **Patroon** <br> Adaptieve formulieren bieden geen ondersteuning voor verticale tekst uit het vak. De service zet verticale tekst dus niet om in de bijbehorende adaptieve Forms-tekst. <br><br>**Resolutie** <br> Gebruik indien nodig een aangepaste formuliereditor om verticale tekst toe te voegen. | ![Niet-duidelijk tabelformulier](assets/vertical-text.png) |
 
 
 
@@ -87,7 +87,7 @@ De dienst zou beginnen correcte gebieden of panelen aan deze patronen te identif
 | Patroon | Resolutie |
 |--- |--- |
 | **Patroon** <br> De dienst identificeert geen gebieden zonder duidelijke grenzen. <br><br>**Resolutie** <br> Gebruik Revisie en Correcte editor om dergelijke velden te identificeren. | ![velden met niet-duidelijke grenzen](assets/best-practice-fields-without-clear-borders.png) |
-| **Patroon** <br> De service kan bepaalde formuliervelden van keuzegroepen niet herkennen met bijschriften aan de onderzijde of rechterzijde van een formulier. <br><br>**Resolutie** <br> De redacteur van het Overzicht en van de Correctie van het gebruik om dergelijke gebieden te identificeren | ![Keuzelijsten](assets/best-practice-caption-bottom-right.png) |
+| **Patroon** <br> De service kan bepaalde formuliervelden van keuzegroepen niet herkennen met bijschriften aan de onderzijde of rechterzijde van een formulier. <br><br>**Resolutie** <br> De redacteur van het Overzicht en van het Juiste gebruiken om dergelijke gebieden te identificeren | ![Keuzelijsten](assets/best-practice-caption-bottom-right.png) |
 | **Patroon** <br> De dienst voegt of wijst een verkeerd type aan sommige vormgebieden toe die zeer dicht bij elkaar worden geplaatst of geen duidelijke grenzen hebben. <br><br>**Resolutie** <br> Gebruik Revisie en Correcte editor om dergelijke velden te identificeren. | ![Keuzelijsten](assets/best-practice-placed-very-near.png) |
 | **Patroon** <br> De dienst kan er niet in slagen om gebieden met verre titels of een gestippelde lijn tussen de titel en inputgebied te erkennen. <br><br>**Resolutie** <br> Gebruik formuliervelden met duidelijke grenzen of gebruik Revisie en Correcte editor om dergelijke problemen op te lossen. | ![Velden ver weg of stippellijn tussen bijschriftvelden](assets/best-practice-far-away-captions-or-a-dotted-line.png) |
 

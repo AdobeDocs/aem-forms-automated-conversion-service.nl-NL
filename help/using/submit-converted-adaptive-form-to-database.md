@@ -1,6 +1,6 @@
 ---
 title: De geconverteerde adaptieve formulieren met een JSON-schema naar database verzenden
-description: Verzend de geconverteerde adaptieve formulieren met een JSON-schema naar de database door een formuliergegevensmodel te maken en ernaar te verwijzen in een AEM workflow.
+description: Verzend de geconverteerde adaptieve formulieren met een JSON-schema naar de database door een formuliergegevensmodel te maken en er in een AEM-workflow naar te verwijzen.
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Administration
@@ -8,16 +8,16 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 5447b66f-9fac-476f-ab8a-9290bb1f9c0d
-source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
 workflow-type: tm+mt
-source-wordcount: '1504'
-ht-degree: 1%
+source-wordcount: '1506'
+ht-degree: 0%
 
 ---
 
-# Adaptief formulier integreren met database door middel van AEM-workflow {#submit-forms-to-database-using-forms-portal}
+# Aangepast formulier integreren met database via AEM workflow {#submit-forms-to-database-using-forms-portal}
 
-Met de service automatede form conversion kunt u een niet-interactief PDF-formulier, een Acro-formulier of een XFA-formulier converteren naar een adaptief formulier. Tijdens het starten van het conversieproces kunt u een adaptief formulier genereren, met of zonder gegevensbindingen.
+Met AFCS (automatede form conversion Service) kunt u een niet-interactief PDF-formulier, een Acro-formulier of een XFA-formulier converteren naar een adaptief formulier. Tijdens het starten van het conversieproces kunt u een adaptief formulier genereren, met of zonder gegevensbindingen.
 
 Als u een adaptief formulier wilt genereren zonder gegevensbindingen, kunt u het geconverteerde adaptieve formulier na conversie integreren met een formuliergegevensmodel, XML-schema of JSON-schema. Voor het formuliergegevensmodel moet u adaptieve formuliervelden handmatig binden met het formuliergegevensmodel. Als u echter een adaptief formulier genereert met gegevensbindingen, koppelt de conversieservice de adaptieve formulieren automatisch aan een JSON-schema en wordt een gegevensbinding gemaakt tussen de velden die beschikbaar zijn in het adaptieve formulier en het JSON-schema. Vervolgens kunt u het aangepaste formulier integreren met een door u gewenste database, gegevens in het formulier invullen en naar de database verzenden. Op dezelfde manier kunt u, nadat u de integratie met de database hebt voltooid, velden in het geconverteerde adaptieve formulier configureren om waarden op te halen uit de database en aangepaste formuliervelden vooraf invullen.
 
@@ -25,14 +25,14 @@ In de volgende afbeelding ziet u de verschillende fasen van het integreren van e
 
 ![database-integratie](assets/integrate-adaptive-form-with-database.png)
 
-In dit artikel worden de stapsgewijze instructies beschreven waarmee u al deze integratiefasen kunt uitvoeren.
+In dit artikel worden de stapsgewijze instructies beschreven om al deze integratiefasen met succes uit te voeren.
 
 ## Voorwaarden {#pre-requisites}
 
 * Een AEM 6.4- of 6.5-auteurinstantie instellen
 * Installeren [nieuwste servicepack](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) voor uw AEM
 * Laatste versie van het AEM Forms-invoegpakket
-* Configureren [automatede form conversion](configure-service.md)
+* Configureren [Automatede form conversion](configure-service.md)
 * Stel een database in. De database die wordt gebruikt in de voorbeeldimplementatie is MySQL 5.6.24. U kunt het geconverteerde adaptieve formulier echter integreren met elke gewenste database.
 
 ## Monster van adaptief formulier {#sample-adaptive-form}
@@ -43,7 +43,7 @@ U kunt het voorbeeld van het contactformulier downloaden met:
 
 [Bestand ophalen](assets/sample_contact_us_form.pdf)
 
-Het PDF-bestand fungeert als invoer voor de service Automatede form conversion. De service converteert dit bestand naar een adaptief formulier. De volgende afbeelding toont de voorbeeldcontactgegevens van een formulier in PDF-indeling.
+Het PDF-bestand fungeert als invoer voor de AFCS-service (Automatede form conversion Service). De service converteert dit bestand naar een adaptief formulier. De volgende afbeelding toont de voorbeeldcontactgegevens van een formulier in PDF-indeling.
 
 ![aanvraagformulier voor een voorbeeldlening](assets/sample_contact_us_form.png)
 
@@ -160,9 +160,9 @@ Nadat u MYSQL als gegevensbron hebt geconfigureerd, voert u de volgende stappen 
 
 1. Navigeer in AEM auteurinstantie naar **[!UICONTROL Forms]** > **[!UICONTROL Data Integrations]**.
 
-1. Tik op **[!UICONTROL Create]** > **[!UICONTROL Form Data Model]**.
+1. Tikken **[!UICONTROL Create]** > **[!UICONTROL Form Data Model]**.
 
-1. In de **[!UICONTROL Create Form Data Model]** wizard, specificeer **workflow_submit** als de naam voor het formuliergegevensmodel. Tik op **[!UICONTROL Next]**.
+1. In de **[!UICONTROL Create Form Data Model]** wizard, specificeer **workflow_submit** als de naam voor het formuliergegevensmodel. Tikken **[!UICONTROL Next]**.
 
 1. Selecteer de MYSQL-gegevensbron die u in de vorige sectie hebt geconfigureerd en tik **[!UICONTROL Create]**.
 
@@ -172,9 +172,9 @@ Nadat u MYSQL als gegevensbron hebt geconfigureerd, voert u de volgende stappen 
 
 1. Selecteer het gegevensmodelobject in het rechtervenster en tik op **[!UICONTROL Edit Properties]**. Selecteren **[!UICONTROL get]** en **[!UICONTROL insert]** van **[!UICONTROL Read Service]** en **[!UICONTROL Write Service]** vervolgkeuzelijsten. Geef de argumenten voor de leesservice op en tik op **[!UICONTROL Done]**.
 
-1. In de **[!UICONTROL Services]** selecteert u de **[!UICONTROL get]** service en tikken **[!UICONTROL Edit Properties]**. Selecteer **[!UICONTROL Output Model Object]**, schakelt u de **[!UICONTROL Return array]** schakelen en tikken **[!UICONTROL Done]**.
+1. In de **[!UICONTROL Services]** selecteert u de **[!UICONTROL get]** service en tikken **[!UICONTROL Edit Properties]**. Selecteer de **[!UICONTROL Output Model Object]**, schakelt u de **[!UICONTROL Return array]** schakelen en tikken **[!UICONTROL Done]**.
 
-1. Selecteer **[!UICONTROL Insert]** service en tikken **[!UICONTROL Edit Properties]**. Selecteer **[!UICONTROL Input Model Object]** en tikken **[!UICONTROL Done]**.
+1. Selecteer de **[!UICONTROL Insert]** service en tikken **[!UICONTROL Edit Properties]**. Selecteer de **[!UICONTROL Input Model Object]** en tikken **[!UICONTROL Done]**.
 
 1. Tikken **[!UICONTROL Save]** om het formuliergegevensmodel op te slaan.
 
@@ -184,11 +184,11 @@ U kunt het model met voorbeeldformuliergegevens downloaden:
 
 ## Aangepaste formulieren genereren met JSON-binding {#generate-adaptive-forms-with-json-binding}
 
-Gebruik de [Omzetten van automatede form conversion](convert-existing-forms-to-adaptive-forms.md) de [Formulier Contact met ons opnemen](#sample-adaptive-form) in een adaptief formulier met gegevensbinding. Zorg ervoor dat u de optie **[!UICONTROL Generate adaptive form(s) without data bindings]** selectievakje tijdens het genereren van het adaptieve formulier.
+Gebruik de [Voor conversie bestemde AFCS-service (automatede form conversion Service)](convert-existing-forms-to-adaptive-forms.md) de [Formulier Contact opnemen](#sample-adaptive-form) in een adaptief formulier met gegevensbinding. Zorg ervoor dat u de optie **[!UICONTROL Generate adaptive form(s) without data bindings]** selectievakje tijdens het genereren van het adaptieve formulier.
 
 ![Aangepaste vorm met JSON-binding](assets/generate_af_with_data_bindings.png)
 
-Omgezette selecteren **Formulier Contact met ons opnemen** beschikbaar in **[!UICONTROL output]** map in **[!UICONTROL Forms & Documents]** en tikken **[!UICONTROL Edit]**. Tikken **[!UICONTROL Preview]**, voert u waarden in de aangepaste formuliervelden in en tikt u op **[!UICONTROL Submit]**.
+Omgezette selecteren **Formulier Contact opnemen** beschikbaar in het **[!UICONTROL output]** map in **[!UICONTROL Forms & Documents]** en tikken **[!UICONTROL Edit]**. Tikken **[!UICONTROL Preview]**, voert u waarden in de aangepaste formuliervelden in en tikt u op **[!UICONTROL Submit]**.
 
 Aanmelden bij **crx-repository** en navigeer naar */content/forms/fp/admin/submit/data* om de verzonden waarden weer te geven in JSON-indeling. Hieronder volgen de voorbeeldgegevens in de JSON-indeling wanneer u de omgezette gegevens verzendt **Contact opnemen** adaptief formulier:
 
@@ -235,7 +235,7 @@ Voer de volgende stappen uit om een workflowmodel te maken voor het verzenden va
 
 1. In de **[!UICONTROL Form Data Model]** selecteert u het formuliergegevensmodel dat u in het dialoogvenster **[!UICONTROL Form Data Model path]** veld en selecteer **[!UICONTROL insert]** van de **[!UICONTROL Service]** vervolgkeuzelijst.
 
-1. In de **[!UICONTROL Input for Service]** tab, selecteert u **[!UICONTROL Provide input data using literal, variable, or a workflow metadata, and a JSON file]** in de vervolgkeuzelijst selecteert u **[!UICONTROL Map input fields from input JSON]** selectievakje, selecteren **[!UICONTROL Relative to payload]** en **data.xml** als de waarde voor de **[!UICONTROL Select input JSON document using]** veld.
+1. In de **[!UICONTROL Input for Service]** tab, selecteert u **[!UICONTROL Provide input data using literal, variable, or a workflow metadata, and a JSON file]** in de vervolgkeuzelijst selecteert u **[!UICONTROL Map input fields from input JSON]** selectievakje, selecteren **[!UICONTROL Relative to payload]** en verstrekken **data.xml** als de waarde voor de **[!UICONTROL Select input JSON document using]** veld.
 
 1. In de **[!UICONTROL Service Arguments]** de volgende waarden op voor de argumenten van het formuliergegevensmodel:
 
@@ -263,7 +263,7 @@ Voer de volgende stappen uit om adaptief formulier te configureren voor het voor
 
 1. Tik op de knop **E-mail** veld in het adaptieve formulier en tik ![Regel bewerken](assets/edit-rules.png).
 
-1. Tikken **[!UICONTROL Create]** en selecteert u **[!UICONTROL is changed]** van de **[!UICONTROL Select State]** vervolgkeuzelijst in het dialoogvenster **[!UICONTROL When]** sectie.
+1. Tikken **[!UICONTROL Create]** en selecteert u **[!UICONTROL is changed]** van de **[!UICONTROL Select State]** vervolgkeuzelijst in de **[!UICONTROL When]** sectie.
 
 1. In de **[!UICONTROL Then]** sectie, selecteert u **[!UICONTROL Invoke Service]** en **get** als de service voor het formuliergegevensmodel dat u in een vorige sectie van dit artikel hebt gemaakt.
 

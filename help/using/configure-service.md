@@ -31,7 +31,7 @@ In deze Help wordt beschreven hoe een AEM beheerder AFCS (Automatede form conver
 
 ## Onboarding{#onboarding}
 
-De service is gratis beschikbaar voor AEM 6.4 Forms en AEM 6.5 Forms On-Premise-term klanten en Adobe-Managed Service Enterprise-klanten. U kunt het team van de Verkoop van de Adobe of uw vertegenwoordiger van de Adobe contacteren om toegang tot de dienst te verzoeken. De service is ook gratis en vooraf ingeschakeld voor as a Cloud Service AEM Forms-klanten.
+De service is gratis beschikbaar voor AEM 6.4 Forms en AEM 6.5 Forms On-Premise-term klanten en Adobe-Managed Service Enterprise-klanten. U kunt het team van de Verkoop van de Adobe of uw vertegenwoordiger van de Adobe contacteren om toegang tot de dienst te verzoeken. De service is ook gratis en vooraf ingeschakeld voor AEM Forms as a Cloud Service klanten.
 
 Adobe maakt toegang voor uw organisatie mogelijk en biedt de vereiste rechten aan de persoon die is aangewezen als beheerder in uw organisatie. De beheerder kan toegang verlenen aan uw AEM Forms-ontwikkelaars (gebruikers) van uw organisatie om verbinding te maken met de service.
 
@@ -41,7 +41,7 @@ U hebt het volgende nodig om de service Automatede form conversion (AFCS) te geb
 
 * De service automatede form conversion (AFCS) is ingeschakeld voor uw organisatie
 * Een Adobe ID-account met beheerdersrechten voor de conversieservice
-* Een actieve AEM 6.4, AEM 6.5, of AEM Forms as a Cloud Service auteurinstantie met recentste AEM Service Pack of recentste updates.
+* Een actieve AEM 6.4, AEM 6.5 of AEM Forms as a Cloud Service-auteur met de nieuwste AEM Service Pack of de nieuwste updates.
 * Een AEM gebruiker (op uw AEM) die lid is van een formulier-gebruikersgroep
 
 ## De omgeving instellen {#setuptheservice}
@@ -51,29 +51,29 @@ Voordat u de service gebruikt, moet u de AEM auteur voorbereiden om verbinding t
 1. [Download en installeer AEM 6.4, AEM 6.5 of aan boord van AEM Forms as a Cloud Service](#aemquickstart)
 1. [Download en installeer de nieuwste AEM Service Pack](#servicepack)
 1. [Download en installeer het nieuwste AEM Forms Add-on-pakket](#downloadaemformsaddon)
-1. (optioneel) [Download en installeer het nieuwste connectorpakket](#installConnectorPackage)
+1. (facultatief) [ Download en installeer recentste schakelaarpakket ](#installConnectorPackage)
 1. [Aangepaste thema&#39;s en sjablonen maken](#referencepackage)
 
 ### Download en installeer AEM 6.4 of AEM 6.5 of aan boord van AEM Forms as a Cloud Service {#aemquickstart}
 
 
-De dienst van de automatede form conversion (AFCS) loopt op AEM auteursinstantie. U hebt AEM 6.4, AEM 6.5 of AEM Forms as a Cloud Service nodig om een AEM-auteurinstantie in te stellen.
+De dienst van de automatede form conversion (AFCS) loopt op AEM auteursinstantie. U hebt AEM 6.4, AEM 6.5 of AEM Forms as a Cloud Service nodig om een AEM auteur-instantie in te stellen.
 
-* Als u AEM 6.4 of AEM 6.5 niet in gebruik hebt, kunt u het downloaden van de onderstaande locaties. Nadat u AEM hebt gedownload, vindt u instructies voor het instellen van een AEM instantie van de auteur [implementeren en onderhouden](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#defaultlocalinstall).:
+* Als u AEM 6.4 of AEM 6.5 niet in gebruik hebt, kunt u het downloaden van de onderstaande locaties. Nadat u AEM downloadt, voor instructies aan opstelling een AEM auteursinstantie, zie [ plaatsend en het handhaven ](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#defaultlocalinstall):
 
-   * Als u een bestaande AEM klant bent, downloadt u AEM 6.4 of AEM 6.5 van [Licentiewebsite voor Adobe](http://licensing.adobe.com).
+   * Als u een bestaande AEM klant bent, download AEM 6.4 of AEM 6.5 van [ het Verlenen van vergunningen van de Adobe website ](http://licensing.adobe.com).
 
-   * Als u een Adobe partner bent, gebruik [Adobe Partner Training Program](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) AEM 6.4 of AEM 6.5.
+   * Als u een partner van de Adobe bent, gebruik [ Programma van de Opleiding van de Partner van de Adobe ](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) om AEM 6.4 of AEM 6.5 te verzoeken.
 
-* Als u as a Cloud Service AEM Forms gebruikt, zie aan boord [AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-forms-cloud-service.html?lang=en#setup-environment) en [een lokale ontwikkelomgeving instellen](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?lang=en#setup-environment).
+* Als u AEM Forms as a Cloud Service aan [ AEM Forms as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-forms-cloud-service.html?lang=en#setup-environment) gebruikt en [ opstelling een lokale ontwikkelomgeving ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?lang=en#setup-environment).
 
 ### (Alleen voor AEM 6.4 en AEM 6.5) Download en installeer AEM nieuwste Service Pack {#servicepack}
 
-Download en installeer de nieuwste AEM Service Pack. Zie voor gedetailleerde instructies, of [AEM 6.4 Opmerkingen bij de release Service Pack](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) of [Opmerkingen bij de release AEM 6.5 Service Pack](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html).
+Download en installeer de nieuwste AEM Service Pack. Voor gedetailleerde instructies zie, of [ AEM 6.4 de Nota&#39;s van de Versie van het Pak van de Dienst ](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) of [ AEM 6.5 de Nota&#39;s van de Versie van het Pak van de Dienst ](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html).
 
 ### (Alleen voor AEM 6.4 en AEM 6.5) Download en installeer het AEM Forms-invoegpakket  {#downloadaemformsaddon}
 
-Een AEM-exemplaar bevat basisformuliermogelijkheden. Voor de conversieservice zijn alle mogelijkheden van AEM Forms vereist. Download en installeer het invoegpakket voor AEM Forms om alle mogelijkheden van AEM Forms te benutten. Het pakket is vereist om de conversieservice in te stellen en uit te voeren. Zie voor gedetailleerde instructies [Opties voor gegevensvastlegging installeren en configureren.](https://helpx.adobe.com/experience-manager/6-5/forms/using/installing-configuring-aem-forms-osgi.html)
+Een AEM-exemplaar bevat basisformuliermogelijkheden. Voor de conversieservice zijn alle mogelijkheden van AEM Forms vereist. Download en installeer het invoegpakket voor AEM Forms om alle mogelijkheden van AEM Forms te benutten. Het pakket is vereist om de conversieservice in te stellen en uit te voeren. Voor gedetailleerde instructies, zie [ gegevens installeren en vormen vangen mogelijkheden.](https://helpx.adobe.com/experience-manager/6-5/forms/using/installing-configuring-aem-forms-osgi.html)
 
 >[!NOTE]
 > Zorg ervoor dat u de verplichte configuraties na de installatie uitvoert nadat u het invoegpakket hebt geïnstalleerd.
@@ -86,21 +86,21 @@ The connector package provides early access to the [Auto-detect logical sections
 
 ### Aangepaste thema&#39;s en sjablonen maken {#referencepackage}
 
-Als u AEM 6,4 of AEM 6,5 inch [productiemodus](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/production-ready.html) (de uitvoermodus Geen samplinhoud), zijn de referentiepakketten niet geïnstalleerd. De referentiepakketten bevatten voorbeeldthema&#39;s en sjablonen. Voor de service automatede form conversion (AFCS) zijn minstens één thema en één sjabloon nodig om een PDF-formulier om te zetten in een adaptief formulier. Een aangepast thema en een eigen sjabloon maken [serviceconfiguratie](#configure-the-cloud-service) om douanesjablonen en thema&#39;s te gebruiken alvorens de dienst te gebruiken.
+Als u AEM 6.4 of AEM 6.5 op [ productiemodus ](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/production-ready.html) (nosamplcontent run mode) begint, worden de verwijzingspakketten niet geïnstalleerd. De referentiepakketten bevatten voorbeeldthema&#39;s en sjablonen. Voor de service automatede form conversion (AFCS) zijn minstens één thema en één sjabloon nodig om een PDF-formulier om te zetten in een adaptief formulier. Creeer een douanethema en malplaatje van uw eigen en punt [ de dienstconfiguratie ](#configure-the-cloud-service) om douanesjablonen en thema&#39;s te gebruiken alvorens de dienst te gebruiken.
 
-U kunt ook het dialoogvenster [AEM Forms Reference Assets](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) op uw instantie Auteur. Er worden enkele referentiethema&#39;s en sjablonen gemaakt.
+U kunt het [ Assets van de Verwijzing van AEM Forms ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) pakket van de Verwijzing van 0} ook downloaden en installeren op uw instantie van de Auteur. Er worden enkele referentiethema&#39;s en sjablonen gemaakt.
 
 ## De service configureren {#configure-the-service}
 
 Voordat u verdergaat om de service te configureren en uw lokale instantie te verbinden met de service die wordt uitgevoerd op Adobe Cloud, moet u meer weten over de personen en rechten die nodig zijn om verbinding te maken met de service. De dienst gebruikt twee verschillende types van persona&#39;s, beheerders en ontwikkelaars:
 
-* **Beheerders**: Beheerders zijn verantwoordelijk voor het beheer van de software en services van Adoben voor hun organisatie. Beheerders verlenen toegang aan ontwikkelaars in hun organisatie om verbinding te maken met AFCS (Automatede form conversion Service) die worden uitgevoerd op Adobe Cloud. Wanneer een beheerder is ingericht voor een organisatie, ontvangt de beheerder een e-mail met titel **[!UICONTROL 'You now have administrator rights to manage Adobe software and services for your organization']**. Als u een beheerder bent, controleer uw brievenbus voor e-mail met eerder vermelde titel en ga te werk aan [toegang verlenen aan ontwikkelaars van uw organisatie](#adduseranddevs).
+* **Beheerders**: De beheerders zijn verantwoordelijk voor het beheren van de software en de diensten van de Adobe voor hun organisatie. Beheerders verlenen toegang aan ontwikkelaars in hun organisatie om verbinding te maken met AFCS (Automatede form conversion Service) die worden uitgevoerd op Adobe Cloud. Als een beheerder is ingericht voor een organisatie, ontvangt de beheerder een e-mail met de titel **[!UICONTROL 'You now have administrator rights to manage Adobe software and services for your organization']** . Als u een beheerder bent, controleer uw brievenbus voor e-mail met eerder vermelde titel en ga aan [ subsidietoegang tot ontwikkelaars van uw organisatie ](#adduseranddevs) te werk.
 
-![E-mail met toegangsrechten voor beheerder](assets/admin-console-adobe-io-access-grantedx75.png)
+![ Admin toegang verlenen e-mail ](assets/admin-console-adobe-io-access-grantedx75.png)
 
-* **Ontwikkelaars**: Een ontwikkelaar verbindt een lokale AEM Forms-auteur-instantie met AFCS (Automatede form conversion Service) die wordt uitgevoerd op Adobe Cloud. Wanneer een beheerder rechten toekent aan een ontwikkelaar om verbinding te maken met de service Automatede form conversion (AFCS), wordt een e-mail met de titel U hebt nu toegang tot ontwikkelaars om de integratie van de Adobe-API voor uw organisatie te beheren, verzonden naar de ontwikkelaar. Als u een ontwikkelaar bent, controleer uw brievenbus voor e-mail met eerder vermelde titel en ga te werk aan [Verbind uw lokale AEM instantie met de dienst van de Automatede form conversion op de Wolk van de Adobe.](#connectafcadobeio)
+* **Ontwikkelaars**: Een ontwikkelaar verbindt een lokale de auteurinstantie van AEM Forms met de dienst van de Automatede form conversion (AFCS) die op de Wolk van de Adobe loopt. Wanneer een beheerder rechten toekent aan een ontwikkelaar om verbinding te maken met de service Automatede form conversion (AFCS), wordt een e-mail met de titel U hebt nu toegang tot ontwikkelaars om de integratie van de Adobe-API voor uw organisatie te beheren, verzonden naar de ontwikkelaar. Als u een ontwikkelaar bent, controleer uw brievenbus voor e-mail met eerder vermelde titel en ga aan [ te werk verbindt uw lokale AEM instantie met de dienst van de Automatede form conversion op de Wolk van de Adobe.](#connectafcadobeio)
 
-![Toegang tot ontwikkelaar per e-mail](assets/email-developer-accessx94.png)
+![ de toegangsE-mail van de ontwikkelaar ](assets/email-developer-accessx94.png)
 
 ### (Alleen voor beheerders van AEM 6.4 en AEM 6.5) Toegang verlenen aan ontwikkelaars van uw organisatie {#adduseranddevs}
 
@@ -108,22 +108,22 @@ Nadat de Adobe toegang voor uw organisatie toelaat en vereiste voorrechten aan d
 
 De ontwikkelaars zijn leden van uw organisatie die wordt aangewezen om de omzettingsdienst in werking te stellen. Alleen ontwikkelaars die zijn toegevoegd aan het AFCS-profiel (Adobe Automatede form conversion Service) hebben het recht om de AFCS-service (Automatede form conversion Service) te gebruiken. Voer de onderstaande stappen uit om een profiel te maken en er ontwikkelaars aan toe te voegen. Er is minimaal één profiel vereist om vereiste toegang te verlenen aan ontwikkelaars van uw organisatie:
 
-1. Aanmelden bij [Admin Console](https://adminconsole.adobe.com/). Gebruiken **Adobe ID** van beheerder die is ingericht om de Automatede form conversion-service (AFCS) te gebruiken voor aanmelding. Geen andere id of Federated ID aan login.
-1. Klik op de knop **[!UICONTROL Automated Forms Conversion]** -optie.
-1. Klikken **[!UICONTROL New Profile]** in de **[!UICONTROL Products]** tab.
-1. Opgeven **[!UICONTROL Name]**, **[!UICONTROL Display Name]**, en **[!UICONTROL Description]** voor het profiel. Klik op **[!UICONTROL Done]**. Er wordt een profiel gemaakt.
+1. Login aan [ Admin Console ](https://adminconsole.adobe.com/). Het gebruik **Adobe ID** van beheerder provisioned aan de dienst van de Automatede form conversion (AFCS) aan login. Geen andere id of Federated ID aan login.
+1. Klik op de optie **[!UICONTROL Automated Forms Conversion]** .
+1. Klik op **[!UICONTROL New Profile]** op het tabblad **[!UICONTROL Products]** .
+1. Geef **[!UICONTROL Name]** , **[!UICONTROL Display Name]** en **[!UICONTROL Description]** op voor het profiel. Klik op **[!UICONTROL Done]**. Er wordt een profiel gemaakt.
 
-   ![Geef details op voor het nieuwe profiel.](assets/create-new-profile-details.png)
+   ![ specificeer details voor het nieuwe profiel.](assets/create-new-profile-details.png)
 
 1. Voeg ontwikkelaar toe aan het profiel. U voegt als volgt de ontwikkelaars toe:
-   1. In de [Admin Console](https://adminconsole.adobe.com/enterprise)Navigeer naar het tabblad Overzicht.
-   1. Klikken **[!UICONTROL Assign Developers]** op de vereiste productkaart.
+   1. In de [ Admin Console ](https://adminconsole.adobe.com/enterprise), navigeer aan het Overzicht tabel.
+   1. Klik op **[!UICONTROL Assign Developers]** op de vereiste productkaart.
    1. Voer het e-mailadres en (optioneel) de naam en achternaam van de ontwikkelaar in.
-   1. Selecteer productprofielen. Tikken **[!UICONTROL Save]**.
+   1. Selecteer productprofielen. Tik op **[!UICONTROL Save]** .
 
-Herhaal bovenstaande stappen voor alle gebruikers. Zie voor meer informatie over het toevoegen van ontwikkelaars [Ontwikkelaars beheren](https://helpx.adobe.com/enterprise/using/manage-developers.html).
+Herhaal bovenstaande stappen voor alle gebruikers. Voor meer details over het toevoegen van ontwikkelaars, zie [ ontwikkelaars ](https://helpx.adobe.com/enterprise/using/manage-developers.html) leiden.
 
-Nadat een beheerder ontwikkelaars heeft toegevoegd aan het Adobe I/O-profiel, worden de ontwikkelaars via e-mail op de hoogte gesteld. Nadat de ontwikkelaars de e-mail hebben ontvangen, kunnen ze doorgaan naar [Een lokale AEM Forms-instantie verbinden met de Automatede form conversion-service op Adobe Cloud](#connectafcadobeio).
+Nadat een beheerder ontwikkelaars heeft toegevoegd aan het Adobe I/O-profiel, worden de ontwikkelaars via e-mail op de hoogte gesteld. Na het ontvangen van e-mail, kunnen de ontwikkelaars aan [ te werk gaan om een lokale instantie van AEM Forms met de dienst van de Automatede form conversion op de Wolk van de Adobe ](#connectafcadobeio) te verbinden.
 
 ### (Alleen voor ontwikkelaars) Sluit uw lokale AEM Forms-instantie aan op AFCS (Automatede form conversion Service) op Adobe Cloud {#connectafcadobeio}
 
@@ -132,7 +132,7 @@ Nadat een beheerder u ontwikkelaarstoegang verleent, kunt u uw lokale instantie 
 * [E-mailmeldingen configureren](configure-service.md#configureemailnotification)
 * [Gebruiker toevoegen aan de groep met gebruikers van het formulier](#adduserstousergroup)
 * [Openbare certificaten verkrijgen](#obtainpubliccertificates)
-* [De service-API&#39;s configureren in Adobe Developer Console](#createintegration)
+* [De service-API&#39;s configureren op Adobe Developer Console](#createintegration)
 * [De cloudservice configureren](configure-service.md#configure-the-cloud-service)
 
 #### E-mailmelding configureren {#configureemailnotification}
@@ -141,43 +141,43 @@ De service automatede form conversion (AFCS) gebruikt de CQ-mailservice op de da
 
 * Voor AEM 6.4 Forms of AEM 6.5 Forms:
 
-   1. Ga naar AEM configuratiemanager op `http://localhost:4502/system/console/configMgr`
-   1. Open de configuratie van de Day CQ Mail Service. Geef een waarde op voor de **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port]**, en **[!UICONTROL From address]** velden. Klik op **[!UICONTROL Save]**.
+   1. Ga naar AEM configuratiebeheer op `http://localhost:4502/system/console/configMgr`
+   1. Open de configuratie van de Day CQ Mail Service. Geef een waarde op voor de velden **[!UICONTROL SMTP server host name]** , **[!UICONTROL SMTP server port]** en **[!UICONTROL From address]** . Klik op **[!UICONTROL Save]**.
 
       U kunt contact opnemen met uw e-mailserviceprovider of IT-beheerder voor informatie over de hostnaam en poort van SMTP-server. U kunt elk geldig e-mailadres gebruiken in het veld Van. Bijvoorbeeld notification@example.com of donotreply@example.com.
 
-   1. Open de **[!UICONTROL Day CQ Link Externalizer]** configuratie. In de **[!UICONTROL Domains]** in het veld de werkelijke hostnaam of het werkelijke IP-adres en het poortnummer voor lokale, auteur- en publicatie-instanties op. Klik op **[!UICONTROL Save]**.
+   1. Open de **[!UICONTROL Day CQ Link Externalizer]** -configuratie. Geef in het veld **[!UICONTROL Domains]** de werkelijke hostnaam of het werkelijke IP-adres en het poortnummer op voor lokale, auteur- en publicatieinstanties. Klik op **[!UICONTROL Save]**.
 
-* Voor AEM Forms as a Cloud Service, [een ondersteuningsticket aanmelden om de e-mailservice in te schakelen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
+* Voor AEM Forms as a Cloud Service, [ logboek een steunkaartje om de e-maildienst ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email) toe te laten.
 
 #### Gebruiker toevoegen aan de groep met gebruikers van het formulier {#adduserstousergroup}
 
-Geef een e-mailadres op in het profiel van de AEM gebruiker die is aangewezen om de service uit te voeren. Zorg ervoor dat de gebruiker lid is van de [formuliergebruiker](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html) groep. E-mails worden verzonden naar het e-mailadres van de gebruiker die de conversie uitvoert. U kunt als volgt een e-mailadres voor de gebruiker opgeven en gebruiker toevoegen aan de gebruikersgroep voor formulieren:
+Geef een e-mailadres op in het profiel van de AEM gebruiker die is aangewezen om de service uit te voeren. Zorg ervoor dat de gebruiker het lid van de [ gebruikers ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html) groep van vormen is. E-mails worden verzonden naar het e-mailadres van de gebruiker die de conversie uitvoert. U kunt als volgt een e-mailadres voor de gebruiker opgeven en gebruiker toevoegen aan de gebruikersgroep voor formulieren:
 
-1. Meld u als AEM beheerder aan bij de auteur-instantie van AEM Forms. Gebruik uw lokale AEM om u aan te melden. Gebruik Adobe ID niet voor aanmelding. Tikken **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.
+1. Meld u als AEM beheerder aan bij de auteur-instantie van AEM Forms. Gebruik uw lokale AEM om u aan te melden. Gebruik Adobe ID niet voor aanmelding. Tik op **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]** .
 
-1. Selecteer een gebruiker die is aangewezen om de conversieservice uit te voeren en tik op **[!UICONTROL Properties]**. De pagina Gebruikersinstellingen bewerken wordt geopend.
-1. Geef een e-mailadres op in het dialoogvenster **[!UICONTROL Email]** veld en tik **[!UICONTROL Save]**. De e-mails worden naar het opgegeven e-mailadres verzonden wanneer de conversie is voltooid of mislukt.
-1. Tik op de knop **Groepen** tab. Typ en selecteer op het tabblad Groep selecteren de optie **formulieren-gebruikers** groep. Tikken **Opslaan en sluiten**. De gebruiker is nu lid van de groep met gebruikers van het formulier.
+1. Selecteer een gebruiker die is toegewezen om de conversieservice uit te voeren en tik op **[!UICONTROL Properties]** . De pagina Gebruikersinstellingen bewerken wordt geopend.
+1. Geef een e-mailadres op in het veld **[!UICONTROL Email]** en tik op **[!UICONTROL Save]** . De e-mails worden naar het opgegeven e-mailadres verzonden wanneer de conversie is voltooid of mislukt.
+1. Tik de **Groepen** tabel. In het uitgezochte groepslusje, type en selecteer de **vorm-gebruikers** groep. Tik **sparen &amp; sluit**. De gebruiker is nu lid van de groep met gebruikers van het formulier.
 
 #### (Alleen voor AEM 6.4 en AEM 6.5) Overheidscertificaten verkrijgen {#obtainpubliccertificates}
 
 Met een openbaar certificaat kunt u uw profiel verifiëren op Adobe I/O.
 
-1. Meld u aan bij de AEM Forms-auteur. Navigeren naar **[!UICONTROL Tools]**> **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**. Tik op **[!UICONTROL Create]**. De **[!UICONTROL Adobe IMS Technical Account Configuration]** wordt weergegeven.
+1. Meld u aan bij de AEM Forms-auteur. Navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]** . Tik op **[!UICONTROL Create]**. De pagina **[!UICONTROL Adobe IMS Technical Account Configuration]** wordt weergegeven.
 
-   ![De pagina Configuratie technische account van Adobe IMS](assets/adobe-ims-technical-account-configuration.png)
+   ![ de pagina van de Configuratie van de Rekening van Adobe IMS Technische ](assets/adobe-ims-technical-account-configuration.png)
 
-1. Selecteren **[!UICONTROL Automated Forms Conversion Service]** in Cloud Solution.
+1. Selecteer **[!UICONTROL Automated Forms Conversion Service]** in Cloudoplossing.
 
-1. Selecteer de **[!UICONTROL Create new certificate]** en geeft u een alias op. De alias fungeert als naam voor het dialoogvenster. Tik op **[!UICONTROL Create certificate]**. Er wordt een dialoogvenster weergegeven. Klik op **[!UICONTROL OK]**. Het certificaat wordt gemaakt.
+1. Selecteer het selectievakje **[!UICONTROL Create new certificate]** en geef een alias op. De alias fungeert als naam voor het dialoogvenster. Tik op **[!UICONTROL Create certificate]**. Er wordt een dialoogvenster weergegeven. Klik op **[!UICONTROL OK]**. Het certificaat wordt gemaakt.
 
-1. Tikken **[!UICONTROL Download Public Key]** en sla de *AEM-Adobe-IMS.crt* certificaatbestand op uw computer. Het certificaatbestand wordt gebruikt om [De service-API&#39;s configureren in Adobe Developer Console](#createintegration). Tikken **[!UICONTROL Next]**.
+1. Tik **[!UICONTROL Download Public Key]** en sla het *AEM-Adobe-IMS.crt* certificaatdossier op uw machine op. Het certificaatdossier wordt gebruikt om [ de dienst APIs op Adobe Developer Console ](#createintegration) te vormen. Tik op **[!UICONTROL Next]** .
 
 1. Geef het volgende op:
 
    * Titel: geef een titel op.
-   * Autorisatieserver: [https://ims-na1.adobelogin.com](https://ims-na1.adobelogin.com)\
+   * De Server van de vergunning: [ https://ims-na1.adobelogin.com](https://ims-na1.adobelogin.com) \
 
    Laat de overige velden voorlopig leeg (later te verstrekken). Laat de pagina open.
 
@@ -193,28 +193,28 @@ Met een openbaar certificaat kunt u uw profiel verifiëren op Adobe I/O.
    <li>Step text</li>
    -->
 
-#### (Alleen voor AEM 6.4 en AEM 6.5) De service-API&#39;s configureren in Adobe Developer Console {#createintegration}
+#### (Alleen voor AEM 6.4 en AEM 6.5) De service-API&#39;s configureren op Adobe Developer Console {#createintegration}
 
-Om de dienst van de Automatede form conversion (AFCS) te gebruiken, creeer een project en voeg Geautomatiseerde de Dienst API van de Configuratie van Forms aan het project op de Console van Adobe Developer toe. De integratie genereert API Key, Client Secret, Payload (JWT).
+Om de dienst van de Automatede form conversion (AFCS) te gebruiken, creeer een project en voeg Geautomatiseerde de Dienst API van de Configuratie van Forms aan het project op Adobe Developer Console toe. De integratie genereert API Key, Client Secret, Payload (JWT).
 
-1. Aanmelden bij [https://console.adobe.io/](https://console.adobe.io/). Gebruik uw Adobe ID, ontwikkelaarsaccount die uw beheerder heeft ingericht om u aan te melden bij de Adobe I/O-console voor aanmelding.
+1. Login aan [ https://console.adobe.io/ ](https://console.adobe.io/). Gebruik uw Adobe ID, ontwikkelaarsaccount die uw beheerder heeft ingericht om u aan te melden bij de Adobe I/O-console voor aanmelding.
 1. Selecteer uw organisatie in de rechterbovenhoek. Neem contact op met de beheerder als u uw organisatie niet kent.
 1. Tik op **[!UICONTROL Create new project]**. Er verschijnt een scherm om aan de slag te gaan met uw nieuwe project. Tik op **[!UICONTROL Add API]**. Er verschijnt een scherm met een lijst van alle API&#39;s die voor uw account zijn ingeschakeld.
-1. Selecteren **[!UICONTROL Automated Forms Conversion service]** en tikken **[!UICONTROL Next]**. Er verschijnt een scherm om de API te configureren.
-1. Selecteer de [!UICONTROL Upload your public key] uploadt u het bestand AEM-Adobe-IMS.crt dat u in het dialoogvenster [Openbare certificaten verkrijgen](#obtainpubliccertificates) sectie en tikken **[!UICONTROL Next]**. De optie Create a new Service Account (JWT) credential wordt weergegeven. Tikken **[!UICONTROL Next]**.
-1. Selecteer een productprofiel en tik op **[!UICONTROL Save configured API]**. Selecteer het profiel dat is gemaakt terwijl [toegang verlenen aan ontwikkelaars van uw organisatie](#adduseranddevs). Neem contact op met de beheerder als u niet weet welk profiel u moet selecteren.
-1. Tikken **[!UICONTROL Service Account (JWT)]** om de API Sleutel, de Geheime cliënt, en andere informatie te bekijken die wordt vereist om uw lokale AEM instantie aan de dienst van de Automatede form conversion (AFCS) te verbinden. De informatie op de pagina wordt gebruikt om configuratie IMS op uw lokale machine tot stand te brengen.
+1. Selecteer **[!UICONTROL Automated Forms Conversion service]** en tik op **[!UICONTROL Next]** . Er verschijnt een scherm om de API te configureren.
+1. Selecteer de [!UICONTROL Upload your public key] optie, upload het AEM-Adobe-IMS.crt dossier in [ wordt gedownload verkrijgt Openbare Certificaten ](#obtainpubliccertificates) sectie en tikt **[!UICONTROL Next]** dat. De optie Create a new Service Account (JWT) credential wordt weergegeven. Tik op **[!UICONTROL Next]** .
+1. Selecteer een productprofiel en tik op **[!UICONTROL Save configured API]** . Selecteer het profiel dat wordt gecreeerd terwijl [ toegang tot ontwikkelaars van uw organisatie ](#adduseranddevs) verleent. Neem contact op met de beheerder als u niet weet welk profiel u moet selecteren.
+1. Tik op **[!UICONTROL Service Account (JWT)]** om de API-sleutel, het clientgeheim en andere informatie weer te geven die nodig is om uw lokale AEM-instantie aan te sluiten op AFCS (Automatede form conversion Service). De informatie op de pagina wordt gebruikt om configuratie IMS op uw lokale machine tot stand te brengen.
 
 1. Open de pagina van de Configuratie IMS op uw lokale instantie. U hebt de pagina open gelaten aan het einde van de sectie voor [Openbaar certificaat verkrijgen](#obtainpubliccertificates).
 
-   ![Titel, API-sleutel, clientgeheim en payload opgeven ](assets/ims-configuration-details.png)
+   ![ specificeer Titel, Sleutel API, Geheime cliënt, en lading ](assets/ims-configuration-details.png)
 
 1. Geef API-sleutel en clientgeheim op de technische pagina van Adobe IMS op. Gebruik de waarden die zijn opgegeven in Service Account (JWT) van de Adobe Developer-consolepagina.
 
    >[!NOTE]
    >
    >
-   >Gebruik voor het laden de code op het tabblad Genereer JWT van de pagina Servicerekening (JWT) van Adobe Developer Console.
+   >Gebruik voor het laden de code op het tabblad Generate JWT van de pagina Service Account (JWT) van Adobe Developer Console.
 
 1. Tik op **[!UICONTROL Save]**. De IMS-configuratie wordt gemaakt.
 
@@ -222,9 +222,9 @@ Om de dienst van de Automatede form conversion (AFCS) te gebruiken, creeer een p
    >
    >Maak slechts één IMS-configuratie. Maak niet meer dan één IMS-configuratie.
 
-1. Selecteer de IMS-configuratie en tik op **[!UICONTROL Check Health]**. Er wordt een dialoogvenster weergegeven. Tik op **[!UICONTROL Check]**. Bij een geslaagde verbinding wordt het bericht *Token retrieved successfully* weergegeven.
+1. Selecteer de IMS-configuratie en tik op **[!UICONTROL Check Health]** . Er wordt een dialoogvenster weergegeven. Tik op **[!UICONTROL Check]**. Bij een geslaagde verbinding wordt het bericht *Token retrieved successfully* weergegeven.
 
-   ![Bij een geslaagde verbinding wordt het bericht met succes opgehaalde token weergegeven. ](assets/health-check.png)
+   ![ op succesvolle verbinding, verschijnt het met succes opgehaalde symbolische bericht. ](assets/health-check.png)
 
    <br/> <br/>
 
@@ -232,23 +232,23 @@ Om de dienst van de Automatede form conversion (AFCS) te gebruiken, creeer een p
 
 Creeer een configuratie van de Cloud Service om uw AEM instantie aan de omzettingsdienst te verbinden. U kunt hiermee ook een sjabloon, thema en formulierfragmenten opgeven voor conversie. U kunt meerdere configuraties voor cloudservices maken, afzonderlijk voor elke set formulieren. U kunt bijvoorbeeld een aparte configuratie voor de formulieren van de verkoopafdeling en een aparte configuratie voor de formulieren voor klantenondersteuning hebben. Voer de volgende stappen uit om een configuratie van de wolkendienst tot stand te brengen:
 
-1. Tik op uw AEM Forms-exemplaar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]**> **[!UICONTROL Cloud Services]** > **[!UICONTROL Automate Forms Conversion Configuration]**.
-1. Tik op de knop **[!UICONTROL Global]** map en tik **[!UICONTROL Create]**. De pagina om de configuratie van de Automatede form conversion tot stand te brengen verschijnt. De configuratie wordt gemaakt in de map Global. U kunt de configuratie ook maken in een andere map die bestaat of een map voor uw configuraties maken.
+1. Tik in uw AEM Forms-instantie op **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automate Forms Conversion Configuration]** .
+1. Tik op de map **[!UICONTROL Global]** en tik op **[!UICONTROL Create]** . De pagina om de configuratie van de Automatede form conversion tot stand te brengen verschijnt. De configuratie wordt gemaakt in de map Global. U kunt de configuratie ook maken in een andere map die bestaat of een map voor uw configuraties maken.
 
-1. Op de **[!UICONTROL Create Automated Forms Conversion Configuration]** pagina, geef waarde op voor de volgende velden en tik op **[!UICONTROL Next]**.
+1. Geef op de pagina **[!UICONTROL Create Automated Forms Conversion Configuration]** een waarde op voor de volgende velden en tik op **[!UICONTROL Next]** .
 
    | Veld | Beschrijving |
    |--- |--- |
    | Titel | Unieke titel voor de configuratie. De titel wordt weergegeven in de gebruikersinterface waarmee de conversie wordt gestart. |
-   | Naam | Unieke naam voor de configuratie. De configuratie wordt met de opgegeven naam opgeslagen in de CRX-gegevensopslagruimte. De naam kan identiek zijn aan de titel. |
+   | Naam | Unieke naam voor de configuratie. De configuratie wordt met de opgegeven naam opgeslagen in de CRX-Repository. De naam kan identiek zijn aan de titel. |
    | Locatie miniatuur | Locatie van de miniatuur voor de configuratie. |
-   | Service-URL | URL van de AFCS-service (Automatede form conversion service) op Adobe Cloud. Gebruik de `https://aemformsconversion.adobe.io/` URL. |
+   | Service-URL | URL van de AFCS-service (Automatede form conversion service) op Adobe Cloud. Gebruik de URL `https://aemformsconversion.adobe.io/` . |
    | Sjabloon | Standaardsjabloon die op geconverteerde formulieren moet worden toegepast. U kunt altijd een andere sjabloon opgeven voordat u de conversie start. Een sjabloon bevat basisstructuur en initiële inhoud voor een adaptief formulier. U kunt een sjabloon kiezen uit de sjablonen die u buiten het vak plaatst. U kunt ook een aangepaste sjabloon maken. |
    | Thema | Standaardthema dat op geconverteerde formulieren moet worden toegepast. U kunt altijd een ander thema opgeven voordat u de conversie start.  U kunt op het pictogram klikken om een thema te kiezen dat buiten het vak wordt weergegeven. U kunt ook een aangepast thema maken. |
    | Bestaande fragmenten | Plaats van bestaande fragmenten, indien aanwezig. |
    | Aangepast metamodel | Pad van het bestand .schema.json van het aangepaste metamodel. U kunt aparte metamodellen maken voor de talen Engels, Frans, Duits, Spaans, Italiaans en Portugees. |
 
-1. In de **[!UICONTROL Advanced]** tabblad van het **[!UICONTROL Create Automated Forms Conversion Configuration]** pagina, geeft u waarde op voor het volgende veld:
+1. Geef op het tabblad **[!UICONTROL Advanced]** van de pagina **[!UICONTROL Create Automated Forms Conversion Configuration]** een waarde op voor het volgende veld:
 
    <table>
    <thead>
@@ -270,7 +270,7 @@ Creeer een configuratie van de Cloud Service om uw AEM instantie aan de omzettin
    </table>
 
    * Als de bron een op XFA-Gebaseerde vorm met uitbreiding .XDP is, dan behoudt de output DOR de XFA lay-out, anders gebruikt de omzettingsdienst een uit-van-de-doos malplaatje om DOR voor andere op XFA-Gebaseerde vormen te produceren.
-   * Wanneer een XFA-formulier wordt verzonden, worden de gegevens van het formulier opgeslagen als een XML-element of een kenmerk. Bijvoorbeeld: `<Amount currency="USD"> 10.00 </Amount>`. De valuta wordt opgeslagen als een kenmerk en valutabedrag, 10,00 als een element. Gegevens van een adaptief formulier verzenden heeft geen kenmerken, het heeft alleen elementen. Als een XFA-formulier wordt geconverteerd naar een adaptief formulier, bevatten de adaptieve formulierverzendgegevens dus een element voor elk van deze kenmerken. Bijvoorbeeld:
+   * Wanneer een XFA-formulier wordt verzonden, worden de gegevens van het formulier opgeslagen als een XML-element of een kenmerk. Bijvoorbeeld `<Amount currency="USD"> 10.00 </Amount>` . De valuta wordt opgeslagen als een kenmerk en valutabedrag, 10,00 als een element. Gegevens van een adaptief formulier verzenden heeft geen kenmerken, het heeft alleen elementen. Als een XFA-formulier wordt geconverteerd naar een adaptief formulier, bevatten de adaptieve formulierverzendgegevens dus een element voor elk van deze kenmerken. Bijvoorbeeld:
 
    ```css
       {

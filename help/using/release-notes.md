@@ -10,8 +10,8 @@ level: Beginner, Intermediate
 exl-id: fccafbc9-28c1-4736-922c-24d675b25213
 source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
 workflow-type: tm+mt
-source-wordcount: '451'
-ht-degree: 66%
+source-wordcount: '487'
+ht-degree: 63%
 
 ---
 
@@ -30,11 +30,11 @@ De service voor automatische conversie van formulieren wordt voortdurend verbete
 
 ## 24 feb. 2022 (AFC-2022.02.0) {#feb-2022}
 
-* Extra mogelijkheden aan [secties automatisch omzetten in fragmenten](convert-existing-forms-to-adaptive-forms.md) om de weergavesnelheid van geconverteerde formulieren te verbeteren en het gemakkelijker te maken om grote formulieren in een adaptieve formuliereditor te laden.
+* Toegevoegd vermogen aan [ zet automatisch secties in fragmenten ](convert-existing-forms-to-adaptive-forms.md) om helpen teruggevende snelheid van omgezette vormen verbeteren en maakt het gemakkelijker om grote vormen in adaptieve vormredacteur te laden.
 
 ## 29 aug. 2021 (AFC-2021.08.0) {#aug-2021}
 
-* Toegevoegde mogelijkheid om PDF forms in het Italiaans en het Portugees om te zetten in een adaptieve vorm.
+* Toegevoegde mogelijkheid om PDF forms in de Italiaanse en de Portugese taal om te zetten in een adaptieve vorm.
 
 ## 29 juli 2021 (AFC-2021.07.2) {#july-2021}
 
@@ -46,7 +46,7 @@ De service voor automatische conversie van formulieren wordt voortdurend verbete
 
 Verbeterde nauwkeurigheid voor het automatisch detecteren van logische secties in de bronformulieren en het converteren van deze secties naar overeenkomstige adaptieve formulierdeelvensters.
 
-## 03 mrt. 2021 (AFC-2021.02.2) {#mar-2021}
+## 3 mrt. 2021 (AFC-2021.02.2) {#mar-2021}
 
 ### Wat is er verbeterd? {#march-2021-improvements}
 

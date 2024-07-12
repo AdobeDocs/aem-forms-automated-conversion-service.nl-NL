@@ -22,11 +22,11 @@ ht-degree: 0%
 Met het Document of Record (DoR) kunt u een record bijhouden van de gegevens die u opgeeft en kunt u deze in een adaptief formulier verzenden, zodat u er later naar kunt verwijzen.
 Het DoR gebruikt een basissjabloon om zijn lay-out te bepalen. U kunt een DoR genereren door een standaardsjabloon te gebruiken of een andere sjabloon aan het aangepaste formulier te koppelen.
 
-![Gegenereerd document van record](assets/document_of_record.gif)
+![ Gegenereerd Document van Verslag ](assets/document_of_record.gif)
 
-Voor meer informatie bij het produceren van een DoR, zie [Document met record genereren voor adaptieve formulieren](https://helpx.adobe.com/experience-manager/6-5/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.html).
+Voor meer informatie bij het produceren van aDoR, zie [ Document van Verslag voor adaptieve vormen ](https://helpx.adobe.com/experience-manager/6-5/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) produceren.
 
-De [Automatede form conversion (AFCS)](/help/using/introduction.md) converteert de volgende bronformulieren naar adaptieve formulieren:
+De [ dienst van de Automatede form conversion (AFCS) ](/help/using/introduction.md) zet de volgende bronvormen in adaptieve vormen om:
 
 * niet-interactieve PDF forms
 * Acro Forms
@@ -43,7 +43,7 @@ De volgende lijst illustreert een voorbeeld van hoe het malplaatje van Dor dat u
 <table> 
  <tbody>
  <tr>
-  <td><p><strong>Bronformulier</strong></p></td>
+  <td><p><strong>Source-formulier</strong></p></td>
   <td><p><strong>Gegenereerde DoR</strong></p></td> 
    </tr>
   <tr>
@@ -63,7 +63,7 @@ In dit artikel worden de aanbevolen paden beschreven voor het genereren van een 
 <table> 
  <tbody> 
   <tr> 
-   <th><strong>Bronformulier</strong></th> 
+   <th><strong>Source-formulier</strong></th> 
    <th><strong>Methoden om DoR te genereren</strong></th> 
   </tr> 
   <tr> 
@@ -94,30 +94,30 @@ Als u een niet-interactief PDF-formulier gebruikt als bronformulier voor AFCS (A
 
 ### genereren van doR inschakelen vóór conversie om DoR te genereren met de standaardsjabloon {#generate-document-of-record-using-cloud-configuration}
 
-1. Selecteren **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion Configuration]** > Eigenschappen van cloudconfiguratie gebruikt voor conversie > **[!UICONTROL Advanced]** > **[!UICONTROL Generate Document of Record]** -optie.
+1. Selecteer **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion Configuration]** > Eigenschappen van de cloudconfiguratie die wordt gebruikt voor conversie > optie **[!UICONTROL Advanced]** > **[!UICONTROL Generate Document of Record]** .
 
-   ![Document met record genereren met cloudconfiguratie](assets/generate_dor_cloud_config.gif)
+   ![ produceer Document van Verslag gebruikend wolkenconfiguratie ](assets/generate_dor_cloud_config.gif)
 
-1. Tikken **[!UICONTROL Save & Close]** om de instellingen op te slaan.
+1. Tik op **[!UICONTROL Save & Close]** om de instellingen op te slaan.
 
-1. [De conversie uitvoeren](/help/using/convert-existing-forms-to-adaptive-forms.md). Zorg ervoor dat u de wolkenconfiguratie gebruikt die in stap 1 van deze instructies wordt uitgegeven.
+1. [ stel de omzetting ](/help/using/convert-existing-forms-to-adaptive-forms.md) in werking. Zorg ervoor dat u de wolkenconfiguratie gebruikt die in stap 1 van deze instructies wordt uitgegeven.
 Bij het verzenden van het geconverteerde adaptieve formulier wordt de DoR automatisch gegenereerd met de standaardsjabloon.
 
 ### Aangepaste formuliereigenschappen bewerken na conversie om DoR-generatie in te schakelen {#edit-adaptive-form-properties-generate-document-of-record}
 
 Als u het genereren van doR niet inschakelt voordat u het bronformulier omzet in een adaptief formulier, kunt u dit nog steeds doen na de conversie.
 
-1. [De conversie uitvoeren](/help/using/convert-existing-forms-to-adaptive-forms.md) op het niet-interactieve PDF formulier om een adaptief formulier te genereren.
+1. [ stel de omzetting ](/help/using/convert-existing-forms-to-adaptive-forms.md) op de niet-interactieve vorm van PDF in werking om een adaptieve vorm te produceren.
 
-1. Selecteer het adaptieve formulier in het dialoogvenster **[!UICONTROL output]** map en tik **[!UICONTROL Properties]**.
+1. Selecteer het aangepaste formulier in de map **[!UICONTROL output]** en tik op **[!UICONTROL Properties]** .
 
-1. In de **[!UICONTROL Form Model]** tabblad, vouwt u de **[!UICONTROL Document of Record Template Configuration]** en selecteert u **[!UICONTROL Generate Document of Record]**.
+1. Vouw op het tabblad **[!UICONTROL Form Model]** de sectie **[!UICONTROL Document of Record Template Configuration]** uit en selecteer **[!UICONTROL Generate Document of Record]** .
 
-   ![Document van record genereren](assets/generate_dor_af_properties.png)
+   ![ produceer Document van Verslag ](assets/generate_dor_af_properties.png)
 
-1. Tikken **[!UICONTROL Save & Close]** om de instellingen op te slaan.
+1. Tik op **[!UICONTROL Save & Close]** om de instellingen op te slaan.
 
-Bij het verzenden van het geconverteerde adaptieve formulier wordt de DoR automatisch gegenereerd met de standaardsjabloon. Als u een andere DoR-sjabloon wilt koppelen aan het geconverteerde adaptieve formulier, kunt u **[!UICONTROL Associate form template as the Document of Record template]** -optie.
+Bij het verzenden van het geconverteerde adaptieve formulier wordt de DoR automatisch gegenereerd met de standaardsjabloon. Als u een andere DoR-sjabloon aan het omgezette adaptieve formulier wilt koppelen, kunt u de optie **[!UICONTROL Associate form template as the Document of Record template]** selecteren.
 
 ## Document met record genereren voor Acrobat Forms- of XFA-PDF forms {#generate-document-of-record-acroform-xfaform}
 
@@ -129,25 +129,25 @@ Als u een Acro-formulier of een XFA-gebaseerd PDF formulier gebruikt als bronfor
 
 ### genereren van doR inschakelen vóór conversie om doR te genereren met behulp van bronformuliersjabloon {#use-input-form-as-template-to-generate-document-of-record}
 
-1. Selecteren **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion Configuration]** > Eigenschappen van cloudconfiguratie gebruikt voor conversie > **[!UICONTROL Advanced]** > **[!UICONTROL Generate Document of Record]** -optie.
+1. Selecteer **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion Configuration]** > Eigenschappen van de cloudconfiguratie die wordt gebruikt voor conversie > optie **[!UICONTROL Advanced]** > **[!UICONTROL Generate Document of Record]** .
 
-1. Tikken **[!UICONTROL Save & Close]** om de instellingen op te slaan.
+1. Tik op **[!UICONTROL Save & Close]** om de instellingen op te slaan.
 
-1. [De conversie uitvoeren](/help/using/convert-existing-forms-to-adaptive-forms.md). Zorg ervoor dat u de wolkenconfiguratie gebruikt die in stap 1 van deze instructies wordt uitgegeven.
+1. [ stel de omzetting ](/help/using/convert-existing-forms-to-adaptive-forms.md) in werking. Zorg ervoor dat u de wolkenconfiguratie gebruikt die in stap 1 van deze instructies wordt uitgegeven.
 De conversieservice koppelt het Acro Form- of XFA-gebaseerde PDF-formulier automatisch aan het geconverteerde adaptieve formulier als de DoR-sjabloon.
-U kunt de adaptieve formuliereigenschappen openen om de DoR-sjabloon weer te geven in het dialoogvenster **[!UICONTROL Document of Record Template Configuration]** deel van **[!UICONTROL Form Model]** tab.
+U kunt de adaptieve formuliereigenschappen openen om de DoR-sjabloon weer te geven in de sectie **[!UICONTROL Document of Record Template Configuration]** van het tabblad **[!UICONTROL Form Model]** .
 
-   ![Aangepaste formuliereigenschappen bewerken om een document met records te genereren](assets/generate_dor_af_properties_xdp_acro.png)
+   ![ geef adaptieve vormeigenschappen uit om Document van Verslag te produceren ](assets/generate_dor_af_properties_xdp_acro.png)
 
    Bij het verzenden van het geconverteerde adaptieve formulier wordt de DoR automatisch gegenereerd met behulp van de bronformuliersjabloon.
 
 ### Aangepaste formuliereigenschappen bewerken na conversie om DoR-generatie in te schakelen {#edit-adaptive-form-properties-to-generate-document-of-record}
 
-1. [De conversie uitvoeren](/help/using/convert-existing-forms-to-adaptive-forms.md) op het niet-interactieve PDF formulier om een adaptief formulier te genereren.
+1. [ stel de omzetting ](/help/using/convert-existing-forms-to-adaptive-forms.md) op de niet-interactieve vorm van PDF in werking om een adaptieve vorm te produceren.
 
-1. Selecteer het adaptieve formulier in het dialoogvenster **[!UICONTROL output]** map en tik **[!UICONTROL Properties]**.
+1. Selecteer het aangepaste formulier in de map **[!UICONTROL output]** en tik op **[!UICONTROL Properties]** .
 
-1. In de **[!UICONTROL Form Model]** tabblad, vouwt u de **[!UICONTROL Document of Record Template Configuration]** en selecteert u **[!UICONTROL Generate Document of Record]** om het produceren van Dor toe te laten gebruikend het standaardmalplaatje.
-U kunt ook de optie **[!UICONTROL Associate form template as the Document of Record template]** en selecteert u de sjabloon om het genereren van doR-bestanden in te schakelen met de bronformuliersjabloon of een andere formuliersjabloon.
+1. Vouw op het tabblad **[!UICONTROL Form Model]** de sectie **[!UICONTROL Document of Record Template Configuration]** uit en selecteer **[!UICONTROL Generate Document of Record]** om het genereren van doR in te schakelen met de standaardsjabloon.
+U kunt ook de optie **[!UICONTROL Associate form template as the Document of Record template]** selecteren en de sjabloon selecteren om het genereren van een doR-bestand met behulp van een bronformuliersjabloon of een andere formuliersjabloon in te schakelen.
 
-1. Tikken **[!UICONTROL Save & Close]** om de instellingen op te slaan.
+1. Tik op **[!UICONTROL Save & Close]** om de instellingen op te slaan.

@@ -13,7 +13,7 @@ role: User
 source-git-commit: 298d6c0641d7b416edb5b2bcd5fec0232f01f4c7
 workflow-type: tm+mt
 source-wordcount: '87'
-ht-degree: 100%
+ht-degree: 36%
 
 ---
 
@@ -22,14 +22,14 @@ ht-degree: 100%
 
 + [Inleiding](introduction.md)
 + [Release-opmerkingen](release-notes.md)
-+ [Best practices en overwegingen](styles-and-pattern-considerations-and-best-practices.md)
-+ [Service configureren](configure-service.md)
-+ [Printformulieren converteren naar adaptieve formulieren](convert-existing-forms-to-adaptive-forms.md)
-+ [Geconverteerde formulieren controleren en corrigeren](review-correct-ui-edited.md)
-+ [Het standaard metamodel uitbreiden](extending-the-default-meta-model.md)
-+ [Aanbevolen vooraf ingevulde gegevens gebaseerd op gegevensbron en workflows toevoegen voor adaptieve formulieren](prefill-submit-forms.md)
-+ [Aanbevolen workflows om document van recordgeneratie voor adaptieve workflows in te schakelen](enable-document-of-record-generation.md)
-+ [Adaptief formulier integreren met database door middel van AEM-workflow](submit-converted-adaptive-form-to-database.md)
++ [Aanbevolen werkwijzen en overwegingen](styles-and-pattern-considerations-and-best-practices.md)
++ [De service configureren](configure-service.md)
++ [Afdrukformulieren converteren naar aangepaste formulieren](convert-existing-forms-to-adaptive-forms.md)
++ [Omgezette formulieren controleren en corrigeren](review-correct-ui-edited.md)
++ [Het standaardmetamodel uitbreiden](extending-the-default-meta-model.md)
++ [Aanbevolen vooraf ingevulde en verzendworkflows voor gegevensbronnen voor adaptieve formulieren](prefill-submit-forms.md)
++ [Aanbevolen workflows om het genereren van documenten voor adaptieve formulieren mogelijk te maken](enable-document-of-record-generation.md)
++ [Aangepast formulier integreren met database via AEM workflow](submit-converted-adaptive-form-to-database.md)
 + [Veelgestelde vragen](frequently-asked-questions.md)
 + [Bekende problemen](known-issues.md)
 + [Problemen oplossen](troubleshoot-afcs.md)

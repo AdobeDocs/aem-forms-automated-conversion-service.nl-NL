@@ -1,6 +1,6 @@
 ---
 title: Aanbevolen werkwijzen en overwegingen
-description: NIET PUBLICEREN
+description: NIET PUBLISH
 seo-description: DO NOT PUBLISH
 page-status-flag: never-activated
 uuid: c2821264-39e2-44f8-b234-835c46f33fd5
@@ -26,7 +26,7 @@ AEM Forms Automated Conversion-service converteert een PDF-formulier naar een ad
 
 De service automatede form conversion (AFCS) is opgeleid op een groot aantal formulieren. Het identificeert gemakkelijk gebieden in een bronvorm en produceert adaptieve vormen. Er zijn echter enkele velden en stijlen in PDF forms die gemakkelijk zichtbaar zijn voor het oog, maar moeilijk te begrijpen zijn voor de service. De service kan verschillende veldtypen of deelvensters toewijzen aan bepaalde velden of stijlen. Alle dergelijke veld- en stijlpatronen worden hieronder weergegeven.
 
-De dienst zou beginnen correcte gebieden of panelen aan deze patronen te identificeren en toe te wijzen aangezien het het leren van de brongegevens houdt. U kunt voorlopig [Reviseren en corrigeren](review-correct-ui-edited.md) editor om dergelijke problemen op te lossen. Voordat u de problemen gaat verhelpen of verder gaat lezen, moet u zich vertrouwd maken met [adaptieve formuliercomponenten](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html).
+De dienst zou beginnen correcte gebieden of panelen aan deze patronen te identificeren en toe te wijzen aangezien het het leren van de brongegevens houdt. Voor het tijd zijn, kunt u [ Overzicht gebruiken en ](review-correct-ui-edited.md) redacteur verbeteren om dergelijke kwesties te bevestigen. Alvorens de kwesties te beginnen bevestigen of verder te lezen, vertrouwt me met [ aanpassende vormcomponenten ](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html).
 
 ## Algemeen {#general}
 

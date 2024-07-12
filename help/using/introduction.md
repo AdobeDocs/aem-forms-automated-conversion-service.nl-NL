@@ -29,7 +29,7 @@ De service automatede form conversion (AFCS) helpt de digitalisering en modernis
 
 ## Onboarding {#onboarding}
 
-De service is gratis beschikbaar voor AEM 6.4 Forms en AEM 6.5 Forms On-Premise-term klanten en Adobe-Managed Service Enterprise-klanten. U kunt het team van de Verkoop van de Adobe of uw vertegenwoordiger van de Adobe contacteren om toegang tot de dienst te verzoeken. De service is ook gratis en vooraf ingeschakeld voor as a Cloud Service AEM Forms-klanten.
+De service is gratis beschikbaar voor AEM 6.4 Forms en AEM 6.5 Forms On-Premise-term klanten en Adobe-Managed Service Enterprise-klanten. U kunt het team van de Verkoop van de Adobe of uw vertegenwoordiger van de Adobe contacteren om toegang tot de dienst te verzoeken. De service is ook gratis en vooraf ingeschakeld voor AEM Forms as a Cloud Service klanten.
 
 Adobe maakt toegang voor uw organisatie mogelijk en biedt de vereiste rechten aan de persoon die is aangewezen als beheerder in uw organisatie. De beheerder kan toegang verlenen aan de AEM Forms-ontwikkelaars (gebruikers) van uw organisatie om verbinding te maken met de service. Raadpleeg [De service voor automatische conversie van formulieren configureren](configure-service.md) voor meer informatie.
 
@@ -39,7 +39,7 @@ De service ondersteunt niet-interactieve PDF-formulieren, formulieren die zijn g
 
 De service biedt ook ondersteuning voor PDF forms die geschikt zijn voor Adobe Sign. Als het PDF-bronformulier Adobe Sign-tekstcodes heeft, behoudt de service tijdens de conversie alle aan Adobe Sign gerelateerde informatie en worden de ondertekenaargegevens in de PDF van de bron gekoppeld aan de bijbehorende adaptieve formuliervelden. De functie is alleen beschikbaar voor AcroForms.
 
-De service kan formulieren in het Engels, Frans, Duits, Spaans, Italiaans en Portugees omzetten in aangepaste formulieren. U kunt de gegenereerde adaptieve formulieren ook naar een andere taal vertalen met [AEM vertaalworkflow](https://helpx.adobe.com/nl/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
+De service kan formulieren in het Engels, Frans, Duits, Spaans, Italiaans en Portugees omzetten in aangepaste formulieren. U kunt de geproduceerde adaptieve vormen aan een andere taal ook vertalen gebruikend [ AEM vertaalwerkschema ](https://helpx.adobe.com/nl/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 
 ## Conversieworkflow  {#conversion-workflow}
 

@@ -23,16 +23,16 @@ Als u een adaptief formulier wilt genereren zonder gegevensbindingen, kunt u het
 
 In de volgende afbeelding ziet u de verschillende fasen van het integreren van een geconverteerd adaptief formulier in een database:
 
-![database-integratie](assets/integrate-adaptive-form-with-database.png)
+![ gegevensbestandintegratie ](assets/integrate-adaptive-form-with-database.png)
 
 In dit artikel worden de stapsgewijze instructies beschreven om al deze integratiefasen met succes uit te voeren.
 
 ## Voorwaarden {#pre-requisites}
 
 * Een AEM 6.4- of 6.5-auteurinstantie instellen
-* Installeren [nieuwste servicepack](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) voor uw AEM
+* Installeer [ recentste de dienstpak ](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) voor uw AEM instantie
 * Laatste versie van het AEM Forms-invoegpakket
-* Configureren [Automatede form conversion](configure-service.md)
+* Vorm [ de dienst van de Automatede form conversion ](configure-service.md)
 * Stel een database in. De database die wordt gebruikt in de voorbeeldimplementatie is MySQL 5.6.24. U kunt het geconverteerde adaptieve formulier echter integreren met elke gewenste database.
 
 ## Monster van adaptief formulier {#sample-adaptive-form}
@@ -45,28 +45,28 @@ U kunt het voorbeeld van het contactformulier downloaden met:
 
 Het PDF-bestand fungeert als invoer voor de AFCS-service (Automatede form conversion Service). De service converteert dit bestand naar een adaptief formulier. De volgende afbeelding toont de voorbeeldcontactgegevens van een formulier in PDF-indeling.
 
-![aanvraagformulier voor een voorbeeldlening](assets/sample_contact_us_form.png)
+![ de vorm van de de toepassingstoepassing van de steekproeflening ](assets/sample_contact_us_form.png)
 
 ## Het bestand mysql-connector-java-5.1.39-bin.jar installeren {#install-mysql-connector-java-file}
 
 Voer de volgende stappen uit, op alle auteur- en publicatieinstanties, om het bestand mysql-connector-java-5.1.39-bin.jar te installeren:
 
-1. Navigeren naar `http://server:port/system/console/depfinder` en zoek naar het pakket com.mysql.jdbc.
+1. Ga naar `http://server:port/system/console/depfinder` en zoek naar het pakket com.mysql.jdbc.
 1. Controleer in de kolom Geëxporteerd door of het pakket wordt geëxporteerd door een willekeurige bundel. Ga door als het pakket niet door enige bundel wordt uitgevoerd.
-1. Navigeren naar `http://server:port/system/console/bundles` en klik op **[!UICONTROL Install/Update]**.
-1. Klikken **[!UICONTROL Choose File]** en bladert u om het bestand mysql-connector-java-5.1.39-bin.jar te selecteren. Selecteer ook **[!UICONTROL Start Bundle]** en **[!UICONTROL Refresh Packages]** selectievakjes.
-1. Klikken **[!UICONTROL Install]** of **[!UICONTROL Update]**. Start de server opnieuw als de bewerking is voltooid.
+1. Ga naar `http://server:port/system/console/bundles` en klik op **[!UICONTROL Install/Update]** .
+1. Klik op **[!UICONTROL Choose File]** en blader naar het bestand mysql-connector-java-5.1.39-bin.jar en selecteer dit. Selecteer ook de selectievakjes **[!UICONTROL Start Bundle]** en **[!UICONTROL Refresh Packages]** .
+1. Klik op **[!UICONTROL Install]** of **[!UICONTROL Update]** . Start de server opnieuw als de bewerking is voltooid.
 1. (Alleen Windows) Schakel de systeemfirewall van uw besturingssysteem uit.
 
 ## Gegevens voorbereiden voor formuliermodel {#prepare-data-for-form-model}
 
 Met AEM Forms Data Integration kunt u verschillende gegevensbronnen configureren en verbinden. Nadat u een adaptief formulier hebt gegenereerd met behulp van het conversieproces, kunt u het formuliermodel definiëren op basis van een formuliergegevensmodel, XSD of een JSON-schema. U kunt een database, Microsoft Dynamics of een andere service van derden gebruiken om een formuliergegevensmodel te maken.
 
-Deze zelfstudie gebruikt de MySQL-database als bron voor het maken van een formuliergegevensmodel. Een schema maken in de database en toevoegen **contactus** tabel naar het schema op basis van de velden die beschikbaar zijn in het adaptieve formulier.
+Deze zelfstudie gebruikt de MySQL-database als bron voor het maken van een formuliergegevensmodel. Creeer een schema in het gegevensbestand en voeg **contactus** lijst aan het schema toe dat op de gebieden wordt gebaseerd die in de adaptieve vorm beschikbaar zijn.
 
-![Voorbeeldgegevens mysql](assets/db_entries_sample_form.png)
+![ gegevens van de Steekproef mysql ](assets/db_entries_sample_form.png)
 
-U kunt de volgende verklaring gebruiken DDL om tot de **contactus** tabel in de database.
+U kunt de volgende verklaring gebruiken DDL om de **contactus** lijst in gegevensbestand tot stand te brengen.
 
 ```sql
 CREATE TABLE `contactus` (
@@ -82,8 +82,8 @@ CREATE TABLE `contactus` (
 
 Voer de volgende configuratiestappen uit om een verbinding tussen AEM instantie en het gegevensbestand tot stand te brengen MYSQL:
 
-1. Ga naar AEM webconsoleconfiguratiepagina op `http://server:port/system/console/configMgr`.
-1. Zoeken en klikken om te openen **[!UICONTROL Apache Sling Connection Pooled DataSource]** in geef wijze in de Configuratie van de Console van het Web uit. Geef de waarden voor de eigenschappen op zoals in de volgende tabel wordt beschreven:
+1. Ga naar AEM webconsoleconfiguratiepagina op `http://server:port/system/console/configMgr` .
+1. Zoek en klik om **[!UICONTROL Apache Sling Connection Pooled DataSource]** te openen in de bewerkingsmodus in de configuratie van de webconsole. Geef de waarden voor de eigenschappen op zoals in de volgende tabel wordt beschreven:
 
    <table> 
     <tbody> 
@@ -101,7 +101,7 @@ Voer de volgende configuratiestappen uit om een verbinding tussen AEM instantie 
     </tr>
     <tr> 
     <td><p>URI voor JDBC-verbinding</p></td> 
-    <td><p>jdbc:mysql://[host]:[poort]/[schema_naam]</p></td>
+    <td><p>jdbc:mysql://[host]:[poort]/[schema_name]</p></td>
     </tr>
     <tr> 
     <td><p>Gebruikersnaam</p></td> 
@@ -158,25 +158,25 @@ Voer de volgende configuratiestappen uit om een verbinding tussen AEM instantie 
 
 Nadat u MYSQL als gegevensbron hebt geconfigureerd, voert u de volgende stappen uit om een formuliergegevensmodel te maken:
 
-1. Navigeer in AEM auteurinstantie naar **[!UICONTROL Forms]** > **[!UICONTROL Data Integrations]**.
+1. Navigeer in AEM auteurinstantie naar **[!UICONTROL Forms]** > **[!UICONTROL Data Integrations]** .
 
-1. Tikken **[!UICONTROL Create]** > **[!UICONTROL Form Data Model]**.
+1. Tik op **[!UICONTROL Create]** > **[!UICONTROL Form Data Model]** .
 
-1. In de **[!UICONTROL Create Form Data Model]** wizard, specificeer **workflow_submit** als de naam voor het formuliergegevensmodel. Tikken **[!UICONTROL Next]**.
+1. In de **[!UICONTROL Create Form Data Model]** tovenaar, specificeer **workflow_submit** als naam voor het model van vormgegevens. Tik op **[!UICONTROL Next]** .
 
-1. Selecteer de MYSQL-gegevensbron die u in de vorige sectie hebt geconfigureerd en tik **[!UICONTROL Create]**.
+1. Selecteer de MYSQL-gegevensbron die u in de vorige sectie hebt geconfigureerd en tik op **[!UICONTROL Create]** .
 
-1. Tikken **[!UICONTROL Edit]** en breid de gegevensbron uit die in de linkerruit wordt vermeld om te selecteren **contactus** tabel, **[!UICONTROL get]**, en **[!UICONTROL insert]** services en tikken **[!UICONTROL Add Selected]**.
+1. Tik **[!UICONTROL Edit]** en breid de gegevensbron uit die in de linkerruit wordt vermeld om **contactus** lijst, **[!UICONTROL get]**, en **[!UICONTROL insert]** diensten te selecteren, en te tikken **[!UICONTROL Add Selected]**.
 
-   ![Voorbeeldgegevens mysql](assets/fdm_details_workfdlow_submit.png)
+   ![ gegevens van de Steekproef mysql ](assets/fdm_details_workfdlow_submit.png)
 
-1. Selecteer het gegevensmodelobject in het rechtervenster en tik op **[!UICONTROL Edit Properties]**. Selecteren **[!UICONTROL get]** en **[!UICONTROL insert]** van **[!UICONTROL Read Service]** en **[!UICONTROL Write Service]** vervolgkeuzelijsten. Geef de argumenten voor de leesservice op en tik op **[!UICONTROL Done]**.
+1. Selecteer het gegevensmodelobject in het rechterdeelvenster en tik op **[!UICONTROL Edit Properties]** . Selecteer **[!UICONTROL get]** en **[!UICONTROL insert]** in de vervolgkeuzelijsten **[!UICONTROL Read Service]** en **[!UICONTROL Write Service]** . Geef de argumenten voor de leesservice op en tik op **[!UICONTROL Done]** .
 
-1. In de **[!UICONTROL Services]** selecteert u de **[!UICONTROL get]** service en tikken **[!UICONTROL Edit Properties]**. Selecteer de **[!UICONTROL Output Model Object]**, schakelt u de **[!UICONTROL Return array]** schakelen en tikken **[!UICONTROL Done]**.
+1. Selecteer op het tabblad **[!UICONTROL Services]** de service **[!UICONTROL get]** en tik op **[!UICONTROL Edit Properties]** . Selecteer de **[!UICONTROL Output Model Object]** , schakel de **[!UICONTROL Return array]** -toets uit en tik **[!UICONTROL Done]** .
 
-1. Selecteer de **[!UICONTROL Insert]** service en tikken **[!UICONTROL Edit Properties]**. Selecteer de **[!UICONTROL Input Model Object]** en tikken **[!UICONTROL Done]**.
+1. Selecteer de service **[!UICONTROL Insert]** en tik op **[!UICONTROL Edit Properties]** . Selecteer **[!UICONTROL Input Model Object]** en tik **[!UICONTROL Done]**.
 
-1. Tikken **[!UICONTROL Save]** om het formuliergegevensmodel op te slaan.
+1. Tik op **[!UICONTROL Save]** om het formuliergegevensmodel op te slaan.
 
 U kunt het model met voorbeeldformuliergegevens downloaden:
 
@@ -184,13 +184,13 @@ U kunt het model met voorbeeldformuliergegevens downloaden:
 
 ## Aangepaste formulieren genereren met JSON-binding {#generate-adaptive-forms-with-json-binding}
 
-Gebruik de [Voor conversie bestemde AFCS-service (automatede form conversion Service)](convert-existing-forms-to-adaptive-forms.md) de [Formulier Contact opnemen](#sample-adaptive-form) in een adaptief formulier met gegevensbinding. Zorg ervoor dat u de optie **[!UICONTROL Generate adaptive form(s) without data bindings]** selectievakje tijdens het genereren van het adaptieve formulier.
+Gebruik de [ dienst van de Automatede form conversion (AFCS) om ](convert-existing-forms-to-adaptive-forms.md) de [ vorm van het Contact van Us ](#sample-adaptive-form) in een adaptieve vorm met gegevensband om te zetten. Zorg ervoor dat u het selectievakje **[!UICONTROL Generate adaptive form(s) without data bindings]** niet inschakelt tijdens het genereren van het adaptieve formulier.
 
-![Aangepaste vorm met JSON-binding](assets/generate_af_with_data_bindings.png)
+![ Aangepaste vorm met band JSON ](assets/generate_af_with_data_bindings.png)
 
-Omgezette selecteren **Formulier Contact opnemen** beschikbaar in het **[!UICONTROL output]** map in **[!UICONTROL Forms & Documents]** en tikken **[!UICONTROL Edit]**. Tikken **[!UICONTROL Preview]**, voert u waarden in de aangepaste formuliervelden in en tikt u op **[!UICONTROL Submit]**.
+Selecteer de omgezette **vorm van het Contact van het Contact** beschikbaar in de **[!UICONTROL output]** omslag in **[!UICONTROL Forms & Documents]** en tikken **[!UICONTROL Edit]**. Tik op **[!UICONTROL Preview]** en geef waarden op in de aangepaste formuliervelden. Tik vervolgens op **[!UICONTROL Submit]** .
 
-Aanmelden bij **crx-repository** en navigeer naar */content/forms/fp/admin/submit/data* om de verzonden waarden weer te geven in JSON-indeling. Hieronder volgen de voorbeeldgegevens in de JSON-indeling wanneer u de omgezette gegevens verzendt **Contact opnemen** adaptief formulier:
+Logon aan **crx-bewaarplaats** en navigeer aan */content/forms/fp/admin/submit/data* om de voorgelegde waarden in formaat te bekijken JSON. Het volgende is de steekproefgegevens in formaat JSON wanneer u het omgezette **Aangepaste vorm van het Contact van ons** voorlegt:
 
 ```json
 {
@@ -223,55 +223,55 @@ U moet nu een workflowmodel maken dat deze gegevens kan verwerken en verzenden n
 
 Voer de volgende stappen uit om een workflowmodel te maken voor het verzenden van de adaptieve formuliergegevens naar de database:
 
-1. Open de console Workflowmodellen. De standaard-URL is `https://server:port/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`.
+1. Open de console Workflowmodellen. De standaard-URL is `https://server:port/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models` .
 
-1. Selecteren **[!UICONTROL Create]** vervolgens **[!UICONTROL Create Model]**. De **[!UICONTROL Add Workflow Model]** wordt weergegeven.
+1. Selecteer **[!UICONTROL Create]** en vervolgens **[!UICONTROL Create Model]** . Het dialoogvenster **[!UICONTROL Add Workflow Model]** wordt weergegeven.
 
-1. Voer de **[!UICONTROL Title]** en **[!UICONTROL Name]** (optioneel). Bijvoorbeeld: **workflow_json_submit**. Tikken **[!UICONTROL Done]** om het model te maken.
+1. Voer de opties **[!UICONTROL Title]** en **[!UICONTROL Name]** (optioneel) in. Bijvoorbeeld, **workflow_json_submit**. Tik op **[!UICONTROL Done]** om het model te maken.
 
-1. Selecteer het workflowmodel en tik op **[!UICONTROL Edit]** om het model te openen in de bewerkingsmodus. Tik + en voeg toe **[!UICONTROL Invoke Form Data Model Service]** stap naar het workflowmodel.
+1. Selecteer het workflowmodel en tik op **[!UICONTROL Edit]** om het model te openen in de bewerkingsmodus. Tik op + en voeg **[!UICONTROL Invoke Form Data Model Service]** -stap toe aan het workflowmodel.
 
-1. Tik op de knop **[!UICONTROL Invoke Form Data Model Service]** stap en tik ![Configureren](assets/configure_icon.png).
+1. Tik de **[!UICONTROL Invoke Form Data Model Service]** stap en de tikken ![ vormen ](assets/configure_icon.png).
 
-1. In de **[!UICONTROL Form Data Model]** selecteert u het formuliergegevensmodel dat u in het dialoogvenster **[!UICONTROL Form Data Model path]** veld en selecteer **[!UICONTROL insert]** van de **[!UICONTROL Service]** vervolgkeuzelijst.
+1. Selecteer op het tabblad **[!UICONTROL Form Data Model]** het formuliergegevensmodel dat u in het **[!UICONTROL Form Data Model path]** -veld hebt gemaakt en selecteer **[!UICONTROL insert]** in de vervolgkeuzelijst **[!UICONTROL Service]** .
 
-1. In de **[!UICONTROL Input for Service]** tab, selecteert u **[!UICONTROL Provide input data using literal, variable, or a workflow metadata, and a JSON file]** in de vervolgkeuzelijst selecteert u **[!UICONTROL Map input fields from input JSON]** selectievakje, selecteren **[!UICONTROL Relative to payload]** en verstrekken **data.xml** als de waarde voor de **[!UICONTROL Select input JSON document using]** veld.
+1. In het **[!UICONTROL Input for Service]** lusje, uitgezochte **[!UICONTROL Provide input data using literal, variable, or a workflow metadata, and a JSON file]** van de drop-down lijst, selecteert **[!UICONTROL Map input fields from input JSON]** checkbox, selecteert **[!UICONTROL Relative to payload]**, en verstrekt **data.xml** als waarde voor het **[!UICONTROL Select input JSON document using]** gebied.
 
-1. In de **[!UICONTROL Service Arguments]** de volgende waarden op voor de argumenten van het formuliergegevensmodel:
+1. Geef in de sectie **[!UICONTROL Service Arguments]** de volgende waarden op voor de argumenten van het formuliergegevensmodel:
 
-   ![Formuliergegevensmodelservice aanroepen](assets/invoke_form_data_model_service.png)
+   ![ roept de ModelDienst van Gegevens van de Vorm ](assets/invoke_form_data_model_service.png) aan
 
-   De modelvelden van het formuliergegevensmodel, bijvoorbeeld de puntnaam van contactus, zijn toegewezen aan **afData.afBoundData.data.name1**, die verwijst naar de bindingen van het JSON-schema voor het ingediende adaptieve formulier.
+   Bericht dat de modelgebieden van vormgegevens, bijvoorbeeld, contactus puntnaam, aan **afData.afBoundData.data.name1** in kaart wordt gebracht, die naar de JSON schemabindingen voor de voorgelegde adaptieve vorm verwijst.
 
 ## Aangepaste formulierverzending configureren {#configure-adaptive-form-submission}
 
 Voer de volgende stappen uit om het aangepaste formulier te verzenden naar het workflowmodel dat u in de vorige sectie hebt gemaakt:
 
-1. Selecteer het geconverteerde contactformulier dat beschikbaar is in het dialoogvenster **[!UICONTROL output]** map in **[!UICONTROL Forms & Documents]** en tikken **[!UICONTROL Edit]**.
+1. Selecteer het geconverteerde contactformulier dat beschikbaar is in de map **[!UICONTROL output]** in **[!UICONTROL Forms & Documents]** en tik op **[!UICONTROL Edit]** .
 
-1. Eigenschappen van adaptieve formulieren openen door te tikken **[!UICONTROL Form Container]** en tikt u vervolgens op ![Configureren](assets/configure_icon.png).
+1. Open adaptieve vormeigenschappen door te tikken **[!UICONTROL Form Container]** en dan te tikken ![ vormen ](assets/configure_icon.png).
 
-1. In de **[!UICONTROL Submission]** sectie, selecteert u **[!UICONTROL Invoke an AEM workflow]** van de **[!UICONTROL Submit Action]** vervolgkeuzelijst, selecteert u het workflowmodel dat u in de vorige sectie hebt gemaakt en geeft u **data.xml** in de **[!UICONTROL Data File Path]** veld.
+1. In de **[!UICONTROL Submission]** sectie, selecteer **[!UICONTROL Invoke an AEM workflow]** van de **[!UICONTROL Submit Action]** drop-down lijst, selecteer het werkschemamodel dat u in de vorige sectie creeerde, en specificeer **data.xml** op het **[!UICONTROL Data File Path]** gebied.
 
-1. Tikken ![Opslaan](assets/save_icon.png) om de eigenschappen op te slaan.
+1. Tik ![ sparen ](assets/save_icon.png) om de eigenschappen te bewaren.
 
-1. Tikken **[!UICONTROL Preview]**, voert u waarden in de aangepaste formuliervelden in en tikt u op **[!UICONTROL Submit]**. De verzonden waarden worden nu weergegeven in de MYSQL-databasetabel in plaats van **crx-repository**.
+1. Tik op **[!UICONTROL Preview]** en geef waarden op in de aangepaste formuliervelden. Tik vervolgens op **[!UICONTROL Submit]** . De voorgelegde waarden tonen nu in de MYSQL- gegevensbestandlijst in plaats van **crx-bewaarplaats**.
 
 ## Aangepast formulier configureren om waarden vooraf in te vullen vanuit de database
 
 Voer de volgende stappen uit om adaptief formulier te configureren voor het vooraf invullen van waarden uit de MYSQL-database op basis van de primaire sleutel die in de tabel is gedefinieerd (in dit geval per e-mail):
 
-1. Tik op de knop **E-mail** veld in het adaptieve formulier en tik ![Regel bewerken](assets/edit-rules.png).
+1. Tik het **E-mail** gebied in de adaptieve vorm en tik ![ regel ](assets/edit-rules.png) uit.
 
-1. Tikken **[!UICONTROL Create]** en selecteert u **[!UICONTROL is changed]** van de **[!UICONTROL Select State]** vervolgkeuzelijst in de **[!UICONTROL When]** sectie.
+1. Tik **[!UICONTROL Create]** en selecteer **[!UICONTROL is changed]** in de vervolgkeuzelijst **[!UICONTROL Select State]** in de sectie **[!UICONTROL When]** .
 
-1. In de **[!UICONTROL Then]** sectie, selecteert u **[!UICONTROL Invoke Service]** en **get** als de service voor het formuliergegevensmodel dat u in een vorige sectie van dit artikel hebt gemaakt.
+1. In de **[!UICONTROL Then]** sectie, uitgezochte **[!UICONTROL Invoke Service]** en **krijgen** als dienst voor het model van vormgegevens dat u in een vorige sectie van dit artikel hebt gecreeerd.
 
-1. Selecteren **E-mail** in de **[!UICONTROL Input]** en de overige drie velden van het formuliergegevensmodel, **Naam**, **Telefoonnummer**, en **Probleembeschrijving** in de **[!UICONTROL Output]** sectie. Tikken **[!UICONTROL Done]** om de instellingen op te slaan.
+1. Selecteer **E-mail** in de **[!UICONTROL Input]** sectie en de rest drie gebieden van het model van vormgegevens, **Naam**, **Aantal van de Telefoon**, en **Beschrijving van de Uitgave** in de **[!UICONTROL Output]** sectie. Tik op **[!UICONTROL Done]** om de instellingen op te slaan.
 
-   ![Voorinstellingen voor e-mail configureren](assets/email_prefill_settings.png)
+   ![ vorm Vooraf ingevulde Montages E-mail ](assets/email_prefill_settings.png)
 
-   Als gevolg hiervan kunt u op basis van bestaande e-mailadressen in de MYSQL-database de waarden voor de overige drie velden vooraf invullen in de **[!UICONTROL Preview]** modus van het adaptieve formulier. Als u bijvoorbeeld aya.tan@xyz.com opgeeft in het dialoogvenster **E-mail** veld (gebaseerd op bestaande gegevens in [Formuliergegevensmodel voorbereiden](#prepare-data-for-form-model) (deel van dit artikel) en de overige drie velden met een tab uit het veld; **Naam**, **Telefoonnummer**, en **Probleembeschrijving** automatisch in het adaptieve formulier worden weergegeven.
+   Op basis van bestaande e-mailgegevens in de MYSQL-database kunt u daarom de waarden voor de overige drie velden vooraf invullen in de modus **[!UICONTROL Preview]** van het adaptieve formulier. Bijvoorbeeld, als u aya.tan@xyz.com op het **E-mail** gebied (dat op bestaande gegevens in [ wordt gebaseerd vormt het model van vormgegevens ](#prepare-data-for-form-model) sectie van dit artikel) en lusje uit het gebied specificeert, de rest drie gebieden, **Naam**, **Aantal van de Telefoon**, en **de vertoning van de Beschrijving van de Uitgave** automatisch in de adaptieve vorm.
 
 U kunt het geconverteerde adaptieve voorbeeldformulier downloaden met:
 
